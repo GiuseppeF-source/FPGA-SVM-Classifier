@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Voting_w_ce_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Voting_w_ce" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="772615fs"></ZoomEndTime>
+      <Cursor1Time time="211587fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="229"></NameColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/TB_Voting_w_ce/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/sign_classifier" type="logic">
+      <obj_property name="ElementShortName">sign_classifier</obj_property>
+      <obj_property name="ObjectShortName">sign_classifier</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/sign_valid" type="logic">
+      <obj_property name="ElementShortName">sign_valid</obj_property>
+      <obj_property name="ObjectShortName">sign_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/win_class" type="array">
+      <obj_property name="ElementShortName">win_class[2:0]</obj_property>
+      <obj_property name="ObjectShortName">win_class[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/win_class_valid" type="logic">
+      <obj_property name="ElementShortName">win_class_valid</obj_property>
+      <obj_property name="ObjectShortName">win_class_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/period" type="other">
+      <obj_property name="ElementShortName">period</obj_property>
+      <obj_property name="ObjectShortName">period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/Vwce/count_clk" type="other">
+      <obj_property name="ElementShortName">count_clk</obj_property>
+      <obj_property name="ObjectShortName">count_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/Vwce/ce_class" type="array">
+      <obj_property name="ElementShortName">ce_class[1:6]</obj_property>
+      <obj_property name="ObjectShortName">ce_class[1:6]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Voting_w_ce/Vwce/out_class" type="array">
+      <obj_property name="ElementShortName">out_class[1:6][2:0]</obj_property>
+      <obj_property name="ObjectShortName">out_class[1:6][2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

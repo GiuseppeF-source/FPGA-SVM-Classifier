@@ -1,0 +1,79 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ccbfaebe9d1d405295bdb8b82b93d3ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_CLASSIFIER_w_VOTING_behav xil_defaultlib.TB_CLASSIFIER_w_VOTING -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.personal_type_pkg
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.ram_pkg
+Compiling architecture arch of entity xil_defaultlib.SIPO_buffer [sipo_buffer_default]
+Compiling architecture behavioral of entity xil_defaultlib.DSP_AxB_Cascade [dsp_axb_cascade_default]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture behavioral of entity xil_defaultlib.DSP_AxB_Cascade_wo_PCIN [dsp_axb_cascade_wo_pcin_default]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture behavioral of entity xil_defaultlib.DSP_AxB_plus_C [dsp_axb_plus_c_default]
+Compiling architecture arch of entity xil_defaultlib.SVM [svm_default]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.double_shift_reg [\double_shift_reg(widtha=8,width...]
+Compiling architecture arch of entity xil_defaultlib.incremental_pipe [incremental_pipe_default]
+Compiling architecture arch of entity xil_defaultlib.Classifier [classifier_default]
+Compiling architecture rtl of entity xil_defaultlib.xilinx_single_port_ram_no_change [\xilinx_single_port_ram_no_chang...]
+Compiling architecture arch of entity xil_defaultlib.RAM_Pre_Computed_Vector [ram_pre_computed_vector_default]
+Compiling architecture rtl of entity xil_defaultlib.xilinx_single_port_ram_no_change [\xilinx_single_port_ram_no_chang...]
+Compiling architecture arch of entity xil_defaultlib.RAM_Kernel_Scale [ram_kernel_scale_default]
+Compiling architecture rtl of entity xil_defaultlib.xilinx_single_port_ram_no_change [\xilinx_single_port_ram_no_chang...]
+Compiling architecture arch of entity xil_defaultlib.RAM_Bias [ram_bias_default]
+Compiling architecture arch of entity xil_defaultlib.counter_3b [counter_3b_default]
+Compiling architecture arch of entity xil_defaultlib.Voting_w_ce [voting_w_ce_default]
+Compiling architecture arch of entity xil_defaultlib.FSM_SIPO_PCV [fsm_sipo_pcv_default]
+Compiling architecture arch of entity xil_defaultlib.FSM_Kernel_Bias [fsm_kernel_bias_default]
+Compiling architecture arch of entity xil_defaultlib.FSM_Voting [fsm_voting_default]
+Compiling architecture arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture arch of entity xil_defaultlib.PL_CLASSIFIER_w_VOTING [pl_classifier_w_voting_default]
+Compiling architecture arch of entity xil_defaultlib.tb_classifier_w_voting
+Built simulation snapshot TB_CLASSIFIER_w_VOTING_behav

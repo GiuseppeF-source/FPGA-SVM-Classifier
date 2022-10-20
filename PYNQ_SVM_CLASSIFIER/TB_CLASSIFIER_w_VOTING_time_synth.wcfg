@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_CLASSIFIER_w_VOTING_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_CLASSIFIER_w_VOTING" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="7000000001fs"></ZoomEndTime>
+      <Cursor1Time time="170844000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="222"></NameColumnWidth>
+      <ValueColumnWidth column_width="70"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/classification" type="logic">
+      <obj_property name="ElementShortName">classification</obj_property>
+      <obj_property name="ObjectShortName">classification</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/s_axis_aclk" type="logic">
+      <obj_property name="ElementShortName">s_axis_aclk</obj_property>
+      <obj_property name="ObjectShortName">s_axis_aclk</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/s_axis_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/s_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/s_axis_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/m_axis_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/m_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/m_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="group177" type="group">
+      <obj_property name="label">Classifier</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/Output_SVM" type="array">
+         <obj_property name="ElementShortName">Output_SVM[0:0]</obj_property>
+         <obj_property name="ObjectShortName">Output_SVM[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/ce_DSP_AxB_Cascade_classifier" type="logic">
+         <obj_property name="ElementShortName">ce_DSP_AxB_Cascade_classifier</obj_property>
+         <obj_property name="ObjectShortName">ce_DSP_AxB_Cascade_classifier</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/inst_incremental_pipe/Q" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Q[1:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[1:0]</obj_property>
+         <obj_property name="label">En_Rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="group773" type="group">
+         <obj_property name="label">Attr_PIPE_to_SVM</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/inst_SVM/DSP48E1_inst_0" type="array">
+            <obj_property name="ElementShortName">DSP48E1_inst_0[7:0]</obj_property>
+            <obj_property name="ObjectShortName">DSP48E1_inst_0[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[4]_0 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[4]_0 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[4]_0 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[5]_2 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[5]_2 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[5]_2 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[6]_4 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[6]_4 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[6]_4 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[7]_6 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[7]_6 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[7]_6 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[8]_8 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[8]_8 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[8]_8 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[9]_10 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[9]_10 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[9]_10 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[10]_12 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[10]_12 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[10]_12 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[11]_14 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[11]_14 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[11]_14 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[12]_16 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[12]_16 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[12]_16 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[13]_18 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[13]_18 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[13]_18 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[14]_20 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[14]_20 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[14]_20 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[15]_22 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[15]_22 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[15]_22 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[16]_24 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[16]_24 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[16]_24 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[17]_26 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[17]_26 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[17]_26 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[18]_28 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[18]_28 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[18]_28 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[19]_30 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[19]_30 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[19]_30 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[20]_32 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[20]_32 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[20]_32 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[21]_34 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[21]_34 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[21]_34 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[22]_36 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[22]_36 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[22]_36 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[23]_38 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[23]_38 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[23]_38 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[24]_40 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[24]_40 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[24]_40 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[25]_42 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[25]_42 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[25]_42 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[26]_44 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[26]_44 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[26]_44 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[27]_46 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[27]_46 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[27]_46 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[28]_48 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[28]_48 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[28]_48 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[29]_50 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[29]_50 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[29]_50 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[30]_52 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[30]_52 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[30]_52 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[31]_54 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[31]_54 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[31]_54 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[32]_56 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[32]_56 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[32]_56 [7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_Attr_pipe_to_SVM[33]_58 " type="array">
+            <obj_property name="ElementShortName">\wire_Attr_pipe_to_SVM[33]_58 [7:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_Attr_pipe_to_SVM[33]_58 [7:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group774" type="group">
+         <obj_property name="label">PCV_PIPE_to_SVM</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[4]_1 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[4]_1 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[4]_1 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[5]_3 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[5]_3 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[5]_3 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[6]_5 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[6]_5 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[6]_5 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[7]_7 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[7]_7 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[7]_7 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[8]_9 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[8]_9 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[8]_9 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[9]_11 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[9]_11 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[9]_11 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[10]_13 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[10]_13 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[10]_13 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[11]_15 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[11]_15 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[11]_15 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[12]_17 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[12]_17 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[12]_17 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[13]_19 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[13]_19 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[13]_19 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[14]_21 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[14]_21 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[14]_21 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[15]_23 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[15]_23 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[15]_23 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[16]_25 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[16]_25 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[16]_25 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[17]_27 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[17]_27 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[17]_27 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[18]_29 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[18]_29 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[18]_29 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[19]_31 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[19]_31 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[19]_31 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[20]_33 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[20]_33 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[20]_33 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[21]_35 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[21]_35 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[21]_35 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[22]_37 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[22]_37 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[22]_37 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[23]_39 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[23]_39 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[23]_39 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[24]_41 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[24]_41 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[24]_41 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[25]_43 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[25]_43 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[25]_43 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[26]_45 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[26]_45 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[26]_45 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[27]_47 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[27]_47 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[27]_47 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[28]_49 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[28]_49 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[28]_49 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[29]_51 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[29]_51 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[29]_51 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[30]_53 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[30]_53 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[30]_53 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[31]_55 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[31]_55 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[31]_55 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[32]_57 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[32]_57 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[32]_57 [11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/\wire_SV_pipe_to_SVM[33]_59 " type="array">
+            <obj_property name="ElementShortName">\wire_SV_pipe_to_SVM[33]_59 [11:0]</obj_property>
+            <obj_property name="ObjectShortName">\wire_SV_pipe_to_SVM[33]_59 [11:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/inst_SVM/wire_Out_Cascade_In_DSP_AxB_plus_C" type="array">
+         <obj_property name="ElementShortName">wire_Out_Cascade_In_DSP_AxB_plus_C[25:1]</obj_property>
+         <obj_property name="ObjectShortName">wire_Out_Cascade_In_DSP_AxB_plus_C[25:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/inst_SVM/inst_DSP_AxB_pluc_C/DSP48E1_inst_0" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">DSP48E1_inst_0[11:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP48E1_inst_0[11:0]</obj_property>
+         <obj_property name="label">Kernel_in_AxB+C</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/inst_SVM/inst_DSP_AxB_pluc_C/DSP48E1_inst_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">DSP48E1_inst_1[6:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP48E1_inst_1[6:0]</obj_property>
+         <obj_property name="label">Bias_in_AxB+C</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_Kernel_Bias/ce_DSP_AxB_plus_C_classifier" type="logic">
+      <obj_property name="ElementShortName">ce_DSP_AxB_plus_C_classifier</obj_property>
+      <obj_property name="ObjectShortName">ce_DSP_AxB_plus_C_classifier</obj_property>
+   </wvobject>
+   <wvobject fp_name="group178" type="group">
+      <obj_property name="label">Voting</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Voting/\out_class[1]_0 " type="array">
+         <obj_property name="ElementShortName">\out_class[1]_0 [2:0]</obj_property>
+         <obj_property name="ObjectShortName">\out_class[1]_0 [2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Voting/\out_class[2]_1 " type="array">
+         <obj_property name="ElementShortName">\out_class[2]_1 [2:0]</obj_property>
+         <obj_property name="ObjectShortName">\out_class[2]_1 [2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Voting/\out_class[3]_2 " type="array">
+         <obj_property name="ElementShortName">\out_class[3]_2 [2:2]</obj_property>
+         <obj_property name="ObjectShortName">\out_class[3]_2 [2:2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Voting/\out_class[4]_3 " type="array">
+         <obj_property name="ElementShortName">\out_class[4]_3 [2:0]</obj_property>
+         <obj_property name="ObjectShortName">\out_class[4]_3 [2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Voting/\out_class[5]_4 " type="array">
+         <obj_property name="ElementShortName">\out_class[5]_4 [2:0]</obj_property>
+         <obj_property name="ObjectShortName">\out_class[5]_4 [2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Voting/m_axis_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_tdata[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group179" type="group">
+      <obj_property name="label">SIPO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_SIPO_PCV/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_SIPO_PCV/next_state__0" type="array">
+         <obj_property name="ElementShortName">next_state__0[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state__0[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group414" type="group">
+      <obj_property name="label">RAM_PCV</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_SIPO_PCV/addr_RAM_Pre_Computed_Vector" type="array">
+         <obj_property name="ElementShortName">addr_RAM_Pre_Computed_Vector[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_RAM_Pre_Computed_Vector[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_RAM_Pre_Computed_Vector/ram_data" type="array">
+         <obj_property name="ElementShortName">ram_data[407:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_data[407:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_RAM_Pre_Computed_Vector/E[0]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+         <obj_property name="label">en_RAM_PCV</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1399" type="group">
+      <obj_property name="label">RAM_Kernel_Scale</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group376" type="group">
+         <obj_property name="label">FSM_Kernel_Bias</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_Kernel_Bias/State" type="array">
+         <obj_property name="ElementShortName">State[2:0]</obj_property>
+         <obj_property name="ObjectShortName">State[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Kernel_Scale" type="array">
+         <obj_property name="ElementShortName">addr_RAM_Kernel_Scale[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_RAM_Kernel_Scale[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_Kernel_Bias/en_RAM_RAM_Kernel_Scale" type="logic">
+         <obj_property name="ElementShortName">en_RAM_RAM_Kernel_Scale</obj_property>
+         <obj_property name="ObjectShortName">en_RAM_RAM_Kernel_Scale</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_RAM_Kernel_Scale/Kernel_Scale_inv_quadro_SVM" type="array">
+         <obj_property name="ElementShortName">Kernel_Scale_inv_quadro_SVM[11:0]</obj_property>
+         <obj_property name="ObjectShortName">Kernel_Scale_inv_quadro_SVM[11:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1400" type="group">
+      <obj_property name="label">RAM_Bias</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Bias" type="array">
+         <obj_property name="ElementShortName">addr_RAM_Bias[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_RAM_Bias[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_FSM/pm_FSM_Kernel_Bias/en_RAM_Bias" type="logic">
+         <obj_property name="ElementShortName">en_RAM_Bias</obj_property>
+         <obj_property name="ObjectShortName">en_RAM_Bias</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_RAM_Bias/Bias_SVM" type="array">
+         <obj_property name="ElementShortName">Bias_SVM[6:0]</obj_property>
+         <obj_property name="ObjectShortName">Bias_SVM[6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1293" type="group">
+      <obj_property name="label">Incremental-pipe</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group1294" type="group">
+         <obj_property name="label">in_Attr</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group1295" type="group">
+         <obj_property name="label">in_PCV</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/inst_SVM/DSP48E1_inst" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">DSP48E1_inst[11:0]</obj_property>
+            <obj_property name="ObjectShortName">DSP48E1_inst[11:0]</obj_property>
+            <obj_property name="label">corto </obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_CLASSIFIER_w_VOTING/DUT/PM_Classifier/inst_incremental_pipe/\signB_reg[0][11]_0 " type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">\signB_reg[0][11]_0 [395:0]</obj_property>
+            <obj_property name="ObjectShortName">\signB_reg[0][11]_0 [395:0]</obj_property>
+            <obj_property name="label">pipe</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

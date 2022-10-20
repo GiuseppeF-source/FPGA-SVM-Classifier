@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Driver_Classifier_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Driver_Classifier" />
+            <top_module name="personal_type_pkg" />
+            <top_module name="ram_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2000000fs"></ZoomEndTime>
+      <Cursor1Time time="1287900fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="229"></NameColumnWidth>
+      <ValueColumnWidth column_width="95"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/TB_Driver_Classifier/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/s_Attribute_j" type="array">
+      <obj_property name="ElementShortName">s_Attribute_j[0:33][7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_Attribute_j[0:33][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/Kernel_Scale_inv_quadro_SVM" type="array">
+      <obj_property name="ElementShortName">Kernel_Scale_inv_quadro_SVM[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Kernel_Scale_inv_quadro_SVM[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/Bias_SVM" type="array">
+      <obj_property name="ElementShortName">Bias_SVM[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Bias_SVM[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/Output_Classifier" type="logic">
+      <obj_property name="ElementShortName">Output_Classifier</obj_property>
+      <obj_property name="ObjectShortName">Output_Classifier</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/UUT_Classifier/wire_Out_Classifier" type="array">
+      <obj_property name="ElementShortName">wire_Out_Classifier[47:0]</obj_property>
+      <obj_property name="ObjectShortName">wire_Out_Classifier[47:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/addr_RAM_Pre_Computed_Vector" type="array">
+      <obj_property name="ElementShortName">addr_RAM_Pre_Computed_Vector[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_RAM_Pre_Computed_Vector[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/addr_RAM_Kernel_Scale" type="array">
+      <obj_property name="ElementShortName">addr_RAM_Kernel_Scale[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_RAM_Kernel_Scale[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/addr_RAM_Bias" type="array">
+      <obj_property name="ElementShortName">addr_RAM_Bias[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_RAM_Bias[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/RST_SVM" type="logic">
+      <obj_property name="ElementShortName">RST_SVM</obj_property>
+      <obj_property name="ObjectShortName">RST_SVM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/RST_PIPE" type="logic">
+      <obj_property name="ElementShortName">RST_PIPE</obj_property>
+      <obj_property name="ObjectShortName">RST_PIPE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/CE_PIPE" type="logic">
+      <obj_property name="ElementShortName">CE_PIPE</obj_property>
+      <obj_property name="ObjectShortName">CE_PIPE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/CE_DSP_AxB_Cascade" type="logic">
+      <obj_property name="ElementShortName">CE_DSP_AxB_Cascade</obj_property>
+      <obj_property name="ObjectShortName">CE_DSP_AxB_Cascade</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/CE_DSP_AxB_plus_C" type="logic">
+      <obj_property name="ElementShortName">CE_DSP_AxB_plus_C</obj_property>
+      <obj_property name="ObjectShortName">CE_DSP_AxB_plus_C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/din_RAM_Kernel_Scale" type="array">
+      <obj_property name="ElementShortName">din_RAM_Kernel_Scale[11:0]</obj_property>
+      <obj_property name="ObjectShortName">din_RAM_Kernel_Scale[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/we_RAM_Kernel_Scale" type="logic">
+      <obj_property name="ElementShortName">we_RAM_Kernel_Scale</obj_property>
+      <obj_property name="ObjectShortName">we_RAM_Kernel_Scale</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/en_RAM_Kernel_Scale" type="logic">
+      <obj_property name="ElementShortName">en_RAM_Kernel_Scale</obj_property>
+      <obj_property name="ObjectShortName">en_RAM_Kernel_Scale</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/regce_RAM_Kernel_Scale" type="logic">
+      <obj_property name="ElementShortName">regce_RAM_Kernel_Scale</obj_property>
+      <obj_property name="ObjectShortName">regce_RAM_Kernel_Scale</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/din_RAM_Bias" type="array">
+      <obj_property name="ElementShortName">din_RAM_Bias[6:0]</obj_property>
+      <obj_property name="ObjectShortName">din_RAM_Bias[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/we_RAM_Bias" type="logic">
+      <obj_property name="ElementShortName">we_RAM_Bias</obj_property>
+      <obj_property name="ObjectShortName">we_RAM_Bias</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/en_RAM_Bias" type="logic">
+      <obj_property name="ElementShortName">en_RAM_Bias</obj_property>
+      <obj_property name="ObjectShortName">en_RAM_Bias</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/regce_RAM_Bias" type="logic">
+      <obj_property name="ElementShortName">regce_RAM_Bias</obj_property>
+      <obj_property name="ObjectShortName">regce_RAM_Bias</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/din_RAM_Pre_Computed_Vector" type="array">
+      <obj_property name="ElementShortName">din_RAM_Pre_Computed_Vector[407:0]</obj_property>
+      <obj_property name="ObjectShortName">din_RAM_Pre_Computed_Vector[407:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/we_RAM_Pre_Computed_Vector" type="logic">
+      <obj_property name="ElementShortName">we_RAM_Pre_Computed_Vector</obj_property>
+      <obj_property name="ObjectShortName">we_RAM_Pre_Computed_Vector</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/en_RAM_Pre_Computed_Vector" type="logic">
+      <obj_property name="ElementShortName">en_RAM_Pre_Computed_Vector</obj_property>
+      <obj_property name="ObjectShortName">en_RAM_Pre_Computed_Vector</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/regce_RAM_Pre_Computed_Vector" type="logic">
+      <obj_property name="ElementShortName">regce_RAM_Pre_Computed_Vector</obj_property>
+      <obj_property name="ObjectShortName">regce_RAM_Pre_Computed_Vector</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/dout_RAM_Pre_Computed_Vector" type="array">
+      <obj_property name="ElementShortName">dout_RAM_Pre_Computed_Vector[407:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_RAM_Pre_Computed_Vector[407:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/attributes" type="array">
+      <obj_property name="ElementShortName">attributes[0:35][271:0]</obj_property>
+      <obj_property name="ObjectShortName">attributes[0:35][271:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/addr_test" type="other">
+      <obj_property name="ElementShortName">addr_test</obj_property>
+      <obj_property name="ObjectShortName">addr_test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/clock_period" type="other">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/DEPTH_Coeff" type="other">
+      <obj_property name="ElementShortName">DEPTH_Coeff</obj_property>
+      <obj_property name="ObjectShortName">DEPTH_Coeff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/WIDTH_Kernel_Scale" type="other">
+      <obj_property name="ElementShortName">WIDTH_Kernel_Scale</obj_property>
+      <obj_property name="ObjectShortName">WIDTH_Kernel_Scale</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/WIDTH_Bias" type="other">
+      <obj_property name="ElementShortName">WIDTH_Bias</obj_property>
+      <obj_property name="ObjectShortName">WIDTH_Bias</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/WIDTH_Pre_Computed_Vector" type="other">
+      <obj_property name="ElementShortName">WIDTH_Pre_Computed_Vector</obj_property>
+      <obj_property name="ObjectShortName">WIDTH_Pre_Computed_Vector</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/WIDTH_Attribute" type="other">
+      <obj_property name="ElementShortName">WIDTH_Attribute</obj_property>
+      <obj_property name="ObjectShortName">WIDTH_Attribute</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Driver_Classifier/num_attribute" type="other">
+      <obj_property name="ElementShortName">num_attribute</obj_property>
+      <obj_property name="ObjectShortName">num_attribute</obj_property>
+   </wvobject>
+</wave_config>
