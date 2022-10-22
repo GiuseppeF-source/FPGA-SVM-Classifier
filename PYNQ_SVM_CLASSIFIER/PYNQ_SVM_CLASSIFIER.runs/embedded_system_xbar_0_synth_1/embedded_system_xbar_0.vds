@@ -2,31 +2,30 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Aug 17 22:20:42 2022
-# Process ID: 14720
-# Current directory: C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1
+# Start of session at: Sat Oct 22 21:14:38 2022
+# Process ID: 11048
+# Current directory: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1
 # Command line: vivado.exe -log embedded_system_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source embedded_system_xbar_0.tcl
-# Log file: C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.vds
-# Journal file: C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1\vivado.jou
+# Log file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.vds
+# Journal file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source embedded_system_xbar_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 266.590 ; gain = 18.102
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip 
+Current IP cache path is c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip 
 Command: synth_design -top embedded_system_xbar_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1928 
+INFO: Helper process launched with PID 11472 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 395.734 ; gain = 105.871
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 394.938 ; gain = 105.164
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'embedded_system_xbar_0' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/synth/embedded_system_xbar_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'embedded_system_xbar_0' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/synth/embedded_system_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 3 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 7 - type: integer 
@@ -35,8 +34,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:
 	Parameter C_AXI_DATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 448'b1111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000011001000000000000000000000000000000000000000000000000000000000001100010000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000011000000000000100000000000000000000000000000000000000000000000001100000000000100000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 224'b00000000000000000000000000000000000000000000000000000000000111010000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000011000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 448'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_BASE_ID bound to: 96'b000000000000000000000000000000100000000000000000000000000000000100000000000000000000000000000000 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -75,7 +74,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 3 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 7 - type: integer 
@@ -84,8 +83,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 448'b1111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000011001000000000000000000000000000000000000000000000000000000000001100010000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000011000000000000100000000000000000000000000000000000000000000000001100000000000100000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 448'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101111111111111111111111111111100000000000000000000000000000000011001000000000000001111111111110000000000000000000000000000000001100010000000000000111111111111000000000000000000000000000000000110000000000000000011111111111100000000000000000000000000000000011000000000000111111111111111110000000000000000000000000000000001100000000000101111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 448'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 448'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_BASE_ID bound to: 192'b000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 192'b000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -128,7 +127,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c
 	Parameter P_FULLY_REG bound to: 1 - type: integer 
 	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
 	Parameter P_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_TARGETS bound to: 7 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 3 - type: integer 
@@ -137,76 +136,25 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [c:
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 448'b1111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000011001000000000000000000000000000000000000000000000000000000000001100010000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000011000000000000100000000000000000000000000000000000000000000000001100000000000100000000000000000 
-	Parameter C_HIGH_ADDR bound to: 448'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101111111111111111111111111111100000000000000000000000000000000011001000000000000001111111111110000000000000000000000000000000001100010000000000000111111111111000000000000000000000000000000000110000000000000000011111111111100000000000000000000000000000000011000000000000111111111111111110000000000000000000000000000000001100000000000101111111111111111 
+	Parameter C_BASE_ADDR bound to: 448'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_HIGH_ADDR bound to: 448'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_TARGET_QUAL bound to: 8'b01111111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b011000000000001000000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b011000000000000100000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b011000000000000000000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b011000100000000000000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b011001000000000000000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010000000000000000000000000000 
-	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
-	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
-	Parameter C_NUM_LUT bound to: 5 - type: integer 
-	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' (3#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' (1#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (4#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (2#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 579 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (4#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (2#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -221,9 +169,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [c:
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' (5#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' (3#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_S bound to: 3 - type: integer 
 	Parameter C_NUM_S_LOG bound to: 2 - type: integer 
@@ -231,49 +179,79 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter P_PRIO_MASK bound to: 3'b000 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 65 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (5#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' (6#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (3#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' (4#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter' (7#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter' (5#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' (7#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' (5#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 8 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (5#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 8 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 516 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (7#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (5#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 516 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' (8#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized4' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' (6#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized4' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 8 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized4' (8#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' (9#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' (10#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'embedded_system_xbar_0' (11#1) [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/synth/embedded_system_xbar_0.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized4' (6#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' (7#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' (8#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'embedded_system_xbar_0' (9#1) [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/synth/embedded_system_xbar_0.v:59]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[31]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[30]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[29]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[28]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[27]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[26]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[25]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[24]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[23]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[22]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[21]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[20]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[19]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[18]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[17]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[16]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[15]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[14]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[13]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[12]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[11]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[10]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[9]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[8]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[2]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[1]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[0]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[5]
@@ -344,39 +322,9 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[50]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[49]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[48]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[47]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[46]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[45]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[44]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[43]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[42]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[41]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[40]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[39]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[38]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[37]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[36]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[35]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[34]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[33]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awaddr[32]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[15]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[14]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[13]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[12]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[11]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[10]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[9]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlen[8]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awsize[5]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awsize[4]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awsize[3]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awburst[3]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awburst[2]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awlock[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 561.121 ; gain = 271.258
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 558.457 ; gain = 268.684
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -389,44 +337,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 561.121 ; gain = 271.258
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 558.457 ; gain = 268.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 561.121 ; gain = 271.258
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 558.457 ; gain = 268.684
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/embedded_system_xbar_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/embedded_system_xbar_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/embedded_system_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/embedded_system_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 870.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 869.949 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 871.051 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 873.086 ; gain = 2.398
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 870.203 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.388 . Memory (MB): peak = 872.297 ; gain = 2.348
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:30 ; elapsed = 00:01:45 . Memory (MB): peak = 873.086 ; gain = 583.223
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:30 ; elapsed = 00:01:45 . Memory (MB): peak = 873.086 ; gain = 583.223
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:45 . Memory (MB): peak = 873.086 ; gain = 583.223
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -434,7 +382,7 @@ INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3669]
+INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3669]
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_19_decerr_slave'
 INFO: [Synth 8-5546] ROM "gen_axi.read_cs" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "gen_axi.s_axi_rlast_i" won't be mapped to RAM because it is too sparse
@@ -475,7 +423,7 @@ INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because ad
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_19_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:34 ; elapsed = 00:01:49 . Memory (MB): peak = 873.086 ; gain = 583.223
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -500,7 +448,6 @@ Detailed RTL Component Info :
 	   2 Input    516 Bit        Muxes := 2     
 	   2 Input     65 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 89    
 	   3 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
@@ -510,10 +457,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module axi_crossbar_v2_1_19_addr_decoder 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      7 Bit        Muxes := 1     
 Module generic_baseblocks_v2_1_0_mux_enc 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -604,9 +547,17 @@ INFO: [Synth 8-5546] ROM "gen_axi.read_cs" won't be mapped to RAM because it is 
 INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_arvalid_reg_reg[2]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_awvalid_reg_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_sasd.crossbar_sasd_0 /addr_arbiter_inst/\s_awvalid_reg_reg[1] )
 INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.last_rr_hot_reg[1]' (FDRE) to 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_arbiter.m_grant_enc_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[0]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[1]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[2]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[3]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[4]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[5]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_hot_reg[6]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_sasd.crossbar_sasd_0 /\m_atarget_hot_reg[6] )
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_enc_reg[0]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_enc_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/m_atarget_enc_reg[1]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_enc_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:16 . Memory (MB): peak = 873.086 ; gain = 583.223
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -618,13 +569,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:27 ; elapsed = 00:02:47 . Memory (MB): peak = 873.086 ; gain = 583.223
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:54 . Memory (MB): peak = 873.086 ; gain = 583.223
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -635,8 +586,9 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/aresetn_d_reg[0]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/m_atarget_enc_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:41 ; elapsed = 00:03:02 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -660,7 +612,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:46 ; elapsed = 00:03:07 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -673,7 +625,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:52 ; elapsed = 00:03:14 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -685,25 +637,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:54 ; elapsed = 00:03:16 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:54 ; elapsed = 00:03:16 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:58 ; elapsed = 00:03:20 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:58 ; elapsed = 00:03:21 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -716,70 +668,62 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |LUT1  |     4|
-|2     |LUT2  |    37|
-|3     |LUT3  |   536|
-|4     |LUT4  |  1220|
-|5     |LUT5  |   540|
-|6     |LUT6  |   888|
-|7     |MUXF7 |     2|
-|8     |FDRE  |  1156|
-|9     |FDSE  |     2|
-+------+------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     4|
+|2     |LUT2 |   287|
+|3     |LUT3 |     6|
+|4     |LUT4 |  1168|
+|5     |LUT5 |    20|
+|6     |LUT6 |    99|
+|7     |FDRE |   861|
+|8     |FDSE |   276|
++------+-----+------+
 
 Report Instance Areas: 
 +------+-------------------------------------+----------------------------------------------------+------+
 |      |Instance                             |Module                                              |Cells |
 +------+-------------------------------------+----------------------------------------------------+------+
-|1     |top                                  |                                                    |  4385|
-|2     |  inst                               |axi_crossbar_v2_1_19_axi_crossbar                   |  4385|
-|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_19_crossbar_sasd                  |  4385|
-|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_19_addr_arbiter_sasd              |   895|
-|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_19_decerr_slave                   |    47|
-|6     |      mi_arready_mux_inst            |generic_baseblocks_v2_1_0_mux_enc__parameterized2   |     3|
-|7     |      mi_awready_mux_inst            |generic_baseblocks_v2_1_0_mux_enc__parameterized2_0 |     3|
-|8     |      mi_bvalid_mux_inst             |generic_baseblocks_v2_1_0_mux_enc__parameterized2_1 |     3|
-|9     |      mi_rvalid_mux_inst             |generic_baseblocks_v2_1_0_mux_enc__parameterized2_2 |     3|
-|10    |      mi_wready_mux_inst             |generic_baseblocks_v2_1_0_mux_enc__parameterized2_3 |     3|
-|11    |      reg_slice_r                    |axi_register_slice_v2_1_18_axic_register_slice      |  3385|
-|12    |      splitter_ar                    |axi_crossbar_v2_1_19_splitter__parameterized0       |     5|
-|13    |      splitter_aw                    |axi_crossbar_v2_1_19_splitter                       |     6|
+|1     |top                                  |                                                    |  2721|
+|2     |  inst                               |axi_crossbar_v2_1_19_axi_crossbar                   |  2721|
+|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_19_crossbar_sasd                  |  2721|
+|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_19_addr_arbiter_sasd              |   830|
+|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_19_decerr_slave                   |    44|
+|6     |      mi_awready_mux_inst            |generic_baseblocks_v2_1_0_mux_enc__parameterized2   |     1|
+|7     |      mi_bvalid_mux_inst             |generic_baseblocks_v2_1_0_mux_enc__parameterized2_0 |     1|
+|8     |      mi_rvalid_mux_inst             |generic_baseblocks_v2_1_0_mux_enc__parameterized2_1 |     1|
+|9     |      mi_wready_mux_inst             |generic_baseblocks_v2_1_0_mux_enc__parameterized2_2 |     1|
+|10    |      reg_slice_r                    |axi_register_slice_v2_1_18_axic_register_slice      |  1825|
+|11    |      splitter_ar                    |axi_crossbar_v2_1_19_splitter__parameterized0       |     4|
+|12    |      splitter_aw                    |axi_crossbar_v2_1_19_splitter                       |     6|
 +------+-------------------------------------+----------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:58 ; elapsed = 00:03:21 . Memory (MB): peak = 907.805 ; gain = 617.941
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 872.297 ; gain = 582.523
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 795 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:02:37 . Memory (MB): peak = 907.805 ; gain = 305.977
-Synthesis Optimization Complete : Time (s): cpu = 00:02:58 ; elapsed = 00:03:21 . Memory (MB): peak = 907.805 ; gain = 617.941
+Synthesis finished with 0 errors, 0 critical warnings and 783 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 872.297 ; gain = 268.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 872.297 ; gain = 582.523
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 907.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 873.062 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-105 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+98 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:14 ; elapsed = 00:03:39 . Memory (MB): peak = 907.805 ; gain = 624.812
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 907.805 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 873.070 ; gain = 590.227
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 873.070 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 907.805 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 907.805 ; gain = 0.000
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP embedded_system_xbar_0, cache-ID = 51a87e8ed375b452
-INFO: [Coretcl 2-1174] Renamed 12 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 907.805 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP embedded_system_xbar_0, cache-ID = f58401d7887ba62d
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 873.070 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 907.805 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file embedded_system_xbar_0_utilization_synth.rpt -pb embedded_system_xbar_0_utilization_synth.pb
-write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 907.805 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 17 22:25:11 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 22 21:15:56 2022...

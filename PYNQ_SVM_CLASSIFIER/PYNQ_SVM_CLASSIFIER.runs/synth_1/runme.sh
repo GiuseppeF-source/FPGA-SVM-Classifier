@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1'
+HD_PWD='C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log embedded_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source embedded_system_wrapper.tcl
+EAStep vivado -log axis_to_bram_PCV.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_to_bram_PCV.tcl
