@@ -1,7 +1,7 @@
 (DELAYFILE 
 (SDFVERSION "3.0" )
 (DESIGN "axis_to_bram_PCV")
-(DATE "Sat Oct 22 22:12:21 2022")
+(DATE "Sun Nov  6 12:58:06 2022")
 (VENDOR "XILINX")
 (PROGRAM "Vivado")
 (VERSION "2018.3")
@@ -157,27 +157,8 @@
   )
 )
 (CELL 
-  (CELLTYPE "LDCE")
-  (INSTANCE FSM/count_addr_reg\[0\])
-  (DELAY 
-    (ABSOLUTE 
-      (IOPATH (posedge CLR) Q (645.0:800.0:800.0))
-      (IOPATH G Q (378.0:469.0:469.0) (378.0:469.0:469.0))
-      (IOPATH GE Q (415.0:514.0:514.0) (415.0:514.0:514.0))
-      (IOPATH D Q (214.0:265.0:265.0) (214.0:265.0:265.0))
-    )
-  )
-    (TIMINGCHECK
-      (RECREM (negedge CLR) (negedge G) (279.0:347.0:347.0) (-232.0:-232.0:-232.0))
-      (SETUPHOLD (posedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (negedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (posedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-      (SETUPHOLD (negedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-    )
-)
-(CELL 
   (CELLTYPE "LUT1")
-  (INSTANCE FSM/count_addr_reg\[0\]_i_1)
+  (INSTANCE FSM/count_addr\[0\]_i_1)
   (DELAY 
     (PATHPULSE (50.0))
     (ABSOLUTE 
@@ -186,27 +167,8 @@
   )
 )
 (CELL 
-  (CELLTYPE "LDCE")
-  (INSTANCE FSM/count_addr_reg\[1\])
-  (DELAY 
-    (ABSOLUTE 
-      (IOPATH (posedge CLR) Q (645.0:800.0:800.0))
-      (IOPATH G Q (378.0:469.0:469.0) (378.0:469.0:469.0))
-      (IOPATH GE Q (415.0:514.0:514.0) (415.0:514.0:514.0))
-      (IOPATH D Q (214.0:265.0:265.0) (214.0:265.0:265.0))
-    )
-  )
-    (TIMINGCHECK
-      (RECREM (negedge CLR) (negedge G) (279.0:347.0:347.0) (-232.0:-232.0:-232.0))
-      (SETUPHOLD (posedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (negedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (posedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-      (SETUPHOLD (negedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-    )
-)
-(CELL 
   (CELLTYPE "LUT2")
-  (INSTANCE FSM/count_addr_reg\[1\]_i_1)
+  (INSTANCE FSM/count_addr\[1\]_i_1)
   (DELAY 
     (PATHPULSE (50.0))
     (ABSOLUTE 
@@ -216,27 +178,8 @@
   )
 )
 (CELL 
-  (CELLTYPE "LDCE")
-  (INSTANCE FSM/count_addr_reg\[2\])
-  (DELAY 
-    (ABSOLUTE 
-      (IOPATH (posedge CLR) Q (645.0:800.0:800.0))
-      (IOPATH G Q (378.0:469.0:469.0) (378.0:469.0:469.0))
-      (IOPATH GE Q (415.0:514.0:514.0) (415.0:514.0:514.0))
-      (IOPATH D Q (214.0:265.0:265.0) (214.0:265.0:265.0))
-    )
-  )
-    (TIMINGCHECK
-      (RECREM (negedge CLR) (negedge G) (279.0:347.0:347.0) (-232.0:-232.0:-232.0))
-      (SETUPHOLD (posedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (negedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (posedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-      (SETUPHOLD (negedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-    )
-)
-(CELL 
   (CELLTYPE "LUT3")
-  (INSTANCE FSM/count_addr_reg\[2\]_i_1)
+  (INSTANCE FSM/count_addr\[2\]_i_1)
   (DELAY 
     (PATHPULSE (50.0))
     (ABSOLUTE 
@@ -247,27 +190,8 @@
   )
 )
 (CELL 
-  (CELLTYPE "LDCE")
-  (INSTANCE FSM/count_addr_reg\[3\])
-  (DELAY 
-    (ABSOLUTE 
-      (IOPATH (posedge CLR) Q (645.0:800.0:800.0))
-      (IOPATH G Q (378.0:469.0:469.0) (378.0:469.0:469.0))
-      (IOPATH GE Q (415.0:514.0:514.0) (415.0:514.0:514.0))
-      (IOPATH D Q (214.0:265.0:265.0) (214.0:265.0:265.0))
-    )
-  )
-    (TIMINGCHECK
-      (RECREM (negedge CLR) (negedge G) (279.0:347.0:347.0) (-232.0:-232.0:-232.0))
-      (SETUPHOLD (posedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (negedge D) (negedge G) (-78.0:-64.0:-64.0) (262.0:262.0:262.0))
-      (SETUPHOLD (posedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-      (SETUPHOLD (negedge GE) (negedge G) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
-    )
-)
-(CELL 
   (CELLTYPE "LUT4")
-  (INSTANCE FSM/count_addr_reg\[3\]_i_1)
+  (INSTANCE FSM/count_addr\[3\]_i_1)
   (DELAY 
     (PATHPULSE (50.0))
     (ABSOLUTE 
@@ -277,6 +201,74 @@
       (IOPATH I0 O (118.0:146.0:146.0) (118.0:146.0:146.0))
     )
   )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE FSM/count_addr_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE FSM/count_addr_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE FSM/count_addr_reg\[2\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE FSM/count_addr_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
 )
 (CELL 
   (CELLTYPE "LUT2")
@@ -12034,34 +12026,34 @@
       (INTERCONNECT FSM/count\[3\]_i_1/O SIPO/count_reg\[1\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
       (INTERCONNECT FSM/count\[3\]_i_1/O SIPO/count_reg\[2\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
       (INTERCONNECT FSM/count\[3\]_i_1/O SIPO/count_reg\[3\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
-      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/addr_ram_reg\[0\]/D (491.4:550.0:550.0) (491.4:550.0:550.0))
-      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr_reg\[0\]_i_1/I0 (426.5:449.0:449.0) (426.5:449.0:449.0))
-      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr_reg\[1\]_i_1/I0 (398.0:419.0:419.0) (398.0:419.0:419.0))
-      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr_reg\[2\]_i_1/I0 (856.9:902.0:902.0) (856.9:902.0:902.0))
-      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr_reg\[3\]_i_1/I1 (856.9:902.0:902.0) (856.9:902.0:902.0))
-      (INTERCONNECT FSM/count_addr_reg\[0\]_i_1/O FSM/count_addr_reg\[0\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
-      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/addr_ram_reg\[1\]/D (491.4:550.0:550.0) (491.4:550.0:550.0))
-      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/count_addr_reg\[3\]_i_1/I0 (631.8:665.0:665.0) (631.8:665.0:665.0))
-      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/count_addr_reg\[1\]_i_1/I1 (426.5:449.0:449.0) (426.5:449.0:449.0))
-      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/count_addr_reg\[2\]_i_1/I1 (398.0:419.0:419.0) (398.0:419.0:419.0))
-      (INTERCONNECT FSM/count_addr_reg\[1\]_i_1/O FSM/count_addr_reg\[1\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
-      (INTERCONNECT FSM/count_addr_reg\[2\]/Q FSM/addr_ram_reg\[2\]/D (491.4:550.0:550.0) (491.4:550.0:550.0))
-      (INTERCONNECT FSM/count_addr_reg\[2\]/Q FSM/count_addr_reg\[2\]_i_1/I2 (426.5:449.0:449.0) (426.5:449.0:449.0))
-      (INTERCONNECT FSM/count_addr_reg\[2\]/Q FSM/count_addr_reg\[3\]_i_1/I2 (398.0:419.0:419.0) (398.0:419.0:419.0))
-      (INTERCONNECT FSM/count_addr_reg\[2\]_i_1/O FSM/count_addr_reg\[2\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
-      (INTERCONNECT FSM/count_addr_reg\[3\]/Q FSM/addr_ram_reg\[3\]/D (491.4:550.0:550.0) (491.4:550.0:550.0))
-      (INTERCONNECT FSM/count_addr_reg\[3\]/Q FSM/count_addr_reg\[3\]_i_1/I3 (426.5:449.0:449.0) (426.5:449.0:449.0))
-      (INTERCONNECT FSM/count_addr_reg\[3\]_i_1/O FSM/count_addr_reg\[3\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT FSM/count_addr\[0\]_i_1/O FSM/count_addr_reg\[0\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT FSM/count_addr\[1\]_i_1/O FSM/count_addr_reg\[1\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT FSM/count_addr\[2\]_i_1/O FSM/count_addr_reg\[2\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT FSM/count_addr\[3\]_i_1/O FSM/count_addr_reg\[3\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/addr_ram_reg\[0\]/D (630.3:722.0:722.0) (630.3:722.0:722.0))
+      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr\[0\]_i_1/I0 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr\[1\]_i_1/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr\[2\]_i_1/I0 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT FSM/count_addr_reg\[0\]/Q FSM/count_addr\[3\]_i_1/I1 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/addr_ram_reg\[1\]/D (630.3:722.0:722.0) (630.3:722.0:722.0))
+      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/count_addr\[3\]_i_1/I0 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/count_addr\[1\]_i_1/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT FSM/count_addr_reg\[1\]/Q FSM/count_addr\[2\]_i_1/I1 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT FSM/count_addr_reg\[2\]/Q FSM/addr_ram_reg\[2\]/D (630.3:722.0:722.0) (630.3:722.0:722.0))
+      (INTERCONNECT FSM/count_addr_reg\[2\]/Q FSM/count_addr\[2\]_i_1/I2 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT FSM/count_addr_reg\[2\]/Q FSM/count_addr\[3\]_i_1/I2 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT FSM/count_addr_reg\[3\]/Q FSM/addr_ram_reg\[3\]/D (630.3:722.0:722.0) (630.3:722.0:722.0))
+      (INTERCONNECT FSM/count_addr_reg\[3\]/Q FSM/count_addr\[3\]_i_1/I3 (433.5:482.0:482.0) (433.5:482.0:482.0))
       (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O en_ram_OBUF_inst/I (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O we_ram_OBUF_inst/I (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[0\]/CE (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[1\]/CE (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[2\]/CE (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[3\]/CE (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/addr_ram_reg\[0\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/addr_ram_reg\[1\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/addr_ram_reg\[2\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/addr_ram_reg\[3\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
-      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[0\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
-      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[1\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
-      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[2\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
-      (INTERCONNECT FSM/en_ram_OBUF_inst_i_1/O FSM/count_addr_reg\[3\]/G (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT FSM/in_ready_OBUF_inst_i_1/O SIPO/count_reg\[0\]/CE (599.4:659.0:659.0) (599.4:659.0:659.0))
       (INTERCONNECT FSM/in_ready_OBUF_inst_i_1/O SIPO/count_reg\[1\]/CE (599.4:659.0:659.0) (599.4:659.0:659.0))
       (INTERCONNECT FSM/in_ready_OBUF_inst_i_1/O SIPO/count_reg\[2\]/CE (599.4:659.0:659.0) (599.4:659.0:659.0))
@@ -13297,6 +13289,10 @@
       (INTERCONNECT SIPO/shift_reg_reg\[9\]\[9\]/Q SIPO/shift_reg_reg\[10\]\[9\]/D (618.3:707.0:707.0) (618.3:707.0:707.0))
       (INTERCONNECT clk_IBUF_BUFG_inst/O FSM/FSM_sequential_state_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT clk_IBUF_BUFG_inst/O FSM/FSM_sequential_state_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM/count_addr_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM/count_addr_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM/count_addr_reg\[2\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM/count_addr_reg\[3\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT clk_IBUF_BUFG_inst/O SIPO/count_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT clk_IBUF_BUFG_inst/O SIPO/count_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
       (INTERCONNECT clk_IBUF_BUFG_inst/O SIPO/count_reg\[2\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))

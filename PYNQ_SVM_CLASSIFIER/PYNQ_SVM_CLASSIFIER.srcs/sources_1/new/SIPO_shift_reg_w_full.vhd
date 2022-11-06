@@ -47,12 +47,12 @@ begin
 
 end process;
 
-full <= '1' when ( count = 13 ) else '0';
+full <= '1' when ( count >= 13 ) else '0';
 
 output_gen: 
     for i in  depth-1 downto 1 generate 
         data_out( (i+1)*n_in_bit - diff_w_mult32 -1  downto (i)*n_in_bit - diff_w_mult32  ) <= shift_reg(i); 
     end generate;
-        data_out( n_in_bit - diff_w_mult32 -1 downto 0 )                        <= shift_reg(0)(n_in_bit -1 downto diff_w_mult32); -- scarto gli ultimi 8 bit 
+        data_out( n_in_bit - diff_w_mult32 -1 downto 0 )                                    <= shift_reg(0)(n_in_bit -1 downto diff_w_mult32); -- scarto gli ultimi 8 bit 
 
 end rtl;

@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Sat Oct 22 22:12:21 2022
+// Date        : Sun Nov  6 12:58:06 2022
 // Host        : peppe-pc running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_axis_to_bram_PCV_time_synth.v
@@ -38,16 +38,10 @@ module FSM_axis_to_bram
   wire [0:0]\FSM_sequential_state_reg[1]_0 ;
   wire [3:0]Q;
   wire [0:0]SR;
-  wire \count_addr_reg[0]_i_1_n_0 ;
-  wire \count_addr_reg[1]_i_1_n_0 ;
-  wire \count_addr_reg[2]_i_1_n_0 ;
-  wire \count_addr_reg[3]_i_1_n_0 ;
-  wire \count_addr_reg_n_0_[0] ;
-  wire \count_addr_reg_n_0_[1] ;
-  wire \count_addr_reg_n_0_[2] ;
-  wire \count_addr_reg_n_0_[3] ;
+  wire [3:0]count_addr_reg__0;
   wire full;
   wire in_valid_IBUF;
+  wire [3:0]p_0_in;
   wire [1:0]state;
   wire trig_IBUF;
 
@@ -94,7 +88,7 @@ module FSM_axis_to_bram
     .INIT(1'b0)) 
     \addr_ram_reg[0] 
        (.CLR(1'b0),
-        .D(\count_addr_reg_n_0_[0] ),
+        .D(count_addr_reg__0[0]),
         .G(E),
         .GE(1'b1),
         .Q(Q[0]));
@@ -103,7 +97,7 @@ module FSM_axis_to_bram
     .INIT(1'b0)) 
     \addr_ram_reg[1] 
        (.CLR(1'b0),
-        .D(\count_addr_reg_n_0_[1] ),
+        .D(count_addr_reg__0[1]),
         .G(E),
         .GE(1'b1),
         .Q(Q[1]));
@@ -112,7 +106,7 @@ module FSM_axis_to_bram
     .INIT(1'b0)) 
     \addr_ram_reg[2] 
        (.CLR(1'b0),
-        .D(\count_addr_reg_n_0_[2] ),
+        .D(count_addr_reg__0[2]),
         .G(E),
         .GE(1'b1),
         .Q(Q[2]));
@@ -121,7 +115,7 @@ module FSM_axis_to_bram
     .INIT(1'b0)) 
     \addr_ram_reg[3] 
        (.CLR(1'b0),
-        .D(\count_addr_reg_n_0_[3] ),
+        .D(count_addr_reg__0[3]),
         .G(E),
         .GE(1'b1),
         .Q(Q[3]));
@@ -132,72 +126,68 @@ module FSM_axis_to_bram
        (.I0(state[0]),
         .I1(state[1]),
         .O(SR));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \count_addr_reg[0] 
-       (.CLR(1'b0),
-        .D(\count_addr_reg[0]_i_1_n_0 ),
-        .G(E),
-        .GE(1'b1),
-        .Q(\count_addr_reg_n_0_[0] ));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT1 #(
     .INIT(2'h1)) 
-    \count_addr_reg[0]_i_1 
-       (.I0(\count_addr_reg_n_0_[0] ),
-        .O(\count_addr_reg[0]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \count_addr_reg[1] 
-       (.CLR(1'b0),
-        .D(\count_addr_reg[1]_i_1_n_0 ),
-        .G(E),
-        .GE(1'b1),
-        .Q(\count_addr_reg_n_0_[1] ));
+    \count_addr[0]_i_1 
+       (.I0(count_addr_reg__0[0]),
+        .O(p_0_in[0]));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT2 #(
     .INIT(4'h6)) 
-    \count_addr_reg[1]_i_1 
-       (.I0(\count_addr_reg_n_0_[0] ),
-        .I1(\count_addr_reg_n_0_[1] ),
-        .O(\count_addr_reg[1]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \count_addr_reg[2] 
-       (.CLR(1'b0),
-        .D(\count_addr_reg[2]_i_1_n_0 ),
-        .G(E),
-        .GE(1'b1),
-        .Q(\count_addr_reg_n_0_[2] ));
+    \count_addr[1]_i_1 
+       (.I0(count_addr_reg__0[0]),
+        .I1(count_addr_reg__0[1]),
+        .O(p_0_in[1]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(
     .INIT(8'h78)) 
-    \count_addr_reg[2]_i_1 
-       (.I0(\count_addr_reg_n_0_[0] ),
-        .I1(\count_addr_reg_n_0_[1] ),
-        .I2(\count_addr_reg_n_0_[2] ),
-        .O(\count_addr_reg[2]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \count_addr_reg[3] 
-       (.CLR(1'b0),
-        .D(\count_addr_reg[3]_i_1_n_0 ),
-        .G(E),
-        .GE(1'b1),
-        .Q(\count_addr_reg_n_0_[3] ));
+    \count_addr[2]_i_1 
+       (.I0(count_addr_reg__0[0]),
+        .I1(count_addr_reg__0[1]),
+        .I2(count_addr_reg__0[2]),
+        .O(p_0_in[2]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
-    \count_addr_reg[3]_i_1 
-       (.I0(\count_addr_reg_n_0_[1] ),
-        .I1(\count_addr_reg_n_0_[0] ),
-        .I2(\count_addr_reg_n_0_[2] ),
-        .I3(\count_addr_reg_n_0_[3] ),
-        .O(\count_addr_reg[3]_i_1_n_0 ));
+    \count_addr[3]_i_1 
+       (.I0(count_addr_reg__0[1]),
+        .I1(count_addr_reg__0[0]),
+        .I2(count_addr_reg__0[2]),
+        .I3(count_addr_reg__0[3]),
+        .O(p_0_in[3]));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_addr_reg[0] 
+       (.C(CLK),
+        .CE(E),
+        .D(p_0_in[0]),
+        .Q(count_addr_reg__0[0]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_addr_reg[1] 
+       (.C(CLK),
+        .CE(E),
+        .D(p_0_in[1]),
+        .Q(count_addr_reg__0[1]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_addr_reg[2] 
+       (.C(CLK),
+        .CE(E),
+        .D(p_0_in[2]),
+        .Q(count_addr_reg__0[2]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \count_addr_reg[3] 
+       (.C(CLK),
+        .CE(E),
+        .D(p_0_in[3]),
+        .Q(count_addr_reg__0[3]),
+        .R(1'b0));
   LUT2 #(
     .INIT(4'h8)) 
     en_ram_OBUF_inst_i_1
@@ -234,12 +224,12 @@ module SIPO_shift_reg_w_full
   wire [3:0]count_reg__0;
   wire [407:0]data_out_OBUF;
   wire full;
-  wire [3:0]p_0_in;
+  wire [3:0]p_0_in__0;
   wire [7:0]\shift_reg_reg[0] ;
 
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT4 #(
-    .INIT(16'h2000)) 
+    .INIT(16'hA800)) 
     \FSM_sequential_state[1]_i_2 
        (.I0(count_reg__0[2]),
         .I1(count_reg__0[1]),
@@ -250,14 +240,14 @@ module SIPO_shift_reg_w_full
     .INIT(2'h1)) 
     \count[0]_i_1 
        (.I0(count_reg__0[0]),
-        .O(p_0_in[0]));
+        .O(p_0_in__0[0]));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \count[1]_i_1 
        (.I0(count_reg__0[0]),
         .I1(count_reg__0[1]),
-        .O(p_0_in[1]));
+        .O(p_0_in__0[1]));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'h78)) 
@@ -265,7 +255,7 @@ module SIPO_shift_reg_w_full
        (.I0(count_reg__0[0]),
         .I1(count_reg__0[1]),
         .I2(count_reg__0[2]),
-        .O(p_0_in[2]));
+        .O(p_0_in__0[2]));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
@@ -274,13 +264,13 @@ module SIPO_shift_reg_w_full
         .I1(count_reg__0[0]),
         .I2(count_reg__0[2]),
         .I3(count_reg__0[3]),
-        .O(p_0_in[3]));
+        .O(p_0_in__0[3]));
   FDRE #(
     .INIT(1'b0)) 
     \count_reg[0] 
        (.C(CLK),
         .CE(E),
-        .D(p_0_in[0]),
+        .D(p_0_in__0[0]),
         .Q(count_reg__0[0]),
         .R(SR));
   FDRE #(
@@ -288,7 +278,7 @@ module SIPO_shift_reg_w_full
     \count_reg[1] 
        (.C(CLK),
         .CE(E),
-        .D(p_0_in[1]),
+        .D(p_0_in__0[1]),
         .Q(count_reg__0[1]),
         .R(SR));
   FDRE #(
@@ -296,7 +286,7 @@ module SIPO_shift_reg_w_full
     \count_reg[2] 
        (.C(CLK),
         .CE(E),
-        .D(p_0_in[2]),
+        .D(p_0_in__0[2]),
         .Q(count_reg__0[2]),
         .R(SR));
   FDRE #(
@@ -304,7 +294,7 @@ module SIPO_shift_reg_w_full
     \count_reg[3] 
        (.C(CLK),
         .CE(E),
-        .D(p_0_in[3]),
+        .D(p_0_in__0[3]),
         .Q(count_reg__0[3]),
         .R(SR));
   FDRE #(

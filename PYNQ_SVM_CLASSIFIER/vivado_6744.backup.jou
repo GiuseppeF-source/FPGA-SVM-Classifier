@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 22 16:01:28 2022
+# Process ID: 6744
+# Current directory: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14564 C:\Users\yoxo\OneDrive\Documenti\work_dir\Master_Degree_Thesis\PYNQ_SVM_CLASSIFIER\PYNQ_SVM_CLASSIFIER.xpr
+# Log file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/vivado.log
+# Journal file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER\vivado.jou
+#-----------------------------------------------------------
+start_gui

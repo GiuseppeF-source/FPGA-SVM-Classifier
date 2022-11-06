@@ -6,11 +6,12 @@ entity FSM_axis_to_bram is
  Port (
  clk      : in  std_logic;
  trig     : in  std_logic;          -- trig atteso da fsm superiore
+ 
  -- AXI-Stream  input interface
  in_ready : out std_logic;
  in_valid : in  std_logic;
  
- -- SIPO_shift_reg_w_full 
+ -- SIPO_shift_reg_w_full signal 
  ce       : out std_logic;
  rst      : out std_logic;
  full     : in  std_logic;
@@ -47,13 +48,22 @@ begin
     end if;
 end process;
 
+INCR_CNT: process(clk)
+begin 
+    if rising_edge(clk) then
+        if state = WRITE_RAM then  -- like an enable
+            count_addr <= count_addr + 1;
+        end if;
+    end if;
+end process;
+
 OUTPUT_DECODE : process(state) 
 begin
 -- default
-en_ram    <= '0';
-we_ram    <= '0';
-ce        <= '0';
-rst       <= '0'; 
+en_ram      <= '0';
+we_ram      <= '0';
+ce          <= '0';
+rst         <= '0'; 
 in_ready_i  <= '0';
 ----------
     case state is
@@ -87,14 +97,18 @@ begin
         when IDLE =>
         
             if trig = '1' then 
-                next_state <= LOAD_SIPO when ( in_valid = '1' ) else PAUSE_SIPO ;
+                if in_valid = '1' then
+                    next_state <= LOAD_SIPO; 
+                else 
+                    next_state <= PAUSE_SIPO ;
+                end if;
             end if; 
             
         when LOAD_SIPO =>
         
             if full = '1' then
                 next_state <= WRITE_RAM;
-             else 
+            else 
                 if in_valid = '0' then
                    next_state <= PAUSE_SIPO; 
                 end if;
@@ -108,14 +122,9 @@ begin
 
         when WRITE_RAM =>
             
-            count_addr <= count_addr + 1;
             next_state <= IDLE;    
                     
     end case;
 end process;
-
-              
-
-
-
+        
 end rtl;
