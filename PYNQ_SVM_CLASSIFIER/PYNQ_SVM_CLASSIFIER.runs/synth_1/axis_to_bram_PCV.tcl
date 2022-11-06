@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,7 +33,7 @@ update_ip_catalog
 set_property ip_output_repo c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/new/FSM_axis_to_bram.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/new/AXIS_BRAM_mng.vhd
   C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/new/SIPO_shift_reg_w_full.vhd
   C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/new/axis_to_bram_PCV.vhd
 }

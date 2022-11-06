@@ -33,19 +33,33 @@ signal full : std_logic;
 
 begin
 
-FSM: entity work.FSM_axis_to_bram 
+-- FSM: entity work.FSM_axis_to_bram 
+--  Port map (
+--     clk      => clk      ,
+--     trig     => trig     ,    
+--     in_ready => in_ready ,
+--     in_valid => in_valid ,    
+--     ce       => ce       ,
+--     rst      => rst      ,
+--     full     => full     ,                  
+--     addr_ram => addr_ram ,
+--     en_ram   => en_ram   ,
+--     we_ram   => we_ram              
+--  );
+
+MNG: entity work.AXIS_BRAM_mng
  Port map (
-    clk      => clk      ,
-    trig     => trig     ,    
-    in_ready => in_ready ,
-    in_valid => in_valid ,    
-    ce       => ce       ,
-    rst      => rst      ,
-    full     => full     ,                  
-    addr_ram => addr_ram ,
-    en_ram   => en_ram   ,
-    we_ram   => we_ram              
- );
+   clk      => clk      ,
+   trig     => trig     ,    
+   in_ready => in_ready ,
+   in_valid => in_valid ,    
+   ce       => ce       ,
+   rst      => rst      ,
+   full     => full     ,                  
+   addr_ram => addr_ram ,
+   en_ram   => en_ram   ,
+   we_ram   => we_ram              
+);  
  
 SIPO: entity work.SIPO_shift_reg_w_full
  Port map (

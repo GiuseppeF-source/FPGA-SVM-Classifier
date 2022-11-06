@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1667328047">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1667749490">
   <File Type="PA-TCL" Name="axis_to_bram_PCV.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="axis_to_bram_PCV_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="axis_to_bram_PCV_reports.tcl"/>
   <File Type="RDS-RDS" Name="axis_to_bram_PCV.vds"/>
   <File Type="RDS-UTIL" Name="axis_to_bram_PCV_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="axis_to_bram_PCV_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="axis_to_bram_PCV.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="axis_to_bram_PCV_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="axis_to_bram_PCV_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/FSM_axis_to_bram.vhd">
+    <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -22,6 +25,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM_axis_to_bram.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -299,16 +309,18 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_system_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_pc_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_PL_CLASSIFIER_w_VOTI_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embedded_system_system_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_us_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="embedded_system_PL_CLASSIFIER_w_VOTI_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_us_1"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_rst_ps7_0_50M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_ds_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="embedded_system_processing_system7_0_0"/>
 </GenRun>
