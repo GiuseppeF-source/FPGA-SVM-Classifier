@@ -25,23 +25,25 @@ end AXIS_BRAM_mng;
 
 architecture rtl of AXIS_BRAM_mng is
 
-    -- Gestione in_ready
+    -- Gestione segnali per renderli in_out
     signal in_ready_i : std_logic;
+    signal rst_i      : std_logic;
+
 
     -- Gestione indirizzi RAM
-    signal count_addr : natural range 0 to 15;
+    signal count_addr : natural range 0 to 14;
 
 begin
 
- in_ready_i <= in_valid   and trig;   -- HIGH only if VALID = 1 and TRIG = 1 
+ in_ready_i <= in_valid   and  not(rst_i);   -- HIGH only if VALID = 1 and RST = 0 
  
 -- RST = 1 when TRIG = 0 or FULL = 1  
-trig_p: process (full, trig)
+mng_rst_p: process (full, trig)
 begin
     if trig = '0' or full = '1' then
-        rst <= '1'; 
+        rst_i <= '1'; 
     else 
-        rst <= '0';
+        rst_i <= '0';
     end if;
 end process;
 
@@ -65,10 +67,11 @@ end process;
  
  addr_ram <= conv_std_logic_vector( count_addr, 4 );
 
--- Gestione READY 
+-- Gestione READY e RST ( in_out )
  in_ready <= in_ready_i;
+ rst      <= rst_i;
 
 -- Gestione SIPO
- ce        <= in_ready_i and in_valid; -- HIGH only if VALID = 1 and READY = 1  
+ ce       <= in_ready_i and in_valid; -- HIGH only if VALID = 1 and READY = 1  
 
 end rtl;

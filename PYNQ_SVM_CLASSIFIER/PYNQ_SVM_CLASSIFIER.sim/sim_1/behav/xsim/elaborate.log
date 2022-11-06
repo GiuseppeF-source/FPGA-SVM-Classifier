@@ -4,4 +4,16 @@ Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ccbfaebe9d
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling module xil_defaultlib.glbl
+Compiling architecture rtl of entity xil_defaultlib.AXIS_BRAM_mng [axis_bram_mng_default]
+Compiling architecture rtl of entity xil_defaultlib.SIPO_shift_reg_w_full [\SIPO_shift_reg_w_full(depth=1,n...]
+Compiling architecture rtl of entity xil_defaultlib.axis_to_bram_Kernel_Scale [axis_to_bram_kernel_scale_defaul...]
+Compiling architecture rtl of entity xil_defaultlib.tb_axis_to_bram_pcv
+Built simulation snapshot TB_axis_to_bram_PCV_behav

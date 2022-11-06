@@ -9,10 +9,10 @@ end TB_axis_to_bram_PCV;
 
 architecture rtl of TB_axis_to_bram_PCV is
 
-constant clk_period     : time:= 30ns;
+constant clk_period     : TIME    := 30 ns;
 constant n_in_bit       : natural := 32;
-constant n_out_bit      : natural := 408;
-constant add_clk_cycle  :natural := 4;
+constant n_out_bit      : natural := 12;
+constant add_clk_cycle  : natural  := 4;
   
 signal clk      : std_logic :='0';
 signal cnt      : natural   := 0;
@@ -30,7 +30,7 @@ signal data_next: natural :=0;
 
 begin
 
-DUT: entity work.axis_to_bram_PCV 
+DUT: entity work.axis_to_bram_Kernel_Scale 
   Port map (
   clk      => clk     ,
   trig     => trig    ,
@@ -51,7 +51,7 @@ cnt <= cnt + 1 when rising_edge(clk) ;
 stimuli_p: process is
 begin
     wait until rising_edge(clk);
-    wait for 2ns;
+    wait for 2 ns;
         trig     <= '0';
         in_valid <= '0';
         
@@ -77,7 +77,7 @@ end process;
 dma_p: process
 begin 
     wait until rising_edge(clk);
-    wait for 2ns;  
+    wait for 2 ns;              -- extra delay for realist simulation on behavioural 
     
         if ( in_valid and in_ready) = '1' then
            data_next <=  data_next + 1;
@@ -89,6 +89,6 @@ begin
     
 end process;
 
-data_in <= conv_std_logic_vector(data_next,32);
+data_in <= conv_std_logic_vector(data_next,12) & x"00000";
 
 end rtl;

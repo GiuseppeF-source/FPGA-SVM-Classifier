@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log axis_to_bram_PCV.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_to_bram_PCV.tcl" );
+         "-log axis_to_bram_Bias.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_to_bram_Bias.tcl" );
 
 
 
