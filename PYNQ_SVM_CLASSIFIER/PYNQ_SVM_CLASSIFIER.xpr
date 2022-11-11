@@ -24,6 +24,7 @@
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPRepoPath" Val="$PSRCDIR"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../AppData/Roaming/Xilinx/ip_repo"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -35,7 +36,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="pynq-z1"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="94"/>
+    <Option Name="WTXSimLaunchSim" Val="95"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -63,6 +64,158 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/new/incremental_pipe.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/incremental_pipe.vhd"/>
+          <Attr Name="ImportTime" Val="1656056718"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/SVM.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/SVM.vhd"/>
+          <Attr Name="ImportTime" Val="1654786216"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/Classifier.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/Classifier.vhd"/>
+          <Attr Name="ImportTime" Val="1654938262"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/DSP_AxB_Cascade.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/DSP_AxB_Cascade.vhd"/>
+          <Attr Name="ImportTime" Val="1653989960"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/DSP_AxB_Cascade_wo_PCIN.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/DSP_AxB_Cascade_wo_PCIN.vhd"/>
+          <Attr Name="ImportTime" Val="1654331641"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/DSP_AxB_plus_C.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/DSP_AxB_plus_C.vhd"/>
+          <Attr Name="ImportTime" Val="1659006471"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/FSM_SIPO_PCV.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM_SIPO_PCV.vhd"/>
+          <Attr Name="ImportTime" Val="1659970266"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/FSM_Kernel_Bias.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM_Kernel_Bias.vhd"/>
+          <Attr Name="ImportTime" Val="1659962219"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/FSM_Voting.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM_Voting.vhd"/>
+          <Attr Name="ImportTime" Val="1659966032"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/FSM.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM.vhd"/>
+          <Attr Name="ImportTime" Val="1659962850"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/xilinx_single_port_ram_no_change.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/xilinx_single_port_ram_no_change.vhd"/>
+          <Attr Name="ImportTime" Val="1659622296"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/RAM_Bias.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/RAM_Bias.vhd"/>
+          <Attr Name="ImportTime" Val="1653411788"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/RAM_Kernel_Scale.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/RAM_Kernel_Scale.vhd"/>
+          <Attr Name="ImportTime" Val="1653665710"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/RAM_Pre_Computed_Vector.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/RAM_Pre_Computed_Vector.vhd"/>
+          <Attr Name="ImportTime" Val="1659619711"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/SIPO_buffer.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/SIPO_buffer.vhd"/>
+          <Attr Name="ImportTime" Val="1659808720"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/counter_3b.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/counter_3b.vhd"/>
+          <Attr Name="ImportTime" Val="1656361576"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/Voting_w_ce.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/Voting_w_ce.vhd"/>
+          <Attr Name="ImportTime" Val="1659025120"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/double_shift_reg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/double_shift_reg.vhd"/>
+          <Attr Name="ImportTime" Val="1655979306"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd"/>
+          <Attr Name="ImportTime" Val="1659560166"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -75,15 +228,42 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Bias.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
+      <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/embedded_system/embedded_system.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_rst_ps7_0_50M_0/embedded_system_rst_ps7_0_50M_0.xci">
+          <Proxy FileSetName="embedded_system_rst_ps7_0_50M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_xbar_0/embedded_system_xbar_0.xci">
+          <Proxy FileSetName="embedded_system_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_processing_system7_0_0/embedded_system_processing_system7_0_0.xci">
+          <Proxy FileSetName="embedded_system_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -91,220 +271,6 @@
       <File Path="$PSRCDIR/sources_1/new/FSM_axis_to_bram.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/incremental_pipe.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/incremental_pipe.vhd"/>
-          <Attr Name="ImportTime" Val="1656056718"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/SVM.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/SVM.vhd"/>
-          <Attr Name="ImportTime" Val="1654786216"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/Classifier.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/Classifier.vhd"/>
-          <Attr Name="ImportTime" Val="1654938262"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/DSP_AxB_Cascade.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/DSP_AxB_Cascade.vhd"/>
-          <Attr Name="ImportTime" Val="1653989960"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/DSP_AxB_Cascade_wo_PCIN.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/DSP_AxB_Cascade_wo_PCIN.vhd"/>
-          <Attr Name="ImportTime" Val="1654331641"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/DSP_AxB_plus_C.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/DSP_AxB_plus_C.vhd"/>
-          <Attr Name="ImportTime" Val="1659006471"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/FSM_SIPO_PCV.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM_SIPO_PCV.vhd"/>
-          <Attr Name="ImportTime" Val="1659970266"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/FSM_Kernel_Bias.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM_Kernel_Bias.vhd"/>
-          <Attr Name="ImportTime" Val="1659962219"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/FSM_Voting.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM_Voting.vhd"/>
-          <Attr Name="ImportTime" Val="1659966032"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/FSM.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/FSM.vhd"/>
-          <Attr Name="ImportTime" Val="1659962850"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/xilinx_single_port_ram_no_change.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/xilinx_single_port_ram_no_change.vhd"/>
-          <Attr Name="ImportTime" Val="1659622296"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/RAM_Bias.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/RAM_Bias.vhd"/>
-          <Attr Name="ImportTime" Val="1653411788"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/RAM_Kernel_Scale.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/RAM_Kernel_Scale.vhd"/>
-          <Attr Name="ImportTime" Val="1653665710"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/RAM_Pre_Computed_Vector.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/RAM_Pre_Computed_Vector.vhd"/>
-          <Attr Name="ImportTime" Val="1659619711"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/SIPO_buffer.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/SIPO_buffer.vhd"/>
-          <Attr Name="ImportTime" Val="1659808720"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/counter_3b.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/counter_3b.vhd"/>
-          <Attr Name="ImportTime" Val="1656361576"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/Voting_w_ce.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/Voting_w_ce.vhd"/>
-          <Attr Name="ImportTime" Val="1659025120"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/double_shift_reg.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/double_shift_reg.vhd"/>
-          <Attr Name="ImportTime" Val="1655979306"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd"/>
-          <Attr Name="ImportTime" Val="1659560166"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/bd/embedded_system/embedded_system.bd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_xbar_0/embedded_system_xbar_0.xci">
-          <Proxy FileSetName="embedded_system_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_system_ila_0_0/embedded_system_system_ila_0_0.xci">
-          <Proxy FileSetName="embedded_system_system_ila_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_PL_CLASSIFIER_w_VOTI_0_0/embedded_system_PL_CLASSIFIER_w_VOTI_0_0.xci">
-          <Proxy FileSetName="embedded_system_PL_CLASSIFIER_w_VOTI_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_processing_system7_0_0/embedded_system_processing_system7_0_0.xci">
-          <Proxy FileSetName="embedded_system_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_rst_ps7_0_50M_0/embedded_system_rst_ps7_0_50M_0.xci">
-          <Proxy FileSetName="embedded_system_rst_ps7_0_50M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_auto_us_1/embedded_system_auto_us_1.xci">
-          <Proxy FileSetName="embedded_system_auto_us_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_auto_ds_4/embedded_system_auto_ds_4.xci">
-          <Proxy FileSetName="embedded_system_auto_ds_4"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_auto_us_2/embedded_system_auto_us_2.xci">
-          <Proxy FileSetName="embedded_system_auto_us_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embedded_system.bd" FileRelPathName="ip/embedded_system_auto_pc_2/embedded_system_auto_pc_2.xci">
-          <Proxy FileSetName="embedded_system_auto_pc_2"/>
-        </CompFileExtendedInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -363,23 +329,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel_Scale.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="axis_to_bram_Bias"/>
+        <Option Name="TopModule" Val="embedded_system_wrapper"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/new/clock_constraint.xdc">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/constrs_1/new/clock_constraint.xdc"/>
           <Attr Name="ImportTime" Val="1659689729"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -388,6 +346,7 @@
       </File>
       <File Path="$PSRCDIR/constrs_1/new/constraint_axis_to_BRAM.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -613,6 +572,7 @@
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SimMode" Val="post-synthesis"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/TB_axis_to_bram_PCV_time_synth.wcfg"/>
       </Config>
@@ -629,30 +589,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="embedded_system_system_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_system_ila_0_0">
-      <Config>
-        <Option Name="TopModule" Val="embedded_system_system_ila_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="embedded_system_PL_CLASSIFIER_w_VOTI_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_PL_CLASSIFIER_w_VOTI_0_0">
-      <Config>
-        <Option Name="TopModule" Val="embedded_system_PL_CLASSIFIER_w_VOTI_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="embedded_system_auto_us_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_auto_us_2">
-      <Config>
-        <Option Name="TopModule" Val="embedded_system_auto_us_2"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="embedded_system_auto_us_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_auto_us_1">
-      <Config>
-        <Option Name="TopModule" Val="embedded_system_auto_us_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="embedded_system_rst_ps7_0_50M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_rst_ps7_0_50M_0">
       <Config>
         <Option Name="TopModule" Val="embedded_system_rst_ps7_0_50M_0"/>
@@ -662,18 +598,6 @@
     <FileSet Name="embedded_system_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="embedded_system_processing_system7_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="embedded_system_auto_pc_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_auto_pc_2">
-      <Config>
-        <Option Name="TopModule" Val="embedded_system_auto_pc_2"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="embedded_system_auto_ds_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/embedded_system_auto_ds_4">
-      <Config>
-        <Option Name="TopModule" Val="embedded_system_auto_ds_4"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -699,9 +623,7 @@
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -709,42 +631,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="embedded_system_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="embedded_system_xbar_0" Part="xc7z020clg400-1" ConstrsSet="embedded_system_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embedded_system_xbar_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_system_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="embedded_system_system_ila_0_0" Part="xc7z020clg400-1" ConstrsSet="embedded_system_system_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embedded_system_system_ila_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_PL_CLASSIFIER_w_VOTI_0_0_synth_1" Type="Ft3:Synth" SrcSet="embedded_system_PL_CLASSIFIER_w_VOTI_0_0" Part="xc7z020clg400-1" ConstrsSet="embedded_system_PL_CLASSIFIER_w_VOTI_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embedded_system_PL_CLASSIFIER_w_VOTI_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_auto_us_2_synth_1" Type="Ft3:Synth" SrcSet="embedded_system_auto_us_2" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_us_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embedded_system_auto_us_2_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_auto_us_1_synth_1" Type="Ft3:Synth" SrcSet="embedded_system_auto_us_1" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_us_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embedded_system_auto_us_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
@@ -771,29 +657,9 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="embedded_system_auto_pc_2_synth_1" Type="Ft3:Synth" SrcSet="embedded_system_auto_pc_2" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_pc_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embedded_system_auto_pc_2_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_auto_ds_4_synth_1" Type="Ft3:Synth" SrcSet="embedded_system_auto_ds_4" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_ds_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embedded_system_auto_ds_4_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -808,70 +674,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="embedded_system_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_system_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_system_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_system_ila_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_PL_CLASSIFIER_w_VOTI_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_PL_CLASSIFIER_w_VOTI_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_PL_CLASSIFIER_w_VOTI_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_auto_us_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_us_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_auto_us_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_auto_us_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_us_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_auto_us_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -904,38 +706,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="embedded_system_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_auto_pc_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_pc_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_auto_pc_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="embedded_system_auto_ds_4_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="embedded_system_auto_ds_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embedded_system_auto_ds_4_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>

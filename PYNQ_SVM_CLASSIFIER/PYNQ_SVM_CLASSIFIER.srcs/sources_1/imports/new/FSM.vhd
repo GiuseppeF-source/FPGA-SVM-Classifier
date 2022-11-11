@@ -6,8 +6,11 @@ Port (
     s_axis_aclk                    : in std_logic;
     start                          : in std_logic; -- 0 stop --  1 start
     classification                 : in std_logic; -- avvia il processamento se 1
-    -- selettore RAM 
+    -- Gestione RAM da PS 
     BRAM_PS_to_PL                  : out std_logic; -- 0 scrive il PS -- 1 legge la PL
+    trig_axis_to_BRAM_PCV          : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )            
+    trig_axis_to_BRAM_Kernel_Scale : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )        
+    trig_axis_to_BRAM_Bias         : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )
     -- RAM Pre computed Vector
     addr_RAM_Pre_Computed_Vector   : out std_logic_vector( 4-1 downto 0 );
     en_RAM_Pre_Computed_Vector     : out std_logic;
@@ -122,46 +125,51 @@ end process;
 
 OUTPUT_DECODE : process(state) 
 begin
+    --------------------
+    -- Default values --
+    --------------------
+
+    -- Gestione Caricamento Coefficienti in RAM
+    trig_axis_to_BRAM_PCV            <= '0';
+    trig_axis_to_BRAM_Kernel_Scale   <= '0';
+    trig_axis_to_BRAM_Bias           <= '0';
+    BRAM_PS_to_PL                    <= '0';    -- predisposto per connessione Ram al Processore
+
+    -- Gestione RST del CLASSIFIER
+    rst_svm_classifier               <= '0'; 
+    rst_pipe_classfier               <= '0';
+
+    -- Gestione CE del CLASSIFIER
+    ce_pipe_classifier               <= '0';    -- scorrimento bloccato
+    ce_DSP_AxB_Cascade_classifier    <= '0';    -- scorrimento bloccato
+
+    -- Gestione AXIS_READY - interfaccia input
+    sel_0_or_sipo                    <= '0';    -- default 0 = Accelleratore non disponbile a ricevere
+
+    -- Gestione sub FSM
+    start_sub_fsm                    <= '0';    -- default 0 = sub FSM in IDLE
+    ----------------------------------------
+
     case state is
         when IDLE =>
-            start_sub_fsm                    <= '0'; -- altre FSM in IDLE
-            --s_axis_tready                    <= '0'; -- non pronta a ricevere dal DMA
-            sel_0_or_sipo                    <= '0';
-            rst_svm_classifier               <= '1'; -- reset attivati
+            rst_svm_classifier               <= '1';  -- reset attivati
             rst_pipe_classfier               <= '1';
-            ce_pipe_classifier               <= '0';
-            ce_DSP_AxB_Cascade_classifier    <= '0';
-            BRAM_PS_to_PL                    <= '0'; -- predisposto per scrivere il PS
             
         when SETUP =>
-            start_sub_fsm                    <= '0';
-            --s_axis_tready                    <= '0';
-            sel_0_or_sipo                    <= '0';
-            rst_svm_classifier               <= '0'; 
-            rst_pipe_classfier               <= '0';
-            ce_pipe_classifier               <= '0';
-            ce_DSP_AxB_Cascade_classifier    <= '0';
-            BRAM_PS_to_PL                    <= '0'; -- Connessione ram al Processore
+            trig_axis_to_BRAM_PCV            <= '1';  -- trigger per FSM modulo caricamento coeff in RAM
+            trig_axis_to_BRAM_Kernel_Scale   <= '1';
+            trig_axis_to_BRAM_Bias           <= '1';
             
          when PROCESSING =>
             start_sub_fsm                    <= '1';  
-            --s_axis_tready                    <= in_ready;  -- uguale al ready del modulo SIPO
-            sel_0_or_sipo                    <= '1';
-            rst_svm_classifier               <= '0';  
-            rst_pipe_classfier               <= '0';  
+            sel_0_or_sipo                    <= '1';  -- AXIS_READY generato dal SIPO
             ce_pipe_classifier               <= '1';  -- possono scorrere
             ce_DSP_AxB_Cascade_classifier    <= '1';  -- possono scorrere
-            BRAM_PS_to_PL                    <= '1';  -- legge la PL
+            BRAM_PS_to_PL                    <= '1';  -- connessione RAM alla PL 
                            
         when PAUSE =>
             start_sub_fsm                    <= '1';  
-            --s_axis_tready                    <= '0'; -- stallo, non devo riceve nulla 
-            sel_0_or_sipo                    <= '0';
-            rst_svm_classifier               <= '0';  
-            rst_pipe_classfier               <= '0';  
-            ce_pipe_classifier               <= '0'; -- blocco dello scorrimento
-            ce_DSP_AxB_Cascade_classifier    <= '0'; -- blocco dello scorrimento
-            BRAM_PS_to_PL                    <= '1'; -- connessione RAM alla PL                                     
+            BRAM_PS_to_PL                    <= '1';  -- mantenuta connessione RAM alla PL                                     
     end case;
 end process;
 

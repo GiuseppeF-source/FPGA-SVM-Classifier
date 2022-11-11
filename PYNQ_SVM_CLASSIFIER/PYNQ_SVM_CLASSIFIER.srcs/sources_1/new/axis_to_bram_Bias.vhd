@@ -14,9 +14,9 @@ entity axis_to_bram_Bias is
     trig     : in  std_logic; 
     
      -- AXI-Stream  input interface
-    in_ready : out std_logic;
-    in_valid : in  std_logic;
-    data_in  : in  std_logic_vector ( n_in_bit-1 downto 0 );
+    s_axis_tready : out std_logic;
+    s_axis_tvalid : in  std_logic;
+    s_axis_tdata  : in  std_logic_vector ( n_in_bit-1 downto 0 );
     
     -- BRAM signal
     addr_ram : out std_logic_vector( 3 downto 0 );
@@ -38,8 +38,8 @@ MNG: entity work.AXIS_BRAM_mng
  Port map (
    clk      => clk      ,
    trig     => trig     ,    
-   in_ready => in_ready ,
-   in_valid => in_valid ,    
+   in_ready => s_axis_tready ,
+   in_valid => s_axis_tvalid ,    
    ce       => ce       ,
    rst      => rst      ,
    full     => full     ,                  
@@ -58,7 +58,7 @@ SIPO: entity work.SIPO_shift_reg_w_full
     clk      => clk      ,
     rst      => rst      ,
     ce       => ce       ,
-    data_in  => data_in  ,
+    data_in  => s_axis_tdata  ,
     data_out => data_out ,
     full     => full     
   );

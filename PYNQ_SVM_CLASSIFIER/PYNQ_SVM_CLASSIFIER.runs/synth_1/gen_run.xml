@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1667760389">
-  <File Type="PA-TCL" Name="axis_to_bram_Bias.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="axis_to_bram_Bias_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="axis_to_bram_Bias_reports.tcl"/>
-  <File Type="RDS-RDS" Name="axis_to_bram_Bias.vds"/>
-  <File Type="RDS-UTIL" Name="axis_to_bram_Bias_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="axis_to_bram_Bias_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="axis_to_bram_Bias.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="axis_to_bram_Bias_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="axis_to_bram_Bias_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1668193856">
+  <File Type="PA-TCL" Name="axis_to_bram_Kernel_Scale.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="axis_to_bram_Kernel_Scale_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="axis_to_bram_Kernel_Scale_reports.tcl"/>
+  <File Type="RDS-RDS" Name="axis_to_bram_Kernel_Scale.vds"/>
+  <File Type="RDS-UTIL" Name="axis_to_bram_Kernel_Scale_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="axis_to_bram_Kernel_Scale_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="axis_to_bram_Kernel_Scale.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="axis_to_bram_Kernel_Scale_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="axis_to_bram_Kernel_Scale_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
@@ -23,22 +23,23 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Bias.vhd">
+    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel_Scale.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/embedded_system/embedded_system.bd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/FSM_axis_to_bram.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -214,17 +215,23 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/embedded_system/embedded_system.bd">
+    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Bias.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd">
+    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM_axis_to_bram.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -283,23 +290,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel_Scale.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="axis_to_bram_Bias"/>
+      <Option Name="TopModule" Val="axis_to_bram_Kernel_Scale"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/new/clock_constraint.xdc">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/MultiClass_Classifier_SVM_v4/MultiClass_Classifier_SVM_v4.srcs/constrs_1/new/clock_constraint.xdc"/>
         <Attr Name="ImportTime" Val="1659689729"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -308,6 +307,7 @@
     </File>
     <File Path="$PSRCDIR/constrs_1/new/constraint_axis_to_BRAM.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -323,18 +323,10 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_pc_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_system_ila_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_us_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_PL_CLASSIFIER_w_VOTI_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_us_1"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_rst_ps7_0_50M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_ds_4"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_processing_system7_0_0"/>
 </GenRun>

@@ -1,3 +1,10 @@
+-- vsg_off
+-- vsg_off
+-- vsg_off
+-- vsg_off
+-- vsg_off
+-- vsg_off
+-- vsg_off
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 LIBRARY xil_defaultlib;
@@ -14,31 +21,33 @@ entity PL_CLASSIFIER_w_VOTING is
   s_axis_tready    : out std_logic;                          -- from SIPO
   s_axis_tvalid    : in  std_logic;                          -- from DMA
   s_axis_tdata     : in  std_logic_vector( 32 -1 downto 0 ); -- from DMA 
-  --s_axis_tlast     : in  std_logic;                          -- from DMA ( ultimi 32 bit trasmessi ) 
   
   -- AXI-Stream OUTPUT interface
   m_axis_tdata     : out std_logic_vector( 32 -1 downto 0 );
   m_axis_tvalid    : out std_logic;
   m_axis_tready    :  in std_logic;
-  --m_axis_tlast     : out std_logic;                          -- to DMA ( segnalazioe ultima classe ) 
 
   
   -- INPUT interface for RAM 
   -- RAM Pre-comp Vect
-  bram_addr_Pre_Comp_Vect   : in std_logic_vector( 14 downto 0 );  -- da utilizzare solo i primi 4
-  bram_wrdata_Pre_Comp_Vect : in std_logic_vector( 511 downto 0 ); -- dimensione axi full da portare a 408
+  bram_addr_Pre_Comp_Vect   : in std_logic_vector( 3 downto 0 );  
+  bram_wrdata_Pre_Comp_Vect : in std_logic_vector( 407 downto 0 );
   bram_en_Pre_Comp_Vect     : in std_logic;
-  bram_we_Pre_Comp_Vect     : in std_logic_vector( 63 downto 0 );
+  bram_we_Pre_Comp_Vect     : in std_logic;
   -- RAM Kernel Scale
-  bram_addr_Kernel_Scale    : in std_logic_vector( 11 downto 0 ); -- da utilizzare solo i primi 4bit
-  bram_wrdata_Kernel_Scale  : in std_logic_vector( 31 downto 0 ); -- dimensione axi full da portare a 12
+  bram_addr_Kernel_Scale    : in std_logic_vector( 3 downto 0 ); 
+  bram_wrdata_Kernel_Scale  : in std_logic_vector( 11 downto 0 ); 
   bram_en_Kernel_Scale      : in std_logic;
-  bram_we_Kernel_Scale      : in std_logic_vector( 3 downto 0 ); 
+  bram_we_Kernel_Scale      : in std_logic; 
   -- RAM Bias
-  bram_addr_Bias            : in std_logic_vector( 11 downto 0 ); -- da utilizzare solo i primi 4
-  bram_wrdata_Bias          : in std_logic_vector( 31 downto 0 ); -- dimensione axi full da portare a 7
+  bram_addr_Bias            : in std_logic_vector( 3 downto 0 ); 
+  bram_wrdata_Bias          : in std_logic_vector( 6 downto 0 ); 
   bram_en_Bias              : in std_logic;
-  bram_we_Bias              : in std_logic_vector( 3 downto 0 )   
+  bram_we_Bias              : in std_logic;
+  -- Abilitazione Caricamento RAM
+  trig_axis_to_BRAM_PCV          : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )            
+  trig_axis_to_BRAM_Kernel_Scale : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )        
+  trig_axis_to_BRAM_Bias         : out std_logic -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )
   );
 end PL_CLASSIFIER_w_VOTING;
 
@@ -70,29 +79,29 @@ signal i_ce_dsp_axbplusc : std_logic := '1';
 -------------------------------
 -- RAM_Pre_Computed_Vector signal 
 -------------------------------
-signal i_addr_RAM_Pre_Computed_Vector :  std_logic_vector(4   -1 downto 0) := "0000";       -- Address bus, width determined from RAM_DEPTH
+signal i_addr_RAM_Pre_Computed_Vector :  std_logic_vector(4   -1 downto 0);  -- Address bus, width determined from RAM_DEPTH
 signal i_din_RAM_Pre_Computed_Vector  :  std_logic_vector(408 -1 downto 0);  -- RAM input data
-signal i_we_RAM_Pre_Computed_Vector   :  std_logic := '0';                                         -- Write enable
-signal i_en_RAM_Pre_Computed_Vector   :  std_logic := '1';                                         -- RAM Enable, for additional power savings, disable port when not in use
-signal i_regce_RAM_Pre_Computed_Vector:  std_logic := '1';                                         -- Output register enable
+signal i_we_RAM_Pre_Computed_Vector   :  std_logic := '0';                   -- Write enable
+signal i_en_RAM_Pre_Computed_Vector   :  std_logic := '1';                   -- RAM Enable, for additional power savings, disable port when not in use
+signal i_regce_RAM_Pre_Computed_Vector:  std_logic := '1';                   -- Output register enable
 signal i_dout_RAM_Pre_Computed_Vector :  std_logic_vector(408 -1 downto 0);  -- RAM output data 
 -------------------------------
 -- RAM_Kernel_Scale signal 
 -------------------------------
-signal i_addr_RAM_Kernel_Scale       : std_logic_vector(4  -1 downto 0) := "0000";  -- Address bus, width determined from RAM_DEPTH
-signal i_din_RAM_Kernel_Scale        : std_logic_vector(12 -1 downto 0);            -- RAM input data
-signal i_we_RAM_Kernel_Scale         : std_logic := '0';                            -- Write enable
-signal i_en_RAM_Kernel_Scale         : std_logic := '1';                            -- RAM Enable, for additional power savings, disable port when not in use
-signal i_regce_RAM_Kernel_Scale      : std_logic := '0';                            -- Output register enable
+signal i_addr_RAM_Kernel_Scale       : std_logic_vector(4  -1 downto 0);     -- Address bus, width determined from RAM_DEPTH
+signal i_din_RAM_Kernel_Scale        : std_logic_vector(12 -1 downto 0);     -- RAM input data
+signal i_we_RAM_Kernel_Scale         : std_logic := '0';                     -- Write enable
+signal i_en_RAM_Kernel_Scale         : std_logic := '1';                     -- RAM Enable, for additional power savings, disable port when not in use
+signal i_regce_RAM_Kernel_Scale      : std_logic := '0';                     -- Output register enable
 signal i_dout_RAM_Kernel_Scale       : std_logic_vector (12 -1  downto 0);
 -------------------------------
 -- RAM_Bias signal 
 -------------------------------
-signal i_addr_RAM_Bias :  std_logic_vector( 4 -1 downto 0) := "0000";    -- Address bus, width determined from RAM_DEPTH
-signal i_din_RAM_Bias  :  std_logic_vector( 7 -1 downto 0);              -- RAM input data
-signal i_we_RAM_Bias   :  std_logic := '0';                              -- Write enable
-signal i_en_RAM_Bias   :  std_logic := '1';                              -- RAM Enable, for additional power savings, disable port when not in use
-signal i_regce_RAM_Bias:  std_logic := '0';                              -- Output register enable
+signal i_addr_RAM_Bias :  std_logic_vector( 4 -1 downto 0);                  -- Address bus, width determined from RAM_DEPTH
+signal i_din_RAM_Bias  :  std_logic_vector( 7 -1 downto 0);                  -- RAM input data
+signal i_we_RAM_Bias   :  std_logic := '0';                                  -- Write enable
+signal i_en_RAM_Bias   :  std_logic := '1';                                  -- RAM Enable, for additional power savings, disable port when not in use
+signal i_regce_RAM_Bias:  std_logic := '0';                                  -- Output register enable
 signal i_dout_RAM_Bias :  std_logic_vector( 7- 1 downto 0);
 -------------------------------
 -- Voting_w_ce signal 
@@ -203,7 +212,10 @@ component FSM is
   start                          : in std_logic; -- 0 stop --  1 start                      
   classification                 : in std_logic; -- avvia il processamento se 1             
   -- selettore RAM                                                                          
-  BRAM_PS_to_PL                  : out std_logic; -- 0 scrive il PS -- 1 legge la PL        
+  BRAM_PS_to_PL                  : out std_logic; -- 0 scrive il PS -- 1 legge la PL  
+  trig_axis_to_BRAM_PCV          : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )            
+  trig_axis_to_BRAM_Kernel_Scale : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )        
+  trig_axis_to_BRAM_Bias         : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )      
   -- RAM Pre computed Vector                                                                
   addr_RAM_Pre_Computed_Vector   : out std_logic_vector( 4-1 downto 0 );                    
   en_RAM_Pre_Computed_Vector     : out std_logic;                                           
@@ -316,6 +328,9 @@ PM_FSM: FSM Port Map (
     classification                => classification,
     -- selettore RAM              
     BRAM_PS_to_PL                 => i_BRAM_PS_to_PL,
+    trig_axis_to_BRAM_PCV          => trig_axis_to_BRAM_PCV         ,
+    trig_axis_to_BRAM_Kernel_Scale => trig_axis_to_BRAM_Kernel_Scale,
+    trig_axis_to_BRAM_Bias         => trig_axis_to_BRAM_Bias        ,
     -- RAM Pre computed Vector    
     addr_RAM_Pre_Computed_Vector  => i_FSM_addr_RAM_Pre_Computed_Vector,
     en_RAM_Pre_Computed_Vector    => i_FSM_en_RAM_Pre_Computed_Vector,
@@ -347,7 +362,6 @@ PM_FSM: FSM Port Map (
     --m_axis_tlast                  => m_axis_tlast,
     -- Gestione AXI-Stream Input  
     s_axis_tready                 => s_axis_tready 
-    --s_axis_tlast                  => s_axis_tlast
     );    
 
 -- Passaggio out SIPO -> Classifier
@@ -368,20 +382,20 @@ m_axis_tdata( 2 downto 0 )  <= i_win_class;      -- uscita voting to axi stream
 m_axis_tdata( 31 downto 3 ) <= ( others => '0' );
 
 
-                                   -- input da PS                                                                 -- input da FSM
+                                    -- input da PS con i_BRAM_PS_to_PL = '1'                                   -- input da FSM
 i_addr_RAM_Pre_Computed_Vector  <= bram_addr_Pre_Comp_Vect( 4-1 downto 0 )      when (i_BRAM_PS_to_PL = '0') else i_FSM_addr_RAM_Pre_Computed_Vector;   
 i_din_RAM_Pre_Computed_Vector   <= bram_wrdata_Pre_Comp_Vect( 408-1 downto 0 )  when (i_BRAM_PS_to_PL = '0') else (others => '0');                      
-i_we_RAM_Pre_Computed_Vector    <= bram_we_Pre_Comp_Vect(0)                     when (i_BRAM_PS_to_PL = '0') else '0';                               
+i_we_RAM_Pre_Computed_Vector    <= bram_we_Pre_Comp_Vect                        when (i_BRAM_PS_to_PL = '0') else '0';                               
 i_en_RAM_Pre_Computed_Vector    <= bram_en_Pre_Comp_Vect                        when (i_BRAM_PS_to_PL = '0') else i_FSM_en_RAM_Pre_Computed_Vector;     
                                                                                                                      
 i_addr_RAM_Kernel_Scale         <= bram_addr_Kernel_Scale( 4-1 downto 0 )       when (i_BRAM_PS_to_PL = '0') else i_FSM_addr_RAM_Kernel_Scale;          
 i_din_RAM_Kernel_Scale          <= bram_wrdata_Kernel_Scale( 12-1 downto 0 )    when (i_BRAM_PS_to_PL = '0') else (others => '0');                      
-i_we_RAM_Kernel_Scale           <= bram_we_Kernel_Scale(0)                      when (i_BRAM_PS_to_PL = '0') else '0';                                  
+i_we_RAM_Kernel_Scale           <= bram_we_Kernel_Scale                         when (i_BRAM_PS_to_PL = '0') else '0';                                  
 i_en_RAM_Kernel_Scale           <= bram_en_Kernel_Scale                         when (i_BRAM_PS_to_PL = '0') else i_FSM_en_RAM_RAM_Kernel_Scaler;       
                                                                                                                   
 i_addr_RAM_Bias                 <= bram_addr_Bias( 4-1 downto 0 )               when (i_BRAM_PS_to_PL = '0') else i_FSM_addr_RAM_Bias;                  
 i_din_RAM_Bias                  <= bram_wrdata_Bias( 7-1 downto 0 )             when (i_BRAM_PS_to_PL = '0') else ( others => '0' );                      
-i_we_RAM_Bias                   <= bram_we_Bias(0)                              when (i_BRAM_PS_to_PL = '0') else '0';                                  
+i_we_RAM_Bias                   <= bram_we_Bias                                 when (i_BRAM_PS_to_PL = '0') else '0';                                  
 i_en_RAM_Bias                   <= bram_en_Bias                                 when (i_BRAM_PS_to_PL = '0') else i_FSM_en_RAM_Bias;                    
 
 end arch;

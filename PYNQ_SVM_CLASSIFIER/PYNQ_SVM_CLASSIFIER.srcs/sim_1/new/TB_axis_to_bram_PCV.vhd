@@ -30,7 +30,7 @@ signal data_next: natural :=0;
 
 begin
 
-DUT: entity work.axis_to_bram_Kernel_Scale 
+DUT: entity work.axis_to_bram_Kernel
   Port map (
   clk      => clk     ,
   trig     => trig    ,

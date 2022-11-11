@@ -1,7 +1,7 @@
 (DELAYFILE 
 (SDFVERSION "3.0" )
 (DESIGN "axis_to_bram_Bias")
-(DATE "Sun Nov  6 19:53:07 2022")
+(DATE "Sun Nov  6 20:02:45 2022")
 (VENDOR "XILINX")
 (PROGRAM "Vivado")
 (VERSION "2018.3")
