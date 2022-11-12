@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log axis_to_bram_Kernel_Scale.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_to_bram_Kernel_Scale.tcl
+EAStep vivado -log embedded_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source embedded_system_wrapper.tcl

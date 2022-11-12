@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log axis_to_bram_Kernel_Scale.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_to_bram_Kernel_Scale.tcl" );
+         "-log embedded_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source embedded_system_wrapper.tcl" );
 
 
 

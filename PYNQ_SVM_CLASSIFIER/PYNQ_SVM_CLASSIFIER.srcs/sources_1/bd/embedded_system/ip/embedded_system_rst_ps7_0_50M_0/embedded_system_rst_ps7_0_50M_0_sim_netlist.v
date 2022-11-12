@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Aug 17 22:30:12 2022
+// Date        : Sat Nov 12 20:04:22 2022
 // Host        : peppe-pc running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_rst_ps7_0_50M_0/embedded_system_rst_ps7_0_50M_0_sim_netlist.v
+//               C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_rst_ps7_0_50M_0/embedded_system_rst_ps7_0_50M_0_sim_netlist.v
 // Design      : embedded_system_rst_ps7_0_50M_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,7 +25,7 @@ module embedded_system_rst_ps7_0_50M_0
     peripheral_reset,
     interconnect_aresetn,
     peripheral_aresetn);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN embedded_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input slowest_sync_clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 30303030, PHASE 0.000, CLK_DOMAIN embedded_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input slowest_sync_clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 ext_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ext_reset_in;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 aux_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME aux_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aux_reset_in;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 dbg_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input mb_debug_sys_rst;
@@ -50,7 +50,7 @@ module embedded_system_rst_ps7_0_50M_0
   (* C_AUX_RESET_HIGH = "1'b0" *) 
   (* C_AUX_RST_WIDTH = "4" *) 
   (* C_EXT_RESET_HIGH = "1'b0" *) 
-  (* C_EXT_RST_WIDTH = "4" *) 
+  (* C_EXT_RST_WIDTH = "1" *) 
   (* C_FAMILY = "zynq" *) 
   (* C_NUM_BUS_RST = "1" *) 
   (* C_NUM_INTERCONNECT_ARESETN = "1" *) 
@@ -74,27 +74,21 @@ module embedded_system_rst_ps7_0_50M_0_cdc_sync
    (lpf_asr_reg,
     scndry_out,
     lpf_asr,
-    p_1_in,
-    p_2_in,
-    asr_lpf,
+    p_3_out,
     aux_reset_in,
     slowest_sync_clk);
   output lpf_asr_reg;
   output scndry_out;
   input lpf_asr;
-  input p_1_in;
-  input p_2_in;
-  input [0:0]asr_lpf;
+  input [2:0]p_3_out;
   input aux_reset_in;
   input slowest_sync_clk;
 
   wire asr_d1;
-  wire [0:0]asr_lpf;
   wire aux_reset_in;
   wire lpf_asr;
   wire lpf_asr_reg;
-  wire p_1_in;
-  wire p_2_in;
+  wire [2:0]p_3_out;
   wire s_level_out_d1_cdc_to;
   wire s_level_out_d2;
   wire s_level_out_d3;
@@ -154,36 +148,27 @@ module embedded_system_rst_ps7_0_50M_0_cdc_sync
     .INIT(32'hEAAAAAA8)) 
     lpf_asr_i_1
        (.I0(lpf_asr),
-        .I1(p_1_in),
-        .I2(p_2_in),
+        .I1(p_3_out[1]),
+        .I2(p_3_out[2]),
         .I3(scndry_out),
-        .I4(asr_lpf),
+        .I4(p_3_out[0]),
         .O(lpf_asr_reg));
 endmodule
 
 (* ORIG_REF_NAME = "cdc_sync" *) 
 module embedded_system_rst_ps7_0_50M_0_cdc_sync_0
-   (lpf_exr_reg,
-    scndry_out,
-    lpf_exr,
-    p_3_out,
+   (scndry_out,
     mb_debug_sys_rst,
     ext_reset_in,
     slowest_sync_clk);
-  output lpf_exr_reg;
   output scndry_out;
-  input lpf_exr;
-  input [2:0]p_3_out;
   input mb_debug_sys_rst;
   input ext_reset_in;
   input slowest_sync_clk;
 
   wire exr_d1;
   wire ext_reset_in;
-  wire lpf_exr;
-  wire lpf_exr_reg;
   wire mb_debug_sys_rst;
-  wire [2:0]p_3_out;
   wire s_level_out_d1_cdc_to;
   wire s_level_out_d2;
   wire s_level_out_d3;
@@ -240,15 +225,6 @@ module embedded_system_rst_ps7_0_50M_0_cdc_sync_0
         .D(s_level_out_d3),
         .Q(scndry_out),
         .R(1'b0));
-  LUT5 #(
-    .INIT(32'hEAAAAAA8)) 
-    lpf_exr_i_1
-       (.I0(lpf_exr),
-        .I1(p_3_out[1]),
-        .I2(p_3_out[2]),
-        .I3(scndry_out),
-        .I4(p_3_out[0]),
-        .O(lpf_exr_reg));
 endmodule
 
 (* ORIG_REF_NAME = "lpf" *) 
@@ -267,9 +243,7 @@ module embedded_system_rst_ps7_0_50M_0_lpf
   input aux_reset_in;
 
   wire \ACTIVE_LOW_AUX.ACT_LO_AUX_n_0 ;
-  wire \ACTIVE_LOW_EXT.ACT_LO_EXT_n_0 ;
   wire Q;
-  wire [0:0]asr_lpf;
   wire aux_reset_in;
   wire dcm_locked;
   wire ext_reset_in;
@@ -278,56 +252,25 @@ module embedded_system_rst_ps7_0_50M_0_lpf
   wire lpf_int;
   wire lpf_int0__0;
   wire mb_debug_sys_rst;
-  wire p_1_in;
-  wire p_2_in;
-  wire p_3_in1_in;
+  wire p_0_out;
   wire [3:0]p_3_out;
   wire slowest_sync_clk;
 
   embedded_system_rst_ps7_0_50M_0_cdc_sync \ACTIVE_LOW_AUX.ACT_LO_AUX 
-       (.asr_lpf(asr_lpf),
-        .aux_reset_in(aux_reset_in),
+       (.aux_reset_in(aux_reset_in),
         .lpf_asr(lpf_asr),
         .lpf_asr_reg(\ACTIVE_LOW_AUX.ACT_LO_AUX_n_0 ),
-        .p_1_in(p_1_in),
-        .p_2_in(p_2_in),
-        .scndry_out(p_3_in1_in),
+        .p_3_out(p_3_out[2:0]),
+        .scndry_out(p_3_out[3]),
         .slowest_sync_clk(slowest_sync_clk));
   embedded_system_rst_ps7_0_50M_0_cdc_sync_0 \ACTIVE_LOW_EXT.ACT_LO_EXT 
        (.ext_reset_in(ext_reset_in),
-        .lpf_exr(lpf_exr),
-        .lpf_exr_reg(\ACTIVE_LOW_EXT.ACT_LO_EXT_n_0 ),
         .mb_debug_sys_rst(mb_debug_sys_rst),
-        .p_3_out(p_3_out[2:0]),
-        .scndry_out(p_3_out[3]),
+        .scndry_out(p_0_out),
         .slowest_sync_clk(slowest_sync_clk));
   FDRE #(
     .INIT(1'b0)) 
     \AUX_LPF[1].asr_lpf_reg[1] 
-       (.C(slowest_sync_clk),
-        .CE(1'b1),
-        .D(p_3_in1_in),
-        .Q(p_2_in),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \AUX_LPF[2].asr_lpf_reg[2] 
-       (.C(slowest_sync_clk),
-        .CE(1'b1),
-        .D(p_2_in),
-        .Q(p_1_in),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \AUX_LPF[3].asr_lpf_reg[3] 
-       (.C(slowest_sync_clk),
-        .CE(1'b1),
-        .D(p_1_in),
-        .Q(asr_lpf),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \EXT_LPF[1].exr_lpf_reg[1] 
        (.C(slowest_sync_clk),
         .CE(1'b1),
         .D(p_3_out[3]),
@@ -335,7 +278,7 @@ module embedded_system_rst_ps7_0_50M_0_lpf
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \EXT_LPF[2].exr_lpf_reg[2] 
+    \AUX_LPF[2].asr_lpf_reg[2] 
        (.C(slowest_sync_clk),
         .CE(1'b1),
         .D(p_3_out[2]),
@@ -343,7 +286,7 @@ module embedded_system_rst_ps7_0_50M_0_lpf
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \EXT_LPF[3].exr_lpf_reg[3] 
+    \AUX_LPF[3].asr_lpf_reg[3] 
        (.C(slowest_sync_clk),
         .CE(1'b1),
         .D(p_3_out[1]),
@@ -376,7 +319,7 @@ module embedded_system_rst_ps7_0_50M_0_lpf
     lpf_exr_reg
        (.C(slowest_sync_clk),
         .CE(1'b1),
-        .D(\ACTIVE_LOW_EXT.ACT_LO_EXT_n_0 ),
+        .D(p_0_out),
         .Q(lpf_exr),
         .R(1'b0));
   LUT4 #(
@@ -398,7 +341,7 @@ module embedded_system_rst_ps7_0_50M_0_lpf
 endmodule
 
 (* C_AUX_RESET_HIGH = "1'b0" *) (* C_AUX_RST_WIDTH = "4" *) (* C_EXT_RESET_HIGH = "1'b0" *) 
-(* C_EXT_RST_WIDTH = "4" *) (* C_FAMILY = "zynq" *) (* C_NUM_BUS_RST = "1" *) 
+(* C_EXT_RST_WIDTH = "1" *) (* C_FAMILY = "zynq" *) (* C_NUM_BUS_RST = "1" *) 
 (* C_NUM_INTERCONNECT_ARESETN = "1" *) (* C_NUM_PERP_ARESETN = "1" *) (* C_NUM_PERP_RST = "1" *) 
 (* ORIG_REF_NAME = "proc_sys_reset" *) 
 module embedded_system_rst_ps7_0_50M_0_proc_sys_reset

@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Wed Aug 17 22:30:12 2022
+-- Date        : Sat Nov 12 20:04:22 2022
 -- Host        : peppe-pc running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_rst_ps7_0_50M_0/embedded_system_rst_ps7_0_50M_0_sim_netlist.vhdl
+--               C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_rst_ps7_0_50M_0/embedded_system_rst_ps7_0_50M_0_sim_netlist.vhdl
 -- Design      : embedded_system_rst_ps7_0_50M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,9 +19,7 @@ entity embedded_system_rst_ps7_0_50M_0_cdc_sync is
     lpf_asr_reg : out STD_LOGIC;
     scndry_out : out STD_LOGIC;
     lpf_asr : in STD_LOGIC;
-    p_1_in : in STD_LOGIC;
-    p_2_in : in STD_LOGIC;
-    asr_lpf : in STD_LOGIC_VECTOR ( 0 to 0 );
+    p_3_out : in STD_LOGIC_VECTOR ( 2 downto 0 );
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
@@ -110,10 +108,10 @@ lpf_asr_i_1: unisim.vcomponents.LUT5
     )
         port map (
       I0 => lpf_asr,
-      I1 => p_1_in,
-      I2 => p_2_in,
+      I1 => p_3_out(1),
+      I2 => p_3_out(2),
       I3 => \^scndry_out\,
-      I4 => asr_lpf(0),
+      I4 => p_3_out(0),
       O => lpf_asr_reg
     );
 end STRUCTURE;
@@ -123,10 +121,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity embedded_system_rst_ps7_0_50M_0_cdc_sync_0 is
   port (
-    lpf_exr_reg : out STD_LOGIC;
     scndry_out : out STD_LOGIC;
-    lpf_exr : in STD_LOGIC;
-    p_3_out : in STD_LOGIC_VECTOR ( 2 downto 0 );
     mb_debug_sys_rst : in STD_LOGIC;
     ext_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
@@ -140,7 +135,6 @@ architecture STRUCTURE of embedded_system_rst_ps7_0_50M_0_cdc_sync_0 is
   signal s_level_out_d1_cdc_to : STD_LOGIC;
   signal s_level_out_d2 : STD_LOGIC;
   signal s_level_out_d3 : STD_LOGIC;
-  signal \^scndry_out\ : STD_LOGIC;
   attribute ASYNC_REG : boolean;
   attribute ASYNC_REG of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to\ : label is std.standard.true;
   attribute XILINX_LEGACY_PRIM : string;
@@ -157,7 +151,6 @@ architecture STRUCTURE of embedded_system_rst_ps7_0_50M_0_cdc_sync_0 is
   attribute XILINX_LEGACY_PRIM of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "FDR";
   attribute box_type of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "PRIMITIVE";
 begin
-  scndry_out <= \^scndry_out\;
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -208,20 +201,8 @@ begin
       C => slowest_sync_clk,
       CE => '1',
       D => s_level_out_d3,
-      Q => \^scndry_out\,
+      Q => scndry_out,
       R => '0'
-    );
-lpf_exr_i_1: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"EAAAAAA8"
-    )
-        port map (
-      I0 => lpf_exr,
-      I1 => p_3_out(1),
-      I2 => p_3_out(2),
-      I3 => \^scndry_out\,
-      I4 => p_3_out(0),
-      O => lpf_exr_reg
     );
 end STRUCTURE;
 library IEEE;
@@ -407,15 +388,11 @@ end embedded_system_rst_ps7_0_50M_0_lpf;
 
 architecture STRUCTURE of embedded_system_rst_ps7_0_50M_0_lpf is
   signal \ACTIVE_LOW_AUX.ACT_LO_AUX_n_0\ : STD_LOGIC;
-  signal \ACTIVE_LOW_EXT.ACT_LO_EXT_n_0\ : STD_LOGIC;
   signal Q : STD_LOGIC;
-  signal asr_lpf : STD_LOGIC_VECTOR ( 0 to 0 );
   signal lpf_asr : STD_LOGIC;
   signal lpf_exr : STD_LOGIC;
   signal \lpf_int0__0\ : STD_LOGIC;
-  signal p_1_in : STD_LOGIC;
-  signal p_2_in : STD_LOGIC;
-  signal p_3_in1_in : STD_LOGIC;
+  signal p_0_out : STD_LOGIC;
   signal p_3_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute XILINX_LEGACY_PRIM : string;
   attribute XILINX_LEGACY_PRIM of POR_SRL_I : label is "SRL16";
@@ -426,59 +403,21 @@ architecture STRUCTURE of embedded_system_rst_ps7_0_50M_0_lpf is
 begin
 \ACTIVE_LOW_AUX.ACT_LO_AUX\: entity work.embedded_system_rst_ps7_0_50M_0_cdc_sync
      port map (
-      asr_lpf(0) => asr_lpf(0),
       aux_reset_in => aux_reset_in,
       lpf_asr => lpf_asr,
       lpf_asr_reg => \ACTIVE_LOW_AUX.ACT_LO_AUX_n_0\,
-      p_1_in => p_1_in,
-      p_2_in => p_2_in,
-      scndry_out => p_3_in1_in,
+      p_3_out(2 downto 0) => p_3_out(2 downto 0),
+      scndry_out => p_3_out(3),
       slowest_sync_clk => slowest_sync_clk
     );
 \ACTIVE_LOW_EXT.ACT_LO_EXT\: entity work.embedded_system_rst_ps7_0_50M_0_cdc_sync_0
      port map (
       ext_reset_in => ext_reset_in,
-      lpf_exr => lpf_exr,
-      lpf_exr_reg => \ACTIVE_LOW_EXT.ACT_LO_EXT_n_0\,
       mb_debug_sys_rst => mb_debug_sys_rst,
-      p_3_out(2 downto 0) => p_3_out(2 downto 0),
-      scndry_out => p_3_out(3),
+      scndry_out => p_0_out,
       slowest_sync_clk => slowest_sync_clk
     );
 \AUX_LPF[1].asr_lpf_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => slowest_sync_clk,
-      CE => '1',
-      D => p_3_in1_in,
-      Q => p_2_in,
-      R => '0'
-    );
-\AUX_LPF[2].asr_lpf_reg[2]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => slowest_sync_clk,
-      CE => '1',
-      D => p_2_in,
-      Q => p_1_in,
-      R => '0'
-    );
-\AUX_LPF[3].asr_lpf_reg[3]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => slowest_sync_clk,
-      CE => '1',
-      D => p_1_in,
-      Q => asr_lpf(0),
-      R => '0'
-    );
-\EXT_LPF[1].exr_lpf_reg[1]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
@@ -489,7 +428,7 @@ begin
       Q => p_3_out(2),
       R => '0'
     );
-\EXT_LPF[2].exr_lpf_reg[2]\: unisim.vcomponents.FDRE
+\AUX_LPF[2].asr_lpf_reg[2]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
@@ -500,7 +439,7 @@ begin
       Q => p_3_out(1),
       R => '0'
     );
-\EXT_LPF[3].exr_lpf_reg[3]\: unisim.vcomponents.FDRE
+\AUX_LPF[3].asr_lpf_reg[3]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
@@ -543,7 +482,7 @@ lpf_exr_reg: unisim.vcomponents.FDRE
         port map (
       C => slowest_sync_clk,
       CE => '1',
-      D => \ACTIVE_LOW_EXT.ACT_LO_EXT_n_0\,
+      D => p_0_out,
       Q => lpf_exr,
       R => '0'
     );
@@ -913,7 +852,7 @@ entity embedded_system_rst_ps7_0_50M_0_proc_sys_reset is
   attribute C_EXT_RESET_HIGH : string;
   attribute C_EXT_RESET_HIGH of embedded_system_rst_ps7_0_50M_0_proc_sys_reset : entity is "1'b0";
   attribute C_EXT_RST_WIDTH : integer;
-  attribute C_EXT_RST_WIDTH of embedded_system_rst_ps7_0_50M_0_proc_sys_reset : entity is 4;
+  attribute C_EXT_RST_WIDTH of embedded_system_rst_ps7_0_50M_0_proc_sys_reset : entity is 1;
   attribute C_FAMILY : string;
   attribute C_FAMILY of embedded_system_rst_ps7_0_50M_0_proc_sys_reset : entity is "zynq";
   attribute C_NUM_BUS_RST : integer;
@@ -1067,7 +1006,7 @@ architecture STRUCTURE of embedded_system_rst_ps7_0_50M_0 is
   attribute C_EXT_RESET_HIGH : string;
   attribute C_EXT_RESET_HIGH of U0 : label is "1'b0";
   attribute C_EXT_RST_WIDTH : integer;
-  attribute C_EXT_RST_WIDTH of U0 : label is 4;
+  attribute C_EXT_RST_WIDTH of U0 : label is 1;
   attribute C_FAMILY : string;
   attribute C_FAMILY of U0 : label is "zynq";
   attribute C_NUM_BUS_RST : integer;
@@ -1089,7 +1028,7 @@ architecture STRUCTURE of embedded_system_rst_ps7_0_50M_0 is
   attribute x_interface_info of mb_reset : signal is "xilinx.com:signal:reset:1.0 mb_rst RST";
   attribute x_interface_parameter of mb_reset : signal is "XIL_INTERFACENAME mb_rst, POLARITY ACTIVE_HIGH, TYPE PROCESSOR, INSERT_VIP 0";
   attribute x_interface_info of slowest_sync_clk : signal is "xilinx.com:signal:clock:1.0 clock CLK";
-  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN embedded_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of slowest_sync_clk : signal is "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 30303030, PHASE 0.000, CLK_DOMAIN embedded_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of bus_struct_reset : signal is "xilinx.com:signal:reset:1.0 bus_struct_reset RST";
   attribute x_interface_parameter of bus_struct_reset : signal is "XIL_INTERFACENAME bus_struct_reset, POLARITY ACTIVE_HIGH, TYPE INTERCONNECT, INSERT_VIP 0";
   attribute x_interface_info of interconnect_aresetn : signal is "xilinx.com:signal:reset:1.0 interconnect_low_rst RST";

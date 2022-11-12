@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov 12 00:17:21 2022
+# Process ID: 2328
+# Current directory: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_axis_to_bram_Kernel_0_0_synth_1
+# Command line: vivado.exe -log embedded_system_axis_to_bram_Kernel_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source embedded_system_axis_to_bram_Kernel_0_0.tcl
+# Log file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_axis_to_bram_Kernel_0_0_synth_1/embedded_system_axis_to_bram_Kernel_0_0.vds
+# Journal file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_axis_to_bram_Kernel_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source embedded_system_axis_to_bram_Kernel_0_0.tcl -notrace

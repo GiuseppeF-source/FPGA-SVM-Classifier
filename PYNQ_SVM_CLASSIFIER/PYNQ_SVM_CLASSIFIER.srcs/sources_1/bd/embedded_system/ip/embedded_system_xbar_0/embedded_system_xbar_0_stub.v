@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Fri Nov 11 20:09:28 2022
+// Date        : Sat Nov 12 20:06:11 2022
 // Host        : peppe-pc running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/embedded_system_xbar_0_stub.v
@@ -27,46 +27,46 @@ module embedded_system_xbar_0(aclk, aresetn, s_axi_awid, s_axi_awaddr,
   m_axi_arsize, m_axi_arburst, m_axi_arlock, m_axi_arcache, m_axi_arprot, m_axi_arregion, 
   m_axi_arqos, m_axi_arvalid, m_axi_arready, m_axi_rdata, m_axi_rresp, m_axi_rlast, 
   m_axi_rvalid, m_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="aclk,aresetn,s_axi_awid[5:0],s_axi_awaddr[95:0],s_axi_awlen[23:0],s_axi_awsize[8:0],s_axi_awburst[5:0],s_axi_awlock[2:0],s_axi_awcache[11:0],s_axi_awprot[8:0],s_axi_awqos[11:0],s_axi_awvalid[2:0],s_axi_awready[2:0],s_axi_wdata[1535:0],s_axi_wstrb[191:0],s_axi_wlast[2:0],s_axi_wvalid[2:0],s_axi_wready[2:0],s_axi_bid[5:0],s_axi_bresp[5:0],s_axi_bvalid[2:0],s_axi_bready[2:0],s_axi_arid[5:0],s_axi_araddr[95:0],s_axi_arlen[23:0],s_axi_arsize[8:0],s_axi_arburst[5:0],s_axi_arlock[2:0],s_axi_arcache[11:0],s_axi_arprot[8:0],s_axi_arqos[11:0],s_axi_arvalid[2:0],s_axi_arready[2:0],s_axi_rid[5:0],s_axi_rdata[1535:0],s_axi_rresp[5:0],s_axi_rlast[2:0],s_axi_rvalid[2:0],s_axi_rready[2:0],m_axi_awaddr[223:0],m_axi_awlen[55:0],m_axi_awsize[20:0],m_axi_awburst[13:0],m_axi_awlock[6:0],m_axi_awcache[27:0],m_axi_awprot[20:0],m_axi_awregion[27:0],m_axi_awqos[27:0],m_axi_awvalid[6:0],m_axi_awready[6:0],m_axi_wdata[3583:0],m_axi_wstrb[447:0],m_axi_wlast[6:0],m_axi_wvalid[6:0],m_axi_wready[6:0],m_axi_bresp[13:0],m_axi_bvalid[6:0],m_axi_bready[6:0],m_axi_araddr[223:0],m_axi_arlen[55:0],m_axi_arsize[20:0],m_axi_arburst[13:0],m_axi_arlock[6:0],m_axi_arcache[27:0],m_axi_arprot[20:0],m_axi_arregion[27:0],m_axi_arqos[27:0],m_axi_arvalid[6:0],m_axi_arready[6:0],m_axi_rdata[3583:0],m_axi_rresp[13:0],m_axi_rlast[6:0],m_axi_rvalid[6:0],m_axi_rready[6:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="aclk,aresetn,s_axi_awid[17:0],s_axi_awaddr[191:0],s_axi_awlen[47:0],s_axi_awsize[17:0],s_axi_awburst[11:0],s_axi_awlock[5:0],s_axi_awcache[23:0],s_axi_awprot[17:0],s_axi_awqos[23:0],s_axi_awvalid[5:0],s_axi_awready[5:0],s_axi_wdata[3071:0],s_axi_wstrb[383:0],s_axi_wlast[5:0],s_axi_wvalid[5:0],s_axi_wready[5:0],s_axi_bid[17:0],s_axi_bresp[11:0],s_axi_bvalid[5:0],s_axi_bready[5:0],s_axi_arid[17:0],s_axi_araddr[191:0],s_axi_arlen[47:0],s_axi_arsize[17:0],s_axi_arburst[11:0],s_axi_arlock[5:0],s_axi_arcache[23:0],s_axi_arprot[17:0],s_axi_arqos[23:0],s_axi_arvalid[5:0],s_axi_arready[5:0],s_axi_rid[17:0],s_axi_rdata[3071:0],s_axi_rresp[11:0],s_axi_rlast[5:0],s_axi_rvalid[5:0],s_axi_rready[5:0],m_axi_awaddr[223:0],m_axi_awlen[55:0],m_axi_awsize[20:0],m_axi_awburst[13:0],m_axi_awlock[6:0],m_axi_awcache[27:0],m_axi_awprot[20:0],m_axi_awregion[27:0],m_axi_awqos[27:0],m_axi_awvalid[6:0],m_axi_awready[6:0],m_axi_wdata[3583:0],m_axi_wstrb[447:0],m_axi_wlast[6:0],m_axi_wvalid[6:0],m_axi_wready[6:0],m_axi_bresp[13:0],m_axi_bvalid[6:0],m_axi_bready[6:0],m_axi_araddr[223:0],m_axi_arlen[55:0],m_axi_arsize[20:0],m_axi_arburst[13:0],m_axi_arlock[6:0],m_axi_arcache[27:0],m_axi_arprot[20:0],m_axi_arregion[27:0],m_axi_arqos[27:0],m_axi_arvalid[6:0],m_axi_arready[6:0],m_axi_rdata[3583:0],m_axi_rresp[13:0],m_axi_rlast[6:0],m_axi_rvalid[6:0],m_axi_rready[6:0]" */;
   input aclk;
   input aresetn;
-  input [5:0]s_axi_awid;
-  input [95:0]s_axi_awaddr;
-  input [23:0]s_axi_awlen;
-  input [8:0]s_axi_awsize;
-  input [5:0]s_axi_awburst;
-  input [2:0]s_axi_awlock;
-  input [11:0]s_axi_awcache;
-  input [8:0]s_axi_awprot;
-  input [11:0]s_axi_awqos;
-  input [2:0]s_axi_awvalid;
-  output [2:0]s_axi_awready;
-  input [1535:0]s_axi_wdata;
-  input [191:0]s_axi_wstrb;
-  input [2:0]s_axi_wlast;
-  input [2:0]s_axi_wvalid;
-  output [2:0]s_axi_wready;
-  output [5:0]s_axi_bid;
-  output [5:0]s_axi_bresp;
-  output [2:0]s_axi_bvalid;
-  input [2:0]s_axi_bready;
-  input [5:0]s_axi_arid;
-  input [95:0]s_axi_araddr;
-  input [23:0]s_axi_arlen;
-  input [8:0]s_axi_arsize;
-  input [5:0]s_axi_arburst;
-  input [2:0]s_axi_arlock;
-  input [11:0]s_axi_arcache;
-  input [8:0]s_axi_arprot;
-  input [11:0]s_axi_arqos;
-  input [2:0]s_axi_arvalid;
-  output [2:0]s_axi_arready;
-  output [5:0]s_axi_rid;
-  output [1535:0]s_axi_rdata;
-  output [5:0]s_axi_rresp;
-  output [2:0]s_axi_rlast;
-  output [2:0]s_axi_rvalid;
-  input [2:0]s_axi_rready;
+  input [17:0]s_axi_awid;
+  input [191:0]s_axi_awaddr;
+  input [47:0]s_axi_awlen;
+  input [17:0]s_axi_awsize;
+  input [11:0]s_axi_awburst;
+  input [5:0]s_axi_awlock;
+  input [23:0]s_axi_awcache;
+  input [17:0]s_axi_awprot;
+  input [23:0]s_axi_awqos;
+  input [5:0]s_axi_awvalid;
+  output [5:0]s_axi_awready;
+  input [3071:0]s_axi_wdata;
+  input [383:0]s_axi_wstrb;
+  input [5:0]s_axi_wlast;
+  input [5:0]s_axi_wvalid;
+  output [5:0]s_axi_wready;
+  output [17:0]s_axi_bid;
+  output [11:0]s_axi_bresp;
+  output [5:0]s_axi_bvalid;
+  input [5:0]s_axi_bready;
+  input [17:0]s_axi_arid;
+  input [191:0]s_axi_araddr;
+  input [47:0]s_axi_arlen;
+  input [17:0]s_axi_arsize;
+  input [11:0]s_axi_arburst;
+  input [5:0]s_axi_arlock;
+  input [23:0]s_axi_arcache;
+  input [17:0]s_axi_arprot;
+  input [23:0]s_axi_arqos;
+  input [5:0]s_axi_arvalid;
+  output [5:0]s_axi_arready;
+  output [17:0]s_axi_rid;
+  output [3071:0]s_axi_rdata;
+  output [11:0]s_axi_rresp;
+  output [5:0]s_axi_rlast;
+  output [5:0]s_axi_rvalid;
+  input [5:0]s_axi_rready;
   output [223:0]m_axi_awaddr;
   output [55:0]m_axi_awlen;
   output [20:0]m_axi_awsize;
