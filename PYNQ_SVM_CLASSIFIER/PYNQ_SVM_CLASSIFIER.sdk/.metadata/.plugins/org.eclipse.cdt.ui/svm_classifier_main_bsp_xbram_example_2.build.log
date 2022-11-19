@@ -1,4 +1,4 @@
-18:24:38 **** Build of configuration Debug for project svm_classifier_main_bsp_xbram_example_2 ****
+16:54:47 **** Build of configuration Debug for project svm_classifier_main_bsp_xbram_example_2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -19,5 +19,5 @@ arm-none-eabi-size svm_classifier_main_bsp_xbram_example_2.elf  |tee "svm_classi
 'Finished building: svm_classifier_main_bsp_xbram_example_2.elf.size'
 ' '
 
-18:24:40 Build Finished (took 1s.977ms)
+16:54:48 Build Finished (took 946ms)
 

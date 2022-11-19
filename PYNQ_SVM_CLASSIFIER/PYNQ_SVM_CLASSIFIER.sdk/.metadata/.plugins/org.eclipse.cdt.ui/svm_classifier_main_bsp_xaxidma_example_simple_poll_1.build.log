@@ -1,4 +1,4 @@
-14:15:47 **** Build of configuration Debug for project svm_classifier_main_bsp_xaxidma_example_simple_poll_1 ****
+16:54:46 **** Build of configuration Debug for project svm_classifier_main_bsp_xaxidma_example_simple_poll_1 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -22,5 +22,5 @@ arm-none-eabi-size svm_classifier_main_bsp_xaxidma_example_simple_poll_1.elf  |t
 'Finished building: svm_classifier_main_bsp_xaxidma_example_simple_poll_1.elf.size'
 ' '
 
-14:15:49 Build Finished (took 1s.586ms)
+16:54:47 Build Finished (took 878ms)
 

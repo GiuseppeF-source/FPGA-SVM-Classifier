@@ -3,9 +3,6 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-LD_SRCS += \
-../src/lscript.ld 
-
 C_SRCS += \
 ../src/main.c \
 ../src/platform.c 

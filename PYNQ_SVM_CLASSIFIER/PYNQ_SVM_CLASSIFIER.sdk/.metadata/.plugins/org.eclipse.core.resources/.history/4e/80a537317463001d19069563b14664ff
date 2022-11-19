@@ -1,0 +1,144 @@
+#include "stdio.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xgpio.h"
+#include "sleep.h"
+#include "XAXIDMA.h"
+#include "Attribute_Test_ddr32.h"
+#include "Bias_ddr32.h"
+#include "Kernel_Scale_ddr32.h"
+#include "Acc_SVxAlphaxSVLabel_ddr32.h"
+
+/********* GPIO *********/
+XGpio Gpio; 					/* The Instance of the GPIO Driver */
+/* The following constant is used to determine which channel of the GPIO is used. */
+#define START 1
+#define CLASSIFICATION 2
+
+
+/********* Instances DMA *********/
+XAxiDma_Config *CfgPtr_MAIN_DMA;   				 /* Pointer to the configuration of DMA */
+XAxiDma Main_DMA;							 /* The Instance of the DMA */
+
+XAxiDma_Config *CfgPtr_DMA_load_PCV; 			 /* Pointer to the configuration of DMA */
+XAxiDma DMA_load_PCV;				 			 /* The Instance of the DMA */
+
+XAxiDma_Config *CfgPtr_DMA_load_Kernel_Scale;    /* Pointer to the configuration of DMA */
+XAxiDma DMA_load_Kernel_Scale;							 /* The Instance of the DMA */
+
+XAxiDma_Config *CfgPtr_DMA_load_Bias; 		     /* Pointer to the configuration of DMA */
+XAxiDma DMA_load_Bias;							 /* The Instance of the DMA */
+
+
+
+/********* Variable Allocation *********/
+#define n_SVM  15
+//u32 Bias[n_SVM];          // dei 32 bit solo i   7 meno significativi  sono effettivi
+//u32 Kernel_Scale[n_SVM];  // dei 32 bit solo i  12 meno significativi  sono effettivi
+//u32 PCV[34*n_SVM];        // dei 32 bit solo i  12 meno significativi  sono effettivi
+//u32 esempio_Attribute_Test[9*36]; // ogni u32 contiene 4 Attributi da 8bit, per un totale di 36 query da classificare ( da 34 attributi)
+u32 Result[36];           // risultati della classificazione, i 3bit meno significativi sono effettivi
+
+int main()
+{
+    init_platform();
+    Xil_DCacheDisable();
+    xil_printf("Avvio Programma\n\r");
+
+	/* Initialize the GPIO driver */
+    int Status_Gpio;
+
+    Status_Gpio = XGpio_Initialize(&Gpio, XPAR_GPIO_0_DEVICE_ID);
+
+	if (Status_Gpio != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	/* Set the direction for all signals  */
+	XGpio_SetDataDirection(&Gpio, START         , 0); // channel 1 -> start -> output
+	XGpio_SetDataDirection(&Gpio, CLASSIFICATION, 0); // channel 2 -> classification -> output
+	xil_printf("GPIO per controllo FSM  settati in output \r\n");
+
+	/* Send combination 00 -> STATE IDLE to PL */
+	XGpio_DiscreteWrite(&Gpio, START         , 0);
+	XGpio_DiscreteWrite(&Gpio, CLASSIFICATION, 0);
+	xil_printf("START = 0 , CLASSIFICATION = 0 \r\n");
+
+	sleep(1); // wait for 1sec
+
+	/* Send combination 10 -> STATE SETUP of PL */
+	XGpio_DiscreteWrite(&Gpio, START         , 1);
+	XGpio_DiscreteWrite(&Gpio, CLASSIFICATION, 0);
+	xil_printf("START = 1 , CLASSIFICATION = 0 \r\n");
+
+	sleep(1); // wait for 1sec
+
+
+	/* Caricamento BRAM */
+
+
+	////////////// SCRITTURA IN DDR DEI COEFFICIENTI /////////////////
+	xil_printf("Indirizzo memoria Bias: 0x%0x\r\n",Bias);
+	xil_printf("Indirizzo memoria Kernel_Scale: 0x%0x\r\n",Kernel_Scale);
+	xil_printf("Indirizzo memoria PCV: 0x%0x\r\n",PCV);
+	xil_printf("Indirizzo memoria Attribute_Test: 0x%0x\r\n",Attribute_Test);
+	xil_printf("Invia qualsiasi carattere:");
+	char c;
+	scanf("%c",&c);
+
+	/* Initialize the XMain_DMA device */
+	int Status_DMA;
+
+	CfgPtr_MAIN_DMA = XAxiDma_LookupConfig(XPAR_AXI_DMA_0_DEVICE_ID);
+	if (!CfgPtr_MAIN_DMA) {
+		xil_printf("No config found for %d\r\n", XPAR_AXI_DMA_0_DEVICE_ID);
+		return XST_FAILURE;
+	}
+
+	Status_DMA = XAxiDma_CfgInitialize(&Main_DMA, CfgPtr_MAIN_DMA);
+	if (Status_DMA != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status_DMA);
+		return XST_FAILURE;
+	}
+	xil_printf("AXI DMA -> Inizializzato \r\n");
+
+	/* Disable interrupts,  use polling mode */
+	XMain_DMA_IntrDisable(&Main_DMA, XMain_DMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XMain_DMA_IntrDisable(&Main_DMA, XMain_DMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+	/* Send combination 11 -> STATE PROCESSING to PL */
+	XGpio_DiscreteWrite(&Gpio, START         , 1);
+	XGpio_DiscreteWrite(&Gpio, CLASSIFICATION, 1);
+	xil_printf("START = 1 , CLASSIFICATION = 1 -> PROCESSING \r\n");
+
+	/* Invio istanze da classificare */
+	u32 Status;
+	Status = XMain_DMA_SimpleTransfer(&Main_DMA,(u32)Result, 36*sizeof(u32),XAXIDMA_DEVICE_TO_DMA);
+
+			if (Status != XST_SUCCESS) {
+				return XST_FAILURE;
+			}
+	xil_printf("AXI DMA -> Configurato per ricevere da PL \r\n");
+
+	Status = XMain_DMA_SimpleTransfer(&Main_DMA,(u32)Attribute_Test, (9*36)*sizeof(u32), XAXIDMA_DMA_TO_DEVICE);
+
+			if (Status != XST_SUCCESS) {
+				return XST_FAILURE;
+			}
+	xil_printf("AXI DMA -> Configurato per inviare a PL \r\n");
+
+	while ((XMain_DMA_Busy(&Main_DMA,XAXIDMA_DEVICE_TO_DMA)) || (XMain_DMA_Busy(&Main_DMA,XAXIDMA_DMA_TO_DEVICE))) {
+			/* Attesa completamento operazione del DMA */
+	}
+	xil_printf("AXI DMA -> Invio e Ricezione eseguiti con successo \r\n");
+
+	for (u32 i=0; i<36; i=i+1) {
+		xil_printf("Classe dell'istanza %d : %x\n\r",i,(Result[i])&0x7); // maschero i primi 3bit
+	}
+
+    cleanup_platform();
+    return 0;
+}
