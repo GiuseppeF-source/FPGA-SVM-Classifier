@@ -13,8 +13,8 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yoxo/AppData/Roaming/Xilinx/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 268.258 ; gain = 19.094
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 267.465 ; gain = 18.859
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip 
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP embedded_system_axi_dma_0_3, cache-ID = c4c919d9b0ebc0b6.
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 12 17:22:04 2022...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP embedded_system_axi_dma_0_3, cache-ID = a071dd175133c06f.
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 17:15:58 2022...

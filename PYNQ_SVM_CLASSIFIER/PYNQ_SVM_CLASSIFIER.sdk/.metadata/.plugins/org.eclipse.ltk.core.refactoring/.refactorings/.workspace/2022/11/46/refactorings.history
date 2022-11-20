@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/main/src/Acc_SVxAlphaxSVLabel_ddr32.h" element2="/main/src/Bias_ddr32.h" element3="/main/src/Kernel_Scale_ddr32.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1668879966060"/>
-</session>

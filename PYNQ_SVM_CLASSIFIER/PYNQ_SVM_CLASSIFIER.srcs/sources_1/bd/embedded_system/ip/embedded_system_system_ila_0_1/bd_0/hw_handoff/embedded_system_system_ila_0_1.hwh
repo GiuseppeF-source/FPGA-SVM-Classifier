@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Nov 12 20:02:36 2022" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Nov 20 17:00:51 2022" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="bd_d4d3" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -84,6 +84,11 @@
         <CONNECTION INSTANCE="ila_lib" PORT="probe14"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" LEFT="0" NAME="probe15" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe15">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ila_lib" PORT="probe15"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
@@ -109,7 +114,7 @@
         <PARAMETER NAME="C_SLOT_0_AXI_PROTOCOL" VALUE="AXI4"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
         <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="15"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="16"/>
         <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2018"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="3"/>
@@ -3307,6 +3312,11 @@
         <PORT DIR="I" LEFT="0" NAME="probe14" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe14">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="probe14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe15" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="probe15"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

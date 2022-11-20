@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Nov 12 20:16:43 2022
+| Date         : Sun Nov 20 17:30:49 2022
 | Host         : peppe-pc running 64-bit major release  (build 9200)
 | Command      : report_utilization -file embedded_system_wrapper_utilization_synth.rpt -pb embedded_system_wrapper_utilization_synth.pb
 | Design       : embedded_system_wrapper
@@ -187,12 +187,10 @@ Table of Contents
 | embedded_system_axi_dma_0_2              |    1 |
 | embedded_system_axi_dma_0_1              |    1 |
 | embedded_system_axi_dma_0_0              |    1 |
-| embedded_system_auto_us_5                |    1 |
-| embedded_system_auto_us_4                |    1 |
-| embedded_system_auto_us_3                |    1 |
-| embedded_system_auto_us_2                |    1 |
-| embedded_system_auto_us_1                |    1 |
-| embedded_system_auto_us_0                |    1 |
+| embedded_system_axi_cdma_0_0             |    1 |
+| embedded_system_axi_bram_ctrl_0_bram_0   |    1 |
+| embedded_system_axi_bram_ctrl_0_0        |    1 |
+| embedded_system_auto_pc_7                |    1 |
 | embedded_system_auto_pc_6                |    1 |
 | embedded_system_auto_pc_5                |    1 |
 | embedded_system_auto_pc_4                |    1 |
@@ -200,12 +198,6 @@ Table of Contents
 | embedded_system_auto_pc_2                |    1 |
 | embedded_system_auto_pc_1                |    1 |
 | embedded_system_auto_pc_0                |    1 |
-| embedded_system_auto_ds_5                |    1 |
-| embedded_system_auto_ds_4                |    1 |
-| embedded_system_auto_ds_3                |    1 |
-| embedded_system_auto_ds_2                |    1 |
-| embedded_system_auto_ds_1                |    1 |
-| embedded_system_auto_ds_0                |    1 |
 | embedded_system_PL_CLASSIFIER_w_VOTI_0_0 |    1 |
 +------------------------------------------+------+
 

@@ -18,6 +18,7 @@ entity bd_d4d3 is
     probe12 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe13 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe14 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe2 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     probe3 : in STD_LOGIC_VECTOR ( 407 downto 0 );
     probe4 : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -51,7 +52,8 @@ architecture STRUCTURE of bd_d4d3 is
     probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe12 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe13 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe14 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe14 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component bd_d4d3_ila_lib_0;
   signal clk_1 : STD_LOGIC;
@@ -61,6 +63,7 @@ architecture STRUCTURE of bd_d4d3 is
   signal probe12_1 : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal probe13_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal probe14_1 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal probe15_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal probe1_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal probe2_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal probe3_1 : STD_LOGIC_VECTOR ( 407 downto 0 );
@@ -82,6 +85,7 @@ begin
   probe12_1(31 downto 0) <= probe12(31 downto 0);
   probe13_1(0) <= probe13(0);
   probe14_1(0) <= probe14(0);
+  probe15_1(0) <= probe15(0);
   probe1_1(0) <= probe1(0);
   probe2_1(3 downto 0) <= probe2(3 downto 0);
   probe3_1(407 downto 0) <= probe3(407 downto 0);
@@ -101,6 +105,7 @@ ila_lib: component bd_d4d3_ila_lib_0
       probe12(31 downto 0) => probe12_1(31 downto 0),
       probe13(0) => probe13_1(0),
       probe14(0) => probe14_1(0),
+      probe15(0) => probe15_1(0),
       probe2(3 downto 0) => probe2_1(3 downto 0),
       probe3(407 downto 0) => probe3_1(407 downto 0),
       probe4(3 downto 0) => probe4_1(3 downto 0),

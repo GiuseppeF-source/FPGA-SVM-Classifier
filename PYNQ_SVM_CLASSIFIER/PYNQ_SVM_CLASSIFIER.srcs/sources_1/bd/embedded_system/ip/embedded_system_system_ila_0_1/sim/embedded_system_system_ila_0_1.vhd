@@ -70,7 +70,8 @@ ENTITY embedded_system_system_ila_0_1 IS
     probe11 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe12 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     probe13 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    probe14 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
+    probe14 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe15 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
   );
 END embedded_system_system_ila_0_1;
 
@@ -94,12 +95,13 @@ ARCHITECTURE embedded_system_system_ila_0_1_arch OF embedded_system_system_ila_0
       probe11 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       probe12 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       probe13 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      probe14 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
+      probe14 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      probe15 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
     );
   END COMPONENT bd_d4d3;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME CLK.clk, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN embedded_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME CLK.clk, FREQ_HZ 30303030, PHASE 0.000, CLK_DOMAIN embedded_system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 CLK.clk CLK";
 BEGIN
   U0 : bd_d4d3
@@ -119,6 +121,7 @@ BEGIN
       probe11 => probe11,
       probe12 => probe12,
       probe13 => probe13,
-      probe14 => probe14
+      probe14 => probe14,
+      probe15 => probe15
     );
 END embedded_system_system_ila_0_1_arch;

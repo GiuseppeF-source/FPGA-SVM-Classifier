@@ -174,6 +174,7 @@ proc create_root_design { parentCell } {
   set probe12 [ create_bd_port -dir I -from 31 -to 0 probe12 ]
   set probe13 [ create_bd_port -dir I -from 0 -to 0 probe13 ]
   set probe14 [ create_bd_port -dir I -from 0 -to 0 probe14 ]
+  set probe15 [ create_bd_port -dir I -from 0 -to 0 probe15 ]
 
   # Create instance: ila_lib, and set properties
   set ila_lib [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_lib ]
@@ -187,7 +188,7 @@ proc create_root_design { parentCell } {
    CONFIG.C_ILA_CLK_FREQ {30303030} \
    CONFIG.C_INPUT_PIPE_STAGES {0} \
    CONFIG.C_MONITOR_TYPE {Native} \
-   CONFIG.C_NUM_OF_PROBES {15} \
+   CONFIG.C_NUM_OF_PROBES {16} \
    CONFIG.C_PROBE0_MU_CNT {1} \
    CONFIG.C_PROBE0_TYPE {0} \
    CONFIG.C_PROBE0_WIDTH {1} \
@@ -206,6 +207,9 @@ proc create_root_design { parentCell } {
    CONFIG.C_PROBE14_MU_CNT {1} \
    CONFIG.C_PROBE14_TYPE {0} \
    CONFIG.C_PROBE14_WIDTH {1} \
+   CONFIG.C_PROBE15_MU_CNT {1} \
+   CONFIG.C_PROBE15_TYPE {0} \
+   CONFIG.C_PROBE15_WIDTH {1} \
    CONFIG.C_PROBE1_MU_CNT {1} \
    CONFIG.C_PROBE1_TYPE {0} \
    CONFIG.C_PROBE1_WIDTH {1} \
@@ -247,6 +251,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net probe12_1 [get_bd_ports probe12] [get_bd_pins ila_lib/probe12]
   connect_bd_net -net probe13_1 [get_bd_ports probe13] [get_bd_pins ila_lib/probe13]
   connect_bd_net -net probe14_1 [get_bd_ports probe14] [get_bd_pins ila_lib/probe14]
+  connect_bd_net -net probe15_1 [get_bd_ports probe15] [get_bd_pins ila_lib/probe15]
   connect_bd_net -net probe1_1 [get_bd_ports probe1] [get_bd_pins ila_lib/probe1]
   connect_bd_net -net probe2_1 [get_bd_ports probe2] [get_bd_pins ila_lib/probe2]
   connect_bd_net -net probe3_1 [get_bd_ports probe3] [get_bd_pins ila_lib/probe3]

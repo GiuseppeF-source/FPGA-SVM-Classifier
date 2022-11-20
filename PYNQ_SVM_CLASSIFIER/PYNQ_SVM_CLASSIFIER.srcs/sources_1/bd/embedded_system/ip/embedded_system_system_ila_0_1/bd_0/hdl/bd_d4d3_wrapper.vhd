@@ -18,6 +18,7 @@ entity bd_d4d3_wrapper is
     probe12 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe13 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe14 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe2 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     probe3 : in STD_LOGIC_VECTOR ( 407 downto 0 );
     probe4 : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -47,7 +48,8 @@ architecture STRUCTURE of bd_d4d3_wrapper is
     probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe12 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe13 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe14 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe14 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component bd_d4d3;
 begin
@@ -61,6 +63,7 @@ bd_d4d3_i: component bd_d4d3
       probe12(31 downto 0) => probe12(31 downto 0),
       probe13(0) => probe13(0),
       probe14(0) => probe14(0),
+      probe15(0) => probe15(0),
       probe2(3 downto 0) => probe2(3 downto 0),
       probe3(407 downto 0) => probe3(407 downto 0),
       probe4(3 downto 0) => probe4(3 downto 0),

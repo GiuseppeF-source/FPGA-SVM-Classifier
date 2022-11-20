@@ -48,61 +48,37 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system
 # IP: bd/embedded_system/ip/embedded_system_system_ila_0_1/embedded_system_system_ila_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_system_ila_0_1 || ORIG_REF_NAME==embedded_system_system_ila_0_1} -quiet] -quiet
 
-# IP: bd/embedded_system/ip/embedded_system_auto_pc_6/embedded_system_auto_pc_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_6 || ORIG_REF_NAME==embedded_system_auto_pc_6} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_us_0/embedded_system_auto_us_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_us_0 || ORIG_REF_NAME==embedded_system_auto_us_0} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_us_1/embedded_system_auto_us_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_us_1 || ORIG_REF_NAME==embedded_system_auto_us_1} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_us_2/embedded_system_auto_us_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_us_2 || ORIG_REF_NAME==embedded_system_auto_us_2} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_us_3/embedded_system_auto_us_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_us_3 || ORIG_REF_NAME==embedded_system_auto_us_3} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_us_4/embedded_system_auto_us_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_us_4 || ORIG_REF_NAME==embedded_system_auto_us_4} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_us_5/embedded_system_auto_us_5.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_us_5 || ORIG_REF_NAME==embedded_system_auto_us_5} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_ds_0/embedded_system_auto_ds_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_ds_0 || ORIG_REF_NAME==embedded_system_auto_ds_0} -quiet] -quiet
+# IP: bd/embedded_system/ip/embedded_system_auto_pc_7/embedded_system_auto_pc_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_7 || ORIG_REF_NAME==embedded_system_auto_pc_7} -quiet] -quiet
 
 # IP: bd/embedded_system/ip/embedded_system_auto_pc_0/embedded_system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_0 || ORIG_REF_NAME==embedded_system_auto_pc_0} -quiet] -quiet
 
-# IP: bd/embedded_system/ip/embedded_system_auto_ds_1/embedded_system_auto_ds_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_ds_1 || ORIG_REF_NAME==embedded_system_auto_ds_1} -quiet] -quiet
-
 # IP: bd/embedded_system/ip/embedded_system_auto_pc_1/embedded_system_auto_pc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_1 || ORIG_REF_NAME==embedded_system_auto_pc_1} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_ds_2/embedded_system_auto_ds_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_ds_2 || ORIG_REF_NAME==embedded_system_auto_ds_2} -quiet] -quiet
 
 # IP: bd/embedded_system/ip/embedded_system_auto_pc_2/embedded_system_auto_pc_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_2 || ORIG_REF_NAME==embedded_system_auto_pc_2} -quiet] -quiet
 
-# IP: bd/embedded_system/ip/embedded_system_auto_ds_3/embedded_system_auto_ds_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_ds_3 || ORIG_REF_NAME==embedded_system_auto_ds_3} -quiet] -quiet
-
 # IP: bd/embedded_system/ip/embedded_system_auto_pc_3/embedded_system_auto_pc_3.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_3 || ORIG_REF_NAME==embedded_system_auto_pc_3} -quiet] -quiet
-
-# IP: bd/embedded_system/ip/embedded_system_auto_ds_4/embedded_system_auto_ds_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_ds_4 || ORIG_REF_NAME==embedded_system_auto_ds_4} -quiet] -quiet
 
 # IP: bd/embedded_system/ip/embedded_system_auto_pc_4/embedded_system_auto_pc_4.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_4 || ORIG_REF_NAME==embedded_system_auto_pc_4} -quiet] -quiet
 
-# IP: bd/embedded_system/ip/embedded_system_auto_ds_5/embedded_system_auto_ds_5.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_ds_5 || ORIG_REF_NAME==embedded_system_auto_ds_5} -quiet] -quiet
-
 # IP: bd/embedded_system/ip/embedded_system_auto_pc_5/embedded_system_auto_pc_5.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_5 || ORIG_REF_NAME==embedded_system_auto_pc_5} -quiet] -quiet
+
+# IP: bd/embedded_system/ip/embedded_system_auto_pc_6/embedded_system_auto_pc_6.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_auto_pc_6 || ORIG_REF_NAME==embedded_system_auto_pc_6} -quiet] -quiet
+
+# IP: bd/embedded_system/ip/embedded_system_axi_bram_ctrl_0_0/embedded_system_axi_bram_ctrl_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_axi_bram_ctrl_0_0 || ORIG_REF_NAME==embedded_system_axi_bram_ctrl_0_0} -quiet] -quiet
+
+# IP: bd/embedded_system/ip/embedded_system_axi_cdma_0_0/embedded_system_axi_cdma_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_axi_cdma_0_0 || ORIG_REF_NAME==embedded_system_axi_cdma_0_0} -quiet] -quiet
+
+# IP: bd/embedded_system/ip/embedded_system_axi_bram_ctrl_0_bram_0/embedded_system_axi_bram_ctrl_0_bram_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==embedded_system_axi_bram_ctrl_0_bram_0 || ORIG_REF_NAME==embedded_system_axi_bram_ctrl_0_bram_0} -quiet] -quiet
 
 # XDC: bd/embedded_system/embedded_system_ooc.xdc

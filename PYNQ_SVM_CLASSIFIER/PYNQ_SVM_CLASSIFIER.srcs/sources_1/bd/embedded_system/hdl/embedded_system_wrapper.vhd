@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Sat Nov 12 20:02:07 2022
+--Date        : Sun Nov 20 17:00:40 2022
 --Host        : peppe-pc running 64-bit major release  (build 9200)
 --Command     : generate_target embedded_system_wrapper.bd
 --Design      : embedded_system_wrapper

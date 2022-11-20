@@ -15,129 +15,140 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yoxo/AppData/Roaming
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip 
-add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 341.402 ; gain = 73.328
+add_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 340.359 ; gain = 71.875
 Command: synth_design -top embedded_system_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7964 
+INFO: Helper process launched with PID 11840 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 450.211 ; gain = 107.055
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 445.219 ; gain = 103.164
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'embedded_system_wrapper' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd:40]
-INFO: [Synth 8-3491] module 'embedded_system' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7634' bound to instance 'embedded_system_i' of component 'embedded_system' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'embedded_system' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7664]
-INFO: [Synth 8-3491] module 'embedded_system_PL_CLASSIFIER_w_VOTI_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_PL_CLASSIFIER_w_VOTI_0_0_stub.vhdl:5' bound to instance 'PL_CLASSIFIER_w_VOTI_0' of component 'embedded_system_PL_CLASSIFIER_w_VOTI_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8491]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_PL_CLASSIFIER_w_VOTI_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_PL_CLASSIFIER_w_VOTI_0_0_stub.vhdl:35]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7690]
-INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_1_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'embedded_system_axi_dma_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8518]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_1_stub.vhdl:75]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7952]
-INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_1' of component 'embedded_system_axi_dma_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8584]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_0_stub.vhdl:51]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7995]
-INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_2' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_2_stub.vhdl:5' bound to instance 'axi_dma_2' of component 'embedded_system_axi_dma_0_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8626]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_2_stub.vhdl:51]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8038]
-INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_3' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_3_stub.vhdl:5' bound to instance 'axi_dma_3' of component 'embedded_system_axi_dma_0_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8668]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_dma_0_3_stub.vhdl:51]
-INFO: [Synth 8-3491] module 'embedded_system_axi_gpio_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'embedded_system_axi_gpio_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8710]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_gpio_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'embedded_system_axis_to_bram_Bias_0_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axis_to_bram_Bias_0_1_stub.vhdl:5' bound to instance 'axis_to_bram_Bias_0' of component 'embedded_system_axis_to_bram_Bias_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8734]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axis_to_bram_Bias_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axis_to_bram_Bias_0_1_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'embedded_system_axis_to_bram_Kernel_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axis_to_bram_Kernel_0_0_stub.vhdl:5' bound to instance 'axis_to_bram_Kernel_0' of component 'embedded_system_axis_to_bram_Kernel_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8746]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axis_to_bram_Kernel_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axis_to_bram_Kernel_0_0_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'embedded_system_axis_to_bram_PCV_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axis_to_bram_PCV_0_0_stub.vhdl:5' bound to instance 'axis_to_bram_PCV_0' of component 'embedded_system_axis_to_bram_PCV_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8758]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_axis_to_bram_PCV_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_axis_to_bram_PCV_0_0_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'embedded_system_processing_system7_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'embedded_system_processing_system7_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:8770]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_processing_system7_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_processing_system7_0_0_stub.vhdl:121]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_ps7_0_axi_periph_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4985]
+INFO: [Synth 8-3491] module 'embedded_system' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6103' bound to instance 'embedded_system_i' of component 'embedded_system' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'embedded_system' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6133]
+INFO: [Synth 8-3491] module 'embedded_system_PL_CLASSIFIER_w_VOTI_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_PL_CLASSIFIER_w_VOTI_0_0_stub.vhdl:5' bound to instance 'PL_CLASSIFIER_w_VOTI_0' of component 'embedded_system_PL_CLASSIFIER_w_VOTI_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7138]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_PL_CLASSIFIER_w_VOTI_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_PL_CLASSIFIER_w_VOTI_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'embedded_system_axi_bram_ctrl_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'embedded_system_axi_bram_ctrl_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7165]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_bram_ctrl_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'embedded_system_axi_bram_ctrl_0_bram_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_bram_ctrl_0_bram_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0_bram' of component 'embedded_system_axi_bram_ctrl_0_bram_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7208]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_bram_ctrl_0_bram_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_bram_ctrl_0_bram_0_stub.vhdl:19]
+WARNING: [Synth 8-5640] Port 'cdma_tvect_out' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6615]
+INFO: [Synth 8-3491] module 'embedded_system_axi_cdma_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_cdma_0_0_stub.vhdl:5' bound to instance 'axi_cdma_0' of component 'embedded_system_axi_cdma_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7220]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_cdma_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_cdma_0_0_stub.vhdl:61]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6159]
+INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_1_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'embedded_system_axi_dma_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7272]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_1_stub.vhdl:75]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6421]
+INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_1' of component 'embedded_system_axi_dma_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7338]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_0_stub.vhdl:51]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6464]
+INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_2' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_2_stub.vhdl:5' bound to instance 'axi_dma_2' of component 'embedded_system_axi_dma_0_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7380]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_2_stub.vhdl:51]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6507]
+INFO: [Synth 8-3491] module 'embedded_system_axi_dma_0_3' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_3_stub.vhdl:5' bound to instance 'axi_dma_3' of component 'embedded_system_axi_dma_0_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7422]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_dma_0_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_dma_0_3_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'embedded_system_axi_gpio_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'embedded_system_axi_gpio_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7464]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axi_gpio_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'embedded_system_axis_to_bram_Bias_0_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axis_to_bram_Bias_0_1_stub.vhdl:5' bound to instance 'axis_to_bram_Bias_0' of component 'embedded_system_axis_to_bram_Bias_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7488]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axis_to_bram_Bias_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axis_to_bram_Bias_0_1_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'embedded_system_axis_to_bram_Kernel_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axis_to_bram_Kernel_0_0_stub.vhdl:5' bound to instance 'axis_to_bram_Kernel_0' of component 'embedded_system_axis_to_bram_Kernel_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7500]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axis_to_bram_Kernel_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axis_to_bram_Kernel_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'embedded_system_axis_to_bram_PCV_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axis_to_bram_PCV_0_0_stub.vhdl:5' bound to instance 'axis_to_bram_PCV_0' of component 'embedded_system_axis_to_bram_PCV_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7512]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_axis_to_bram_PCV_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_axis_to_bram_PCV_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'embedded_system_processing_system7_0_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'embedded_system_processing_system7_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7524]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_processing_system7_0_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_processing_system7_0_0_stub.vhdl:121]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_ps7_0_axi_periph_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3654]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_GH6ODQ' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:75]
-INFO: [Synth 8-3491] module 'embedded_system_auto_ds_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_0_stub.vhdl:5' bound to instance 'auto_ds' of component 'embedded_system_auto_ds_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:358]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_ds_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_0_stub.vhdl:83]
-INFO: [Synth 8-3491] module 'embedded_system_auto_pc_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:433]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_0_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_GH6ODQ' (1#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_183BBHC' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:557]
-INFO: [Synth 8-3491] module 'embedded_system_auto_ds_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_1_stub.vhdl:5' bound to instance 'auto_ds' of component 'embedded_system_auto_ds_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:839]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_ds_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_1_stub.vhdl:83]
-INFO: [Synth 8-3491] module 'embedded_system_auto_pc_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:914]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_1_stub.vhdl:67]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_183BBHC' (2#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:557]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1BG90OJ' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1038]
-INFO: [Synth 8-3491] module 'embedded_system_auto_ds_2' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_2_stub.vhdl:5' bound to instance 'auto_ds' of component 'embedded_system_auto_ds_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1320]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_ds_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_2_stub.vhdl:83]
-INFO: [Synth 8-3491] module 'embedded_system_auto_pc_2' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1395]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_2_stub.vhdl:67]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1BG90OJ' (3#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1038]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_41F83H' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1519]
-INFO: [Synth 8-3491] module 'embedded_system_auto_ds_3' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_3_stub.vhdl:5' bound to instance 'auto_ds' of component 'embedded_system_auto_ds_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1801]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_ds_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_3_stub.vhdl:83]
-INFO: [Synth 8-3491] module 'embedded_system_auto_pc_3' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1876]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_3_stub.vhdl:67]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_41F83H' (4#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1519]
-INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1HIKNPX' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2000]
-INFO: [Synth 8-3491] module 'embedded_system_auto_ds_4' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_4_stub.vhdl:5' bound to instance 'auto_ds' of component 'embedded_system_auto_ds_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2282]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_ds_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_4_stub.vhdl:83]
-INFO: [Synth 8-3491] module 'embedded_system_auto_pc_4' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2357]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_4_stub.vhdl:67]
-INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1HIKNPX' (5#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2000]
-INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_S45KIJ' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2498]
-INFO: [Synth 8-3491] module 'embedded_system_auto_ds_5' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_5_stub.vhdl:5' bound to instance 'auto_ds' of component 'embedded_system_auto_ds_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2825]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_ds_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_ds_5_stub.vhdl:83]
-INFO: [Synth 8-3491] module 'embedded_system_auto_pc_5' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2900]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_5_stub.vhdl:81]
-INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_S45KIJ' (6#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2498]
-INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_MECLE0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3057]
-INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_MECLE0' (7#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3057]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7PPSL2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3249]
-INFO: [Synth 8-3491] module 'embedded_system_auto_pc_6' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_6_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_6' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3601]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_6' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_pc_6_stub.vhdl:90]
-INFO: [Synth 8-3491] module 'embedded_system_auto_us_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'embedded_system_auto_us_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3683]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_us_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_0_stub.vhdl:87]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7PPSL2' (8#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3249]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1GSL6UW' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3804]
-INFO: [Synth 8-3491] module 'embedded_system_auto_us_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_1_stub.vhdl:5' bound to instance 'auto_us' of component 'embedded_system_auto_us_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3905]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_us_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_1_stub.vhdl:45]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1GSL6UW' (9#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3804]
-INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_12R4RL7' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3990]
-INFO: [Synth 8-3491] module 'embedded_system_auto_us_2' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_2_stub.vhdl:5' bound to instance 'auto_us' of component 'embedded_system_auto_us_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4109]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_us_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_2_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_12R4RL7' (10#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3990]
-INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_CSQHLX' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4194]
-INFO: [Synth 8-3491] module 'embedded_system_auto_us_3' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_3_stub.vhdl:5' bound to instance 'auto_us' of component 'embedded_system_auto_us_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4295]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_us_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_3_stub.vhdl:45]
-INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_CSQHLX' (11#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4194]
-INFO: [Synth 8-638] synthesizing module 's04_couplers_imp_1Q9VKLP' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4374]
-INFO: [Synth 8-3491] module 'embedded_system_auto_us_4' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_4_stub.vhdl:5' bound to instance 'auto_us' of component 'embedded_system_auto_us_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4475]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_us_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_4_stub.vhdl:45]
-INFO: [Synth 8-256] done synthesizing module 's04_couplers_imp_1Q9VKLP' (12#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4374]
-INFO: [Synth 8-638] synthesizing module 's05_couplers_imp_JF0YRN' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4554]
-INFO: [Synth 8-3491] module 'embedded_system_auto_us_5' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_5_stub.vhdl:5' bound to instance 'auto_us' of component 'embedded_system_auto_us_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4655]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_us_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_auto_us_5_stub.vhdl:45]
-INFO: [Synth 8-256] done synthesizing module 's05_couplers_imp_JF0YRN' (13#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4554]
-INFO: [Synth 8-3491] module 'embedded_system_xbar_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'embedded_system_xbar_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6700]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_xbar_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_xbar_0_stub.vhdl:85]
-INFO: [Synth 8-256] done synthesizing module 'embedded_system_ps7_0_axi_periph_0' (14#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:4985]
-INFO: [Synth 8-3491] module 'embedded_system_rst_ps7_0_50M_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'embedded_system_rst_ps7_0_50M_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:9169]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_rst_ps7_0_50M_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_rst_ps7_0_50M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'embedded_system_system_ila_0_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_system_ila_0_1_stub.vhdl:5' bound to instance 'system_ila_0' of component 'embedded_system_system_ila_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:9182]
-INFO: [Synth 8-638] synthesizing module 'embedded_system_system_ila_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-16628-peppe-pc/realtime/embedded_system_system_ila_0_1_stub.vhdl:27]
-INFO: [Synth 8-256] done synthesizing module 'embedded_system' (15#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7664]
-INFO: [Synth 8-256] done synthesizing module 'embedded_system_wrapper' (16#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_183BBHC' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:371]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_1_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_183BBHC' (2#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1BG90OJ' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:666]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_2' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:837]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_2_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1BG90OJ' (3#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:666]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_41F83H' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:961]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_3' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1132]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_3' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_3_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_41F83H' (4#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:961]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1HIKNPX' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1256]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_4' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1427]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_4' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_4_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1HIKNPX' (5#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1256]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_S45KIJ' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1568]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_5' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1784]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_5' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_5_stub.vhdl:81]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_S45KIJ' (6#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1568]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_MECLE0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1933]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_MECLE0' (7#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:1933]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1W176FA' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2093]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_6' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_6_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_6' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2264]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_6' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_6_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1W176FA' (8#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2093]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7PPSL2' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2412]
+INFO: [Synth 8-3491] module 'embedded_system_auto_pc_7' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_7_stub.vhdl:5' bound to instance 'auto_pc' of component 'embedded_system_auto_pc_7' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2653]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_auto_pc_7' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_auto_pc_7_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7PPSL2' (9#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2412]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1GSL6UW' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2775]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1GSL6UW' (10#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2775]
+INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_12R4RL7' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2862]
+INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_12R4RL7' (11#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2862]
+INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_CSQHLX' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2952]
+INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_CSQHLX' (12#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:2952]
+INFO: [Synth 8-638] synthesizing module 's04_couplers_imp_1Q9VKLP' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3033]
+INFO: [Synth 8-256] done synthesizing module 's04_couplers_imp_1Q9VKLP' (13#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3033]
+INFO: [Synth 8-638] synthesizing module 's05_couplers_imp_JF0YRN' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3114]
+INFO: [Synth 8-256] done synthesizing module 's05_couplers_imp_JF0YRN' (14#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3114]
+INFO: [Synth 8-638] synthesizing module 's06_couplers_imp_V3MTE8' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3227]
+INFO: [Synth 8-256] done synthesizing module 's06_couplers_imp_V3MTE8' (15#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3227]
+INFO: [Synth 8-3491] module 'embedded_system_xbar_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'embedded_system_xbar_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:5626]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_xbar_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_xbar_0_stub.vhdl:85]
+INFO: [Synth 8-256] done synthesizing module 'embedded_system_ps7_0_axi_periph_0' (16#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:3654]
+INFO: [Synth 8-3491] module 'embedded_system_rst_ps7_0_50M_0' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_rst_ps7_0_50M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'embedded_system_rst_ps7_0_50M_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7968]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_rst_ps7_0_50M_0' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_rst_ps7_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'embedded_system_system_ila_0_1' declared at 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_system_ila_0_1_stub.vhdl:5' bound to instance 'system_ila_0' of component 'embedded_system_system_ila_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:7981]
+INFO: [Synth 8-638] synthesizing module 'embedded_system_system_ila_0_1' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/.Xil/Vivado-15728-peppe-pc/realtime/embedded_system_system_ila_0_1_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'embedded_system' (17#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/synth/embedded_system.vhd:6133]
+INFO: [Synth 8-256] done synthesizing module 'embedded_system_wrapper' (18#1) [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd:40]
+WARNING: [Synth 8-3331] design s06_couplers_imp_V3MTE8 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s06_couplers_imp_V3MTE8 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s06_couplers_imp_V3MTE8 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s06_couplers_imp_V3MTE8 has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design s05_couplers_imp_JF0YRN has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s05_couplers_imp_JF0YRN has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s05_couplers_imp_JF0YRN has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s05_couplers_imp_JF0YRN has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design s04_couplers_imp_1Q9VKLP has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s04_couplers_imp_1Q9VKLP has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s04_couplers_imp_1Q9VKLP has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s04_couplers_imp_1Q9VKLP has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design s03_couplers_imp_CSQHLX has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s03_couplers_imp_CSQHLX has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s03_couplers_imp_CSQHLX has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s03_couplers_imp_CSQHLX has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design s02_couplers_imp_12R4RL7 has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s02_couplers_imp_12R4RL7 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s02_couplers_imp_12R4RL7 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_12R4RL7 has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design s01_couplers_imp_1GSL6UW has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s01_couplers_imp_1GSL6UW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_1GSL6UW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_1GSL6UW has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_AXI_bid[14]
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_AXI_bid[13]
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_AXI_bid[12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_AXI_rid[14]
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_AXI_rid[13]
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PPSL2 has unconnected port M_AXI_rid[12]
+WARNING: [Synth 8-3331] design m07_couplers_imp_1W176FA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_1W176FA has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m06_couplers_imp_MECLE0 has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design m06_couplers_imp_MECLE0 has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m06_couplers_imp_MECLE0 has unconnected port S_ACLK
@@ -155,7 +166,7 @@ WARNING: [Synth 8-3331] design m01_couplers_imp_183BBHC has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_GH6ODQ has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_GH6ODQ has unconnected port M_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 533.531 ; gain = 190.375
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 513.934 ; gain = 171.879
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -168,10 +179,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 533.531 ; gain = 190.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 513.934 ; gain = 171.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 533.531 ; gain = 190.375
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 513.934 ; gain = 171.879
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -204,44 +215,28 @@ Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_axi_dma_0_3/embedded_system_axi_dma_0_3/embedded_system_axi_dma_0_2_in_context.xdc] for cell 'embedded_system_i/axi_dma_3'
 Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_system_ila_0_1/embedded_system_system_ila_0_1/embedded_system_system_ila_0_1_in_context.xdc] for cell 'embedded_system_i/system_ila_0'
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_system_ila_0_1/embedded_system_system_ila_0_1/embedded_system_system_ila_0_1_in_context.xdc] for cell 'embedded_system_i/system_ila_0'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_6/embedded_system_auto_pc_6/embedded_system_auto_pc_6_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_6/embedded_system_auto_pc_6/embedded_system_auto_pc_6_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_0/embedded_system_auto_us_0/embedded_system_auto_us_0_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_us'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_0/embedded_system_auto_us_0/embedded_system_auto_us_0_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_us'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_1/embedded_system_auto_us_1/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s01_couplers/auto_us'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_1/embedded_system_auto_us_1/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s01_couplers/auto_us'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_2/embedded_system_auto_us_2/embedded_system_auto_us_2_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s02_couplers/auto_us'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_2/embedded_system_auto_us_2/embedded_system_auto_us_2_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s02_couplers/auto_us'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_3/embedded_system_auto_us_3/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s03_couplers/auto_us'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_3/embedded_system_auto_us_3/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s03_couplers/auto_us'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_4/embedded_system_auto_us_4/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s04_couplers/auto_us'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_4/embedded_system_auto_us_4/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s04_couplers/auto_us'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_5/embedded_system_auto_us_5/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s05_couplers/auto_us'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_us_5/embedded_system_auto_us_5/embedded_system_auto_us_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s05_couplers/auto_us'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_0/embedded_system_auto_ds_0/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m00_couplers/auto_ds'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_0/embedded_system_auto_ds_0/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m00_couplers/auto_ds'
+Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_7/embedded_system_auto_pc_7/embedded_system_auto_pc_6_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_7/embedded_system_auto_pc_7/embedded_system_auto_pc_6_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_0/embedded_system_auto_pc_0/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m00_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_0/embedded_system_auto_pc_0/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m00_couplers/auto_pc'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_1/embedded_system_auto_ds_1/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m01_couplers/auto_ds'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_1/embedded_system_auto_ds_1/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m01_couplers/auto_ds'
 Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_1/embedded_system_auto_pc_1/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m01_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_1/embedded_system_auto_pc_1/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m01_couplers/auto_pc'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_2/embedded_system_auto_ds_2/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m02_couplers/auto_ds'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_2/embedded_system_auto_ds_2/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m02_couplers/auto_ds'
 Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_2/embedded_system_auto_pc_2/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m02_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_2/embedded_system_auto_pc_2/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m02_couplers/auto_pc'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_3/embedded_system_auto_ds_3/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m03_couplers/auto_ds'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_3/embedded_system_auto_ds_3/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m03_couplers/auto_ds'
 Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_3/embedded_system_auto_pc_3/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m03_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_3/embedded_system_auto_pc_3/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m03_couplers/auto_pc'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_4/embedded_system_auto_ds_4/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m04_couplers/auto_ds'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_4/embedded_system_auto_ds_4/embedded_system_auto_ds_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m04_couplers/auto_ds'
 Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_4/embedded_system_auto_pc_4/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m04_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_4/embedded_system_auto_pc_4/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m04_couplers/auto_pc'
-Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_5/embedded_system_auto_ds_5/embedded_system_auto_ds_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m05_couplers/auto_ds'
-Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_ds_5/embedded_system_auto_ds_5/embedded_system_auto_ds_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m05_couplers/auto_ds'
 Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_5/embedded_system_auto_pc_5/embedded_system_auto_pc_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m05_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_5/embedded_system_auto_pc_5/embedded_system_auto_pc_5_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m05_couplers/auto_pc'
+Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_6/embedded_system_auto_pc_6/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m07_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_auto_pc_6/embedded_system_auto_pc_6/embedded_system_auto_pc_4_in_context.xdc] for cell 'embedded_system_i/ps7_0_axi_periph/m07_couplers/auto_pc'
+Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_axi_bram_ctrl_0_0/embedded_system_axi_bram_ctrl_0_0/embedded_system_axi_bram_ctrl_0_0_in_context.xdc] for cell 'embedded_system_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_axi_bram_ctrl_0_0/embedded_system_axi_bram_ctrl_0_0/embedded_system_axi_bram_ctrl_0_0_in_context.xdc] for cell 'embedded_system_i/axi_bram_ctrl_0'
+Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_axi_cdma_0_0/embedded_system_axi_cdma_0_0/embedded_system_axi_cdma_0_0_in_context.xdc] for cell 'embedded_system_i/axi_cdma_0'
+Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_axi_cdma_0_0/embedded_system_axi_cdma_0_0/embedded_system_axi_cdma_0_0_in_context.xdc] for cell 'embedded_system_i/axi_cdma_0'
+Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_axi_bram_ctrl_0_bram_0/embedded_system_axi_bram_ctrl_0_bram_0/embedded_system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'embedded_system_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_axi_bram_ctrl_0_bram_0/embedded_system_axi_bram_ctrl_0_bram_0/embedded_system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'embedded_system_i/axi_bram_ctrl_0_bram'
 Parsing XDC File [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/constrs_1/new/clock_constraint.xdc]
 WARNING: [Vivado 12-508] No pins matched 'embedded_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]'. [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/constrs_1/new/clock_constraint.xdc:1]
 WARNING: [Vivado 12-508] No pins matched 'embedded_system_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/pm_FSM_Kernel_Bias/State_reg[2]/Q'. [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/constrs_1/new/clock_constraint.xdc:1]
@@ -289,24 +284,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/embedded_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 898.062 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 853.992 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 898.062 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 853.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 898.062 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 898.062 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 853.992 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 853.992 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -587,29 +582,21 @@ Applied set_property DONT_TOUCH = true for embedded_system_i/axi_dma_2. (constra
 Applied set_property DONT_TOUCH = true for embedded_system_i/axi_dma_3. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/system_ila_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/s01_couplers/auto_us. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/s02_couplers/auto_us. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/s03_couplers/auto_us. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/s04_couplers/auto_us. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/s05_couplers/auto_us. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m01_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m02_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m03_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m04_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m05_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m05_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for embedded_system_i/ps7_0_axi_periph/m07_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for embedded_system_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for embedded_system_i/axi_cdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for embedded_system_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -658,8 +645,22 @@ WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnecte
 WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port M05_ARESETN
 WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port M06_ACLK
 WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port M06_ARESETN
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port M07_ACLK
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port M07_ARESETN
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S01_ARESETN
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S02_ACLK
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S02_ARESETN
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S03_ACLK
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S03_ARESETN
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S04_ACLK
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S04_ARESETN
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S05_ACLK
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S05_ARESETN
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S06_ACLK
+WARNING: [Synth 8-3331] design embedded_system_ps7_0_axi_periph_0 has unconnected port S06_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -671,15 +672,16 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5578] Moved timing constraint from pin 'embedded_system_i/processing_system7_0/FCLK_CLK0' to pin 'embedded_system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
-INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+INFO: [Synth 8-5578] Moved timing constraint from pin 'embedded_system_i/axi_bram_ctrl_0/bram_clk_a' to pin 'embedded_system_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -691,7 +693,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -715,7 +717,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -728,7 +730,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -740,25 +742,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -769,37 +771,29 @@ Report BlackBoxes:
 |      |BlackBox name                            |Instances |
 +------+-----------------------------------------+----------+
 |1     |embedded_system_xbar_0                   |         1|
-|2     |embedded_system_auto_ds_0                |         1|
-|3     |embedded_system_auto_pc_0                |         1|
-|4     |embedded_system_auto_ds_1                |         1|
-|5     |embedded_system_auto_pc_1                |         1|
-|6     |embedded_system_auto_ds_2                |         1|
-|7     |embedded_system_auto_pc_2                |         1|
-|8     |embedded_system_auto_ds_3                |         1|
-|9     |embedded_system_auto_pc_3                |         1|
-|10    |embedded_system_auto_ds_4                |         1|
-|11    |embedded_system_auto_pc_4                |         1|
-|12    |embedded_system_auto_ds_5                |         1|
-|13    |embedded_system_auto_pc_5                |         1|
-|14    |embedded_system_auto_pc_6                |         1|
-|15    |embedded_system_auto_us_0                |         1|
-|16    |embedded_system_auto_us_1                |         1|
-|17    |embedded_system_auto_us_2                |         1|
-|18    |embedded_system_auto_us_3                |         1|
-|19    |embedded_system_auto_us_4                |         1|
-|20    |embedded_system_auto_us_5                |         1|
-|21    |embedded_system_PL_CLASSIFIER_w_VOTI_0_0 |         1|
-|22    |embedded_system_axi_dma_0_1              |         1|
-|23    |embedded_system_axi_dma_0_0              |         1|
-|24    |embedded_system_axi_dma_0_2              |         1|
-|25    |embedded_system_axi_dma_0_3              |         1|
-|26    |embedded_system_axi_gpio_0_0             |         1|
-|27    |embedded_system_axis_to_bram_Bias_0_1    |         1|
-|28    |embedded_system_axis_to_bram_Kernel_0_0  |         1|
-|29    |embedded_system_axis_to_bram_PCV_0_0     |         1|
-|30    |embedded_system_processing_system7_0_0   |         1|
-|31    |embedded_system_rst_ps7_0_50M_0          |         1|
-|32    |embedded_system_system_ila_0_1           |         1|
+|2     |embedded_system_auto_pc_0                |         1|
+|3     |embedded_system_auto_pc_1                |         1|
+|4     |embedded_system_auto_pc_2                |         1|
+|5     |embedded_system_auto_pc_3                |         1|
+|6     |embedded_system_auto_pc_4                |         1|
+|7     |embedded_system_auto_pc_5                |         1|
+|8     |embedded_system_auto_pc_6                |         1|
+|9     |embedded_system_auto_pc_7                |         1|
+|10    |embedded_system_PL_CLASSIFIER_w_VOTI_0_0 |         1|
+|11    |embedded_system_axi_bram_ctrl_0_0        |         1|
+|12    |embedded_system_axi_bram_ctrl_0_bram_0   |         1|
+|13    |embedded_system_axi_cdma_0_0             |         1|
+|14    |embedded_system_axi_dma_0_1              |         1|
+|15    |embedded_system_axi_dma_0_0              |         1|
+|16    |embedded_system_axi_dma_0_2              |         1|
+|17    |embedded_system_axi_dma_0_3              |         1|
+|18    |embedded_system_axi_gpio_0_0             |         1|
+|19    |embedded_system_axis_to_bram_Bias_0_1    |         1|
+|20    |embedded_system_axis_to_bram_Kernel_0_0  |         1|
+|21    |embedded_system_axis_to_bram_PCV_0_0     |         1|
+|22    |embedded_system_processing_system7_0_0   |         1|
+|23    |embedded_system_rst_ps7_0_50M_0          |         1|
+|24    |embedded_system_system_ila_0_1           |         1|
 +------+-----------------------------------------+----------+
 
 Report Cell Usage: 
@@ -807,79 +801,67 @@ Report Cell Usage:
 |      |Cell                                            |Count |
 +------+------------------------------------------------+------+
 |1     |embedded_system_PL_CLASSIFIER_w_VOTI_0_0_bbox_0 |     1|
-|2     |embedded_system_auto_ds_0_bbox_10               |     1|
-|3     |embedded_system_auto_ds_1_bbox_12               |     1|
-|4     |embedded_system_auto_ds_2_bbox_14               |     1|
-|5     |embedded_system_auto_ds_3_bbox_16               |     1|
-|6     |embedded_system_auto_ds_4_bbox_18               |     1|
-|7     |embedded_system_auto_ds_5_bbox_20               |     1|
-|8     |embedded_system_auto_pc_0_bbox_11               |     1|
-|9     |embedded_system_auto_pc_1_bbox_13               |     1|
-|10    |embedded_system_auto_pc_2_bbox_15               |     1|
-|11    |embedded_system_auto_pc_3_bbox_17               |     1|
-|12    |embedded_system_auto_pc_4_bbox_19               |     1|
-|13    |embedded_system_auto_pc_5_bbox_21               |     1|
-|14    |embedded_system_auto_pc_6_bbox_22               |     1|
-|15    |embedded_system_auto_us_0_bbox_23               |     1|
-|16    |embedded_system_auto_us_1_bbox_24               |     1|
-|17    |embedded_system_auto_us_2_bbox_25               |     1|
-|18    |embedded_system_auto_us_3_bbox_26               |     1|
-|19    |embedded_system_auto_us_4_bbox_27               |     1|
-|20    |embedded_system_auto_us_5_bbox_28               |     1|
-|21    |embedded_system_axi_dma_0_0_bbox_2              |     1|
-|22    |embedded_system_axi_dma_0_1_bbox_1              |     1|
-|23    |embedded_system_axi_dma_0_2_bbox_3              |     1|
-|24    |embedded_system_axi_dma_0_3_bbox_4              |     1|
-|25    |embedded_system_axi_gpio_0_0_bbox_5             |     1|
-|26    |embedded_system_axis_to_bram_Bias_0_1_bbox_6    |     1|
-|27    |embedded_system_axis_to_bram_Kernel_0_0_bbox_7  |     1|
-|28    |embedded_system_axis_to_bram_PCV_0_0_bbox_8     |     1|
-|29    |embedded_system_processing_system7_0_0_bbox_9   |     1|
-|30    |embedded_system_rst_ps7_0_50M_0_bbox_30         |     1|
-|31    |embedded_system_system_ila_0_1_bbox_31          |     1|
-|32    |embedded_system_xbar_0_bbox_29                  |     1|
+|2     |embedded_system_auto_pc_0_bbox_13               |     1|
+|3     |embedded_system_auto_pc_1_bbox_14               |     1|
+|4     |embedded_system_auto_pc_2_bbox_15               |     1|
+|5     |embedded_system_auto_pc_3_bbox_16               |     1|
+|6     |embedded_system_auto_pc_4_bbox_17               |     1|
+|7     |embedded_system_auto_pc_5_bbox_18               |     1|
+|8     |embedded_system_auto_pc_6_bbox_19               |     1|
+|9     |embedded_system_auto_pc_7_bbox_20               |     1|
+|10    |embedded_system_axi_bram_ctrl_0_0_bbox_1        |     1|
+|11    |embedded_system_axi_bram_ctrl_0_bram_0_bbox_2   |     1|
+|12    |embedded_system_axi_cdma_0_0_bbox_3             |     1|
+|13    |embedded_system_axi_dma_0_0_bbox_5              |     1|
+|14    |embedded_system_axi_dma_0_1_bbox_4              |     1|
+|15    |embedded_system_axi_dma_0_2_bbox_6              |     1|
+|16    |embedded_system_axi_dma_0_3_bbox_7              |     1|
+|17    |embedded_system_axi_gpio_0_0_bbox_8             |     1|
+|18    |embedded_system_axis_to_bram_Bias_0_1_bbox_9    |     1|
+|19    |embedded_system_axis_to_bram_Kernel_0_0_bbox_10 |     1|
+|20    |embedded_system_axis_to_bram_PCV_0_0_bbox_11    |     1|
+|21    |embedded_system_processing_system7_0_0_bbox_12  |     1|
+|22    |embedded_system_rst_ps7_0_50M_0_bbox_22         |     1|
+|23    |embedded_system_system_ila_0_1_bbox_23          |     1|
+|24    |embedded_system_xbar_0_bbox_21                  |     1|
 +------+------------------------------------------------+------+
 
 Report Instance Areas: 
 +------+---------------------+-----------------------------------+------+
 |      |Instance             |Module                             |Cells |
 +------+---------------------+-----------------------------------+------+
-|1     |top                  |                                   | 16805|
-|2     |  embedded_system_i  |embedded_system                    | 16805|
-|3     |    ps7_0_axi_periph |embedded_system_ps7_0_axi_periph_0 | 15239|
-|4     |      m00_couplers   |m00_couplers_imp_GH6ODQ            |   839|
-|5     |      m01_couplers   |m01_couplers_imp_183BBHC           |   839|
-|6     |      m02_couplers   |m02_couplers_imp_1BG90OJ           |   839|
-|7     |      m03_couplers   |m03_couplers_imp_41F83H            |   839|
-|8     |      m04_couplers   |m04_couplers_imp_1HIKNPX           |   839|
-|9     |      m05_couplers   |m05_couplers_imp_S45KIJ            |   878|
-|10    |      s00_couplers   |s00_couplers_imp_7PPSL2            |  1024|
-|11    |      s01_couplers   |s01_couplers_imp_1GSL6UW           |   100|
-|12    |      s02_couplers   |s02_couplers_imp_12R4RL7           |   646|
-|13    |      s03_couplers   |s03_couplers_imp_CSQHLX            |   100|
-|14    |      s04_couplers   |s04_couplers_imp_1Q9VKLP           |   100|
-|15    |      s05_couplers   |s05_couplers_imp_JF0YRN            |   100|
+|1     |top                  |                                   |  5093|
+|2     |  embedded_system_i  |embedded_system                    |  5093|
+|3     |    ps7_0_axi_periph |embedded_system_ps7_0_axi_periph_0 |  3180|
+|4     |      m00_couplers   |m00_couplers_imp_GH6ODQ            |   153|
+|5     |      m01_couplers   |m01_couplers_imp_183BBHC           |   153|
+|6     |      m02_couplers   |m02_couplers_imp_1BG90OJ           |   153|
+|7     |      m03_couplers   |m03_couplers_imp_41F83H            |   153|
+|8     |      m04_couplers   |m04_couplers_imp_1HIKNPX           |   153|
+|9     |      m05_couplers   |m05_couplers_imp_S45KIJ            |   192|
+|10    |      m07_couplers   |m07_couplers_imp_1W176FA           |   153|
+|11    |      s00_couplers   |s00_couplers_imp_7PPSL2            |   254|
 +------+---------------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 898.062 ; gain = 554.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 898.062 ; gain = 190.375
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 898.062 ; gain = 554.906
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 853.992 ; gain = 171.879
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 853.992 ; gain = 511.938
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.316 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-113 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+102 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 904.703 ; gain = 563.301
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 904.703 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 871.371 ; gain = 531.012
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 871.371 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1/embedded_system_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file embedded_system_wrapper_utilization_synth.rpt -pb embedded_system_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 12 20:16:43 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 17:30:49 2022...

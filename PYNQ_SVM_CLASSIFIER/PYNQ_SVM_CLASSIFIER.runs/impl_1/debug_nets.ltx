@@ -1850,6 +1850,23 @@
                                         "isBus": false
                                     }
                                 ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "embedded_system_i/system_ila_0/U0/probe15_1",
+                                        "isBus": false,
+                                        "parentNetId": 504
+                                    }
+                                ]
                             }
                         ],
                         "native_ports": [
@@ -1943,6 +1960,22 @@
                                         "physical_pin": {
                                             "id": 14,
                                             "name": "probe14",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "connectedBus": "PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_PCV",
+                                "protocol": "PROBE",
+                                "port_maps": [
+                                    {
+                                        "logical_port": "probe15",
+                                        "physical_pin": {
+                                            "id": 15,
+                                            "name": "probe15",
                                             "leftBit": 0,
                                             "width": 1
                                         }
@@ -2090,6 +2123,35 @@
                                             "leftBit": 0,
                                             "width": 32
                                         }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 504,
+                        "name": "embedded_system_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/FSM_onehot_state_reg[2]_0[1]",
+                        "state_reg": [
+                            {
+                                "name": "embedded_system_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/FSM_onehot_state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "idle",
+                                        "val": "0001"
+                                    },
+                                    {
+                                        "name": "setup",
+                                        "val": "0010"
+                                    },
+                                    {
+                                        "name": "pause",
+                                        "val": "1000"
+                                    },
+                                    {
+                                        "name": "processing",
+                                        "val": "0100"
                                     }
                                 ]
                             }
