@@ -11,6 +11,9 @@
 #include "Kernel_Scale_pkt_32b.h" // Kernel_Scale[]
 #include "Bias_pkt_32b.h"  // Bias[]
 
+#include "xaxicdma.h" // test
+
+
 
 /********* GPIO *********/
 XGpio Gpio; 					/* The Instance of the GPIO Driver */
@@ -25,6 +28,7 @@ XGpio Gpio; 					/* The Instance of the GPIO Driver */
 #define DMA_load_PCV_ID 			XPAR_AXI_DMA_1_DEVICE_ID
 #define DMA_load_Kernel_Scale_ID 	XPAR_AXI_DMA_2_DEVICE_ID
 #define DMA_load_Bias_ID 			XPAR_AXI_DMA_3_DEVICE_ID
+#define CDMA_ID						XPAR_AXI_CDMA_0_DEVICE_ID
 
 XAxiDma_Config *CfgPtr_DMA_MAIN;   				 /* Pointer to the configuration of DMA */
 XAxiDma DMA_MAIN;								 /* The Instance of the DMA */
@@ -38,6 +42,9 @@ XAxiDma DMA_load_Kernel_Scale;							 /* The Instance of the DMA */
 XAxiDma_Config *CfgPtr_DMA_load_Bias; 		     /* Pointer to the configuration of DMA */
 XAxiDma DMA_load_Bias;							 /* The Instance of the DMA */
 
+/********* Instances CDMA Test *********/
+XAxiCdma AxiCdmaInstance;	/* Instance of the XAxiCdma */
+XAxiCdma_Config *CfgPtr;
 
 
 /********* Variable Allocation *********/
@@ -49,6 +56,54 @@ int main()
     init_platform();
     Xil_DCacheDisable();
     xil_printf("Avvio Programma\n\r");
+
+    /*********** TEST  CDMA Driver ***********/
+	/* Initialize the XAxiCdma device.
+	 */
+	CfgPtr = XAxiCdma_LookupConfig(CDMA_ID);
+	if (!CfgPtr) {
+		return XST_FAILURE;
+	}
+	int Status_cdma;
+	Status_cdma = XAxiCdma_CfgInitialize(&AxiCdmaInstance, CfgPtr, CfgPtr->BaseAddress);
+	if (Status_cdma != XST_SUCCESS) {
+		return XST_FAILURE;
+	} else xil_printf("CDMA inizializzato\r\n");
+	/* Disable interrupts, we use polling mode
+	 */
+	XAxiCdma_IntrDisable(&AxiCdmaInstance, XAXICDMA_XR_IRQ_ALL_MASK);
+
+	/* Try to start the DMA transfer
+	  */
+	int Retries = 3;
+
+	while (Retries) {
+		Retries -= 1;
+
+		Status_cdma = XAxiCdma_SimpleTransfer(&AxiCdmaInstance, (u32)PCV,
+				0x62000000 , (15*13)*sizeof(u32) , NULL, NULL);
+		if (Status_cdma == XST_SUCCESS) {
+			xil_printf("CDMA non programmato....\r\n");
+			break;
+		}
+	} xil_printf("CDMA programmato....\r\n");
+
+	/* Return failure if failed to submit the transfer
+	 */
+	if (!Retries) {
+		return XST_FAILURE;
+		xil_printf("CDMA nuovo tentativo....\r\n");
+	}
+
+	/* Wait until the DMA transfer is done
+	 */
+	while (XAxiCdma_IsBusy(&AxiCdmaInstance)) {
+		/* Wait */
+		xil_printf("CDMA sta inviando....\r\n");
+		sleep(2);
+	}
+	xil_printf("CDMA ha trasferito i dati con successo!!! \r\n");
+    /*************************************************/
 
 	/*********** Initialize the GPIO driver ***********/
     int Status_Gpio;
