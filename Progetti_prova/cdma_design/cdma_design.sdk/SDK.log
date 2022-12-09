@@ -1,0 +1,12 @@
+18:27:54 INFO  : Registering command handlers for SDK TCF services
+18:27:55 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\yoxo\OneDrive\Documenti\work_dir\Master_Degree_Thesis\cdma_design\cdma_design.sdk\temp_xsdb_launch_script.tcl
+18:27:59 INFO  : XSCT server has started successfully.
+18:28:03 INFO  : Successfully done setting XSCT server connection channel  
+18:28:03 INFO  : Successfully done setting SDK workspace  
+18:28:03 INFO  : Processing command line option -hwspec C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/cdma_design/cdma_design.sdk/system_wrapper.hdf.
+15:52:28 INFO  : Registering command handlers for SDK TCF services
+15:52:29 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\yoxo\OneDrive\Documenti\work_dir\Master_Degree_Thesis\Progetti_prova\cdma_design\cdma_design.sdk\temp_xsdb_launch_script.tcl
+15:52:33 INFO  : XSCT server has started successfully.
+15:52:33 INFO  : Successfully done setting XSCT server connection channel  
+15:52:33 INFO  : Successfully done setting SDK workspace  
+15:52:33 INFO  : Processing command line option -hwspec C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/Progetti_prova/cdma_design/cdma_design.sdk/system_wrapper.hdf.

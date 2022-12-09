@@ -10,20 +10,20 @@
 -+ confronto accuratezza con precisione minore ( su MATLAB )
 
 3 Step:
-- Cercare soluzioni che sfruttino il DSP48 con parallellismo
-- Utilizzare i coefficienti in fix point tramite double( fi ) 
+-+ Cercare soluzioni che sfruttino il DSP48 con parallellismo
+-+ Utilizzare i coefficienti in fix point tramite double( fi ) 
 
 4 Step:
-- Implementare arch semplice con voting ce
+-+ Implementare arch semplice con voting ce
   
 5 Step: 
-- FSM 
+-+ FSM 
 
 6 Step:
-- Design
+-+ Design
 
 7 Step:
-- sdk
+-+ sdk
 
 
 Domande:

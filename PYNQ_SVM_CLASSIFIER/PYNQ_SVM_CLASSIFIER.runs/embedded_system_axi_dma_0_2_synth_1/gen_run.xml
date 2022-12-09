@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="embedded_system_axi_dma_0_2_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1668960077">
+<GenRun Id="embedded_system_axi_dma_0_2_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1670500076">
   <File Type="PA-TCL" Name="embedded_system_axi_dma_0_2.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="embedded_system_axi_dma_0_2_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="embedded_system_axi_dma_0_2_reports.tcl"/>

@@ -12,7 +12,7 @@
 #include "Bias_pkt_32b.h"  // Bias[]
 
 #include "xaxicdma.h" // test
-
+#include "xbram.h"   // test
 
 
 /********* GPIO *********/
@@ -43,8 +43,11 @@ XAxiDma_Config *CfgPtr_DMA_load_Bias; 		     /* Pointer to the configuration of 
 XAxiDma DMA_load_Bias;							 /* The Instance of the DMA */
 
 /********* Instances CDMA Test *********/
-XAxiCdma AxiCdmaInstance;	/* Instance of the XAxiCdma */
+XAxiCdma AxiCdmaInstance;						/* Instance of the XAxiCdma */
 XAxiCdma_Config *CfgPtr;
+/********* Instances BRAM_CTRL Test *********/
+XBram Bram;										/* The Instance of the BRAM Driver */
+XBram_Config *ConfigPtr;
 
 
 /********* Variable Allocation *********/
@@ -55,7 +58,26 @@ int main()
 {
     init_platform();
     Xil_DCacheDisable();
+    Xil_DCacheFlush();
     xil_printf("Avvio Programma\n\r");
+
+
+    /************ TEST BRAM CTRL **************/
+
+
+    ConfigPtr = XBram_LookupConfig(XPAR_AXI_BRAM_CTRL_0_DEVICE_ID);
+    	if (ConfigPtr == (XBram_Config *) NULL) {
+    		return XST_FAILURE;
+    	}
+
+    int Status_bram = XBram_CfgInitialize(&Bram, ConfigPtr,
+    				     ConfigPtr->CtrlBaseAddress);
+    	if (Status_bram != XST_SUCCESS) {
+    		return XST_FAILURE;
+    	} else xil_printf("BRAM CTRL inizializzato\r\n");
+
+
+    /******************************************/
 
     /*********** TEST  CDMA Driver ***********/
 	/* Initialize the XAxiCdma device.
@@ -64,8 +86,8 @@ int main()
 	if (!CfgPtr) {
 		return XST_FAILURE;
 	}
-	int Status_cdma;
-	Status_cdma = XAxiCdma_CfgInitialize(&AxiCdmaInstance, CfgPtr, CfgPtr->BaseAddress);
+
+	int Status_cdma = XAxiCdma_CfgInitialize(&AxiCdmaInstance, CfgPtr, CfgPtr->BaseAddress);
 	if (Status_cdma != XST_SUCCESS) {
 		return XST_FAILURE;
 	} else xil_printf("CDMA inizializzato\r\n");
@@ -75,34 +97,23 @@ int main()
 
 	/* Try to start the DMA transfer
 	  */
-	int Retries = 3;
+//		Xil_DCacheFlushRange((u32)PCV,(15*13)*sizeof(u32));
+//
+//		Status_cdma = XAxiCdma_SimpleTransfer(&AxiCdmaInstance, (u32)PCV, 0x62000000  , (15*13)*sizeof(u32) , NULL, NULL);  // dest << BRAM_CTRL ConfigPtr->MemBaseAddress
+//		if (Status_cdma == XST_SUCCESS) {
+//			xil_printf("CDMA Failed \r\n");
+//			return XST_FAILURE;
+//		}else xil_printf("CDMA programmato....\r\n");
 
-	while (Retries) {
-		Retries -= 1;
-
-		Status_cdma = XAxiCdma_SimpleTransfer(&AxiCdmaInstance, (u32)PCV,
-				0x62000000 , (15*13)*sizeof(u32) , NULL, NULL);
-		if (Status_cdma == XST_SUCCESS) {
-			xil_printf("CDMA non programmato....\r\n");
-			break;
-		}
-	} xil_printf("CDMA programmato....\r\n");
-
-	/* Return failure if failed to submit the transfer
-	 */
-	if (!Retries) {
-		return XST_FAILURE;
-		xil_printf("CDMA nuovo tentativo....\r\n");
-	}
 
 	/* Wait until the DMA transfer is done
 	 */
-	while (XAxiCdma_IsBusy(&AxiCdmaInstance)) {
-		/* Wait */
-		xil_printf("CDMA sta inviando....\r\n");
-		sleep(2);
-	}
-	xil_printf("CDMA ha trasferito i dati con successo!!! \r\n");
+//	while (XAxiCdma_IsBusy(&AxiCdmaInstance)) {
+//		/* Wait */
+//		xil_printf("CDMA sta inviando....\r\n");
+//		sleep(2);
+//	}
+//	xil_printf("CDMA ha trasferito i dati con successo!!! \r\n");
     /*************************************************/
 
 	/*********** Initialize the GPIO driver ***********/
@@ -231,7 +242,7 @@ int main()
 		while ( XAxiDma_Busy(&DMA_load_PCV,XAXIDMA_DMA_TO_DEVICE) ) {
 				/* Attesa completamento operazione del DMA */
 				xil_printf("DMA_load_PCV sta inviando... \r\n");
-				sleep(2);
+				sleep(5);
 		}
 		xil_printf("DMA_load_PCV -> Invio eseguito con successo \r\n");
 
@@ -309,7 +320,7 @@ int main()
 	xil_printf("AXI MAIN DMA -> Invio e Ricezione eseguiti con successo \r\n");
 
 	for (u32 i=0; i<36; i=i+1) {
-		xil_printf("Classe dell'istanza %d : %x\n\r",i,(Result[i])&0x7); // maschero i primi 3bit
+		xil_printf("Classe della istanza %d : %x\n\r",i,(Result[i])&0x7); // maschero i primi 3bit
 	}
 	sleep(30);
     cleanup_platform();

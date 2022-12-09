@@ -1,10 +1,3 @@
--- vsg_off
--- vsg_off
--- vsg_off
--- vsg_off
--- vsg_off
--- vsg_off
--- vsg_off
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 LIBRARY xil_defaultlib;

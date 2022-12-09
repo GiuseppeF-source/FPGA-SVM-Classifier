@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1668960081">
-  <File Type="PA-TCL" Name="embedded_system_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="embedded_system_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="embedded_system_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="embedded_system_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="embedded_system_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="embedded_system_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="embedded_system_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="embedded_system_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="embedded_system_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1670500680">
+  <File Type="PA-TCL" Name="PL_CLASSIFIER_w_VOTING.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PL_CLASSIFIER_w_VOTING_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="PL_CLASSIFIER_w_VOTING_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PL_CLASSIFIER_w_VOTING.vds"/>
+  <File Type="RDS-UTIL" Name="PL_CLASSIFIER_w_VOTING_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PL_CLASSIFIER_w_VOTING_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PL_CLASSIFIER_w_VOTING.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PL_CLASSIFIER_w_VOTING_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PL_CLASSIFIER_w_VOTING_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/incremental_pipe.vhd">
@@ -165,36 +165,42 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/SIPO_shift_reg_w_full.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Bias.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/embedded_system/embedded_system.bd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -202,6 +208,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -269,19 +276,15 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="embedded_system_wrapper"/>
+      <Option Name="TopModule" Val="PL_CLASSIFIER_w_VOTING"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopArchitecture" Val="arch"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/clock_constraint.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/clock_constraint.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -292,23 +295,22 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-    <Step Id="synth_design"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="FlattenHierarchy">1</Option>
+      <Option Id="MoreOptsStr"><![CDATA[-mode out_of_context]]></Option>
+    </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_Kernel_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_PL_CLASSIFIER_w_VOTI_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_Bias_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_PCV_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_system_ila_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_bram_ctrl_0_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_Kernel_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_cdma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_pc_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_bram_ctrl_0_0"/>
 </GenRun>

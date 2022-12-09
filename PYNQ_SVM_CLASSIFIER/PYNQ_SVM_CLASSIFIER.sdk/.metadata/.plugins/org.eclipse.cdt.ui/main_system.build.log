@@ -1,4 +1,4 @@
-22:04:21 **** Auto Build of configuration Debug for project main_system ****
+16:51:23 **** Auto Build of configuration Debug for project main_system ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,9 +15,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main_system.elf  |tee "main_system.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  45516	   4760	  30664	  80940	  13c2c	main_system.elf
+  45556	   4832	  30744	  81132	  13cec	main_system.elf
 'Finished building: main_system.elf.size'
 ' '
 
-22:04:22 Build Finished (took 1s.842ms)
+16:51:24 Build Finished (took 1s.71ms)
 

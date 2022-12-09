@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1668960091">
-  <File Type="BITSTR-BMM" Name="embedded_system_wrapper_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="embedded_system_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="embedded_system_wrapper_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="embedded_system_wrapper_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="embedded_system_wrapper.tcl"/>
-  <File Type="OPT-TIMING" Name="embedded_system_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="embedded_system_wrapper_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="embedded_system_wrapper_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="embedded_system_wrapper_reports.tcl"/>
-  <File Type="OPT-DRC" Name="embedded_system_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="embedded_system_wrapper.hwdef"/>
-  <File Type="PWROPT-DCP" Name="embedded_system_wrapper_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="embedded_system_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="embedded_system_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="embedded_system_wrapper_placed.dcp"/>
-  <File Type="PLACE-IO" Name="embedded_system_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="embedded_system_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="embedded_system_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="embedded_system_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="embedded_system_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="embedded_system_wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="embedded_system_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="embedded_system_wrapper.bgn"/>
-  <File Type="PLACE-TIMING" Name="embedded_system_wrapper_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="embedded_system_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="embedded_system_wrapper.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="embedded_system_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="embedded_system_wrapper_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="embedded_system_wrapper_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="embedded_system_wrapper.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="embedded_system_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="embedded_system_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="embedded_system_wrapper_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="embedded_system_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="embedded_system_wrapper_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="embedded_system_wrapper_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1670500757">
+  <File Type="BITSTR-BMM" Name="PL_CLASSIFIER_w_VOTING_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PL_CLASSIFIER_w_VOTING_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PL_CLASSIFIER_w_VOTING_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="PL_CLASSIFIER_w_VOTING_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PL_CLASSIFIER_w_VOTING.tcl"/>
+  <File Type="OPT-TIMING" Name="PL_CLASSIFIER_w_VOTING_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="PL_CLASSIFIER_w_VOTING_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="PL_CLASSIFIER_w_VOTING_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PL_CLASSIFIER_w_VOTING_reports.tcl"/>
+  <File Type="OPT-DRC" Name="PL_CLASSIFIER_w_VOTING_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="PL_CLASSIFIER_w_VOTING.hwdef"/>
+  <File Type="PWROPT-DCP" Name="PL_CLASSIFIER_w_VOTING_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="PL_CLASSIFIER_w_VOTING_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="PL_CLASSIFIER_w_VOTING_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PL_CLASSIFIER_w_VOTING_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PL_CLASSIFIER_w_VOTING_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PL_CLASSIFIER_w_VOTING_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PL_CLASSIFIER_w_VOTING_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PL_CLASSIFIER_w_VOTING_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PL_CLASSIFIER_w_VOTING_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PL_CLASSIFIER_w_VOTING_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PL_CLASSIFIER_w_VOTING_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="PL_CLASSIFIER_w_VOTING.bgn"/>
+  <File Type="PLACE-TIMING" Name="PL_CLASSIFIER_w_VOTING_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PL_CLASSIFIER_w_VOTING_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="PL_CLASSIFIER_w_VOTING.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PL_CLASSIFIER_w_VOTING_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PL_CLASSIFIER_w_VOTING_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PL_CLASSIFIER_w_VOTING_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="PL_CLASSIFIER_w_VOTING.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="PL_CLASSIFIER_w_VOTING_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PL_CLASSIFIER_w_VOTING_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PL_CLASSIFIER_w_VOTING_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PL_CLASSIFIER_w_VOTING_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PL_CLASSIFIER_w_VOTING_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PL_CLASSIFIER_w_VOTING_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="embedded_system_wrapper.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="embedded_system_wrapper_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="embedded_system_wrapper.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="embedded_system_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="embedded_system_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="embedded_system_wrapper.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="embedded_system_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="embedded_system_wrapper_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="embedded_system_wrapper_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="embedded_system_wrapper_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="embedded_system_wrapper_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="embedded_system_wrapper_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="embedded_system_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="embedded_system_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="embedded_system_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="embedded_system_wrapper_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="embedded_system_wrapper_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="embedded_system_wrapper_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="embedded_system_wrapper_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="embedded_system_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="embedded_system_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="embedded_system_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="embedded_system_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="embedded_system_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="embedded_system_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="embedded_system_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="embedded_system_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="embedded_system_wrapper.rbt"/>
-  <File Type="BITSTR-NKY" Name="embedded_system_wrapper.nky"/>
-  <File Type="BG-DRC" Name="embedded_system_wrapper.drc"/>
-  <File Type="RDI-RDI" Name="embedded_system_wrapper.vdi"/>
+  <File Type="BITSTR-LTX" Name="PL_CLASSIFIER_w_VOTING.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="PL_CLASSIFIER_w_VOTING_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="PL_CLASSIFIER_w_VOTING.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PL_CLASSIFIER_w_VOTING_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PL_CLASSIFIER_w_VOTING_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="PL_CLASSIFIER_w_VOTING.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PL_CLASSIFIER_w_VOTING_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="PL_CLASSIFIER_w_VOTING_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PL_CLASSIFIER_w_VOTING_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PL_CLASSIFIER_w_VOTING_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PL_CLASSIFIER_w_VOTING_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PL_CLASSIFIER_w_VOTING_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PL_CLASSIFIER_w_VOTING_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PL_CLASSIFIER_w_VOTING_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PL_CLASSIFIER_w_VOTING_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PL_CLASSIFIER_w_VOTING_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="PL_CLASSIFIER_w_VOTING_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="PL_CLASSIFIER_w_VOTING_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PL_CLASSIFIER_w_VOTING_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PL_CLASSIFIER_w_VOTING_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PL_CLASSIFIER_w_VOTING_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PL_CLASSIFIER_w_VOTING_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PL_CLASSIFIER_w_VOTING_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PL_CLASSIFIER_w_VOTING_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PL_CLASSIFIER_w_VOTING_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="PL_CLASSIFIER_w_VOTING.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PL_CLASSIFIER_w_VOTING_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="PL_CLASSIFIER_w_VOTING.rbt"/>
+  <File Type="BITSTR-NKY" Name="PL_CLASSIFIER_w_VOTING.nky"/>
+  <File Type="BG-DRC" Name="PL_CLASSIFIER_w_VOTING.drc"/>
+  <File Type="RDI-RDI" Name="PL_CLASSIFIER_w_VOTING.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -225,36 +225,42 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/SIPO_shift_reg_w_full.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Bias.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/embedded_system/embedded_system.bd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -262,6 +268,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/embedded_system/hdl/embedded_system_wrapper.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -329,19 +336,15 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="embedded_system_wrapper"/>
+      <Option Name="TopModule" Val="PL_CLASSIFIER_w_VOTING"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopArchitecture" Val="arch"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/clock_constraint.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/clock_constraint.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -352,7 +355,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -364,19 +369,13 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_Kernel_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_PL_CLASSIFIER_w_VOTI_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_Bias_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_PCV_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_system_ila_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_bram_ctrl_0_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axis_to_bram_Kernel_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_dma_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_cdma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_auto_pc_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="embedded_system_axi_bram_ctrl_0_0"/>
 </GenRun>

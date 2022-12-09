@@ -13,17 +13,19 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yoxo/AppData/Roaming/Xilinx/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 267.918 ; gain = 21.719
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip 
 Command: synth_design -top embedded_system_xbar_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/embedded_system_xbar_0.xci
+
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12416 
+INFO: Helper process launched with PID 17140 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 396.785 ; gain = 106.555
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 395.859 ; gain = 105.113
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'embedded_system_xbar_0' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/synth/embedded_system_xbar_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -392,7 +394,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnecte
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[97]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 556.523 ; gain = 266.293
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 554.773 ; gain = 264.027
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -405,10 +407,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 556.523 ; gain = 266.293
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 554.773 ; gain = 264.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 556.523 ; gain = 266.293
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 554.773 ; gain = 264.027
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -421,28 +423,28 @@ Parsing XDC File [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis
 Finished Parsing XDC File [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 827.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 828.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 827.969 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.886 . Memory (MB): peak = 829.805 ; gain = 1.836
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 828.047 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 828.941 ; gain = 0.895
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:39 . Memory (MB): peak = 829.805 ; gain = 539.574
+Finished Constraint Validation : Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 828.941 ; gain = 538.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:39 . Memory (MB): peak = 829.805 ; gain = 539.574
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 828.941 ; gain = 538.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:39 . Memory (MB): peak = 829.805 ; gain = 539.574
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 828.941 ; gain = 538.195
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "f_mux_return6" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "f_mux_return6" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -506,7 +508,7 @@ INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because ad
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_19_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 829.805 ; gain = 539.574
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:10 ; elapsed = 00:01:21 . Memory (MB): peak = 828.941 ; gain = 538.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -645,7 +647,7 @@ INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/addr_arbite
 INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_awvalid_reg_reg[4]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_awvalid_reg_reg[5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_awvalid_reg_reg[5] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:02:05 . Memory (MB): peak = 829.805 ; gain = 539.574
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:40 . Memory (MB): peak = 828.941 ; gain = 538.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -657,13 +659,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:14 ; elapsed = 00:02:41 . Memory (MB): peak = 829.805 ; gain = 539.574
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:07 . Memory (MB): peak = 828.941 ; gain = 538.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:03:03 . Memory (MB): peak = 929.234 ; gain = 639.004
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:18 . Memory (MB): peak = 924.902 ; gain = 634.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -675,7 +677,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:36 ; elapsed = 00:03:06 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished Technology Mapping : Time (s): cpu = 00:02:02 ; elapsed = 00:02:19 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -699,7 +701,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:40 ; elapsed = 00:03:11 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -712,7 +714,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:40 ; elapsed = 00:03:11 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -724,25 +726,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:41 ; elapsed = 00:03:12 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:41 ; elapsed = 00:03:12 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:41 ; elapsed = 00:03:12 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:41 ; elapsed = 00:03:12 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -782,31 +784,31 @@ Report Instance Areas:
 |8     |      splitter_aw                    |axi_crossbar_v2_1_19_splitter                  |    19|
 +------+-------------------------------------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:41 ; elapsed = 00:03:12 . Memory (MB): peak = 930.277 ; gain = 640.047
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:05 ; elapsed = 00:02:22 . Memory (MB): peak = 926.449 ; gain = 635.703
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1319 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:02:40 . Memory (MB): peak = 930.277 ; gain = 366.766
-Synthesis Optimization Complete : Time (s): cpu = 00:02:41 ; elapsed = 00:03:13 . Memory (MB): peak = 930.277 ; gain = 640.047
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:02:00 . Memory (MB): peak = 926.449 ; gain = 361.535
+Synthesis Optimization Complete : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 926.449 ; gain = 635.703
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 930.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 926.449 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-124 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+124 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:49 ; elapsed = 00:03:25 . Memory (MB): peak = 930.277 ; gain = 646.875
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 930.277 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:27 . Memory (MB): peak = 926.449 ; gain = 642.598
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 926.449 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP embedded_system_xbar_0, cache-ID = dbda9c4f186dd751
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP embedded_system_xbar_0, cache-ID = 38c6aca925d6a0c3
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 930.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 926.449 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/embedded_system_xbar_0_synth_1/embedded_system_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file embedded_system_xbar_0_utilization_synth.rpt -pb embedded_system_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 17:05:43 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  8 12:50:50 2022...

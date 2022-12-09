@@ -114,9 +114,10 @@ int XBram_CfgInitialize(XBram *InstancePtr,
 	/*
 	 * Set some default values.
 	 */
+
 	InstancePtr->Config.CtrlBaseAddress = EffectiveAddr;
-	InstancePtr->Config.MemBaseAddress = Config->MemBaseAddress;
-	InstancePtr->Config.MemHighAddress = Config->MemHighAddress;
+	InstancePtr->Config.MemBaseAddress  = Config->MemBaseAddress;
+	InstancePtr->Config.MemHighAddress  = Config->MemHighAddress;
 	InstancePtr->Config.DataWidth = Config->DataWidth;
 	InstancePtr->Config.EccPresent = Config->EccPresent;
 	InstancePtr->Config.FaultInjectionPresent =

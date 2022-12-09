@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_axi_bram_ctrl_acp_cpu_0_1/sim/system_axi_bram_ctrl_acp_cpu_0.vhd" \
+"../../../bd/system/ip/system_axi_bram_ctrl_acp_dma_0_1/sim/system_axi_bram_ctrl_acp_dma_0.vhd" \
+"../../../bd/system/ip/system_axi_cdma_0_0_1/sim/system_axi_cdma_0_0.vhd" \
+"../../../bd/system/ip/system_rst_processing_system7_0_50M_0_1/sim/system_rst_processing_system7_0_50M_0.vhd" \
+"../../../bd/system/sim/system.vhd" \
+
+nosort

@@ -23,9 +23,9 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "write_bitstream", "begin" );
+ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log embedded_system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source embedded_system_wrapper.tcl -notrace" );
+         "-log PL_CLASSIFIER_w_VOTING.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PL_CLASSIFIER_w_VOTING.tcl -notrace" );
 
 
 

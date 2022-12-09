@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
-EAStep vivado -log embedded_system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source embedded_system_wrapper.tcl -notrace
+/bin/touch .init_design.begin.rst
+EAStep vivado -log PL_CLASSIFIER_w_VOTING.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PL_CLASSIFIER_w_VOTING.tcl -notrace
 
 
