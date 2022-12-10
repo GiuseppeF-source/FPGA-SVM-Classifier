@@ -11,37 +11,42 @@ architecture arch of TB_CLASSIFIER_w_VOTING is
 
 component PL_CLASSIFIER_w_VOTING is
   Port ( 
-  -- GPIO INPUT interface 
-  start            : in std_logic;
-  classification   : in std_logic;
-  
-  -- AXI-Stream  INPUT interface
-  s_axis_aclk      : in  std_logic;
-  s_axis_tready    : out std_logic;                          -- from SIPO
-  s_axis_tvalid    : in  std_logic;                          -- from DMA
-  s_axis_tdata     : in  std_logic_vector( 32 -1 downto 0 ); -- from DMA 
-  
-  -- AXI-Stream OUTPUT interface
-  m_axis_tdata     : out std_logic_vector( 32 -1 downto 0 );
-  m_axis_tvalid    : out std_logic;
-  m_axis_tready    :  in std_logic;
-  
-  -- INPUT interface for RAM 
-  -- RAM Pre-comp Vect
-  bram_addr_Pre_Comp_Vect   : in std_logic_vector( 14 downto 0 );  -- da utilizzare solo i primi 4
-  bram_wrdata_Pre_Comp_Vect : in std_logic_vector( 511 downto 0 ); -- dimensione axi full da portare a 408
-  bram_en_Pre_Comp_Vect     : in std_logic;
-  bram_we_Pre_Comp_Vect     : in std_logic_vector( 63 downto 0 );
-  -- RAM Kernel Scale
-  bram_addr_Kernel_Scale    : in std_logic_vector( 11 downto 0 ); -- da utilizzare solo i primi 4bit
-  bram_wrdata_Kernel_Scale  : in std_logic_vector( 31 downto 0 ); -- dimensione axi full da portare a 12
-  bram_en_Kernel_Scale      : in std_logic;
-  bram_we_Kernel_Scale      : in std_logic_vector( 3 downto 0 ); 
-  -- RAM Bias
-  bram_addr_Bias            : in std_logic_vector( 11 downto 0 ); -- da utilizzare solo i primi 4
-  bram_wrdata_Bias          : in std_logic_vector( 31 downto 0 ); -- dimensione axi full da portare a 7
-  bram_en_Bias              : in std_logic;
-  bram_we_Bias              : in std_logic_vector( 3 downto 0 )   
+   -- GPIO INPUT interface 
+   start            : in std_logic := '0';
+   classification   : in std_logic := '0';
+   
+   -- AXI-Stream  INPUT interface
+   s_axis_aclk      : in  std_logic;
+   s_axis_tready    : out std_logic;                          -- from SIPO
+   s_axis_tvalid    : in  std_logic;                          -- from DMA
+   s_axis_tdata     : in  std_logic_vector( 32 -1 downto 0 ); -- from DMA 
+   
+   -- AXI-Stream OUTPUT interface
+   m_axis_tdata     : out std_logic_vector( 32 -1 downto 0 );
+   m_axis_tvalid    : out std_logic;
+   m_axis_tready    :  in std_logic;
+ 
+   
+   -- INPUT interface for RAM 
+   -- RAM Pre-comp Vect
+   bram_addr_Pre_Comp_Vect   : in std_logic_vector( 3 downto 0 );  
+   bram_wrdata_Pre_Comp_Vect : in std_logic_vector( 407 downto 0 );
+   bram_en_Pre_Comp_Vect     : in std_logic;
+   bram_we_Pre_Comp_Vect     : in std_logic;
+   -- RAM Kernel Scale
+   bram_addr_Kernel_Scale    : in std_logic_vector( 3 downto 0 ); 
+   bram_wrdata_Kernel_Scale  : in std_logic_vector( 11 downto 0 ); 
+   bram_en_Kernel_Scale      : in std_logic;
+   bram_we_Kernel_Scale      : in std_logic; 
+   -- RAM Bias
+   bram_addr_Bias            : in std_logic_vector( 3 downto 0 ); 
+   bram_wrdata_Bias          : in std_logic_vector( 6 downto 0 ); 
+   bram_en_Bias              : in std_logic;
+   bram_we_Bias              : in std_logic;
+   -- Abilitazione Caricamento RAM
+   trig_axis_to_BRAM_PCV          : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )            
+   trig_axis_to_BRAM_Kernel_Scale : out std_logic; -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )        
+   trig_axis_to_BRAM_Bias         : out std_logic -- trigger = 1 permette caricamento da DMA a BRAM ( comanda uP )
   );
 end component;
 
@@ -60,20 +65,24 @@ constant clock_period : time := 20ns;
     signal  m_axis_tvalid             : std_logic;                                              
     signal  m_axis_tready             : std_logic :='0';    -- DMA Sempre disponibile                                                                         
 -- RAM Pre-comp Vect     
-    signal  bram_addr_Pre_Comp_Vect   : std_logic_vector( 14 downto 0 );  -- da utilizzare solo i primi 4         
-    signal  bram_wrdata_Pre_Comp_Vect : std_logic_vector( 511 downto 0 ); -- dimensione axi full da portare a 408 
+    signal  bram_addr_Pre_Comp_Vect   : std_logic_vector( 3 downto 0 );  -- da utilizzare solo i primi 4         
+    signal  bram_wrdata_Pre_Comp_Vect : std_logic_vector( 407 downto 0 ); -- dimensione axi full da portare a 408 
     signal  bram_en_Pre_Comp_Vect     : std_logic;                                                                
-    signal  bram_we_Pre_Comp_Vect     : std_logic_vector( 63 downto 0 );                                         
+    signal  bram_we_Pre_Comp_Vect     : std_logic;                                         
 -- RAM Kernel Scale              
-    signal  bram_addr_Kernel_Scale    : std_logic_vector( 11 downto 0 ); -- da utilizzare solo i primi 4bit       
-    signal  bram_wrdata_Kernel_Scale  : std_logic_vector( 31 downto 0 ); -- dimensione axi full da portare a 12   
+    signal  bram_addr_Kernel_Scale    : std_logic_vector( 3 downto 0 ); -- da utilizzare solo i primi 4bit       
+    signal  bram_wrdata_Kernel_Scale  : std_logic_vector( 11 downto 0 ); -- dimensione axi full da portare a 12   
     signal  bram_en_Kernel_Scale      : std_logic;                                                                
-    signal  bram_we_Kernel_Scale      : std_logic_vector( 3 downto 0 );                                           
+    signal  bram_we_Kernel_Scale      : std_logic;                                           
 -- RAM Bias                      
-    signal  bram_addr_Bias            : std_logic_vector( 11 downto 0 ); -- da utilizzare solo i primi 4          
-    signal  bram_wrdata_Bias          : std_logic_vector( 31 downto 0 ); -- dimensione axi full da portare a 7    
-    signal  bram_en_Bias       : std_logic;                                                                
-    signal  bram_we_Bias       : std_logic_vector( 3 downto 0 );                                           
+    signal  bram_addr_Bias            : std_logic_vector( 3 downto 0 ); -- da utilizzare solo i primi 4          
+    signal  bram_wrdata_Bias          : std_logic_vector( 6 downto 0 ); -- dimensione axi full da portare a 7    
+    signal  bram_en_Bias              : std_logic;                                                                
+    signal  bram_we_Bias              : std_logic;   
+-- start SETUP RAM
+    signal  trig_axis_to_BRAM_PCV          :  std_logic;
+    signal  trig_axis_to_BRAM_Kernel_Scale :  std_logic;
+    signal  trig_axis_to_BRAM_Bias         :  std_logic;                                         
   
 ------------------------------------------
 -- Signals necessary for Reading from file
@@ -85,34 +94,37 @@ begin
 
 DUT: PL_CLASSIFIER_w_VOTING Port Map (
 -- GPIO INPUT interface       
-  start                       => start,
-  classification              => classification,                             
-  -- AXI-Stream  IN           
-  s_axis_aclk                 => s_axis_aclk,
-  s_axis_tready               => s_axis_tready,
-  s_axis_tvalid               => s_axis_tvalid,
-  s_axis_tdata                => s_axis_tdata,                            
-  -- AXI-Stream OUT           
-  m_axis_tdata                => m_axis_tdata,
-  m_axis_tvalid               => m_axis_tvalid,
-  m_axis_tready               => m_axis_tready,                            
-  -- INPUT interface for RAM  
-  -- RAM Pre-comp Vect        
-  bram_addr_Pre_Comp_Vect     => bram_addr_Pre_Comp_Vect,
-  bram_wrdata_Pre_Comp_Vect   => bram_wrdata_Pre_Comp_Vect,
-  bram_en_Pre_Comp_Vect       => bram_en_Pre_Comp_Vect,
-  bram_we_Pre_Comp_Vect       => bram_we_Pre_Comp_Vect,
-  -- RAM Kernel Scale         
-  bram_addr_Kernel_Scale      => bram_addr_Kernel_Scale,
-  bram_wrdata_Kernel_Scale    => bram_wrdata_Kernel_Scale,
-  bram_en_Kernel_Scale        => bram_en_Kernel_Scale,
-  bram_we_Kernel_Scale        => bram_we_Kernel_Scale,
-  -- RAM Bias                 
-  bram_addr_Bias              => bram_addr_Bias,
-  bram_wrdata_Bias            => bram_wrdata_Bias,
-  bram_en_Bias                => bram_en_Bias,
-  bram_we_Bias                => bram_we_Bias
-);
+  start                          => start,
+  classification                 => classification,                             
+  -- AXI-Stream  IN              
+  s_axis_aclk                    => s_axis_aclk,
+  s_axis_tready                  => s_axis_tready,
+  s_axis_tvalid                  => s_axis_tvalid,
+  s_axis_tdata                   => s_axis_tdata,                            
+  -- AXI-Stream OUT              
+  m_axis_tdata                   => m_axis_tdata,
+  m_axis_tvalid                  => m_axis_tvalid,
+  m_axis_tready                  => m_axis_tready,                            
+  -- INPUT interface for RAM     
+  -- RAM Pre-comp Vect           
+  bram_addr_Pre_Comp_Vect        => bram_addr_Pre_Comp_Vect,
+  bram_wrdata_Pre_Comp_Vect      => bram_wrdata_Pre_Comp_Vect,
+  bram_en_Pre_Comp_Vect          => bram_en_Pre_Comp_Vect,
+  bram_we_Pre_Comp_Vect          => bram_we_Pre_Comp_Vect,
+  -- RAM Kernel Scale            
+  bram_addr_Kernel_Scale         => bram_addr_Kernel_Scale,
+  bram_wrdata_Kernel_Scale       => bram_wrdata_Kernel_Scale,
+  bram_en_Kernel_Scale           => bram_en_Kernel_Scale,
+  bram_we_Kernel_Scale           => bram_we_Kernel_Scale,
+  -- RAM Bias                    
+  bram_addr_Bias                 => bram_addr_Bias,
+  bram_wrdata_Bias               => bram_wrdata_Bias,
+  bram_en_Bias                   => bram_en_Bias,
+  bram_we_Bias                   => bram_we_Bias,
+  trig_axis_to_BRAM_PCV          => trig_axis_to_BRAM_PCV,      
+  trig_axis_to_BRAM_Kernel_Scale => trig_axis_to_BRAM_Kernel_Scale,
+  trig_axis_to_BRAM_Bias         => trig_axis_to_BRAM_Bias        
+); 
 
 -------------------------------
 -- Lettura Attributi da file
@@ -154,30 +166,39 @@ end process;
 s_axis_aclk <= not s_axis_aclk after clock_period/2;
 
 p_stimuli: process
-
-
-
 begin 
     wait for 5 * clock_period; -- 100ns process;
--- Da IDLE a PROCESSING
     wait until rising_edge(s_axis_aclk);
+    --wait for 1ns;          -- time for propagation of signal after rising edge 
+
+-- -- IDLE
+--     start <= '0';
+--     classification <= '0';     
+--     wait for  15 * clock_period; 
+
+-- -- Da IDLE a SETUP
+--     start <= '1';
+--     classification <= '0';     
+--     wait for  15 * clock_period; 
+
+-- Da SETUP a PROCESSING
     start <= '1';
-    classification <= '1';
--- attesa per un ciclo
-    wait for  clock_period;
-    
+    classification <= '1';          
+    wait for 3*clock_period;
+
 -- Simulazione DMA 
-    --------------------
-    -- OUTPUT Interface
-    --------------------
+    ------------------------
+    -- OUTPUT Interface S2MM
+    ------------------------
     m_axis_tready <= '1'; -- DMA sempre in ricezione
-    --------------------
-    -- INPUT  Interface
-    --------------------
+    wait for 2*clock_period;
+    ------------------------
+    -- INPUT  Interface MM2S
+    ------------------------
     s_axis_tvalid  <= '1'; -- dato del DMA sempre valido 
     --------------------   
     wait for 2.25us;
-    m_axis_tready <= '0'; -- DMA non più in ricezione
+    m_axis_tready <= '0'; -- DMA non piÃ¹ in ricezione
     wait for 3us;
     m_axis_tready <= '1'; -- DMA nuovamente in ricezione
       

@@ -1,0 +1,12 @@
+ILA
+probe6 -> START
+probe7 -> CLASSIFICATION
+
+slot0 -> PL AXI input ( MM2S )
+slot1 -> PL AXI output ( S2MM )
+
+probe1 -> Wdata(512bit) PCV 
+probe2 -> Wdata(32bit) Kernel_Scale
+probe3 -> Addr(12bit)  Kernel_Scale
+probe4 -> Wdata(32bit) Bias
+probe5 -> Addr(12bit)  Bias

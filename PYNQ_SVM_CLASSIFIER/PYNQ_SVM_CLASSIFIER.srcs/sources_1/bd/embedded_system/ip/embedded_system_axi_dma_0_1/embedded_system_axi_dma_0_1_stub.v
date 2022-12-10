@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Fri Aug 12 12:35:42 2022
+// Date        : Sun Nov 20 17:18:54 2022
 // Host        : peppe-pc running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top embedded_system_axi_dma_0_1 -prefix
 //               embedded_system_axi_dma_0_1_ embedded_system_axi_dma_0_1_stub.v

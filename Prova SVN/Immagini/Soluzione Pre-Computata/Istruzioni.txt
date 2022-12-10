@@ -1,0 +1,3 @@
+Grafici ottenuti mantenendo la minima parte frazionaria per rappresentare i coefficienti reali senza tagli, e variando la parte frazionaria di un coefficiente alla volta. 
+
+Senza approssimazioni dopo il dot()

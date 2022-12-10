@@ -1,8 +1,0 @@
-00:10:26 **** Incremental Build of configuration Debug for project prova ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-
-00:10:26 Build Finished (took 246ms)
-

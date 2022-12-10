@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"TB_axis_to_bram_PCV_func_synth.vhd" \
+"../../../../../PYNQ_SVM_CLASSIFIER.srcs/sim_1/new/TB_axis_to_bram_PCV.vhd" \
+
+# Do not sort compile order
+nosort

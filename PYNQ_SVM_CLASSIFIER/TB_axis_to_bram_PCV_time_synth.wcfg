@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_axis_to_bram_PCV_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_axis_to_bram_PCV" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="898666666fs"></ZoomStartTime>
+      <ZoomEndTime time="1020266667fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="214"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/TB_axis_to_bram_PCV/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/trig" type="logic">
+      <obj_property name="ElementShortName">trig</obj_property>
+      <obj_property name="ObjectShortName">trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/DUT/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/in_ready" type="logic">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/DUT/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/addr_ram" type="array">
+      <obj_property name="ElementShortName">addr_ram[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_ram[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[407:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[407:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/en_ram" type="logic">
+      <obj_property name="ElementShortName">en_ram</obj_property>
+      <obj_property name="ObjectShortName">en_ram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/we_ram" type="logic">
+      <obj_property name="ElementShortName">we_ram</obj_property>
+      <obj_property name="ObjectShortName">we_ram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/data_next" type="other">
+      <obj_property name="ElementShortName">data_next</obj_property>
+      <obj_property name="ObjectShortName">data_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/DUT/SIPO/count" type="other">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_axis_to_bram_PCV/DUT/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+</wave_config>

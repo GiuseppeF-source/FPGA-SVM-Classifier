@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Wed Aug 17 22:30:12 2022
+-- Date        : Sun Nov 20 17:03:50 2022
 -- Host        : peppe-pc running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_rst_ps7_0_50M_0/embedded_system_rst_ps7_0_50M_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top embedded_system_rst_ps7_0_50M_0 -prefix
+--               embedded_system_rst_ps7_0_50M_0_ embedded_system_rst_ps7_0_50M_0_stub.vhdl
 -- Design      : embedded_system_rst_ps7_0_50M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

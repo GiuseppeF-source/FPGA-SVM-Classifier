@@ -1,0 +1,121 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "sleep.h"
+#include "xaxidma.h"
+#include "xaxicdma.h" // test
+
+#include "PCV_pkt_32b.h" // PCV[]
+
+#define DMA_MAIN_ID					XPAR_AXI_DMA_0_DEVICE_ID
+#define CDMA_ID						XPAR_AXI_CDMA_0_DEVICE_ID
+
+/********* Instances DMA Test *********/
+XAxiDma_Config *CfgPtr_DMA_MAIN;   				 /* Pointer to the configuration of DMA */
+XAxiDma DMA_MAIN;
+
+/********* Instances CDMA Test *********/
+XAxiCdma AxiCdmaInstance;						/* Instance of the XAxiCdma */
+XAxiCdma_Config *CfgPtr;
+
+u32 RESULT[15*13];
+
+int main()
+{
+    init_platform();
+    Xil_DCacheDisable();
+    Xil_DCacheFlush();
+
+    xil_printf("Avvio Programma\n\r");
+
+    /*********** TEST  CDMA Driver ***********/
+	/* Initialize the XAxiCdma device.
+	 */
+	CfgPtr = XAxiCdma_LookupConfig(CDMA_ID);
+	if (!CfgPtr) {
+		return XST_FAILURE;
+	}
+
+	int Status_cdma = XAxiCdma_CfgInitialize(&AxiCdmaInstance, CfgPtr, CfgPtr->BaseAddress);
+	if (Status_cdma != XST_SUCCESS) {
+		return XST_FAILURE;
+	} else xil_printf("CDMA inizializzato\r\n");
+	/* Disable interrupts, we use polling mode
+	 */
+	XAxiCdma_IntrDisable(&AxiCdmaInstance, XAXICDMA_XR_IRQ_ALL_MASK);
+
+	/* Try to start the DMA transfer
+	  */
+		Xil_DCacheFlushRange((u32)PCV,(15*13)*sizeof(u32));
+
+		Status_cdma = XAxiCdma_SimpleTransfer(&AxiCdmaInstance, (u32)PCV, 0xC0000000  , (15*13)*sizeof(u32) , NULL, NULL);  // dest << BRAM_CTRL ConfigPtr->MemBaseAddress
+		if (Status_cdma == XST_SUCCESS) {
+			xil_printf("CDMA Failed \r\n");
+			return XST_FAILURE;
+		}else xil_printf("CDMA programmato....\r\n");
+
+
+	/* Wait until the CDMA transfer is done
+	 */
+	while (XAxiCdma_IsBusy(&AxiCdmaInstance)) {
+		/* Wait */
+		xil_printf("CDMA sta inviando....\r\n");
+		sleep(2);
+	}
+	xil_printf("CDMA ha trasferito i dati con successo!!! \r\n");
+        /*************************************************/
+
+	/*********** TEST the DMA driver ***********/
+	/////// DMA_MAIN ///////
+	CfgPtr_DMA_MAIN = XAxiDma_LookupConfig(DMA_MAIN_ID);
+	if (!CfgPtr_DMA_MAIN) {
+		xil_printf("No config found for %d\r\n", DMA_MAIN_ID);
+		return XST_FAILURE;
+	}
+
+	int Status_DMA = XAxiDma_CfgInitialize(&DMA_MAIN, CfgPtr_DMA_MAIN);
+	if (Status_DMA != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status_DMA);
+		return XST_FAILURE;
+	}else xil_printf("DMA_MAIN -> Inizializzato \r\n");
+
+	/* Disable interrupts,  use polling mode */
+	XAxiDma_IntrDisable(&DMA_MAIN, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&DMA_MAIN, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+	/* Try to start the DMA transfer
+		  */
+	Xil_DCacheFlushRange((u32)PCV,(15*13)*sizeof(u32));
+
+	//RICEZIONE
+	int Status_receive = XAxiDma_SimpleTransfer(&DMA_MAIN, (u32)RESULT, (15*13)*sizeof(u32), XAXIDMA_DEVICE_TO_DMA);
+
+			if (Status_receive != XST_SUCCESS) {
+				xil_printf("Config Receiver Failed \r\n");
+				return XST_FAILURE;
+			}
+	xil_printf("AXI MAIN DMA -> Configurato per Ricevere da PL \r\n");
+
+	// INVIO
+	int Status_send = XAxiDma_SimpleTransfer(&DMA_MAIN, (u32)PCV, (15*13)*sizeof(u32), XAXIDMA_DMA_TO_DEVICE);
+
+			if (Status_send != XST_SUCCESS) {
+				xil_printf("Config Transfer Failed \r\n");
+				return XST_FAILURE;
+			}
+	xil_printf("AXI MAIN DMA -> Configurato per Inviare a PL \r\n");
+
+
+
+	while ((XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DEVICE_TO_DMA)) && (XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DMA_TO_DEVICE))) {
+			/* Attesa completamento operazione del DMA */
+			xil_printf("DMA MAIN sta inviando... \r\n");
+			sleep(1);
+	}
+	xil_printf("AXI MAIN DMA -> Invio e Ricezione eseguiti con successo \r\n");
+
+    cleanup_platform();
+    return 0;
+}

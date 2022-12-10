@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log embedded_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source embedded_system_wrapper.tcl" );
+         "-log PL_CLASSIFIER_w_VOTING.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PL_CLASSIFIER_w_VOTING.tcl" );
 
 
 

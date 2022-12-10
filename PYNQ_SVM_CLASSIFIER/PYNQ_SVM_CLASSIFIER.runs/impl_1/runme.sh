@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/impl_1'
+HD_PWD='C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log embedded_system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source embedded_system_wrapper.tcl -notrace
+EAStep vivado -log PL_CLASSIFIER_w_VOTING.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PL_CLASSIFIER_w_VOTING.tcl -notrace
 
 
