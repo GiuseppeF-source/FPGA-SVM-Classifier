@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1'
+HD_PWD='C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

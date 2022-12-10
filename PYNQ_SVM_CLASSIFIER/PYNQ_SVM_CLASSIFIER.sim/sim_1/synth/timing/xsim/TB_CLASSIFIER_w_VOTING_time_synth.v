@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Sat Aug 13 17:41:25 2022
+// Date        : Sat Dec 10 20:54:25 2022
 // Host        : peppe-pc running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
-//               C:/Users/yoxo/Desktop/Giuseppe/Unical/CdL_LM_Tesi/Classifier_HW/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_CLASSIFIER_w_VOTING_time_synth.v
+//               C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_CLASSIFIER_w_VOTING_time_synth.v
 // Design      : PL_CLASSIFIER_w_VOTING
 // Purpose     : This verilog netlist is a timing simulation representation of the design and should not be modified or
 //               synthesized. Please ensure that this netlist is used with the corresponding SDF file.
@@ -44,7 +44,7 @@ module RAM32X1S_UNIQ_BASE_
   wire WE;
 
   RAMS32 #(
-    .INIT(32'h00004C77),
+    .INIT(32'h0000CC77),
     .IS_CLK_INVERTED(1'b0)) 
     SP
        (.ADR0(A0),
@@ -58,7 +58,7 @@ module RAM32X1S_UNIQ_BASE_
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD427
+module RAM32X1S_HD37
    (O,
     A0,
     A1,
@@ -103,7 +103,7 @@ module RAM32X1S_HD427
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD428
+module RAM32X1S_HD38
    (O,
     A0,
     A1,
@@ -134,7 +134,7 @@ module RAM32X1S_HD428
   wire WE;
 
   RAMS32 #(
-    .INIT(32'h0000561E),
+    .INIT(32'h0000D61E),
     .IS_CLK_INVERTED(1'b0)) 
     SP
        (.ADR0(A0),
@@ -148,7 +148,7 @@ module RAM32X1S_HD428
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD429
+module RAM32X1S_HD39
    (O,
     A0,
     A1,
@@ -193,7 +193,7 @@ module RAM32X1S_HD429
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD430
+module RAM32X1S_HD40
    (O,
     A0,
     A1,
@@ -238,7 +238,7 @@ module RAM32X1S_HD430
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD431
+module RAM32X1S_HD41
    (O,
     A0,
     A1,
@@ -269,7 +269,7 @@ module RAM32X1S_HD431
   wire WE;
 
   RAMS32 #(
-    .INIT(32'h00006F5D),
+    .INIT(32'h0000EF5D),
     .IS_CLK_INVERTED(1'b0)) 
     SP
        (.ADR0(A0),
@@ -283,7 +283,7 @@ module RAM32X1S_HD431
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD432
+module RAM32X1S_HD42
    (O,
     A0,
     A1,
@@ -314,7 +314,7 @@ module RAM32X1S_HD432
   wire WE;
 
   RAMS32 #(
-    .INIT(32'h00006F5D),
+    .INIT(32'h0000EF5D),
     .IS_CLK_INVERTED(1'b0)) 
     SP
        (.ADR0(A0),
@@ -328,7 +328,7 @@ module RAM32X1S_HD432
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD433
+module RAM32X1S_HD43
    (O,
     A0,
     A1,
@@ -373,7 +373,7 @@ module RAM32X1S_HD433
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD434
+module RAM32X1S_HD44
    (O,
     A0,
     A1,
@@ -418,7 +418,7 @@ module RAM32X1S_HD434
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD435
+module RAM32X1S_HD45
    (O,
     A0,
     A1,
@@ -463,7 +463,7 @@ module RAM32X1S_HD435
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD436
+module RAM32X1S_HD46
    (O,
     A0,
     A1,
@@ -508,7 +508,7 @@ module RAM32X1S_HD436
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD437
+module RAM32X1S_HD47
    (O,
     A0,
     A1,
@@ -539,7 +539,7 @@ module RAM32X1S_HD437
   wire WE;
 
   RAMS32 #(
-    .INIT(32'h000061EF),
+    .INIT(32'h0000E1EF),
     .IS_CLK_INVERTED(1'b0)) 
     SP
        (.ADR0(A0),
@@ -553,7 +553,7 @@ module RAM32X1S_HD437
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD438
+module RAM32X1S_HD48
    (O,
     A0,
     A1,
@@ -598,7 +598,7 @@ module RAM32X1S_HD438
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD439
+module RAM32X1S_HD49
    (O,
     A0,
     A1,
@@ -643,7 +643,7 @@ module RAM32X1S_HD439
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD440
+module RAM32X1S_HD50
    (O,
     A0,
     A1,
@@ -688,7 +688,7 @@ module RAM32X1S_HD440
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD441
+module RAM32X1S_HD51
    (O,
     A0,
     A1,
@@ -733,7 +733,7 @@ module RAM32X1S_HD441
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD442
+module RAM32X1S_HD52
    (O,
     A0,
     A1,
@@ -778,7 +778,7 @@ module RAM32X1S_HD442
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD443
+module RAM32X1S_HD53
    (O,
     A0,
     A1,
@@ -823,7 +823,7 @@ module RAM32X1S_HD443
         .WE(WE));
 endmodule
 
-module RAM32X1S_HD444
+module RAM32X1S_HD54
    (O,
     A0,
     A1,
@@ -928,7 +928,7 @@ module Classifier
   wire [7:0]\wire_Attr_pipe_to_SVM[17]_26 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[18]_28 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[19]_30 ;
-  wire [7:0]\wire_Attr_pipe_to_SVM[1]_61 ;
+  wire [7:0]\wire_Attr_pipe_to_SVM[1]_60 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[20]_32 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[21]_34 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[22]_36 ;
@@ -939,12 +939,12 @@ module Classifier
   wire [7:0]\wire_Attr_pipe_to_SVM[27]_46 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[28]_48 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[29]_50 ;
-  wire [7:0]\wire_Attr_pipe_to_SVM[2]_62 ;
+  wire [7:0]\wire_Attr_pipe_to_SVM[2]_61 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[30]_52 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[31]_54 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[32]_56 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[33]_58 ;
-  wire [7:0]\wire_Attr_pipe_to_SVM[3]_64 ;
+  wire [7:0]\wire_Attr_pipe_to_SVM[3]_63 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[4]_0 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[5]_2 ;
   wire [7:0]\wire_Attr_pipe_to_SVM[6]_4 ;
@@ -971,12 +971,12 @@ module Classifier
   wire [11:0]\wire_SV_pipe_to_SVM[27]_47 ;
   wire [11:0]\wire_SV_pipe_to_SVM[28]_49 ;
   wire [11:0]\wire_SV_pipe_to_SVM[29]_51 ;
-  wire [11:0]\wire_SV_pipe_to_SVM[2]_63 ;
+  wire [11:0]\wire_SV_pipe_to_SVM[2]_62 ;
   wire [11:0]\wire_SV_pipe_to_SVM[30]_53 ;
   wire [11:0]\wire_SV_pipe_to_SVM[31]_55 ;
   wire [11:0]\wire_SV_pipe_to_SVM[32]_57 ;
   wire [11:0]\wire_SV_pipe_to_SVM[33]_59 ;
-  wire [11:0]\wire_SV_pipe_to_SVM[3]_65 ;
+  wire [11:0]\wire_SV_pipe_to_SVM[3]_64 ;
   wire [11:0]\wire_SV_pipe_to_SVM[4]_1 ;
   wire [11:0]\wire_SV_pipe_to_SVM[5]_3 ;
   wire [11:0]\wire_SV_pipe_to_SVM[6]_5 ;
@@ -1018,11 +1018,11 @@ module Classifier
         .DSP48E1_inst(DSP48E1_inst[31:24]),
         .DSP48E1_inst_0(DSP48E1_inst_0),
         .DSP48E1_inst_1(DSP48E1_inst_1),
-        .DSP48E1_inst_2(\wire_Attr_pipe_to_SVM[1]_61 ),
-        .DSP48E1_inst_3(\wire_SV_pipe_to_SVM[2]_63 ),
-        .DSP48E1_inst_4(\wire_Attr_pipe_to_SVM[2]_62 ),
-        .DSP48E1_inst_5(\wire_SV_pipe_to_SVM[3]_65 ),
-        .DSP48E1_inst_6(\wire_Attr_pipe_to_SVM[3]_64 ),
+        .DSP48E1_inst_2(\wire_Attr_pipe_to_SVM[1]_60 ),
+        .DSP48E1_inst_3(\wire_SV_pipe_to_SVM[2]_62 ),
+        .DSP48E1_inst_4(\wire_Attr_pipe_to_SVM[2]_61 ),
+        .DSP48E1_inst_5(\wire_SV_pipe_to_SVM[3]_64 ),
+        .DSP48E1_inst_6(\wire_Attr_pipe_to_SVM[3]_63 ),
         .Output_SVM(Output_SVM),
         .Q(Q),
         .\SV_Alpha_Label_j_SVM[10] (\wire_SV_pipe_to_SVM[10]_13 ),
@@ -1122,20 +1122,20 @@ module Classifier
         .\SV_Alpha_Label_j_SVM[9] (\wire_SV_pipe_to_SVM[9]_11 ),
         .ram_data(ram_data[383:0]),
         .s_axis_aclk(s_axis_aclk),
-        .\signA_reg[0][7] (\wire_Attr_pipe_to_SVM[1]_61 ),
+        .\signA_reg[0][7] (\wire_Attr_pipe_to_SVM[1]_60 ),
         .\signA_reg[0][7]_0 (DSP48E1_inst[23:0]),
         .\signA_reg[10][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_9 (\signA_reg[10][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_9 ),
         .\signA_reg[14][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_13 (\signA_reg[14][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_13 ),
         .\signA_reg[18][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_17 (\signA_reg[18][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_17 ),
-        .\signA_reg[1][7] (\wire_Attr_pipe_to_SVM[2]_62 ),
+        .\signA_reg[1][7] (\wire_Attr_pipe_to_SVM[2]_61 ),
         .\signA_reg[22][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_21 (\signA_reg[22][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_21 ),
         .\signA_reg[26][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_25 (\signA_reg[26][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_25 ),
-        .\signA_reg[2][7] (\wire_Attr_pipe_to_SVM[3]_64 ),
+        .\signA_reg[2][7] (\wire_Attr_pipe_to_SVM[3]_63 ),
         .\signA_reg[2][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_1 (\signA_reg[2][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_1 ),
         .\signA_reg[30][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_29 (\signA_reg[30][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_29 ),
         .\signA_reg[6][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_5 (\signA_reg[6][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_5 ),
-        .\signB_reg[1][11] (\wire_SV_pipe_to_SVM[2]_63 ),
-        .\signB_reg[2][11] (\wire_SV_pipe_to_SVM[3]_65 ));
+        .\signB_reg[1][11] (\wire_SV_pipe_to_SVM[2]_62 ),
+        .\signB_reg[2][11] (\wire_SV_pipe_to_SVM[3]_64 ));
 endmodule
 
 module DSP_AxB_Cascade
@@ -6874,8 +6874,14 @@ module FSM
     dina,
     \bram_wrdata_Kernel_Scale[11] ,
     din_RAM_Bias,
-    i_addr_RAM_Bias,
-    i_addr_RAM_Kernel_Scale,
+    bram_addr_Bias_0_sp_1,
+    bram_addr_Bias_1_sp_1,
+    bram_addr_Bias_2_sp_1,
+    bram_addr_Bias_3_sp_1,
+    bram_addr_Kernel_Scale_0_sp_1,
+    bram_addr_Kernel_Scale_1_sp_1,
+    bram_addr_Kernel_Scale_2_sp_1,
+    bram_addr_Kernel_Scale_3_sp_1,
     i_en_RAM_Pre_Computed_Vector,
     ADDRARDADDR,
     p_0_in__1,
@@ -6913,12 +6919,18 @@ module FSM
   output \State_reg[0] ;
   output \count_reg[3] ;
   output s_axis_tready;
-  output [1:0]\FSM_onehot_state_reg[2]_0 ;
+  output [2:0]\FSM_onehot_state_reg[2]_0 ;
   output [407:0]dina;
   output [11:0]\bram_wrdata_Kernel_Scale[11] ;
   output [6:0]din_RAM_Bias;
-  output [3:0]i_addr_RAM_Bias;
-  output [3:0]i_addr_RAM_Kernel_Scale;
+  output bram_addr_Bias_0_sp_1;
+  output bram_addr_Bias_1_sp_1;
+  output bram_addr_Bias_2_sp_1;
+  output bram_addr_Bias_3_sp_1;
+  output bram_addr_Kernel_Scale_0_sp_1;
+  output bram_addr_Kernel_Scale_1_sp_1;
+  output bram_addr_Kernel_Scale_2_sp_1;
+  output bram_addr_Kernel_Scale_3_sp_1;
   output i_en_RAM_Pre_Computed_Vector;
   output [3:0]ADDRARDADDR;
   output p_0_in__1;
@@ -6941,11 +6953,11 @@ module FSM
   input [3:0]bram_addr_Kernel_Scale;
   input bram_en_Pre_Comp_Vect;
   input [3:0]bram_addr_Pre_Comp_Vect;
-  input [0:0]bram_we_Bias;
+  input bram_we_Bias;
   input bram_en_Bias;
-  input [0:0]bram_we_Kernel_Scale;
+  input bram_we_Kernel_Scale;
   input bram_en_Kernel_Scale;
-  input [0:0]bram_we_Pre_Comp_Vect;
+  input bram_we_Pre_Comp_Vect;
   input start;
   input out_valid_i;
   input classification;
@@ -6954,12 +6966,12 @@ module FSM
   wire [3:0]ADDRARDADDR;
   wire [0:0]E;
   wire \FSM_onehot_state[1]_i_1_n_0 ;
+  wire \FSM_onehot_state[1]_i_2_n_0 ;
+  wire \FSM_onehot_state[1]_i_3_n_0 ;
+  wire \FSM_onehot_state[1]_i_4_n_0 ;
   wire \FSM_onehot_state[2]_i_1_n_0 ;
   wire \FSM_onehot_state[3]_i_1_n_0 ;
-  wire \FSM_onehot_state[3]_i_2_n_0 ;
-  wire \FSM_onehot_state[3]_i_3_n_0 ;
-  wire [1:0]\FSM_onehot_state_reg[2]_0 ;
-  wire \FSM_onehot_state_reg_n_0_[1] ;
+  wire [2:0]\FSM_onehot_state_reg[2]_0 ;
   wire \FSM_onehot_state_reg_n_0_[3] ;
   wire [1:0]Q;
   wire [0:0]SS;
@@ -6967,15 +6979,23 @@ module FSM
   wire [0:0]\State_reg[2] ;
   wire [0:0]WEA;
   wire [3:0]bram_addr_Bias;
+  wire bram_addr_Bias_0_sn_1;
+  wire bram_addr_Bias_1_sn_1;
+  wire bram_addr_Bias_2_sn_1;
+  wire bram_addr_Bias_3_sn_1;
   wire [3:0]bram_addr_Kernel_Scale;
+  wire bram_addr_Kernel_Scale_0_sn_1;
+  wire bram_addr_Kernel_Scale_1_sn_1;
+  wire bram_addr_Kernel_Scale_2_sn_1;
+  wire bram_addr_Kernel_Scale_3_sn_1;
   wire [3:0]bram_addr_Pre_Comp_Vect;
   wire bram_en_Bias;
   wire bram_en_Kernel_Scale;
   wire [0:0]bram_en_Kernel_Scale_0;
   wire bram_en_Pre_Comp_Vect;
-  wire [0:0]bram_we_Bias;
-  wire [0:0]bram_we_Kernel_Scale;
-  wire [0:0]bram_we_Pre_Comp_Vect;
+  wire bram_we_Bias;
+  wire bram_we_Kernel_Scale;
+  wire bram_we_Pre_Comp_Vect;
   wire [6:0]bram_wrdata_Bias;
   wire [11:0]bram_wrdata_Kernel_Scale;
   wire [11:0]\bram_wrdata_Kernel_Scale[11] ;
@@ -6988,8 +7008,6 @@ module FSM
   wire [6:0]din_RAM_Bias;
   wire [407:0]dina;
   wire en_RAM_Pre_Computed_Vector;
-  wire [3:0]i_addr_RAM_Bias;
-  wire [3:0]i_addr_RAM_Kernel_Scale;
   wire i_en_RAM_Pre_Computed_Vector;
   wire i_ready_from_SIPO;
   wire m_axis_tready;
@@ -7002,7 +7020,6 @@ module FSM
   wire pm_FSM_Voting_n_1;
   wire pm_FSM_Voting_n_2;
   wire ram_name_reg_0_i_43_n_0;
-  wire ram_name_reg_0_i_44_n_0;
   wire ram_name_reg_2_i_37_n_0;
   wire ram_name_reg_5_i_37_n_0;
   wire s_axis_aclk;
@@ -7011,78 +7028,92 @@ module FSM
   wire \shift_reg[0]_0 ;
   wire start;
 
-  (* SOFT_HLUTNM = "soft_lutpair319" *) 
+  assign bram_addr_Bias_0_sp_1 = bram_addr_Bias_0_sn_1;
+  assign bram_addr_Bias_1_sp_1 = bram_addr_Bias_1_sn_1;
+  assign bram_addr_Bias_2_sp_1 = bram_addr_Bias_2_sn_1;
+  assign bram_addr_Bias_3_sp_1 = bram_addr_Bias_3_sn_1;
+  assign bram_addr_Kernel_Scale_0_sp_1 = bram_addr_Kernel_Scale_0_sn_1;
+  assign bram_addr_Kernel_Scale_1_sp_1 = bram_addr_Kernel_Scale_1_sn_1;
+  assign bram_addr_Kernel_Scale_2_sp_1 = bram_addr_Kernel_Scale_2_sn_1;
+  assign bram_addr_Kernel_Scale_3_sp_1 = bram_addr_Kernel_Scale_3_sn_1;
+  LUT1 #(
+    .INIT(2'h1)) 
+    \FSM_onehot_state[1]_i_1 
+       (.I0(start),
+        .O(\FSM_onehot_state[1]_i_1_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFEA)) 
+    \FSM_onehot_state[1]_i_2 
+       (.I0(\FSM_onehot_state[1]_i_4_n_0 ),
+        .I1(\FSM_onehot_state_reg[2]_0 [1]),
+        .I2(classification),
+        .I3(\FSM_onehot_state_reg[2]_0 [0]),
+        .O(\FSM_onehot_state[1]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair318" *) 
   LUT2 #(
     .INIT(4'h2)) 
-    \FSM_onehot_state[1]_i_1 
+    \FSM_onehot_state[1]_i_3 
        (.I0(\FSM_onehot_state_reg[2]_0 [0]),
         .I1(classification),
-        .O(\FSM_onehot_state[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair319" *) 
+        .O(\FSM_onehot_state[1]_i_3_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \FSM_onehot_state[1]_i_4 
+       (.I0(\FSM_onehot_state_reg[2]_0 [2]),
+        .I1(\FSM_onehot_state_reg_n_0_[3] ),
+        .O(\FSM_onehot_state[1]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair318" *) 
   LUT5 #(
     .INIT(32'hFFEAEAEA)) 
     \FSM_onehot_state[2]_i_1 
-       (.I0(\FSM_onehot_state_reg_n_0_[1] ),
+       (.I0(\FSM_onehot_state_reg[2]_0 [1]),
         .I1(classification),
         .I2(\FSM_onehot_state_reg[2]_0 [0]),
         .I3(m_axis_tready),
-        .I4(ram_name_reg_0_i_44_n_0),
+        .I4(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\FSM_onehot_state[2]_i_1_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \FSM_onehot_state[3]_i_1 
-       (.I0(start),
-        .O(\FSM_onehot_state[3]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFEA)) 
-    \FSM_onehot_state[3]_i_2 
-       (.I0(ram_name_reg_0_i_44_n_0),
-        .I1(\FSM_onehot_state_reg_n_0_[1] ),
-        .I2(classification),
-        .I3(\FSM_onehot_state_reg[2]_0 [0]),
-        .O(\FSM_onehot_state[3]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h2)) 
-    \FSM_onehot_state[3]_i_3 
-       (.I0(ram_name_reg_0_i_44_n_0),
+    \FSM_onehot_state[3]_i_1 
+       (.I0(\FSM_onehot_state[1]_i_4_n_0 ),
         .I1(m_axis_tready),
-        .O(\FSM_onehot_state[3]_i_3_n_0 ));
+        .O(\FSM_onehot_state[3]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "idle:0001,setup:0010,pause:1000,processing:0100" *) 
   FDSE #(
     .INIT(1'b1)) 
     \FSM_onehot_state_reg[0] 
        (.C(s_axis_aclk),
-        .CE(\FSM_onehot_state[3]_i_2_n_0 ),
+        .CE(\FSM_onehot_state[1]_i_2_n_0 ),
         .D(1'b0),
         .Q(\FSM_onehot_state_reg[2]_0 [0]),
-        .S(\FSM_onehot_state[3]_i_1_n_0 ));
+        .S(\FSM_onehot_state[1]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "idle:0001,setup:0010,pause:1000,processing:0100" *) 
   FDRE #(
     .INIT(1'b0)) 
     \FSM_onehot_state_reg[1] 
        (.C(s_axis_aclk),
-        .CE(\FSM_onehot_state[3]_i_2_n_0 ),
-        .D(\FSM_onehot_state[1]_i_1_n_0 ),
-        .Q(\FSM_onehot_state_reg_n_0_[1] ),
-        .R(\FSM_onehot_state[3]_i_1_n_0 ));
+        .CE(\FSM_onehot_state[1]_i_2_n_0 ),
+        .D(\FSM_onehot_state[1]_i_3_n_0 ),
+        .Q(\FSM_onehot_state_reg[2]_0 [1]),
+        .R(\FSM_onehot_state[1]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "idle:0001,setup:0010,pause:1000,processing:0100" *) 
   FDRE #(
     .INIT(1'b0)) 
     \FSM_onehot_state_reg[2] 
        (.C(s_axis_aclk),
-        .CE(\FSM_onehot_state[3]_i_2_n_0 ),
+        .CE(\FSM_onehot_state[1]_i_2_n_0 ),
         .D(\FSM_onehot_state[2]_i_1_n_0 ),
-        .Q(\FSM_onehot_state_reg[2]_0 [1]),
-        .R(\FSM_onehot_state[3]_i_1_n_0 ));
+        .Q(\FSM_onehot_state_reg[2]_0 [2]),
+        .R(\FSM_onehot_state[1]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "idle:0001,setup:0010,pause:1000,processing:0100" *) 
   FDRE #(
     .INIT(1'b0)) 
     \FSM_onehot_state_reg[3] 
        (.C(s_axis_aclk),
-        .CE(\FSM_onehot_state[3]_i_2_n_0 ),
-        .D(\FSM_onehot_state[3]_i_3_n_0 ),
+        .CE(\FSM_onehot_state[1]_i_2_n_0 ),
+        .D(\FSM_onehot_state[3]_i_1_n_0 ),
         .Q(\FSM_onehot_state_reg_n_0_[3] ),
-        .R(\FSM_onehot_state[3]_i_1_n_0 ));
+        .R(\FSM_onehot_state[1]_i_1_n_0 ));
   FSM_Kernel_Bias pm_FSM_Kernel_Bias
        (.E(E),
         .Q({\State_reg[2] ,pm_FSM_Voting_n_1,pm_FSM_Voting_n_2}),
@@ -7090,17 +7121,23 @@ module FSM
         .\State_reg[0]_0 (pm_FSM_Kernel_Bias_n_10),
         .\State_reg[1]_0 (en_RAM_Pre_Computed_Vector),
         .bram_addr_Bias(bram_addr_Bias),
+        .bram_addr_Bias_0_sp_1(bram_addr_Bias_0_sn_1),
+        .bram_addr_Bias_1_sp_1(bram_addr_Bias_1_sn_1),
+        .bram_addr_Bias_2_sp_1(bram_addr_Bias_2_sn_1),
+        .bram_addr_Bias_3_sp_1(bram_addr_Bias_3_sn_1),
         .bram_addr_Kernel_Scale(bram_addr_Kernel_Scale),
+        .bram_addr_Kernel_Scale_0_sp_1(bram_addr_Kernel_Scale_0_sn_1),
+        .bram_addr_Kernel_Scale_1_sp_1(bram_addr_Kernel_Scale_1_sn_1),
+        .bram_addr_Kernel_Scale_2_sp_1(bram_addr_Kernel_Scale_2_sn_1),
+        .bram_addr_Kernel_Scale_3_sp_1(bram_addr_Kernel_Scale_3_sn_1),
         .bram_en_Bias(bram_en_Bias),
         .bram_en_Kernel_Scale(bram_en_Kernel_Scale),
         .bram_en_Kernel_Scale_0(bram_en_Kernel_Scale_0),
         .bram_we_Bias(bram_we_Bias),
         .bram_we_Kernel_Scale(bram_we_Kernel_Scale),
         .ce_DSP_AxB_plus_C_classifier(ce_DSP_AxB_plus_C_classifier),
-        .i_addr_RAM_Bias(i_addr_RAM_Bias),
-        .i_addr_RAM_Kernel_Scale(i_addr_RAM_Kernel_Scale),
         .m_axis_tready(m_axis_tready),
-        .\ram_data_reg[0] (ram_name_reg_0_i_44_n_0),
+        .\ram_data_reg[0] (\FSM_onehot_state[1]_i_4_n_0 ),
         .\ram_data_reg[0]_0 (ram_name_reg_0_i_43_n_0),
         .s_axis_aclk(s_axis_aclk));
   FSM_SIPO_PCV pm_FSM_SIPO_PCV
@@ -7117,14 +7154,14 @@ module FSM
         .s_axis_aclk(s_axis_aclk),
         .s_axis_tvalid(s_axis_tvalid),
         .\shift_reg[0]_0 (\shift_reg[0]_0 ),
-        .\state_reg[1]_0 (ram_name_reg_0_i_44_n_0));
+        .\state_reg[1]_0 (\FSM_onehot_state[1]_i_4_n_0 ));
   FSM_Voting pm_FSM_Voting
        (.Q({\State_reg[2] ,pm_FSM_Voting_n_1,pm_FSM_Voting_n_2}),
         .SR(p_0_in),
         .SS(SS),
         .\State[1]_i_3_0 (pm_FSM_Kernel_Bias_n_10),
         .\State_reg[0]_0 (\State_reg[0] ),
-        .\State_reg[2]_0 ({\FSM_onehot_state_reg_n_0_[3] ,\FSM_onehot_state_reg[2]_0 [1]}),
+        .\State_reg[2]_0 ({\FSM_onehot_state_reg_n_0_[3] ,\FSM_onehot_state_reg[2]_0 [2]}),
         .\count[2]_i_3 (\count[2]_i_3 ),
         .\count_reg[3]_0 (\count_reg[3] ),
         .\count_reg[4]_0 (\count_reg[4] ),
@@ -7135,321 +7172,321 @@ module FSM
     .INIT(4'h2)) 
     ram_name_reg_0_15_0_0_i_1
        (.I0(bram_wrdata_Kernel_Scale[0]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [0]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_0_0_i_1__0
        (.I0(bram_wrdata_Bias[0]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(din_RAM_Bias[0]));
   LUT3 #(
     .INIT(8'h08)) 
     ram_name_reg_0_15_0_0_i_2
        (.I0(bram_we_Bias),
         .I1(bram_en_Bias),
-        .I2(ram_name_reg_0_i_44_n_0),
+        .I2(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(p_0_in__1));
   LUT3 #(
     .INIT(8'h08)) 
     ram_name_reg_0_15_0_0_i_2__0
        (.I0(bram_we_Kernel_Scale),
         .I1(bram_en_Kernel_Scale),
-        .I2(ram_name_reg_0_i_44_n_0),
+        .I2(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(p_0_in__0));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_10_10_i_1
        (.I0(bram_wrdata_Kernel_Scale[10]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [10]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_11_11_i_1
        (.I0(bram_wrdata_Kernel_Scale[11]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [11]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_1_1_i_1
        (.I0(bram_wrdata_Kernel_Scale[1]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [1]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_1_1_i_1__0
        (.I0(bram_wrdata_Bias[1]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(din_RAM_Bias[1]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_2_2_i_1
        (.I0(bram_wrdata_Kernel_Scale[2]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [2]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_2_2_i_1__0
        (.I0(bram_wrdata_Bias[2]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(din_RAM_Bias[2]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_3_3_i_1
        (.I0(bram_wrdata_Kernel_Scale[3]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [3]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_3_3_i_1__0
        (.I0(bram_wrdata_Bias[3]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(din_RAM_Bias[3]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_4_4_i_1
        (.I0(bram_wrdata_Kernel_Scale[4]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [4]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_4_4_i_1__0
        (.I0(bram_wrdata_Bias[4]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(din_RAM_Bias[4]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_5_5_i_1
        (.I0(bram_wrdata_Kernel_Scale[5]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [5]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_5_5_i_1__0
        (.I0(bram_wrdata_Bias[5]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(din_RAM_Bias[5]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_6_6_i_1
        (.I0(bram_wrdata_Kernel_Scale[6]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [6]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_6_6_i_1__0
        (.I0(bram_wrdata_Bias[6]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(din_RAM_Bias[6]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_7_7_i_1
        (.I0(bram_wrdata_Kernel_Scale[7]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [7]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_8_8_i_1
        (.I0(bram_wrdata_Kernel_Scale[8]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [8]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_15_9_9_i_1
        (.I0(bram_wrdata_Kernel_Scale[9]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(\bram_wrdata_Kernel_Scale[11] [9]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_10
        (.I0(bram_wrdata_Pre_Comp_Vect[11]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[11]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_11
        (.I0(bram_wrdata_Pre_Comp_Vect[10]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[10]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_12
        (.I0(bram_wrdata_Pre_Comp_Vect[9]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[9]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_13
        (.I0(bram_wrdata_Pre_Comp_Vect[8]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[8]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_14
        (.I0(bram_wrdata_Pre_Comp_Vect[7]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[7]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_15
        (.I0(bram_wrdata_Pre_Comp_Vect[6]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[6]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_16
        (.I0(bram_wrdata_Pre_Comp_Vect[5]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[5]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_17
        (.I0(bram_wrdata_Pre_Comp_Vect[4]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[4]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_18
        (.I0(bram_wrdata_Pre_Comp_Vect[3]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[3]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_19
        (.I0(bram_wrdata_Pre_Comp_Vect[2]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[2]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_20
        (.I0(bram_wrdata_Pre_Comp_Vect[1]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[1]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_21
        (.I0(bram_wrdata_Pre_Comp_Vect[0]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[0]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_22
        (.I0(bram_wrdata_Pre_Comp_Vect[33]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[33]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_23
        (.I0(bram_wrdata_Pre_Comp_Vect[32]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[32]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_24
        (.I0(bram_wrdata_Pre_Comp_Vect[31]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[31]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_25
        (.I0(bram_wrdata_Pre_Comp_Vect[30]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[30]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_26
        (.I0(bram_wrdata_Pre_Comp_Vect[29]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[29]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_27
        (.I0(bram_wrdata_Pre_Comp_Vect[28]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[28]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_28
        (.I0(bram_wrdata_Pre_Comp_Vect[27]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[27]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_29
        (.I0(bram_wrdata_Pre_Comp_Vect[26]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[26]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_30
        (.I0(bram_wrdata_Pre_Comp_Vect[25]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[25]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_31
        (.I0(bram_wrdata_Pre_Comp_Vect[24]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[24]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_32
        (.I0(bram_wrdata_Pre_Comp_Vect[23]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[23]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_33
        (.I0(bram_wrdata_Pre_Comp_Vect[22]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[22]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_34
        (.I0(bram_wrdata_Pre_Comp_Vect[21]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[21]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_35
        (.I0(bram_wrdata_Pre_Comp_Vect[20]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[20]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_36
        (.I0(bram_wrdata_Pre_Comp_Vect[19]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[19]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_37
        (.I0(bram_wrdata_Pre_Comp_Vect[18]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[18]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_38
        (.I0(bram_wrdata_Pre_Comp_Vect[17]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[17]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_39
        (.I0(bram_wrdata_Pre_Comp_Vect[16]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[16]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_40
        (.I0(bram_wrdata_Pre_Comp_Vect[35]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[35]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_41
        (.I0(bram_wrdata_Pre_Comp_Vect[34]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[34]));
   LUT2 #(
     .INIT(4'h2)) 
@@ -7460,38 +7497,32 @@ module FSM
   LUT2 #(
     .INIT(4'hE)) 
     ram_name_reg_0_i_43
-       (.I0(\FSM_onehot_state_reg[2]_0 [1]),
+       (.I0(\FSM_onehot_state_reg[2]_0 [2]),
         .I1(\FSM_onehot_state_reg_n_0_[3] ),
         .O(ram_name_reg_0_i_43_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ram_name_reg_0_i_44
-       (.I0(\FSM_onehot_state_reg[2]_0 [1]),
-        .I1(\FSM_onehot_state_reg_n_0_[3] ),
-        .O(ram_name_reg_0_i_44_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_6
        (.I0(bram_wrdata_Pre_Comp_Vect[15]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[15]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_7
        (.I0(bram_wrdata_Pre_Comp_Vect[14]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[14]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_8
        (.I0(bram_wrdata_Pre_Comp_Vect[13]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[13]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_0_i_9
        (.I0(bram_wrdata_Pre_Comp_Vect[12]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[12]));
   LUT2 #(
     .INIT(4'h2)) 
@@ -7785,217 +7816,217 @@ module FSM
     .INIT(4'h2)) 
     ram_name_reg_1_i_1
        (.I0(bram_wrdata_Pre_Comp_Vect[51]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[51]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_10
        (.I0(bram_wrdata_Pre_Comp_Vect[42]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[42]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_11
        (.I0(bram_wrdata_Pre_Comp_Vect[41]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[41]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_12
        (.I0(bram_wrdata_Pre_Comp_Vect[40]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[40]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_13
        (.I0(bram_wrdata_Pre_Comp_Vect[39]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[39]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_14
        (.I0(bram_wrdata_Pre_Comp_Vect[38]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[38]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_15
        (.I0(bram_wrdata_Pre_Comp_Vect[37]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[37]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_16
        (.I0(bram_wrdata_Pre_Comp_Vect[36]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[36]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_17
        (.I0(bram_wrdata_Pre_Comp_Vect[69]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[69]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_18
        (.I0(bram_wrdata_Pre_Comp_Vect[68]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[68]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_19
        (.I0(bram_wrdata_Pre_Comp_Vect[67]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[67]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_2
        (.I0(bram_wrdata_Pre_Comp_Vect[50]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[50]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_20
        (.I0(bram_wrdata_Pre_Comp_Vect[66]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[66]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_21
        (.I0(bram_wrdata_Pre_Comp_Vect[65]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[65]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_22
        (.I0(bram_wrdata_Pre_Comp_Vect[64]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[64]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_23
        (.I0(bram_wrdata_Pre_Comp_Vect[63]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[63]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_24
        (.I0(bram_wrdata_Pre_Comp_Vect[62]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[62]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_25
        (.I0(bram_wrdata_Pre_Comp_Vect[61]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[61]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_26
        (.I0(bram_wrdata_Pre_Comp_Vect[60]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[60]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_27
        (.I0(bram_wrdata_Pre_Comp_Vect[59]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[59]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_28
        (.I0(bram_wrdata_Pre_Comp_Vect[58]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[58]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_29
        (.I0(bram_wrdata_Pre_Comp_Vect[57]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[57]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_3
        (.I0(bram_wrdata_Pre_Comp_Vect[49]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[49]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_30
        (.I0(bram_wrdata_Pre_Comp_Vect[56]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[56]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_31
        (.I0(bram_wrdata_Pre_Comp_Vect[55]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[55]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_32
        (.I0(bram_wrdata_Pre_Comp_Vect[54]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[54]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_33
        (.I0(bram_wrdata_Pre_Comp_Vect[53]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[53]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_34
        (.I0(bram_wrdata_Pre_Comp_Vect[52]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[52]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_35
        (.I0(bram_wrdata_Pre_Comp_Vect[71]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[71]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_36
        (.I0(bram_wrdata_Pre_Comp_Vect[70]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[70]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_4
        (.I0(bram_wrdata_Pre_Comp_Vect[48]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[48]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_5
        (.I0(bram_wrdata_Pre_Comp_Vect[47]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[47]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_6
        (.I0(bram_wrdata_Pre_Comp_Vect[46]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[46]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_7
        (.I0(bram_wrdata_Pre_Comp_Vect[45]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[45]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_8
        (.I0(bram_wrdata_Pre_Comp_Vect[44]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[44]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_1_i_9
        (.I0(bram_wrdata_Pre_Comp_Vect[43]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[43]));
   LUT2 #(
     .INIT(4'h2)) 
@@ -8007,43 +8038,43 @@ module FSM
     .INIT(4'h2)) 
     ram_name_reg_2_i_10
        (.I0(bram_wrdata_Pre_Comp_Vect[78]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[78]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_2_i_11
        (.I0(bram_wrdata_Pre_Comp_Vect[77]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[77]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_2_i_12
        (.I0(bram_wrdata_Pre_Comp_Vect[76]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[76]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_2_i_13
        (.I0(bram_wrdata_Pre_Comp_Vect[75]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[75]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_2_i_14
        (.I0(bram_wrdata_Pre_Comp_Vect[74]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[74]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_2_i_15
        (.I0(bram_wrdata_Pre_Comp_Vect[73]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[73]));
   LUT2 #(
     .INIT(4'h2)) 
     ram_name_reg_2_i_16
        (.I0(bram_wrdata_Pre_Comp_Vect[72]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[72]));
   LUT2 #(
     .INIT(4'h2)) 
@@ -8180,7 +8211,7 @@ module FSM
   LUT2 #(
     .INIT(4'hE)) 
     ram_name_reg_2_i_37
-       (.I0(\FSM_onehot_state_reg[2]_0 [1]),
+       (.I0(\FSM_onehot_state_reg[2]_0 [2]),
         .I1(\FSM_onehot_state_reg_n_0_[3] ),
         .O(ram_name_reg_2_i_37_n_0));
   LUT2 #(
@@ -8217,7 +8248,7 @@ module FSM
     .INIT(4'h2)) 
     ram_name_reg_2_i_9
        (.I0(bram_wrdata_Pre_Comp_Vect[79]),
-        .I1(ram_name_reg_0_i_44_n_0),
+        .I1(\FSM_onehot_state[1]_i_4_n_0 ),
         .O(dina[79]));
   LUT2 #(
     .INIT(4'h2)) 
@@ -8834,7 +8865,7 @@ module FSM
   LUT2 #(
     .INIT(4'hE)) 
     ram_name_reg_5_i_37
-       (.I0(\FSM_onehot_state_reg[2]_0 [1]),
+       (.I0(\FSM_onehot_state_reg[2]_0 [2]),
         .I1(\FSM_onehot_state_reg_n_0_[3] ),
         .O(ram_name_reg_5_i_37_n_0));
   LUT2 #(
@@ -9740,14 +9771,20 @@ module FSM
   LUT2 #(
     .INIT(4'h8)) 
     s_axis_tready_INST_0
-       (.I0(\FSM_onehot_state_reg[2]_0 [1]),
+       (.I0(\FSM_onehot_state_reg[2]_0 [2]),
         .I1(i_ready_from_SIPO),
         .O(s_axis_tready));
 endmodule
 
 module FSM_Kernel_Bias
-   (i_addr_RAM_Bias,
-    i_addr_RAM_Kernel_Scale,
+   (bram_addr_Bias_0_sp_1,
+    bram_addr_Bias_1_sp_1,
+    bram_addr_Bias_2_sp_1,
+    bram_addr_Bias_3_sp_1,
+    bram_addr_Kernel_Scale_0_sp_1,
+    bram_addr_Kernel_Scale_1_sp_1,
+    bram_addr_Kernel_Scale_2_sp_1,
+    bram_addr_Kernel_Scale_3_sp_1,
     E,
     bram_en_Kernel_Scale_0,
     \State_reg[0]_0 ,
@@ -9765,8 +9802,14 @@ module FSM_Kernel_Bias
     \State_reg[1]_0 ,
     s_axis_aclk,
     SR);
-  output [3:0]i_addr_RAM_Bias;
-  output [3:0]i_addr_RAM_Kernel_Scale;
+  output bram_addr_Bias_0_sp_1;
+  output bram_addr_Bias_1_sp_1;
+  output bram_addr_Bias_2_sp_1;
+  output bram_addr_Bias_3_sp_1;
+  output bram_addr_Kernel_Scale_0_sp_1;
+  output bram_addr_Kernel_Scale_1_sp_1;
+  output bram_addr_Kernel_Scale_2_sp_1;
+  output bram_addr_Kernel_Scale_3_sp_1;
   output [0:0]E;
   output [0:0]bram_en_Kernel_Scale_0;
   output \State_reg[0]_0 ;
@@ -9776,9 +9819,9 @@ module FSM_Kernel_Bias
   input [3:0]bram_addr_Kernel_Scale;
   input \ram_data_reg[0]_0 ;
   input bram_en_Bias;
-  input [0:0]bram_we_Bias;
+  input bram_we_Bias;
   input bram_en_Kernel_Scale;
-  input [0:0]bram_we_Kernel_Scale;
+  input bram_we_Kernel_Scale;
   input m_axis_tready;
   input [2:0]Q;
   input [0:0]\State_reg[1]_0 ;
@@ -9818,12 +9861,20 @@ module FSM_Kernel_Bias
   wire \addr_RAM_Kernel_Scale_reg[3]_i_1_n_0 ;
   wire \addr_RAM_Kernel_Scale_reg[3]_i_2_n_0 ;
   wire [3:0]bram_addr_Bias;
+  wire bram_addr_Bias_0_sn_1;
+  wire bram_addr_Bias_1_sn_1;
+  wire bram_addr_Bias_2_sn_1;
+  wire bram_addr_Bias_3_sn_1;
   wire [3:0]bram_addr_Kernel_Scale;
+  wire bram_addr_Kernel_Scale_0_sn_1;
+  wire bram_addr_Kernel_Scale_1_sn_1;
+  wire bram_addr_Kernel_Scale_2_sn_1;
+  wire bram_addr_Kernel_Scale_3_sn_1;
   wire bram_en_Bias;
   wire bram_en_Kernel_Scale;
   wire [0:0]bram_en_Kernel_Scale_0;
-  wire [0:0]bram_we_Bias;
-  wire [0:0]bram_we_Kernel_Scale;
+  wire bram_we_Bias;
+  wire bram_we_Kernel_Scale;
   wire ce_DSP_AxB_plus_C_classifier;
   wire \count[0]_i_1__0_n_0 ;
   wire \count[1]_i_1__0_n_0 ;
@@ -9847,8 +9898,6 @@ module FSM_Kernel_Bias
   wire \count_reg_n_0_[3] ;
   wire \count_reg_n_0_[4] ;
   wire \count_reg_n_0_[5] ;
-  wire [3:0]i_addr_RAM_Bias;
-  wire [3:0]i_addr_RAM_Kernel_Scale;
   wire m_axis_tready;
   wire \pause_state[2]_i_1__1_n_0 ;
   wire \pause_state_reg_n_0_[0] ;
@@ -9859,6 +9908,14 @@ module FSM_Kernel_Bias
   wire \ram_data_reg[0]_0 ;
   wire s_axis_aclk;
 
+  assign bram_addr_Bias_0_sp_1 = bram_addr_Bias_0_sn_1;
+  assign bram_addr_Bias_1_sp_1 = bram_addr_Bias_1_sn_1;
+  assign bram_addr_Bias_2_sp_1 = bram_addr_Bias_2_sn_1;
+  assign bram_addr_Bias_3_sp_1 = bram_addr_Bias_3_sn_1;
+  assign bram_addr_Kernel_Scale_0_sp_1 = bram_addr_Kernel_Scale_0_sn_1;
+  assign bram_addr_Kernel_Scale_1_sp_1 = bram_addr_Kernel_Scale_1_sn_1;
+  assign bram_addr_Kernel_Scale_2_sp_1 = bram_addr_Kernel_Scale_2_sn_1;
+  assign bram_addr_Kernel_Scale_3_sp_1 = bram_addr_Kernel_Scale_3_sn_1;
   LUT3 #(
     .INIT(8'hF8)) 
     DSP48E1_inst_i_1
@@ -9886,7 +9943,7 @@ module FSM_Kernel_Bias
         .I4(\addr_RAM_Kernel_Scale_reg[3]_i_2_n_0 ),
         .I5(\addr_RAM_Bias_reg[3]_i_3_n_0 ),
         .O(\State[0]_i_2__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair300" *) 
+  (* SOFT_HLUTNM = "soft_lutpair301" *) 
   LUT5 #(
     .INIT(32'hFFFFFFEF)) 
     \State[0]_i_3__0 
@@ -9906,7 +9963,7 @@ module FSM_Kernel_Bias
         .I4(\State[1]_i_3__0_n_0 ),
         .I5(\State[1]_i_4_n_0 ),
         .O(\State[1]_i_1__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair301" *) 
+  (* SOFT_HLUTNM = "soft_lutpair302" *) 
   LUT5 #(
     .INIT(32'h00000008)) 
     \State[1]_i_2__0 
@@ -9966,14 +10023,12 @@ module FSM_Kernel_Bias
         .I4(Q[1]),
         .I5(Q[0]),
         .O(\State_reg[0]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair306" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \State[1]_i_7 
        (.I0(\count_reg_n_0_[1] ),
         .I1(\count_reg_n_0_[5] ),
         .O(\State[1]_i_7_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair308" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \State[1]_i_8 
@@ -10000,7 +10055,7 @@ module FSM_Kernel_Bias
         .I4(\count_reg_n_0_[2] ),
         .I5(\count_reg_n_0_[3] ),
         .O(\State[2]_i_2__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair303" *) 
+  (* SOFT_HLUTNM = "soft_lutpair304" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \State[2]_i_3__0 
@@ -10060,6 +10115,7 @@ module FSM_Kernel_Bias
         .G(\addr_RAM_Bias_reg[3]_i_2_n_0 ),
         .GE(1'b1),
         .Q(addr_RAM_Bias[0]));
+  (* SOFT_HLUTNM = "soft_lutpair307" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \addr_RAM_Bias_reg[0]_i_1 
@@ -10074,7 +10130,7 @@ module FSM_Kernel_Bias
         .G(\addr_RAM_Bias_reg[3]_i_2_n_0 ),
         .GE(1'b1),
         .Q(addr_RAM_Bias[1]));
-  (* SOFT_HLUTNM = "soft_lutpair308" *) 
+  (* SOFT_HLUTNM = "soft_lutpair306" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \addr_RAM_Bias_reg[1]_i_1 
@@ -10090,7 +10146,7 @@ module FSM_Kernel_Bias
         .G(\addr_RAM_Bias_reg[3]_i_2_n_0 ),
         .GE(1'b1),
         .Q(addr_RAM_Bias[2]));
-  (* SOFT_HLUTNM = "soft_lutpair307" *) 
+  (* SOFT_HLUTNM = "soft_lutpair306" *) 
   LUT3 #(
     .INIT(8'hE1)) 
     \addr_RAM_Bias_reg[2]_i_1 
@@ -10107,7 +10163,7 @@ module FSM_Kernel_Bias
         .G(\addr_RAM_Bias_reg[3]_i_2_n_0 ),
         .GE(1'b1),
         .Q(addr_RAM_Bias[3]));
-  (* SOFT_HLUTNM = "soft_lutpair304" *) 
+  (* SOFT_HLUTNM = "soft_lutpair303" *) 
   LUT4 #(
     .INIT(16'hCCC9)) 
     \addr_RAM_Bias_reg[3]_i_1 
@@ -10116,7 +10172,7 @@ module FSM_Kernel_Bias
         .I2(\count_reg_n_0_[0] ),
         .I3(\count_reg_n_0_[1] ),
         .O(\addr_RAM_Bias_reg[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair302" *) 
+  (* SOFT_HLUTNM = "soft_lutpair300" *) 
   LUT5 #(
     .INIT(32'hAAAAAAA8)) 
     \addr_RAM_Bias_reg[3]_i_2 
@@ -10170,7 +10226,7 @@ module FSM_Kernel_Bias
         .G(\addr_RAM_Kernel_Scale_reg[3]_i_1_n_0 ),
         .GE(1'b1),
         .Q(addr_RAM_Kernel_Scale[3]));
-  (* SOFT_HLUTNM = "soft_lutpair306" *) 
+  (* SOFT_HLUTNM = "soft_lutpair305" *) 
   LUT4 #(
     .INIT(16'h1000)) 
     \addr_RAM_Kernel_Scale_reg[3]_i_1 
@@ -10179,7 +10235,7 @@ module FSM_Kernel_Bias
         .I2(State[2]),
         .I3(\addr_RAM_Kernel_Scale_reg[3]_i_2_n_0 ),
         .O(\addr_RAM_Kernel_Scale_reg[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair302" *) 
+  (* SOFT_HLUTNM = "soft_lutpair300" *) 
   LUT4 #(
     .INIT(16'h7FFF)) 
     \addr_RAM_Kernel_Scale_reg[3]_i_2 
@@ -10208,7 +10264,7 @@ module FSM_Kernel_Bias
         .I4(\count_reg_n_0_[1] ),
         .I5(\count[1]_i_4_n_0 ),
         .O(\count[1]_i_1__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair305" *) 
+  (* SOFT_HLUTNM = "soft_lutpair304" *) 
   LUT4 #(
     .INIT(16'hFFF7)) 
     \count[1]_i_2__0 
@@ -10217,7 +10273,7 @@ module FSM_Kernel_Bias
         .I2(\count_reg_n_0_[5] ),
         .I3(\count_reg_n_0_[4] ),
         .O(\count[1]_i_2__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair300" *) 
+  (* SOFT_HLUTNM = "soft_lutpair301" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \count[1]_i_3__1 
@@ -10291,7 +10347,7 @@ module FSM_Kernel_Bias
         .I4(m_axis_tready),
         .I5(\count_reg_n_0_[5] ),
         .O(\count[4]_i_2__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair301" *) 
+  (* SOFT_HLUTNM = "soft_lutpair302" *) 
   LUT3 #(
     .INIT(8'hF1)) 
     \count[4]_i_3__0 
@@ -10319,7 +10375,6 @@ module FSM_Kernel_Bias
         .I4(State[1]),
         .I5(\count[5]_i_4_n_0 ),
         .O(\count[5]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair303" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \count[5]_i_3 
@@ -10435,7 +10490,7 @@ module FSM_Kernel_Bias
         .I3(bram_en_Bias),
         .I4(bram_we_Bias),
         .O(E));
-  (* SOFT_HLUTNM = "soft_lutpair304" *) 
+  (* SOFT_HLUTNM = "soft_lutpair303" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \ram_data[6]_i_2 
@@ -10450,56 +10505,56 @@ module FSM_Kernel_Bias
        (.I0(addr_RAM_Bias[0]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Bias[0]),
-        .O(i_addr_RAM_Bias[0]));
+        .O(bram_addr_Bias_0_sn_1));
   LUT3 #(
     .INIT(8'hB8)) 
     ram_name_reg_0_15_0_0_i_3__0
        (.I0(addr_RAM_Kernel_Scale[0]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Kernel_Scale[0]),
-        .O(i_addr_RAM_Kernel_Scale[0]));
+        .O(bram_addr_Kernel_Scale_0_sn_1));
   LUT3 #(
     .INIT(8'hB8)) 
     ram_name_reg_0_15_0_0_i_4
        (.I0(addr_RAM_Bias[1]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Bias[1]),
-        .O(i_addr_RAM_Bias[1]));
+        .O(bram_addr_Bias_1_sn_1));
   LUT3 #(
     .INIT(8'hB8)) 
     ram_name_reg_0_15_0_0_i_4__0
        (.I0(addr_RAM_Kernel_Scale[1]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Kernel_Scale[1]),
-        .O(i_addr_RAM_Kernel_Scale[1]));
+        .O(bram_addr_Kernel_Scale_1_sn_1));
   LUT3 #(
     .INIT(8'hB8)) 
     ram_name_reg_0_15_0_0_i_5
        (.I0(addr_RAM_Bias[2]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Bias[2]),
-        .O(i_addr_RAM_Bias[2]));
+        .O(bram_addr_Bias_2_sn_1));
   LUT3 #(
     .INIT(8'hB8)) 
     ram_name_reg_0_15_0_0_i_5__0
        (.I0(addr_RAM_Kernel_Scale[2]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Kernel_Scale[2]),
-        .O(i_addr_RAM_Kernel_Scale[2]));
+        .O(bram_addr_Kernel_Scale_2_sn_1));
   LUT3 #(
     .INIT(8'hB8)) 
     ram_name_reg_0_15_0_0_i_6
        (.I0(addr_RAM_Bias[3]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Bias[3]),
-        .O(i_addr_RAM_Bias[3]));
+        .O(bram_addr_Bias_3_sn_1));
   LUT3 #(
     .INIT(8'hB8)) 
     ram_name_reg_0_15_0_0_i_6__0
        (.I0(addr_RAM_Kernel_Scale[3]),
         .I1(\ram_data_reg[0] ),
         .I2(bram_addr_Kernel_Scale[3]),
-        .O(i_addr_RAM_Kernel_Scale[3]));
+        .O(bram_addr_Kernel_Scale_3_sn_1));
 endmodule
 
 module FSM_SIPO_PCV
@@ -10617,7 +10672,7 @@ module FSM_SIPO_PCV
         .I4(Q[1]),
         .I5(Q[2]),
         .O(p_1_in[0]));
-  (* SOFT_HLUTNM = "soft_lutpair311" *) 
+  (* SOFT_HLUTNM = "soft_lutpair310" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \count[0]_i_2 
@@ -10635,7 +10690,7 @@ module FSM_SIPO_PCV
         .I4(\count_reg_n_0_[0] ),
         .I5(\count_reg_n_0_[1] ),
         .O(p_1_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair309" *) 
+  (* SOFT_HLUTNM = "soft_lutpair308" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \count[1]_i_2__1 
@@ -10643,7 +10698,7 @@ module FSM_SIPO_PCV
         .I1(Q[2]),
         .I2(Q[0]),
         .O(\count[1]_i_2__1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair310" *) 
+  (* SOFT_HLUTNM = "soft_lutpair309" *) 
   LUT3 #(
     .INIT(8'h0E)) 
     \count[1]_i_3__0 
@@ -10689,7 +10744,7 @@ module FSM_SIPO_PCV
         .I4(\count_reg_n_0_[3] ),
         .I5(\count[3]_i_3__1_n_0 ),
         .O(p_1_in[3]));
-  (* SOFT_HLUTNM = "soft_lutpair310" *) 
+  (* SOFT_HLUTNM = "soft_lutpair309" *) 
   LUT4 #(
     .INIT(16'h3730)) 
     \count[3]_i_2__1 
@@ -10806,7 +10861,7 @@ module FSM_SIPO_PCV
         .I1(ram_name_reg_0),
         .I2(bram_addr_Pre_Comp_Vect[0]),
         .O(ADDRARDADDR[0]));
-  (* SOFT_HLUTNM = "soft_lutpair309" *) 
+  (* SOFT_HLUTNM = "soft_lutpair308" *) 
   LUT5 #(
     .INIT(32'hFFFF1000)) 
     \state[0]_i_1 
@@ -10861,7 +10916,7 @@ module FSM_SIPO_PCV
         .I2(Q[2]),
         .I3(\state[2]_i_4_n_0 ),
         .O(\state[2]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair311" *) 
+  (* SOFT_HLUTNM = "soft_lutpair310" *) 
   LUT4 #(
     .INIT(16'hFF7F)) 
     \state[2]_i_3 
@@ -11009,7 +11064,7 @@ module FSM_Voting
         .I4(Q[2]),
         .I5(\pause_state_reg_n_0_[0] ),
         .O(\State[0]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair316" *) 
+  (* SOFT_HLUTNM = "soft_lutpair311" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \State[0]_i_4 
@@ -11026,14 +11081,14 @@ module FSM_Voting
         .I4(Q[0]),
         .I5(\State[1]_i_4__0_n_0 ),
         .O(\State[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair313" *) 
+  (* SOFT_HLUTNM = "soft_lutpair315" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \State[1]_i_2 
        (.I0(Q[2]),
         .I1(\count_reg_n_0_[0] ),
         .O(\State[1]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair314" *) 
+  (* SOFT_HLUTNM = "soft_lutpair312" *) 
   LUT5 #(
     .INIT(32'hBAAAAAAA)) 
     \State[1]_i_3 
@@ -11079,7 +11134,7 @@ module FSM_Voting
         .I4(\State[1]_i_2_n_0 ),
         .I5(\State[1]_i_4__0_n_0 ),
         .O(\State[2]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair312" *) 
+  (* SOFT_HLUTNM = "soft_lutpair314" *) 
   LUT5 #(
     .INIT(32'hEFFFFFFF)) 
     \State[2]_i_3 
@@ -11089,7 +11144,7 @@ module FSM_Voting
         .I3(\count_reg_n_0_[0] ),
         .I4(\count_reg_n_0_[1] ),
         .O(\State[2]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair314" *) 
+  (* SOFT_HLUTNM = "soft_lutpair312" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \State[2]_i_4__0 
@@ -11128,14 +11183,14 @@ module FSM_Voting
         .D(\State[2]_i_1_n_0 ),
         .Q(Q[2]),
         .R(SR));
-  (* SOFT_HLUTNM = "soft_lutpair315" *) 
+  (* SOFT_HLUTNM = "soft_lutpair313" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \count[0]_i_1 
        (.I0(\count[3]_i_3_n_0 ),
         .I1(\count_reg_n_0_[0] ),
         .O(\count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair315" *) 
+  (* SOFT_HLUTNM = "soft_lutpair313" *) 
   LUT5 #(
     .INIT(32'hCFECCCEC)) 
     \count[1]_i_1 
@@ -11155,7 +11210,7 @@ module FSM_Voting
         .I4(Q[2]),
         .I5(\count_reg_n_0_[4] ),
         .O(\count[1]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair313" *) 
+  (* SOFT_HLUTNM = "soft_lutpair315" *) 
   LUT5 #(
     .INIT(32'h00400000)) 
     \count[1]_i_3 
@@ -11165,7 +11220,7 @@ module FSM_Voting
         .I3(\count_reg_n_0_[1] ),
         .I4(\State[2]_i_5__0_n_0 ),
         .O(\count[1]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair317" *) 
+  (* SOFT_HLUTNM = "soft_lutpair316" *) 
   LUT4 #(
     .INIT(16'h2A80)) 
     \count[2]_i_1 
@@ -11174,7 +11229,7 @@ module FSM_Voting
         .I2(\count_reg_n_0_[0] ),
         .I3(\count_reg_n_0_[2] ),
         .O(\count[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair318" *) 
+  (* SOFT_HLUTNM = "soft_lutpair317" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \count[2]_i_1__1 
@@ -11232,7 +11287,7 @@ module FSM_Voting
         .I4(Q[1]),
         .I5(Q[2]),
         .O(\count[4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair312" *) 
+  (* SOFT_HLUTNM = "soft_lutpair314" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \count[4]_i_3 
@@ -11282,7 +11337,7 @@ module FSM_Voting
         .D(\count[4]_i_1_n_0 ),
         .Q(\count_reg_n_0_[4] ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair318" *) 
+  (* SOFT_HLUTNM = "soft_lutpair317" *) 
   LUT2 #(
     .INIT(4'h8)) 
     m_axis_tvalid_INST_0
@@ -11326,7 +11381,7 @@ module FSM_Voting
        (.I0(\State_reg[2]_0 [1]),
         .I1(\State_reg[2]_0 [0]),
         .O(SR));
-  (* SOFT_HLUTNM = "soft_lutpair317" *) 
+  (* SOFT_HLUTNM = "soft_lutpair316" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \win_class_reg[2]_i_14 
@@ -11334,7 +11389,7 @@ module FSM_Voting
         .I1(\count_reg_n_0_[0] ),
         .I2(\count_reg_n_0_[2] ),
         .O(\win_class_reg[2]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair316" *) 
+  (* SOFT_HLUTNM = "soft_lutpair311" *) 
   LUT5 #(
     .INIT(32'hF4FFFFFF)) 
     \win_class_reg[2]_i_7 
@@ -11368,7 +11423,10 @@ module PL_CLASSIFIER_w_VOTING
     bram_addr_Bias,
     bram_wrdata_Bias,
     bram_en_Bias,
-    bram_we_Bias);
+    bram_we_Bias,
+    trig_axis_to_BRAM_PCV,
+    trig_axis_to_BRAM_Kernel_Scale,
+    trig_axis_to_BRAM_Bias);
   input start;
   input classification;
   input s_axis_aclk;
@@ -11378,25 +11436,40 @@ module PL_CLASSIFIER_w_VOTING
   output [31:0]m_axis_tdata;
   output m_axis_tvalid;
   input m_axis_tready;
-  input [14:0]bram_addr_Pre_Comp_Vect;
-  input [511:0]bram_wrdata_Pre_Comp_Vect;
+  input [3:0]bram_addr_Pre_Comp_Vect;
+  input [407:0]bram_wrdata_Pre_Comp_Vect;
   input bram_en_Pre_Comp_Vect;
-  input [63:0]bram_we_Pre_Comp_Vect;
-  input [11:0]bram_addr_Kernel_Scale;
-  input [31:0]bram_wrdata_Kernel_Scale;
+  input bram_we_Pre_Comp_Vect;
+  input [3:0]bram_addr_Kernel_Scale;
+  input [11:0]bram_wrdata_Kernel_Scale;
   input bram_en_Kernel_Scale;
-  input [3:0]bram_we_Kernel_Scale;
-  input [11:0]bram_addr_Bias;
-  input [31:0]bram_wrdata_Bias;
+  input bram_we_Kernel_Scale;
+  input [3:0]bram_addr_Bias;
+  input [6:0]bram_wrdata_Bias;
   input bram_en_Bias;
-  input [3:0]bram_we_Bias;
+  input bram_we_Bias;
+  output trig_axis_to_BRAM_PCV;
+  output trig_axis_to_BRAM_Kernel_Scale;
+  output trig_axis_to_BRAM_Bias;
 
   wire \<const0> ;
   wire [7:0]A;
   wire PM_FSM_n_2;
   wire PM_FSM_n_4;
-  wire PM_FSM_n_450;
-  wire PM_FSM_n_452;
+  wire PM_FSM_n_437;
+  wire PM_FSM_n_438;
+  wire PM_FSM_n_439;
+  wire PM_FSM_n_440;
+  wire PM_FSM_n_441;
+  wire PM_FSM_n_442;
+  wire PM_FSM_n_443;
+  wire PM_FSM_n_444;
+  wire PM_FSM_n_446;
+  wire PM_FSM_n_447;
+  wire PM_FSM_n_448;
+  wire PM_FSM_n_449;
+  wire PM_FSM_n_451;
+  wire PM_FSM_n_453;
   wire PM_FSM_n_5;
   wire PM_SIPO_n_258;
   wire PM_SIPO_n_259;
@@ -11415,30 +11488,27 @@ module PL_CLASSIFIER_w_VOTING
   wire PM_SIPO_n_272;
   wire PM_SIPO_n_273;
   wire PM_Voting_n_1;
-  wire [11:0]bram_addr_Bias;
-  wire [11:0]bram_addr_Kernel_Scale;
-  wire [14:0]bram_addr_Pre_Comp_Vect;
+  wire [3:0]bram_addr_Bias;
+  wire [3:0]bram_addr_Kernel_Scale;
+  wire [3:0]bram_addr_Pre_Comp_Vect;
   wire bram_en_Bias;
   wire bram_en_Kernel_Scale;
   wire bram_en_Pre_Comp_Vect;
-  wire [3:0]bram_we_Bias;
-  wire [3:0]bram_we_Kernel_Scale;
-  wire [63:0]bram_we_Pre_Comp_Vect;
-  wire [31:0]bram_wrdata_Bias;
-  wire [31:0]bram_wrdata_Kernel_Scale;
-  wire [511:0]bram_wrdata_Pre_Comp_Vect;
+  wire bram_we_Bias;
+  wire bram_we_Kernel_Scale;
+  wire bram_we_Pre_Comp_Vect;
+  wire [6:0]bram_wrdata_Bias;
+  wire [11:0]bram_wrdata_Kernel_Scale;
+  wire [407:0]bram_wrdata_Pre_Comp_Vect;
   wire ce_DSP_AxB_Cascade_classifier;
   wire ce_DSP_AxB_plus_C_classifier;
   wire ce_sipo;
   wire classification;
   wire clear;
-  wire [4:4]count_clk_reg;
+  wire [4:4]count_clk_reg__0;
   wire [6:0]din_RAM_Bias;
   wire [407:0]din_RAM_Pre_Computed_Vector;
   wire [11:0]dina;
-  wire [3:0]i_addr_RAM_Bias;
-  wire [3:0]i_addr_RAM_Kernel_Scale;
-  wire [3:0]i_addr_RAM_Pre_Computed_Vector;
   wire i_ce_voting;
   wire [6:0]i_dout_RAM_Bias;
   wire [11:0]i_dout_RAM_Kernel_Scale;
@@ -11470,6 +11540,7 @@ module PL_CLASSIFIER_w_VOTING
   wire [31:0]\shift_reg_reg[7] ;
   wire [11:0]\signB_reg[0] ;
   wire start;
+  wire trig_axis_to_BRAM_PCV;
   wire [11:0]\wire_SV_pipe_to_SVM[1]_1 ;
 
 initial begin
@@ -11505,6 +11576,8 @@ end
   assign m_axis_tdata[4] = \<const0> ;
   assign m_axis_tdata[3] = \<const0> ;
   assign m_axis_tdata[2:0] = \^m_axis_tdata [2:0];
+  assign trig_axis_to_BRAM_Bias = trig_axis_to_BRAM_PCV;
+  assign trig_axis_to_BRAM_Kernel_Scale = trig_axis_to_BRAM_PCV;
   GND GND
        (.G(\<const0> ));
   Classifier PM_Classifier
@@ -11525,37 +11598,43 @@ end
         .\signA_reg[30][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_29 (\shift_reg_reg[0] ),
         .\signA_reg[6][7]_PM_Classifier_inst_incremental_pipe_gen_double_shift_reg_r_5 (\shift_reg_reg[6] ));
   FSM PM_FSM
-       (.ADDRARDADDR(i_addr_RAM_Pre_Computed_Vector),
-        .E(PM_FSM_n_450),
-        .\FSM_onehot_state_reg[2]_0 ({ce_DSP_AxB_Cascade_classifier,rst_pipe_classfier}),
+       (.ADDRARDADDR({PM_FSM_n_446,PM_FSM_n_447,PM_FSM_n_448,PM_FSM_n_449}),
+        .E(PM_FSM_n_451),
+        .\FSM_onehot_state_reg[2]_0 ({ce_DSP_AxB_Cascade_classifier,trig_axis_to_BRAM_PCV,rst_pipe_classfier}),
         .Q({ce_sipo,PM_FSM_n_2}),
         .SS(clear),
         .\State_reg[0] (PM_FSM_n_4),
         .\State_reg[2] (i_ce_voting),
         .WEA(i_we_RAM_Pre_Computed_Vector),
-        .bram_addr_Bias(bram_addr_Bias[3:0]),
-        .bram_addr_Kernel_Scale(bram_addr_Kernel_Scale[3:0]),
-        .bram_addr_Pre_Comp_Vect(bram_addr_Pre_Comp_Vect[3:0]),
+        .bram_addr_Bias(bram_addr_Bias),
+        .bram_addr_Bias_0_sp_1(PM_FSM_n_437),
+        .bram_addr_Bias_1_sp_1(PM_FSM_n_438),
+        .bram_addr_Bias_2_sp_1(PM_FSM_n_439),
+        .bram_addr_Bias_3_sp_1(PM_FSM_n_440),
+        .bram_addr_Kernel_Scale(bram_addr_Kernel_Scale),
+        .bram_addr_Kernel_Scale_0_sp_1(PM_FSM_n_441),
+        .bram_addr_Kernel_Scale_1_sp_1(PM_FSM_n_442),
+        .bram_addr_Kernel_Scale_2_sp_1(PM_FSM_n_443),
+        .bram_addr_Kernel_Scale_3_sp_1(PM_FSM_n_444),
+        .bram_addr_Pre_Comp_Vect(bram_addr_Pre_Comp_Vect),
         .bram_en_Bias(bram_en_Bias),
         .bram_en_Kernel_Scale(bram_en_Kernel_Scale),
-        .bram_en_Kernel_Scale_0(PM_FSM_n_452),
+        .bram_en_Kernel_Scale_0(PM_FSM_n_453),
         .bram_en_Pre_Comp_Vect(bram_en_Pre_Comp_Vect),
-        .bram_we_Bias(bram_we_Bias[0]),
-        .bram_we_Kernel_Scale(bram_we_Kernel_Scale[0]),
-        .bram_we_Pre_Comp_Vect(bram_we_Pre_Comp_Vect[0]),
-        .bram_wrdata_Bias(bram_wrdata_Bias[6:0]),
-        .bram_wrdata_Kernel_Scale(bram_wrdata_Kernel_Scale[11:0]),
+        .bram_we_Bias(bram_we_Bias),
+        .bram_we_Kernel_Scale(bram_we_Kernel_Scale),
+        .bram_we_Pre_Comp_Vect(bram_we_Pre_Comp_Vect),
+        .bram_wrdata_Bias(bram_wrdata_Bias),
+        .bram_wrdata_Kernel_Scale(bram_wrdata_Kernel_Scale),
         .\bram_wrdata_Kernel_Scale[11] (dina),
-        .bram_wrdata_Pre_Comp_Vect(bram_wrdata_Pre_Comp_Vect[407:0]),
+        .bram_wrdata_Pre_Comp_Vect(bram_wrdata_Pre_Comp_Vect),
         .ce_DSP_AxB_plus_C_classifier(ce_DSP_AxB_plus_C_classifier),
         .classification(classification),
-        .\count[2]_i_3 (count_clk_reg),
+        .\count[2]_i_3 (count_clk_reg__0),
         .\count_reg[3] (PM_FSM_n_5),
         .\count_reg[4] (PM_Voting_n_1),
         .din_RAM_Bias(din_RAM_Bias),
         .dina(din_RAM_Pre_Computed_Vector),
-        .i_addr_RAM_Bias(i_addr_RAM_Bias),
-        .i_addr_RAM_Kernel_Scale(i_addr_RAM_Kernel_Scale),
         .i_en_RAM_Pre_Computed_Vector(i_en_RAM_Pre_Computed_Vector),
         .i_ready_from_SIPO(i_ready_from_SIPO),
         .m_axis_tready(m_axis_tready),
@@ -11569,21 +11648,27 @@ end
         .\shift_reg[0]_0 (\shift_reg[0]_0 ),
         .start(start));
   RAM_Bias PM_RAM_Bias
-       (.E(PM_FSM_n_450),
+       (.E(PM_FSM_n_451),
         .din_RAM_Bias(din_RAM_Bias),
-        .i_addr_RAM_Bias(i_addr_RAM_Bias),
         .p_0_in__1(p_0_in__1),
         .ram_data0_out(i_dout_RAM_Bias),
+        .\ram_data_reg[0] (PM_FSM_n_437),
+        .\ram_data_reg[0]_0 (PM_FSM_n_438),
+        .\ram_data_reg[0]_1 (PM_FSM_n_439),
+        .\ram_data_reg[0]_2 (PM_FSM_n_440),
         .s_axis_aclk(s_axis_aclk));
   RAM_Kernel_Scale PM_RAM_Kernel_Scale
-       (.E(PM_FSM_n_452),
+       (.E(PM_FSM_n_453),
         .dina(dina),
-        .i_addr_RAM_Kernel_Scale(i_addr_RAM_Kernel_Scale),
         .p_0_in__0(p_0_in__0),
         .ram_data0_out(i_dout_RAM_Kernel_Scale),
+        .\ram_data_reg[0] (PM_FSM_n_441),
+        .\ram_data_reg[0]_0 (PM_FSM_n_442),
+        .\ram_data_reg[0]_1 (PM_FSM_n_443),
+        .\ram_data_reg[0]_2 (PM_FSM_n_444),
         .s_axis_aclk(s_axis_aclk));
   RAM_Pre_Computed_Vector PM_RAM_Pre_Computed_Vector
-       (.ADDRARDADDR(i_addr_RAM_Pre_Computed_Vector),
+       (.ADDRARDADDR({PM_FSM_n_446,PM_FSM_n_447,PM_FSM_n_448,PM_FSM_n_449}),
         .WEA(i_we_RAM_Pre_Computed_Vector),
         .dina(din_RAM_Pre_Computed_Vector),
         .i_en_RAM_Pre_Computed_Vector(i_en_RAM_Pre_Computed_Vector),
@@ -11609,7 +11694,7 @@ end
         .\shift_reg_reg[8][31]_0 ({i_out_data_sipo,A,PM_SIPO_n_258,PM_SIPO_n_259,PM_SIPO_n_260,PM_SIPO_n_261,PM_SIPO_n_262,PM_SIPO_n_263,PM_SIPO_n_264,PM_SIPO_n_265,PM_SIPO_n_266,PM_SIPO_n_267,PM_SIPO_n_268,PM_SIPO_n_269,PM_SIPO_n_270,PM_SIPO_n_271,PM_SIPO_n_272,PM_SIPO_n_273}));
   Voting_w_ce PM_Voting
        (.Output_SVM(i_out_Classifier),
-        .Q(count_clk_reg),
+        .Q(count_clk_reg__0),
         .SS(clear),
         .\count_clk_reg[0]_0 (PM_FSM_n_5),
         .\count_clk_reg[0]_1 (i_ce_voting),
@@ -11625,25 +11710,34 @@ module RAM_Bias
     s_axis_aclk,
     din_RAM_Bias,
     p_0_in__1,
-    i_addr_RAM_Bias);
+    \ram_data_reg[0] ,
+    \ram_data_reg[0]_0 ,
+    \ram_data_reg[0]_1 ,
+    \ram_data_reg[0]_2 );
   output [6:0]ram_data0_out;
   input [0:0]E;
   input s_axis_aclk;
   input [6:0]din_RAM_Bias;
   input p_0_in__1;
-  input [3:0]i_addr_RAM_Bias;
+  input \ram_data_reg[0] ;
+  input \ram_data_reg[0]_0 ;
+  input \ram_data_reg[0]_1 ;
+  input \ram_data_reg[0]_2 ;
 
   wire [0:0]E;
   wire [6:0]din_RAM_Bias;
-  wire [3:0]i_addr_RAM_Bias;
   wire p_0_in__1;
   wire [6:0]ram_data0_out;
+  wire \ram_data_reg[0] ;
+  wire \ram_data_reg[0]_0 ;
+  wire \ram_data_reg[0]_1 ;
+  wire \ram_data_reg[0]_2 ;
   wire s_axis_aclk;
 
   xilinx_single_port_ram_no_change__parameterized3 inst_RAM_Bias
        (.E(E),
+        .addr_RAM_Bias({\ram_data_reg[0]_2 ,\ram_data_reg[0]_1 ,\ram_data_reg[0]_0 ,\ram_data_reg[0] }),
         .din_RAM_Bias(din_RAM_Bias),
-        .i_addr_RAM_Bias(i_addr_RAM_Bias),
         .p_0_in__1(p_0_in__1),
         .ram_data0_out(ram_data0_out),
         .s_axis_aclk(s_axis_aclk));
@@ -11655,25 +11749,34 @@ module RAM_Kernel_Scale
     s_axis_aclk,
     dina,
     p_0_in__0,
-    i_addr_RAM_Kernel_Scale);
+    \ram_data_reg[0] ,
+    \ram_data_reg[0]_0 ,
+    \ram_data_reg[0]_1 ,
+    \ram_data_reg[0]_2 );
   output [11:0]ram_data0_out;
   input [0:0]E;
   input s_axis_aclk;
   input [11:0]dina;
   input p_0_in__0;
-  input [3:0]i_addr_RAM_Kernel_Scale;
+  input \ram_data_reg[0] ;
+  input \ram_data_reg[0]_0 ;
+  input \ram_data_reg[0]_1 ;
+  input \ram_data_reg[0]_2 ;
 
   wire [0:0]E;
   wire [11:0]dina;
-  wire [3:0]i_addr_RAM_Kernel_Scale;
   wire p_0_in__0;
   wire [11:0]ram_data0_out;
+  wire \ram_data_reg[0] ;
+  wire \ram_data_reg[0]_0 ;
+  wire \ram_data_reg[0]_1 ;
+  wire \ram_data_reg[0]_2 ;
   wire s_axis_aclk;
 
   xilinx_single_port_ram_no_change__parameterized1 inst_RAM_Kernel_Scale
        (.E(E),
+        .addr_RAM_Kernel_Scale({\ram_data_reg[0]_2 ,\ram_data_reg[0]_1 ,\ram_data_reg[0]_0 ,\ram_data_reg[0] }),
         .dina(dina),
-        .i_addr_RAM_Kernel_Scale(i_addr_RAM_Kernel_Scale),
         .p_0_in__0(p_0_in__0),
         .ram_data0_out(ram_data0_out),
         .s_axis_aclk(s_axis_aclk));
@@ -11773,7 +11876,7 @@ module SIPO_buffer
   wire [31:0]\shift_reg_reg[7][31]_0 ;
   wire [31:0]\shift_reg_reg[8][31]_0 ;
 
-  (* SOFT_HLUTNM = "soft_lutpair321" *) 
+  (* SOFT_HLUTNM = "soft_lutpair320" *) 
   LUT4 #(
     .INIT(16'h3233)) 
     \count[0]_i_1__2 
@@ -11788,7 +11891,7 @@ module SIPO_buffer
        (.I0(count[1]),
         .I1(count[0]),
         .O(\count[1]_i_1__2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair321" *) 
+  (* SOFT_HLUTNM = "soft_lutpair320" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[2]_i_1__3 
@@ -11796,7 +11899,7 @@ module SIPO_buffer
         .I1(count[0]),
         .I2(count[2]),
         .O(\count[2]_i_1__3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair320" *) 
+  (* SOFT_HLUTNM = "soft_lutpair319" *) 
   LUT4 #(
     .INIT(16'h7E80)) 
     \count[3]_i_2__2 
@@ -11837,7 +11940,7 @@ module SIPO_buffer
         .D(\count[3]_i_2__2_n_0 ),
         .Q(count[3]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair320" *) 
+  (* SOFT_HLUTNM = "soft_lutpair319" *) 
   LUT4 #(
     .INIT(16'hFFFB)) 
     in_ready_i
@@ -15559,6 +15662,54 @@ module SVM
   wire \inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_7 ;
   wire \inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_8 ;
   wire \inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_9 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_0 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_1 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_10 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_11 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_12 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_13 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_14 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_15 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_16 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_17 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_18 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_19 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_2 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_20 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_21 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_22 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_23 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_24 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_25 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_26 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_27 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_28 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_29 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_3 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_30 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_31 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_32 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_33 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_34 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_35 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_36 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_37 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_38 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_39 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_4 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_40 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_41 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_42 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_43 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_44 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_45 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_46 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_47 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_5 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_6 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_7 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_8 ;
+  wire \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_9 ;
   wire \inst_DSP_AxB_Cascade[3].DSP_AxB_Cascade_pm_n_0 ;
   wire \inst_DSP_AxB_Cascade[3].DSP_AxB_Cascade_pm_n_1 ;
   wire \inst_DSP_AxB_Cascade[3].DSP_AxB_Cascade_pm_n_10 ;
@@ -15897,7 +16048,6 @@ module SVM
   wire \inst_DSP_AxB_Cascade[9].DSP_AxB_Cascade_pm_n_9 ;
   wire [23:0]ram_data;
   wire s_axis_aclk;
-  wire [47:0]\wire_IN_OUT_Cascade[32]_60 ;
   wire [25:1]wire_Out_Cascade_In_DSP_AxB_plus_C;
 
   DSP_AxB_Cascade \inst_DSP_AxB_Cascade[10].DSP_AxB_Cascade_pm 
@@ -16071,7 +16221,7 @@ module SVM
   DSP_AxB_Cascade_28 \inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm 
        (.\Attribute_j_SVM[32] (\Attribute_j_SVM[32] ),
         .DSP48E1_inst_0({\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_0 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_1 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_2 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_3 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_4 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_5 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_6 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_7 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_8 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_9 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_10 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_11 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_12 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_13 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_14 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_15 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_16 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_17 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_18 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_19 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_20 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_21 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_22 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_23 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_24 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_25 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_26 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_27 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_28 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_29 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_30 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_31 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_32 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_33 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_34 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_35 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_36 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_37 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_38 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_39 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_40 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_41 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_42 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_43 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_44 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_45 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_46 ,\inst_DSP_AxB_Cascade[31].DSP_AxB_Cascade_pm_n_47 }),
-        .PCOUT(\wire_IN_OUT_Cascade[32]_60 ),
+        .PCOUT({\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_0 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_1 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_2 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_3 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_4 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_5 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_6 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_7 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_8 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_9 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_10 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_11 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_12 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_13 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_14 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_15 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_16 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_17 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_18 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_19 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_20 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_21 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_22 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_23 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_24 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_25 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_26 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_27 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_28 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_29 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_30 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_31 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_32 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_33 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_34 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_35 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_36 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_37 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_38 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_39 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_40 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_41 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_42 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_43 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_44 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_45 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_46 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_47 }),
         .Q(Q),
         .\SV_Alpha_Label_j_SVM[32] (\SV_Alpha_Label_j_SVM[32] ),
         .s_axis_aclk(s_axis_aclk));
@@ -16127,7 +16277,7 @@ module SVM
   DSP_AxB_Cascade_36 inst_DSP_AxB_Cascade_34
        (.\Attribute_j_SVM[33] (\Attribute_j_SVM[33] ),
         .P(wire_Out_Cascade_In_DSP_AxB_plus_C),
-        .PCOUT(\wire_IN_OUT_Cascade[32]_60 ),
+        .PCOUT({\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_0 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_1 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_2 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_3 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_4 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_5 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_6 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_7 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_8 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_9 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_10 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_11 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_12 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_13 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_14 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_15 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_16 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_17 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_18 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_19 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_20 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_21 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_22 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_23 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_24 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_25 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_26 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_27 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_28 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_29 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_30 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_31 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_32 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_33 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_34 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_35 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_36 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_37 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_38 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_39 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_40 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_41 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_42 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_43 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_44 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_45 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_46 ,\inst_DSP_AxB_Cascade[32].DSP_AxB_Cascade_pm_n_47 }),
         .Q(Q),
         .\SV_Alpha_Label_j_SVM[33] (\SV_Alpha_Label_j_SVM[33] ),
         .s_axis_aclk(s_axis_aclk));
@@ -16196,7 +16346,7 @@ module Voting_w_ce
   wire s_axis_aclk;
   wire \win_class_reg[2]_i_2_n_0 ;
 
-  (* SOFT_HLUTNM = "soft_lutpair329" *) 
+  (* SOFT_HLUTNM = "soft_lutpair328" *) 
   LUT5 #(
     .INIT(32'hFFFFFFFD)) 
     \count[4]_i_2 
@@ -16211,14 +16361,14 @@ module Voting_w_ce
     \count_clk[0]_i_1 
        (.I0(count_clk_reg__0[0]),
         .O(\count_clk[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair331" *) 
+  (* SOFT_HLUTNM = "soft_lutpair330" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \count_clk[1]_i_1 
        (.I0(count_clk_reg__0[0]),
         .I1(count_clk_reg__0[1]),
         .O(p_0_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair330" *) 
+  (* SOFT_HLUTNM = "soft_lutpair329" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count_clk[2]_i_1 
@@ -16226,7 +16376,7 @@ module Voting_w_ce
         .I1(count_clk_reg__0[0]),
         .I2(count_clk_reg__0[2]),
         .O(p_0_in[2]));
-  (* SOFT_HLUTNM = "soft_lutpair330" *) 
+  (* SOFT_HLUTNM = "soft_lutpair329" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count_clk[3]_i_1 
@@ -16245,7 +16395,7 @@ module Voting_w_ce
         .I4(Q),
         .I5(\count_clk_reg[0]_0 ),
         .O(count_clk));
-  (* SOFT_HLUTNM = "soft_lutpair329" *) 
+  (* SOFT_HLUTNM = "soft_lutpair328" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \count_clk[4]_i_2 
@@ -16255,7 +16405,7 @@ module Voting_w_ce
         .I3(count_clk_reg__0[2]),
         .I4(Q),
         .O(p_0_in[4]));
-  (* SOFT_HLUTNM = "soft_lutpair331" *) 
+  (* SOFT_HLUTNM = "soft_lutpair330" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \count_clk[4]_i_3 
@@ -16449,7 +16599,7 @@ module counter_3b
        (.I0(ce_class),
         .I1(\out_class[1]_0 [0]),
         .O(\count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair322" *) 
+  (* SOFT_HLUTNM = "soft_lutpair321" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[1]_i_1 
@@ -16457,7 +16607,7 @@ module counter_3b
         .I1(ce_class),
         .I2(\out_class[1]_0 [1]),
         .O(\count[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair322" *) 
+  (* SOFT_HLUTNM = "soft_lutpair321" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count[2]_i_2 
@@ -16549,7 +16699,7 @@ module counter_3b_0
        (.I0(ce_class),
         .I1(\out_class[2]_1 [0]),
         .O(\count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair323" *) 
+  (* SOFT_HLUTNM = "soft_lutpair322" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[1]_i_1 
@@ -16557,7 +16707,7 @@ module counter_3b_0
         .I1(ce_class),
         .I2(\out_class[2]_1 [1]),
         .O(\count[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair323" *) 
+  (* SOFT_HLUTNM = "soft_lutpair322" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count[2]_i_1 
@@ -16692,7 +16842,7 @@ module counter_3b_1
        (.I0(ce_class),
         .I1(\out_class[3]_2 [0]),
         .O(\count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair324" *) 
+  (* SOFT_HLUTNM = "soft_lutpair323" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[1]_i_1 
@@ -16700,7 +16850,7 @@ module counter_3b_1
         .I1(ce_class),
         .I2(\out_class[3]_2 [1]),
         .O(\count[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair324" *) 
+  (* SOFT_HLUTNM = "soft_lutpair323" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count[2]_i_1 
@@ -16793,7 +16943,7 @@ module counter_3b_1
         .I4(\win_class_reg[2]_i_5_n_0 ),
         .I5(\win_class_reg[1]_i_2_n_0 ),
         .O(D[1]));
-  (* SOFT_HLUTNM = "soft_lutpair325" *) 
+  (* SOFT_HLUTNM = "soft_lutpair324" *) 
   LUT4 #(
     .INIT(16'h0111)) 
     \win_class_reg[1]_i_2 
@@ -16919,7 +17069,7 @@ module counter_3b_1
         .I4(\win_class_reg[2]_i_9_n_0 ),
         .I5(\win_class_reg[0]_i_1_1 ),
         .O(\win_class_reg[2]_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair325" *) 
+  (* SOFT_HLUTNM = "soft_lutpair324" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \win_class_reg[2]_i_6 
@@ -16970,7 +17120,7 @@ module counter_3b_2
        (.I0(ce_class),
         .I1(\out_class[4]_3 [0]),
         .O(\count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair326" *) 
+  (* SOFT_HLUTNM = "soft_lutpair325" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[1]_i_1 
@@ -16978,7 +17128,7 @@ module counter_3b_2
         .I1(ce_class),
         .I2(\out_class[4]_3 [1]),
         .O(\count[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair326" *) 
+  (* SOFT_HLUTNM = "soft_lutpair325" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count[2]_i_1 
@@ -17064,7 +17214,7 @@ module counter_3b_3
        (.I0(ce_class),
         .I1(\out_class[5]_4 [0]),
         .O(\count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair327" *) 
+  (* SOFT_HLUTNM = "soft_lutpair326" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[1]_i_1 
@@ -17072,7 +17222,7 @@ module counter_3b_3
         .I1(ce_class),
         .I2(\out_class[5]_4 [1]),
         .O(\count[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair327" *) 
+  (* SOFT_HLUTNM = "soft_lutpair326" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count[2]_i_1 
@@ -17169,7 +17319,7 @@ module counter_3b_4
        (.I0(ce_class),
         .I1(p_0_out[0]),
         .O(\count[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair328" *) 
+  (* SOFT_HLUTNM = "soft_lutpair327" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \count[1]_i_1 
@@ -17177,7 +17327,7 @@ module counter_3b_4
         .I1(ce_class),
         .I2(p_0_out[1]),
         .O(\count[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair328" *) 
+  (* SOFT_HLUTNM = "soft_lutpair327" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count[2]_i_1 
@@ -48940,17 +49090,17 @@ module xilinx_single_port_ram_no_change__parameterized1
     s_axis_aclk,
     dina,
     p_0_in__0,
-    i_addr_RAM_Kernel_Scale);
+    addr_RAM_Kernel_Scale);
   output [11:0]ram_data0_out;
   input [0:0]E;
   input s_axis_aclk;
   input [11:0]dina;
   input p_0_in__0;
-  input [3:0]i_addr_RAM_Kernel_Scale;
+  input [3:0]addr_RAM_Kernel_Scale;
 
   wire [0:0]E;
+  wire [3:0]addr_RAM_Kernel_Scale;
   wire [11:0]dina;
-  wire [3:0]i_addr_RAM_Kernel_Scale;
   wire p_0_in__0;
   wire [11:0]p_1_out;
   wire [11:0]ram_data0_out;
@@ -49054,11 +49204,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .R(1'b0));
   (* INIT = "32'h000036B3" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD433 ram_name_reg_0_15_0_0
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD43 ram_name_reg_0_15_0_0
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[0]),
         .O(p_1_out[0]),
@@ -49066,11 +49216,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00000000" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD434 ram_name_reg_0_15_10_10
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD44 ram_name_reg_0_15_10_10
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[10]),
         .O(p_1_out[10]),
@@ -49078,11 +49228,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00000000" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD435 ram_name_reg_0_15_11_11
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD45 ram_name_reg_0_15_11_11
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[11]),
         .O(p_1_out[11]),
@@ -49090,23 +49240,23 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00000BBC" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD436 ram_name_reg_0_15_1_1
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD46 ram_name_reg_0_15_1_1
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[1]),
         .O(p_1_out[1]),
         .WCLK(s_axis_aclk),
         .WE(p_0_in__0));
-  (* INIT = "32'h000061EF" *) 
+  (* INIT = "32'h0000E1EF" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD437 ram_name_reg_0_15_2_2
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD47 ram_name_reg_0_15_2_2
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[2]),
         .O(p_1_out[2]),
@@ -49114,11 +49264,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00001002" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD438 ram_name_reg_0_15_3_3
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD48 ram_name_reg_0_15_3_3
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[3]),
         .O(p_1_out[3]),
@@ -49126,11 +49276,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h0000062D" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD439 ram_name_reg_0_15_4_4
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD49 ram_name_reg_0_15_4_4
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[4]),
         .O(p_1_out[4]),
@@ -49138,11 +49288,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00001080" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD440 ram_name_reg_0_15_5_5
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD50 ram_name_reg_0_15_5_5
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[5]),
         .O(p_1_out[5]),
@@ -49150,11 +49300,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00000040" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD441 ram_name_reg_0_15_6_6
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD51 ram_name_reg_0_15_6_6
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[6]),
         .O(p_1_out[6]),
@@ -49162,11 +49312,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00000000" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD442 ram_name_reg_0_15_7_7
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD52 ram_name_reg_0_15_7_7
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[7]),
         .O(p_1_out[7]),
@@ -49174,11 +49324,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00000000" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD443 ram_name_reg_0_15_8_8
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD53 ram_name_reg_0_15_8_8
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[8]),
         .O(p_1_out[8]),
@@ -49186,11 +49336,11 @@ module xilinx_single_port_ram_no_change__parameterized1
         .WE(p_0_in__0));
   (* INIT = "32'h00000000" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD444 ram_name_reg_0_15_9_9
-       (.A0(i_addr_RAM_Kernel_Scale[0]),
-        .A1(i_addr_RAM_Kernel_Scale[1]),
-        .A2(i_addr_RAM_Kernel_Scale[2]),
-        .A3(i_addr_RAM_Kernel_Scale[3]),
+  RAM32X1S_HD54 ram_name_reg_0_15_9_9
+       (.A0(addr_RAM_Kernel_Scale[0]),
+        .A1(addr_RAM_Kernel_Scale[1]),
+        .A2(addr_RAM_Kernel_Scale[2]),
+        .A3(addr_RAM_Kernel_Scale[3]),
         .A4(1'b0),
         .D(dina[9]),
         .O(p_1_out[9]),
@@ -49205,17 +49355,17 @@ module xilinx_single_port_ram_no_change__parameterized3
     s_axis_aclk,
     din_RAM_Bias,
     p_0_in__1,
-    i_addr_RAM_Bias);
+    addr_RAM_Bias);
   output [6:0]ram_data0_out;
   input [0:0]E;
   input s_axis_aclk;
   input [6:0]din_RAM_Bias;
   input p_0_in__1;
-  input [3:0]i_addr_RAM_Bias;
+  input [3:0]addr_RAM_Bias;
 
   wire [0:0]E;
+  wire [3:0]addr_RAM_Bias;
   wire [6:0]din_RAM_Bias;
-  wire [3:0]i_addr_RAM_Bias;
   wire p_0_in__1;
   wire [6:0]p_1_out;
   wire [6:0]ram_data0_out;
@@ -49277,13 +49427,13 @@ module xilinx_single_port_ram_no_change__parameterized3
         .D(p_1_out[6]),
         .Q(ram_data0_out[6]),
         .R(1'b0));
-  (* INIT = "32'h00004C77" *) 
+  (* INIT = "32'h0000CC77" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
   RAM32X1S_UNIQ_BASE_ ram_name_reg_0_15_0_0
-       (.A0(i_addr_RAM_Bias[0]),
-        .A1(i_addr_RAM_Bias[1]),
-        .A2(i_addr_RAM_Bias[2]),
-        .A3(i_addr_RAM_Bias[3]),
+       (.A0(addr_RAM_Bias[0]),
+        .A1(addr_RAM_Bias[1]),
+        .A2(addr_RAM_Bias[2]),
+        .A3(addr_RAM_Bias[3]),
         .A4(1'b0),
         .D(din_RAM_Bias[0]),
         .O(p_1_out[0]),
@@ -49291,23 +49441,23 @@ module xilinx_single_port_ram_no_change__parameterized3
         .WE(p_0_in__1));
   (* INIT = "32'h00003F5A" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD427 ram_name_reg_0_15_1_1
-       (.A0(i_addr_RAM_Bias[0]),
-        .A1(i_addr_RAM_Bias[1]),
-        .A2(i_addr_RAM_Bias[2]),
-        .A3(i_addr_RAM_Bias[3]),
+  RAM32X1S_HD37 ram_name_reg_0_15_1_1
+       (.A0(addr_RAM_Bias[0]),
+        .A1(addr_RAM_Bias[1]),
+        .A2(addr_RAM_Bias[2]),
+        .A3(addr_RAM_Bias[3]),
         .A4(1'b0),
         .D(din_RAM_Bias[1]),
         .O(p_1_out[1]),
         .WCLK(s_axis_aclk),
         .WE(p_0_in__1));
-  (* INIT = "32'h0000561E" *) 
+  (* INIT = "32'h0000D61E" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD428 ram_name_reg_0_15_2_2
-       (.A0(i_addr_RAM_Bias[0]),
-        .A1(i_addr_RAM_Bias[1]),
-        .A2(i_addr_RAM_Bias[2]),
-        .A3(i_addr_RAM_Bias[3]),
+  RAM32X1S_HD38 ram_name_reg_0_15_2_2
+       (.A0(addr_RAM_Bias[0]),
+        .A1(addr_RAM_Bias[1]),
+        .A2(addr_RAM_Bias[2]),
+        .A3(addr_RAM_Bias[3]),
         .A4(1'b0),
         .D(din_RAM_Bias[2]),
         .O(p_1_out[2]),
@@ -49315,11 +49465,11 @@ module xilinx_single_port_ram_no_change__parameterized3
         .WE(p_0_in__1));
   (* INIT = "32'h0000060C" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD429 ram_name_reg_0_15_3_3
-       (.A0(i_addr_RAM_Bias[0]),
-        .A1(i_addr_RAM_Bias[1]),
-        .A2(i_addr_RAM_Bias[2]),
-        .A3(i_addr_RAM_Bias[3]),
+  RAM32X1S_HD39 ram_name_reg_0_15_3_3
+       (.A0(addr_RAM_Bias[0]),
+        .A1(addr_RAM_Bias[1]),
+        .A2(addr_RAM_Bias[2]),
+        .A3(addr_RAM_Bias[3]),
         .A4(1'b0),
         .D(din_RAM_Bias[3]),
         .O(p_1_out[3]),
@@ -49327,35 +49477,35 @@ module xilinx_single_port_ram_no_change__parameterized3
         .WE(p_0_in__1));
   (* INIT = "32'h00000061" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD430 ram_name_reg_0_15_4_4
-       (.A0(i_addr_RAM_Bias[0]),
-        .A1(i_addr_RAM_Bias[1]),
-        .A2(i_addr_RAM_Bias[2]),
-        .A3(i_addr_RAM_Bias[3]),
+  RAM32X1S_HD40 ram_name_reg_0_15_4_4
+       (.A0(addr_RAM_Bias[0]),
+        .A1(addr_RAM_Bias[1]),
+        .A2(addr_RAM_Bias[2]),
+        .A3(addr_RAM_Bias[3]),
         .A4(1'b0),
         .D(din_RAM_Bias[4]),
         .O(p_1_out[4]),
         .WCLK(s_axis_aclk),
         .WE(p_0_in__1));
-  (* INIT = "32'h00006F5D" *) 
+  (* INIT = "32'h0000EF5D" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD431 ram_name_reg_0_15_5_5
-       (.A0(i_addr_RAM_Bias[0]),
-        .A1(i_addr_RAM_Bias[1]),
-        .A2(i_addr_RAM_Bias[2]),
-        .A3(i_addr_RAM_Bias[3]),
+  RAM32X1S_HD41 ram_name_reg_0_15_5_5
+       (.A0(addr_RAM_Bias[0]),
+        .A1(addr_RAM_Bias[1]),
+        .A2(addr_RAM_Bias[2]),
+        .A3(addr_RAM_Bias[3]),
         .A4(1'b0),
         .D(din_RAM_Bias[5]),
         .O(p_1_out[5]),
         .WCLK(s_axis_aclk),
         .WE(p_0_in__1));
-  (* INIT = "32'h00006F5D" *) 
+  (* INIT = "32'h0000EF5D" *) 
   (* XILINX_LEGACY_PRIM = "RAM16X1S" *) 
-  RAM32X1S_HD432 ram_name_reg_0_15_6_6
-       (.A0(i_addr_RAM_Bias[0]),
-        .A1(i_addr_RAM_Bias[1]),
-        .A2(i_addr_RAM_Bias[2]),
-        .A3(i_addr_RAM_Bias[3]),
+  RAM32X1S_HD42 ram_name_reg_0_15_6_6
+       (.A0(addr_RAM_Bias[0]),
+        .A1(addr_RAM_Bias[1]),
+        .A2(addr_RAM_Bias[2]),
+        .A3(addr_RAM_Bias[3]),
         .A4(1'b0),
         .D(din_RAM_Bias[6]),
         .O(p_1_out[6]),

@@ -12,8 +12,8 @@ architecture arch of TB_CLASSIFIER_w_VOTING is
 component PL_CLASSIFIER_w_VOTING is
   Port ( 
    -- GPIO INPUT interface 
-   start            : in std_logic := '0';
-   classification   : in std_logic := '0';
+   start            : in std_logic ;
+   classification   : in std_logic ;
    
    -- AXI-Stream  INPUT interface
    s_axis_aclk      : in  std_logic;
@@ -130,7 +130,7 @@ DUT: PL_CLASSIFIER_w_VOTING Port Map (
 -- Lettura Attributi da file
 -------------------------------
 read_file: process
-    file text_file : text open read_mode is "C:\Users\yoxo\Desktop\Giuseppe\Unical\CdL_LM_Tesi\Dati_Classifier_bin\Coefficienti\Partizione_1\Attribute_Test.dat";
+    file text_file : text open read_mode is "C:\Users\yoxo\Desktop\Giuseppe\Unical\CdL_LM_Tesi\Dati_Classifier_bin\Coeff_TB\Partizione_1\Attribute_Test.dat";
     variable Attributes_Test : line;
     variable successful      : boolean;            -- variabile di conferma lettura
     variable bitvec          : std_logic_vector( 272 - 1 downto 0 ) := (others => '0');
@@ -184,14 +184,14 @@ begin
 -- Da SETUP a PROCESSING
     start <= '1';
     classification <= '1';          
-    wait for 3*clock_period;
+    wait for clock_period;
 
 -- Simulazione DMA 
     ------------------------
     -- OUTPUT Interface S2MM
     ------------------------
     m_axis_tready <= '1'; -- DMA sempre in ricezione
-    wait for 2*clock_period;
+    
     ------------------------
     -- INPUT  Interface MM2S
     ------------------------

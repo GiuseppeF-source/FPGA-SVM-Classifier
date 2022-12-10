@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Thu Dec  8 12:50:49 2022
+-- Date        : Thu Dec  8 12:50:47 2022
 -- Host        : peppe-pc running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/bd/embedded_system/ip/embedded_system_xbar_0/embedded_system_xbar_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top embedded_system_xbar_0 -prefix
+--               embedded_system_xbar_0_ embedded_system_xbar_0_sim_netlist.vhdl
 -- Design      : embedded_system_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -98,8 +98,6 @@ entity embedded_system_xbar_0_axi_crossbar_v2_1_19_addr_arbiter_sasd is
     \gen_axi.s_axi_bvalid_i_reg_1\ : in STD_LOGIC;
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embedded_system_xbar_0_axi_crossbar_v2_1_19_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_19_addr_arbiter_sasd";
 end embedded_system_xbar_0_axi_crossbar_v2_1_19_addr_arbiter_sasd;
 
 architecture STRUCTURE of embedded_system_xbar_0_axi_crossbar_v2_1_19_addr_arbiter_sasd is
@@ -6906,8 +6904,6 @@ entity embedded_system_xbar_0_axi_crossbar_v2_1_19_decerr_slave is
     \gen_axi.s_axi_awready_i_reg_1\ : in STD_LOGIC;
     \gen_axi.s_axi_rlast_i_reg_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embedded_system_xbar_0_axi_crossbar_v2_1_19_decerr_slave : entity is "axi_crossbar_v2_1_19_decerr_slave";
 end embedded_system_xbar_0_axi_crossbar_v2_1_19_decerr_slave;
 
 architecture STRUCTURE of embedded_system_xbar_0_axi_crossbar_v2_1_19_decerr_slave is
@@ -7567,8 +7563,6 @@ entity embedded_system_xbar_0_axi_crossbar_v2_1_19_splitter is
     \m_ready_d_reg[1]_0\ : in STD_LOGIC;
     \m_ready_d_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embedded_system_xbar_0_axi_crossbar_v2_1_19_splitter : entity is "axi_crossbar_v2_1_19_splitter";
 end embedded_system_xbar_0_axi_crossbar_v2_1_19_splitter;
 
 architecture STRUCTURE of embedded_system_xbar_0_axi_crossbar_v2_1_19_splitter is
@@ -7988,8 +7982,6 @@ entity embedded_system_xbar_0_axi_register_slice_v2_1_18_axic_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embedded_system_xbar_0_axi_register_slice_v2_1_18_axic_register_slice : entity is "axi_register_slice_v2_1_18_axic_register_slice";
 end embedded_system_xbar_0_axi_register_slice_v2_1_18_axic_register_slice;
 
 architecture STRUCTURE of embedded_system_xbar_0_axi_register_slice_v2_1_18_axic_register_slice is
@@ -10982,8 +10974,6 @@ entity embedded_system_xbar_0_axi_crossbar_v2_1_19_crossbar_sasd is
     s_axi_awid : in STD_LOGIC_VECTOR ( 11 downto 0 );
     s_axi_arid : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embedded_system_xbar_0_axi_crossbar_v2_1_19_crossbar_sasd : entity is "axi_crossbar_v2_1_19_crossbar_sasd";
 end embedded_system_xbar_0_axi_crossbar_v2_1_19_crossbar_sasd;
 
 architecture STRUCTURE of embedded_system_xbar_0_axi_crossbar_v2_1_19_crossbar_sasd is
@@ -11668,8 +11658,6 @@ entity embedded_system_xbar_0_axi_crossbar_v2_1_19_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of embedded_system_xbar_0_axi_crossbar_v2_1_19_axi_crossbar : entity is "224'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of embedded_system_xbar_0_axi_crossbar_v2_1_19_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embedded_system_xbar_0_axi_crossbar_v2_1_19_axi_crossbar : entity is "axi_crossbar_v2_1_19_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of embedded_system_xbar_0_axi_crossbar_v2_1_19_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

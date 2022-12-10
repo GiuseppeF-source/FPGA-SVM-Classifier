@@ -48,7 +48,7 @@ generic map (
  RAM_WIDTH => WIDTH,
  RAM_DEPTH => DEPTH,
  RAM_PERFORMANCE => "LOW_LATENCY",
- INIT_FILE => "C:\Users\yoxo\Desktop\Giuseppe\Unical\CdL_LM_Tesi\Dati_Classifier_bin\Coefficienti\Partizione_1\Bias.dat" 
+ INIT_FILE => "C:\Users\yoxo\Desktop\Giuseppe\Unical\CdL_LM_Tesi\Dati_Classifier_bin\Coeff_TB\Partizione_1\Bias.dat" 
 )
   port map  (
  addra  => addr_RAM_Bias,
