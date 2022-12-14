@@ -4,6 +4,7 @@ use IEEE.std_logic_arith.all;
 
 entity FSM_Voting is
   Port ( 
+      axi_resetn                      : in std_logic; -- reset Active Low
       start                           : in std_logic; -- proviene dal Main FSM
       s_axis_aclk                     : in  std_logic;
      -- per gestione stallo
@@ -22,28 +23,40 @@ end FSM_Voting;
 
 architecture arch of FSM_Voting is
 
-type t_state is ( IDLE, PAUSE, FIRST_WAITING, WAITING, RST_VOTING, VOTING , RESULT);
-signal  State, next_state, pause_state : t_state;
+type t_state is ( 
+    RESET_STATE,
+    IDLE,
+    PAUSE,
+    FIRST_WAITING,
+    WAITING, 
+    RST_VOTING, 
+    VOTING , 
+    RESULT
+);
+signal  state       : t_state;
+ signal next_state  : t_state;   
+ signal pause_state : t_state;
 
 signal count: natural range 0 to 16 := 0; -- unico counter 
 
 
 begin
 
-SYNC_PROC : process (s_axis_aclk) 
+SYNC_PROC : process (s_axis_aclk, axi_resetn) 
 begin
-    if rising_edge(s_axis_aclk) then
-        if start = '0' then
-            state <= IDLE; 
-        else
-            state <= next_state;
-        end if;
+    if axi_resetn = '0' then
+        state <= RESET_STATE;
+    elsif rising_edge(s_axis_aclk) then
+        state <= IDLE; 
     end if;
 end process;
 
-TIMER : process(s_axis_aclk,state)
+TIMER : process(s_axis_aclk, axi_resetn, state)
 begin
-    if rising_edge(s_axis_aclk) then
+    if axi_resetn = '0' then
+        count <= 0;
+
+    elsif rising_edge(s_axis_aclk) then
        -- gestione counter 
        --                  attesa iniziale 
        --                  attesa tra due inizi voting
@@ -102,6 +115,8 @@ sign_valid      <= '0';
             
         when PAUSE => 
             null;
+        when others => 
+            null;
                                                    
     end case;
 end process;
@@ -110,10 +125,14 @@ NEXT_STATE_DECODE : process (state, pause_state, m_axis_tready, start, start_FSM
 begin
     next_state <= state;
     case state is
+        when RESET_STATE => 
+            next_state <= IDLE;
     
         when IDLE =>
             if start_FSM3 = '1' then 
                 next_state <= FIRST_WAITING;
+            else 
+                next_state <= IDLE;
             end if;  
 
         when FIRST_WAITING =>
@@ -121,6 +140,8 @@ begin
                 next_state  <= PAUSE;      -- stallo, in pause se DMA non ? pronto
             elsif count = 1 then -- attesa causata dai ( 0 to 2) 3 cicli dell'ultimo DSP AxB+C , - quello di reset
                 next_state <= RST_VOTING;
+            else 
+                next_state <= FIRST_WAITING;
             end if;                    
                     
         when WAITING =>
@@ -128,6 +149,8 @@ begin
                 next_state  <= PAUSE;      -- stallo, in pause se DMA non ? pronto
             elsif count = 7 then         -- 10 cicli meno reset, attesa tra un inizio lettura Ram PCV ed un altro ( in base alla prima FSM) 
                 next_state <= RST_VOTING;
+            else
+                next_state <= WAITING;
             end if;
 
         when RST_VOTING =>
@@ -141,7 +164,9 @@ begin
             if m_axis_tready = '0' then
                 next_state  <= PAUSE;      -- stallo in pause se DMA non ? pronto
             elsif win_class_valid = '1'  then
-                next_state  <= RESULT;   
+                next_state  <= RESULT; 
+            else
+                next_state <=  VOTING; 
             end if;        
 
         when RESULT =>
@@ -149,6 +174,8 @@ begin
                 next_state  <= PAUSE;      -- stallo in pause se DMA non ? pronto
             elsif m_axis_tready = '1'  then
                 next_state  <= WAITING;   
+            else
+                next_state <= RESULT;
             end if;        
                   
         when PAUSE =>                                                  

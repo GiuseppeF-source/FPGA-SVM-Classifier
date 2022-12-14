@@ -10,6 +10,7 @@ entity PL_CLASSIFIER_w_VOTING is
   classification   : in std_logic := '0';
   
   -- AXI-Stream  INPUT interface
+  axi_resetn       : in std_logic; -- reset Active Low
   s_axis_aclk      : in  std_logic;
   s_axis_tready    : out std_logic;                          -- from SIPO
   s_axis_tvalid    : in  std_logic;                          -- from DMA
@@ -201,6 +202,7 @@ end component;
 
 component FSM is 
   Port (
+  axi_resetn                     : in std_logic; -- reset Active Low
   s_axis_aclk                    : in std_logic;                                            
   start                          : in std_logic; -- 0 stop --  1 start                      
   classification                 : in std_logic; -- avvia il processamento se 1             
@@ -316,6 +318,7 @@ PM_Voting: Voting_w_ce Port Map (
 ); 
 
 PM_FSM: FSM Port Map (
+    axi_resetn                    => axi_resetn, 
     s_axis_aclk                   => s_axis_aclk,
     start                         => start,
     classification                => classification,

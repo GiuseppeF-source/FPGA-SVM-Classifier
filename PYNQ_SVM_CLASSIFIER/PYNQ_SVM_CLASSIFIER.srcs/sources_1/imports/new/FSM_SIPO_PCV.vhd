@@ -4,6 +4,7 @@ use IEEE.std_logic_arith.ALL;
 
 entity FSM_SIPO_PCV is
   Port (
+    axi_resetn                     : in std_logic; -- reset Active Low
     s_axis_aclk                    : in  std_logic;    
   -- per gestione stallo
     m_axis_tready                  : in  std_logic; 
@@ -22,27 +23,36 @@ end FSM_SIPO_PCV;
 
 architecture arch of FSM_SIPO_PCV is
 
-type t_state is ( IDLE, PAUSE, RST_SIPO, LOAD_SIPO, READ_RAM_PCV );
-signal  state, next_state, pause_state : t_state;
+type t_state is ( 
+    RESET_STATE,
+    IDLE, 
+    PAUSE, 
+    RST_SIPO, 
+    LOAD_SIPO, 
+    READ_RAM_PCV 
+);
+signal  state       : t_state;
+signal  next_state  : t_state;
+signal  pause_state : t_state;
 
-signal count : natural range 0 to 14 := 0;  -- fino a 15 perché se in pausa può incrementare
+signal count : natural range 0 to 14 := 0;  -- fino a 15 perchï¿½ se in pausa puï¿½ incrementare
 
 begin
 
-SYNC_PROC : process (s_axis_aclk) 
+SYNC_PROC : process (s_axis_aclk, axi_resetn) 
 begin
-    if rising_edge(s_axis_aclk) then
-        if start = '0' then
-            state <= IDLE; 
-        else
-            state <= next_state;
-        end if;
+    if axi_resetn = '0' then
+        state <= RESET_STATE
+    elsif rising_edge(s_axis_aclk) then
+        state <= next_state;
     end if;
 end process;
 
-TIMER : process(s_axis_aclk,state)
+TIMER : process(s_axis_aclk, axi_resetn,state)
 begin
-    if rising_edge(s_axis_aclk) then
+    if axi_resetn = '0' then
+        count <= 0;
+    elsif rising_edge(s_axis_aclk) then
        if state /= next_state then
          if  next_state = PAUSE   then  -- ogni cambio stato ( non valido per il PAUSE )
              count <= count + 1;
@@ -86,7 +96,10 @@ start_fsm2                    <= '0';
             start_fsm2     <= '1';  -- avvio la FSM2
             
         when PAUSE =>  
-            null;                                                   
+            null;  
+
+        when others =>
+            null;                                                 
     end case;
 end process;
  
@@ -94,33 +107,41 @@ NEXT_STATE_DECODE : process (state,pause_state, m_axis_tready, start, out_valid_
 begin
     next_state <= state;
     case state is
+        when RESET_STATE => 
+            next_state <= IDLE;
     
         when IDLE =>
             if start = '1' then 
                 next_state <= RST_SIPO;
+            else 
+                next_state <= IDLE;
             end if; 
             
         when RST_SIPO =>
              if m_axis_tready = '0' then
-                next_state <= PAUSE;      -- stallo in pause se DMA non è pronto
+                next_state <= PAUSE;      -- stallo in pause se DMA non ï¿½ pronto
              else
                 next_state <= LOAD_SIPO;
              end if;
              
         when LOAD_SIPO =>
-        -- stallo in pause se DMA non è pronto
+        -- stallo in pause se DMA non ï¿½ pronto
              if m_axis_tready = '0' then
                 next_state  <= PAUSE; 
         -- dato pronto da processare, posso iniziare la lettura ram     
              elsif out_valid_sipo = '1' then
                 next_state  <= READ_RAM_PCV;  
+            else 
+                next_state  <= LOAD_SIPO;
              end if;
              
         when READ_RAM_PCV =>
              if m_axis_tready = '0' then
-                next_state  <= PAUSE;      -- stallo in pause se DMA non è pronto
+                next_state  <= PAUSE;      -- stallo in pause se DMA non ï¿½ pronto
              elsif count = 14  then
                 next_state  <= RST_SIPO;   -- lettura completata posso ripartire a prelevare i dati dal DMA
+            else 
+                next_state <= READ_RAM_PCV;
              end if;        
                     
         when PAUSE =>                                                  

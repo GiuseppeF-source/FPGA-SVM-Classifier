@@ -17,43 +17,44 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/wt [current_project]
-set_property parent.project_path C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/wt [current_project]
+set_property parent.project_path C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs
+  c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs
   c:/Users/yoxo/AppData/Roaming/Xilinx/ip_repo
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip [current_project]
+set_property ip_output_repo c:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/incremental_pipe.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/SVM.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/Classifier.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/DSP_AxB_Cascade.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/DSP_AxB_Cascade_wo_PCIN.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/DSP_AxB_plus_C.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM_SIPO_PCV.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM_Kernel_Bias.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM_Voting.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/xilinx_single_port_ram_no_change.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/RAM_Bias.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/RAM_Kernel_Scale.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/RAM_Pre_Computed_Vector.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/SIPO_buffer.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/counter_3b.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/Voting_w_ce.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/double_shift_reg.vhd
-  C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/incremental_pipe.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/SVM.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/Classifier.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/DSP_AxB_Cascade.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/DSP_AxB_Cascade_wo_PCIN.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/DSP_AxB_plus_C.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM_SIPO_PCV.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM_Kernel_Bias.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM_Voting.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/FSM.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/xilinx_single_port_ram_no_change.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/RAM_Bias.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/RAM_Kernel_Scale.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/RAM_Pre_Computed_Vector.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/SIPO_buffer.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/counter_3b.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/Voting_w_ce.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/double_shift_reg.vhd
+  C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sources_1/imports/new/PL_CLASSIFIER_w_VOTING.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -63,10 +64,13 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/constrs_1/new/clock_constraint.xdc
+set_property used_in_implementation false [get_files C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/constrs_1/new/clock_constraint.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top PL_CLASSIFIER_w_VOTING -part xc7z020clg400-1 -mode out_of_context
+synth_design -top PL_CLASSIFIER_w_VOTING -part xc7z020clg400-1 -flatten_hierarchy none -fsm_extraction off -mode out_of_context
 
 
 # disable binary constraint mode for synth run checkpoints

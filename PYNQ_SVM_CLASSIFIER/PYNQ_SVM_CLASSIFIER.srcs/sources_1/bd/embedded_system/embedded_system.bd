@@ -47,10 +47,10 @@
       "axi_dma_1": "",
       "axi_dma_2": "",
       "axi_dma_3": "",
+      "PL_CLASSIFIER_w_VOTI_0": "",
       "axis_to_bram_PCV_0": "",
       "axis_to_bram_Bias_0": "",
-      "axis_to_bram_Kernel_0": "",
-      "PL_CLASSIFIER_w_VOTI_0": ""
+      "axis_to_bram_Kernel_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1508,10 +1508,10 @@
           }
         },
         "interface_nets": {
-          "m07_couplers_to_ps7_0_axi_periph": {
+          "s03_couplers_to_xbar": {
             "interface_ports": [
-              "M07_AXI",
-              "m07_couplers/M_AXI"
+              "s03_couplers/M_AXI",
+              "xbar/S03_AXI"
             ]
           },
           "xbar_to_m07_couplers": {
@@ -1520,16 +1520,22 @@
               "m07_couplers/S_AXI"
             ]
           },
-          "m06_couplers_to_ps7_0_axi_periph": {
+          "m07_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
-              "M06_AXI",
-              "m06_couplers/M_AXI"
+              "M07_AXI",
+              "m07_couplers/M_AXI"
             ]
           },
           "xbar_to_m06_couplers": {
             "interface_ports": [
               "xbar/M06_AXI",
               "m06_couplers/S_AXI"
+            ]
+          },
+          "m06_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M06_AXI",
+              "m06_couplers/M_AXI"
             ]
           },
           "xbar_to_m04_couplers": {
@@ -1550,10 +1556,10 @@
               "xbar/S04_AXI"
             ]
           },
-          "ps7_0_axi_periph_to_s05_couplers": {
+          "s05_couplers_to_xbar": {
             "interface_ports": [
-              "S05_AXI",
-              "s05_couplers/S_AXI"
+              "s05_couplers/M_AXI",
+              "xbar/S05_AXI"
             ]
           },
           "xbar_to_m05_couplers": {
@@ -1562,28 +1568,22 @@
               "m05_couplers/S_AXI"
             ]
           },
-          "s05_couplers_to_xbar": {
+          "ps7_0_axi_periph_to_s05_couplers": {
             "interface_ports": [
-              "s05_couplers/M_AXI",
-              "xbar/S05_AXI"
-            ]
-          },
-          "s03_couplers_to_xbar": {
-            "interface_ports": [
-              "s03_couplers/M_AXI",
-              "xbar/S03_AXI"
-            ]
-          },
-          "ps7_0_axi_periph_to_s06_couplers": {
-            "interface_ports": [
-              "S06_AXI",
-              "s06_couplers/S_AXI"
+              "S05_AXI",
+              "s05_couplers/S_AXI"
             ]
           },
           "ps7_0_axi_periph_to_s04_couplers": {
             "interface_ports": [
               "S04_AXI",
               "s04_couplers/S_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s06_couplers": {
+            "interface_ports": [
+              "S06_AXI",
+              "s06_couplers/S_AXI"
             ]
           },
           "s06_couplers_to_xbar": {
@@ -1616,12 +1616,6 @@
               "m02_couplers/M_AXI"
             ]
           },
-          "m04_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M04_AXI",
-              "m04_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m01_couplers": {
             "interface_ports": [
               "xbar/M01_AXI",
@@ -1634,22 +1628,28 @@
               "m03_couplers/M_AXI"
             ]
           },
+          "m04_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M04_AXI",
+              "m04_couplers/M_AXI"
+            ]
+          },
           "xbar_to_m03_couplers": {
             "interface_ports": [
               "xbar/M03_AXI",
               "m03_couplers/S_AXI"
             ]
           },
-          "xbar_to_m02_couplers": {
-            "interface_ports": [
-              "xbar/M02_AXI",
-              "m02_couplers/S_AXI"
-            ]
-          },
           "ps7_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
               "s00_couplers/S_AXI"
+            ]
+          },
+          "xbar_to_m02_couplers": {
+            "interface_ports": [
+              "xbar/M02_AXI",
+              "m02_couplers/S_AXI"
             ]
           },
           "s01_couplers_to_xbar": {
@@ -1670,16 +1670,16 @@
               "xbar/S00_AXI"
             ]
           },
-          "ps7_0_axi_periph_to_s02_couplers": {
-            "interface_ports": [
-              "S02_AXI",
-              "s02_couplers/S_AXI"
-            ]
-          },
           "ps7_0_axi_periph_to_s03_couplers": {
             "interface_ports": [
               "S03_AXI",
               "s03_couplers/S_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s02_couplers": {
+            "interface_ports": [
+              "S02_AXI",
+              "s02_couplers/S_AXI"
             ]
           },
           "s02_couplers_to_xbar": {
@@ -3616,6 +3616,126 @@
           }
         }
       },
+      "PL_CLASSIFIER_w_VOTI_0": {
+        "vlnv": "xilinx.com:module_ref:PL_CLASSIFIER_w_VOTING:1.0",
+        "xci_name": "embedded_system_PL_CLASSIFIER_w_VOTI_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PL_CLASSIFIER_w_VOTING",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "m_axis": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:user:s_axis_rtl:1.0",
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "m_axis_tdata",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "m_axis_tvalid",
+                "direction": "O"
+              },
+              "TREADY": {
+                "physical_name": "m_axis_tready",
+                "direction": "I"
+              }
+            }
+          },
+          "s_axis": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:user:s_axis_rtl:1.0",
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "s_axis_tdata",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "s_axis_tvalid",
+                "direction": "I"
+              },
+              "TREADY": {
+                "physical_name": "s_axis_tready",
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "ports": {
+          "s_axis_aclk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "start": {
+            "direction": "I"
+          },
+          "classification": {
+            "direction": "I"
+          },
+          "bram_addr_Pre_Comp_Vect": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "bram_wrdata_Pre_Comp_Vect": {
+            "direction": "I",
+            "left": "407",
+            "right": "0"
+          },
+          "bram_en_Pre_Comp_Vect": {
+            "direction": "I"
+          },
+          "bram_we_Pre_Comp_Vect": {
+            "direction": "I"
+          },
+          "bram_addr_Kernel_Scale": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "bram_wrdata_Kernel_Scale": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "bram_en_Kernel_Scale": {
+            "direction": "I"
+          },
+          "bram_we_Kernel_Scale": {
+            "direction": "I"
+          },
+          "bram_addr_Bias": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "bram_wrdata_Bias": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "bram_en_Bias": {
+            "direction": "I"
+          },
+          "bram_we_Bias": {
+            "direction": "I"
+          },
+          "trig_axis_to_BRAM_PCV": {
+            "direction": "O"
+          },
+          "trig_axis_to_BRAM_Kernel_Scale": {
+            "direction": "O"
+          },
+          "trig_axis_to_BRAM_Bias": {
+            "direction": "O"
+          }
+        }
+      },
       "axis_to_bram_PCV_0": {
         "vlnv": "xilinx.com:module_ref:axis_to_bram_PCV:1.0",
         "xci_name": "embedded_system_axis_to_bram_PCV_0_0",
@@ -3783,126 +3903,6 @@
             "direction": "O"
           }
         }
-      },
-      "PL_CLASSIFIER_w_VOTI_0": {
-        "vlnv": "xilinx.com:module_ref:PL_CLASSIFIER_w_VOTING:1.0",
-        "xci_name": "embedded_system_PL_CLASSIFIER_w_VOTI_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "PL_CLASSIFIER_w_VOTING",
-          "boundary_crc": "0x0"
-        },
-        "interface_ports": {
-          "m_axis": {
-            "mode": "Master",
-            "vlnv": "xilinx.com:user:s_axis_rtl:1.0",
-            "port_maps": {
-              "TDATA": {
-                "physical_name": "m_axis_tdata",
-                "direction": "O",
-                "left": "31",
-                "right": "0"
-              },
-              "TVALID": {
-                "physical_name": "m_axis_tvalid",
-                "direction": "O"
-              },
-              "TREADY": {
-                "physical_name": "m_axis_tready",
-                "direction": "I"
-              }
-            }
-          },
-          "s_axis": {
-            "mode": "Slave",
-            "vlnv": "xilinx.com:user:s_axis_rtl:1.0",
-            "port_maps": {
-              "TDATA": {
-                "physical_name": "s_axis_tdata",
-                "direction": "I",
-                "left": "31",
-                "right": "0"
-              },
-              "TVALID": {
-                "physical_name": "s_axis_tvalid",
-                "direction": "I"
-              },
-              "TREADY": {
-                "physical_name": "s_axis_tready",
-                "direction": "O"
-              }
-            }
-          }
-        },
-        "ports": {
-          "s_axis_aclk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "start": {
-            "direction": "I"
-          },
-          "classification": {
-            "direction": "I"
-          },
-          "bram_addr_Pre_Comp_Vect": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "bram_wrdata_Pre_Comp_Vect": {
-            "direction": "I",
-            "left": "407",
-            "right": "0"
-          },
-          "bram_en_Pre_Comp_Vect": {
-            "direction": "I"
-          },
-          "bram_we_Pre_Comp_Vect": {
-            "direction": "I"
-          },
-          "bram_addr_Kernel_Scale": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "bram_wrdata_Kernel_Scale": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "bram_en_Kernel_Scale": {
-            "direction": "I"
-          },
-          "bram_we_Kernel_Scale": {
-            "direction": "I"
-          },
-          "bram_addr_Bias": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "bram_wrdata_Bias": {
-            "direction": "I",
-            "left": "6",
-            "right": "0"
-          },
-          "bram_en_Bias": {
-            "direction": "I"
-          },
-          "bram_we_Bias": {
-            "direction": "I"
-          },
-          "trig_axis_to_BRAM_PCV": {
-            "direction": "O"
-          },
-          "trig_axis_to_BRAM_Kernel_Scale": {
-            "direction": "O"
-          },
-          "trig_axis_to_BRAM_Bias": {
-            "direction": "O"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -3960,16 +3960,16 @@
           "axi_dma_2/S_AXI_LITE"
         ]
       },
+      "axi_dma_1_M_AXI_MM2S": {
+        "interface_ports": [
+          "axi_dma_1/M_AXI_MM2S",
+          "ps7_0_axi_periph/S03_AXI"
+        ]
+      },
       "axi_dma_3_M_AXI_MM2S": {
         "interface_ports": [
           "axi_dma_3/M_AXI_MM2S",
           "ps7_0_axi_periph/S05_AXI"
-        ]
-      },
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
         ]
       },
       "ps7_0_axi_periph_M05_AXI": {
@@ -3978,16 +3978,16 @@
           "processing_system7_0/S_AXI_HP0"
         ]
       },
-      "axi_dma_1_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_dma_1/M_AXI_MM2S",
-          "ps7_0_axi_periph/S03_AXI"
-        ]
-      },
       "ps7_0_axi_periph_M02_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
           "axi_dma_1/S_AXI_LITE"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       }
     },
@@ -4024,10 +4024,10 @@
           "axi_dma_3/m_axi_mm2s_aclk",
           "ps7_0_axi_periph/S06_ACLK",
           "ps7_0_axi_periph/M07_ACLK",
+          "PL_CLASSIFIER_w_VOTI_0/s_axis_aclk",
           "axis_to_bram_PCV_0/clk",
           "axis_to_bram_Bias_0/clk",
-          "axis_to_bram_Kernel_0/clk",
-          "PL_CLASSIFIER_w_VOTI_0/s_axis_aclk"
+          "axis_to_bram_Kernel_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

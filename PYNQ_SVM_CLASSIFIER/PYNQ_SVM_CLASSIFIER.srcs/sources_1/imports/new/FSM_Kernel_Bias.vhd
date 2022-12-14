@@ -5,6 +5,7 @@ use IEEE.std_logic_arith.all;
 
 entity FSM_Kernel_Bias is
   Port ( 
+      axi_resetn                     : in std_logic; -- reset Active Low
       start                          : in std_logic; -- proviene dal Main FSM
       s_axis_aclk                    : in  std_logic;
      -- per gestione stallo
@@ -25,28 +26,37 @@ end FSM_Kernel_Bias;
 
 architecture arch of FSM_Kernel_Bias is
 
-type t_state is ( IDLE, PAUSE, FIRST_WAITING, WAITING, READ_RAM_Kernel_Bias );
-signal  State, next_state, pause_state : t_state;
+type t_state is ( 
+    RESET_STATE,
+    IDLE,
+    PAUSE,
+    FIRST_WAITING,
+    WAITING,
+    READ_RAM_Kernel_Bias 
+);
+signal  state       : t_state;
+signal  next_state  : t_state;
+signal  pause_state : t_state;
 
 signal count: natural range 0 to 34 := 0; -- unico counter 
 
 
 begin
 
-SYNC_PROC : process (s_axis_aclk) 
+SYNC_PROC : process (s_axis_aclk, axi_resetn) 
 begin
-    if rising_edge(s_axis_aclk) then
-        if start = '0' then
-            state <= IDLE; 
-        else
-            state <= next_state;
-        end if;
+    if axi_resetn = '0' then
+        state <= RESET_STATE;
+    elsif rising_edge(s_axis_aclk) then
+        state <= next_state;
     end if;
 end process;
 
-TIMER : process(s_axis_aclk, state)
+TIMER : process(s_axis_aclk, axi_resetn, state)
 begin
-    if rising_edge(s_axis_aclk) then
+    if axi_resetn = '0' then
+        count <= 0;
+    elsif rising_edge(s_axis_aclk) then
        -- gestione counter lettura ram 
        --                  attesa iniziale 
        --                  attesa tra due inizi lettura 
@@ -104,19 +114,26 @@ start_FSM3                   <= '0';
             
         when PAUSE =>
             start_FSM3                   <= '1';
-                                                             
+
+        when others =>
+            null;                                                  
     end case;
 end process;
  
 NEXT_STATE_DECODE : process (state, pause_state, m_axis_tready, start, start_FSM2, count) 
 begin
     next_state <= state;
-    case state is   
+    case state is 
+        when RESET_STATE => 
+            next_state => IDLE;
+
         when IDLE =>
             if m_axis_tready = '0' then
                 next_state <= PAUSE;
             elsif start_FSM2 = '1' then 
                 next_state <= FIRST_WAITING;
+            else 
+                next_state <= IDLE;
             end if;  
 
         when FIRST_WAITING =>
@@ -124,6 +141,8 @@ begin
                 next_state <= PAUSE;
             elsif count = 34 then       -- attesa causata dall'intero riempimento della pipe + 3 per dsp
                 next_state <= READ_RAM_Kernel_Bias;
+            else
+                next_state <= FIRST_WAITING;
             end if;                    
                     
         when WAITING =>
@@ -131,13 +150,17 @@ begin
                 next_state <= PAUSE;
             elsif count = 9 then         -- attesa tra un inizio lettura ed un altro ( in base alla prima FSM) 
                 next_state <= READ_RAM_Kernel_Bias;
+            else
+                next_state <= WAITING;
             end if;
                            
         when READ_RAM_Kernel_Bias =>
            if m_axis_tready = '0' then
                next_state <= PAUSE;
            elsif count = 15  then
-               next_state  <= WAITING;   
+               next_state  <= WAITING;  
+            else
+                next_state <=  READ_RAM_Kernel_Bias;
            end if;        
                     
         when PAUSE => 

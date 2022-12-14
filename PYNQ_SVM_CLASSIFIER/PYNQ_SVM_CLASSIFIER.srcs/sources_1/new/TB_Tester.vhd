@@ -10,6 +10,7 @@ entity TB_Tester is
    
    -- AXI-Stream  INPUT interface
    m00_axis_aclk      : out  std_logic;
+
    m00_axis_tready    : in   std_logic;                            
    m00_axis_tvalid    : out  std_logic;                          
    m00_axis_tdata     : out  std_logic_vector( 32 - 1 downto 0 ); 
@@ -40,31 +41,85 @@ end TB_Tester;
 
 architecture rtl of TB_Tester is
 
-  constant clock_period : time := 20s;
+    -- Clock period and cnt cycle
+    constant clk_period : time := 20 ns;
+    signal clk_cnt      : natural;
+    --------------------
+    --  CPU Signals   --
+    --------------------
+    signal cpu_clock  : std_logic;
+    signal cpu_nreset : std_logic :='0';
 
-  signal clock          : std_logic := '0';
-  signal nreset         : std_logic := '1';
-
+    
 begin
+ 
 ------------------------------------------
 --                 ISTANCES             --
 ------------------------------------------ 
   DMA_MM2S_inst : entity work.DMA_MM2S
   port map (
-    axis_nreset => axis_nreset,
-    axis_aclk => clock,
+    axis_nreset => cpu_nreset,
+    axis_aclk => cpu_clock,
     axis_tready => m00_axis_tready,
     axis_tvalid => m00_axis_tvalid,
     axis_tdata => m00_axis_tdata
   );
+------------------------------------------------
+----------------- CLOCK PROCESS  ---------------
+------------------------------------------------
+  clk_process : process
+  begin
+  cpu_clock <= '1';
+  wait for clk_period/2;
+  cpu_clock <= '0';
+  wait for clk_period/2;
+  end process ;
 
--------------------------------------------
---                  CLOCK                --
--------------------------------------------
-  clock <= not clock after clock_period/2;
-  m00_axis_aclk <= clock;
+  m00_axis_aclk <= cpu_clock;
+------------------------------------------------
+--------------------- RESET  -------------------
+------------------------------------------------
+  -- reset = 1 for first clock cycle and then 0
+  cpu_nreset <= '0', '1' after 10*clk_period;
 
-
-
+------------------------------------------------
+---------------- COUNTER CYCLES ----------------
+------------------------------------------------
+  clk_cnt_p: process(cpu_clock)
+  begin
+    if rising_edge(cpu_clock)  then
+      if cpu_nreset = '0' then
+        clk_cnt <= 0;
+      else
+        clk_cnt <= clk_cnt + 1;
+      end if;
+    end if;
+  end process;
+------------------------------------------------
+--------------- SIMULATION GPIO ----------------
+------------------------------------------------
+GPIO_p: process(cpu_clock)
+begin
+  if rising_edge(cpu_clock) then
+    if cpu_nreset = '0' then
+      -- IDLE
+      start          <= '1';   
+      classification <= '1'; 
+    else
+      null;
+      -- if clk_cnt >= 2 and clk_cnt <= 6 then
+      --   -- SETUP
+      --   start          <= '1';   
+      --   classification <= '0'; 
+      -- elsif clk_cnt > 6 then
+      --   -- CLASSIFICATION
+      --   start          <= '1';   
+      --   classification <= '1'; 
+      -- end if;
+    end if;
+  end if;
+end process ;
+    
+  
 end rtl;
 

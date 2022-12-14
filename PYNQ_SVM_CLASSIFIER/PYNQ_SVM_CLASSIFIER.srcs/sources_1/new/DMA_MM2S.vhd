@@ -18,13 +18,13 @@ architecture rtl of DMA_MM2S is
 ------------------------------------------
 -- Signals necessary for Reading from file
 ------------------------------------------
-constant n_32b  : natural := 324
+constant n_32b  : natural := 324;
 type array_of_std is array (0 to n_32b - 1) of std_logic_vector(32 - 1 downto 0);
 signal data_to_send                 : array_of_std;
 ------------------------------------------
 -- Signals for send data
 ------------------------------------------
-signal index  : natural := 0;
+signal index  : natural;
 signal axis_tready_i : std_logic;
 signal axis_tvalid_i : std_logic;
 
@@ -64,14 +64,15 @@ begin
 end process;
 
 -------------------------------
--- Processo di invio 
+--     Processo di invio     --
 -------------------------------
 process (axis_aclk)
 begin
   if rising_edge(axis_aclk) then
     if axis_nreset = '0' then
-      axis_tvalid <= '0';
+      axis_tvalid_i <= '0';
       axis_tdata  <= (others => 'Z');
+      index <= 0;
     else
       axis_tvalid_i <= '1'; -- default 
       axis_tdata  <= data_to_send(index);
@@ -81,8 +82,8 @@ begin
               index <= index + 1;
           end if;       
       else
-        axis_tvalid_i <= '0';
-        index         <= index;
+              axis_tvalid_i <= '0';
+              index         <= index;
       end if;
     end if;
   end if;
@@ -93,4 +94,5 @@ end process;
 -------------------------------
 axis_tready_i <= axis_tready;
 axis_tvalid <= axis_tvalid_i; 
+
 end rtl;

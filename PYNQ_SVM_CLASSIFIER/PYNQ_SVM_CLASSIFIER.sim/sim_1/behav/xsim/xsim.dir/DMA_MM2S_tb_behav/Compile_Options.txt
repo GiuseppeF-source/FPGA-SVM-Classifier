@@ -1,0 +1,1 @@
+-wto "ccbfaebe9d1d405295bdb8b82b93d3ed" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "secureip" -L "xpm" --snapshot "DMA_MM2S_tb_behav" "xil_defaultlib.DMA_MM2S_tb" -log "elaborate.log" 

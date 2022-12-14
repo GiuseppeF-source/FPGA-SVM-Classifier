@@ -2,12 +2,12 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Dec 10 19:20:05 2022
-# Process ID: 3448
-# Current directory: C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/xsim.dir/TB_CLASSIFIER_w_VOTING_time_synth/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/webtalk.log
-# Journal file: C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim\webtalk.jou
+# Start of session at: Sun Dec 11 19:36:45 2022
+# Process ID: 4832
+# Current directory: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/xsim.dir/TB_Top_Level_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/yoxo/OneDrive/Documenti/work_dir/MAIN/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/xsim.dir/TB_CLASSIFIER_w_VOTING_time_synth/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sat Dec 10 19:20:09 2022...
+source C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/xsim.dir/TB_Top_Level_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 11 19:36:49 2022...
