@@ -6,8 +6,8 @@ USE xil_defaultlib.personal_type_pkg.ALL;
 entity PL_CLASSIFIER_w_VOTING is
   Port ( 
   -- GPIO INPUT interface 
-  start            : in std_logic := '0';
-  classification   : in std_logic := '0';
+  start            : in std_logic ;
+  classification   : in std_logic ;
   
   -- AXI-Stream  INPUT interface
   axi_resetn       : in std_logic; -- reset Active Low
@@ -355,7 +355,6 @@ PM_FSM: FSM Port Map (
     -- Gestione AXI-Stream Output
     m_axis_tready                 => m_axis_tready,
     m_axis_valid                  => m_axis_tvalid,
-    --m_axis_tlast                  => m_axis_tlast,
     -- Gestione AXI-Stream Input  
     s_axis_tready                 => s_axis_tready 
     );    

@@ -47,7 +47,7 @@ begin
     if axi_resetn = '0' then
         state <= RESET_STATE;
     elsif rising_edge(s_axis_aclk) then
-        state <= IDLE; 
+        state <= next_state; 
     end if;
 end process;
 

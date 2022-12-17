@@ -125,7 +125,7 @@ begin
     next_state <= state;
     case state is 
         when RESET_STATE => 
-            next_state => IDLE;
+            next_state <= IDLE;
 
         when IDLE =>
             if m_axis_tready = '0' then

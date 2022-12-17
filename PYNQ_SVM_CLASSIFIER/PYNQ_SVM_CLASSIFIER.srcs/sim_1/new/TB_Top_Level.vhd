@@ -15,7 +15,8 @@ constant BIAS_WIDTH                   : natural := 7;
 -- GPIO INPUT interface      
 signal  start                          : std_logic;                                               
 signal  classification                 : std_logic;                                                                                                                  
--- AXI-Stream  OUT  interface  -- MAIN DMA                                        
+-- AXI-Stream  OUT  interface  -- MAIN DMA      
+signal  axi_resetn                     : std_logic; -- reset Active Low                                  
 signal  m00_axis_aclk                  : std_logic;                                              
 signal  m00_axis_tready                : std_logic;                                 
 signal  m00_axis_tvalid                : std_logic;                          
@@ -62,6 +63,7 @@ begin
     port map (
       start => start,
       classification => classification,
+      axi_resetn => axi_resetn,
       s_axis_aclk => m00_axis_aclk,
       s_axis_tready => m00_axis_tready,
       s_axis_tvalid => m00_axis_tvalid,
@@ -141,6 +143,7 @@ begin
     port map (
       start => start,
       classification  => classification,
+      axi_resetn      => axi_resetn,
       m00_axis_aclk   => m00_axis_aclk,
       m00_axis_tready => m00_axis_tready,
       m00_axis_tvalid => m00_axis_tvalid,
@@ -150,13 +153,13 @@ begin
       s00_axis_tready => s00_axis_tready,
       m01_axis_tready => m01_axis_tready,
       m01_axis_tvalid => m01_axis_tvalid,
-      m01_axis_tdata => m01_axis_tdata,
+      m01_axis_tdata  => m01_axis_tdata,
       m02_axis_tready => m02_axis_tready,
       m02_axis_tvalid => m02_axis_tvalid,
       m02_axis_tdata  => m02_axis_tdata,
       m03_axis_tready => m03_axis_tready,
       m03_axis_tvalid => m03_axis_tvalid,
-      m03_axis_tdata => m03_axis_tdata
+      m03_axis_tdata  => m03_axis_tdata
     );
   
 

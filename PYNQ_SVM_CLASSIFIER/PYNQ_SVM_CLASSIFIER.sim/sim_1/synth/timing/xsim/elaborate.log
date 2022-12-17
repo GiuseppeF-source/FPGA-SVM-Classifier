@@ -3,179 +3,20 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ccbfaebe9d1d405295bdb8b82b93d3ed --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L xilinx_vip -L simprims_ver -L secureip --snapshot TB_Top_Level_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.TB_Top_Level xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "TB_Top_Level_time_synth.sdf", for root module "TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst".
-INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "TB_Top_Level_time_synth.sdf", for root module "TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst".
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_textio
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module simprims_ver.GND
-Compiling module simprims_ver.DSP48E1(ADREG=0,ALUMODEREG=0,CAR...
-Compiling module xil_defaultlib.DSP_AxB_Cascade__11
-Compiling module xil_defaultlib.DSP_AxB_Cascade__12
-Compiling module xil_defaultlib.DSP_AxB_Cascade__13
-Compiling module xil_defaultlib.DSP_AxB_Cascade__14
-Compiling module xil_defaultlib.DSP_AxB_Cascade__15
-Compiling module xil_defaultlib.DSP_AxB_Cascade__16
-Compiling module xil_defaultlib.DSP_AxB_Cascade__17
-Compiling module xil_defaultlib.DSP_AxB_Cascade__18
-Compiling module xil_defaultlib.DSP_AxB_Cascade__19
-Compiling module xil_defaultlib.DSP_AxB_Cascade__20
-Compiling module xil_defaultlib.DSP_AxB_Cascade__2
-Compiling module xil_defaultlib.DSP_AxB_Cascade__21
-Compiling module xil_defaultlib.DSP_AxB_Cascade__22
-Compiling module xil_defaultlib.DSP_AxB_Cascade__23
-Compiling module xil_defaultlib.DSP_AxB_Cascade__24
-Compiling module xil_defaultlib.DSP_AxB_Cascade__25
-Compiling module xil_defaultlib.DSP_AxB_Cascade__26
-Compiling module xil_defaultlib.DSP_AxB_Cascade__27
-Compiling module xil_defaultlib.DSP_AxB_Cascade__28
-Compiling module xil_defaultlib.DSP_AxB_Cascade__29
-Compiling module xil_defaultlib.DSP_AxB_Cascade__30
-Compiling module xil_defaultlib.DSP_AxB_Cascade__3
-Compiling module xil_defaultlib.DSP_AxB_Cascade__31
-Compiling module xil_defaultlib.DSP_AxB_Cascade__32
-Compiling module xil_defaultlib.DSP_AxB_Cascade
-Compiling module xil_defaultlib.DSP_AxB_Cascade__4
-Compiling module xil_defaultlib.DSP_AxB_Cascade__5
-Compiling module xil_defaultlib.DSP_AxB_Cascade__6
-Compiling module xil_defaultlib.DSP_AxB_Cascade__7
-Compiling module xil_defaultlib.DSP_AxB_Cascade__8
-Compiling module xil_defaultlib.DSP_AxB_Cascade__9
-Compiling module xil_defaultlib.DSP_AxB_Cascade__10
-Compiling module xil_defaultlib.DSP_AxB_Cascade__1
-Compiling module simprims_ver.DSP48E1(ADREG=0,ALUMODEREG=0,CAR...
-Compiling module xil_defaultlib.DSP_AxB_plus_C
-Compiling module xil_defaultlib.DSP_AxB_Cascade_wo_PCIN
-Compiling module xil_defaultlib.SVM
-Compiling module simprims_ver.SRL16E_default
-Compiling module simprims_ver.FDRE_default
-Compiling module simprims_ver.x_lut2_mux4
-Compiling module simprims_ver.LUT2
-Compiling module xil_defaultlib.double_shift_reg__parameterized1...
-Compiling module xil_defaultlib.double_shift_reg__parameterized1...
-Compiling module xil_defaultlib.double_shift_reg__parameterized2...
-Compiling module xil_defaultlib.double_shift_reg__parameterized2...
-Compiling module xil_defaultlib.double_shift_reg__parameterized2...
-Compiling module xil_defaultlib.double_shift_reg__parameterized2...
-Compiling module xil_defaultlib.double_shift_reg__parameterized2...
-Compiling module xil_defaultlib.double_shift_reg__parameterized3...
-Compiling module xil_defaultlib.double_shift_reg__parameterized3...
-Compiling module simprims_ver.SRLC32E_default
-Compiling module xil_defaultlib.double_shift_reg__parameterized3...
-Compiling module xil_defaultlib.double_shift_reg
-Compiling module xil_defaultlib.double_shift_reg__parameterized3...
-Compiling module xil_defaultlib.double_shift_reg__parameterized3...
-Compiling module xil_defaultlib.double_shift_reg__parameterized4...
-Compiling module xil_defaultlib.double_shift_reg__parameterized4...
-Compiling module xil_defaultlib.double_shift_reg__parameterized4...
-Compiling module xil_defaultlib.double_shift_reg__parameterized4...
-Compiling module xil_defaultlib.double_shift_reg__parameterized4...
-Compiling module xil_defaultlib.double_shift_reg__parameterized5...
-Compiling module xil_defaultlib.double_shift_reg__parameterized5...
-Compiling module xil_defaultlib.double_shift_reg__parameterized5...
-Compiling module xil_defaultlib.double_shift_reg__parameterized1
-Compiling module xil_defaultlib.double_shift_reg__parameterized5...
-Compiling module xil_defaultlib.double_shift_reg__parameterized5...
-Compiling module xil_defaultlib.double_shift_reg__parameterized6...
-Compiling module xil_defaultlib.double_shift_reg__parameterized6...
-Compiling module xil_defaultlib.double_shift_reg__parameterized3
-Compiling module xil_defaultlib.double_shift_reg__parameterized5
-Compiling module xil_defaultlib.double_shift_reg__parameterized7
-Compiling module xil_defaultlib.double_shift_reg__parameterized9
-Compiling module xil_defaultlib.double_shift_reg__parameterized1...
-Compiling module xil_defaultlib.double_shift_reg__parameterized1...
-Compiling module xil_defaultlib.double_shift_reg__parameterized1...
-Compiling module xil_defaultlib.incremental_pipe
-Compiling module xil_defaultlib.Classifier
-Compiling module simprims_ver.LUT6
-Compiling module simprims_ver.LUT5
-Compiling module simprims_ver.LUT4
-Compiling module simprims_ver.latchsre_ldce
-Compiling module simprims_ver.LDCE
-Compiling module simprims_ver.x_lut1_mux2
-Compiling module simprims_ver.LUT1
-Compiling module simprims_ver.x_lut3_mux8
-Compiling module simprims_ver.LUT3
-Compiling module xil_defaultlib.FSM_Kernel_Bias
-Compiling module xil_defaultlib.FSM_SIPO_PCV
-Compiling module xil_defaultlib.FSM_Voting
-Compiling module xil_defaultlib.FSM
-Compiling module simprims_ver.RAMS32
-Compiling module xil_defaultlib.RAM32X1S_UNIQ_BASE_
-Compiling module xil_defaultlib.RAM32X1S_HD55
-Compiling module xil_defaultlib.RAM32X1S_HD56
-Compiling module xil_defaultlib.RAM32X1S_HD57
-Compiling module xil_defaultlib.RAM32X1S_HD58
-Compiling module xil_defaultlib.RAM32X1S_HD59
-Compiling module xil_defaultlib.RAM32X1S_HD60
-Compiling module xil_defaultlib.xilinx_single_port_ram_no_change...
-Compiling module xil_defaultlib.RAM_Bias
-Compiling module xil_defaultlib.RAM32X1S_HD61
-Compiling module xil_defaultlib.RAM32X1S_HD62
-Compiling module xil_defaultlib.RAM32X1S_HD63
-Compiling module xil_defaultlib.RAM32X1S_HD64
-Compiling module xil_defaultlib.RAM32X1S_HD65
-Compiling module xil_defaultlib.RAM32X1S_HD66
-Compiling module xil_defaultlib.RAM32X1S_HD67
-Compiling module xil_defaultlib.RAM32X1S_HD68
-Compiling module xil_defaultlib.RAM32X1S_HD69
-Compiling module xil_defaultlib.RAM32X1S_HD70
-Compiling module xil_defaultlib.RAM32X1S_HD71
-Compiling module xil_defaultlib.RAM32X1S_HD72
-Compiling module xil_defaultlib.xilinx_single_port_ram_no_change...
-Compiling module xil_defaultlib.RAM_Kernel_Scale
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010101010...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b011111011...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010111011...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0111110100...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010001100...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010000000...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010100011...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b011110110...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010100001...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010000001...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b011110000...
-Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module simprims_ver.RAMB18E1(INITP_00=256'b010100100...
-Compiling module xil_defaultlib.xilinx_single_port_ram_no_change
-Compiling module xil_defaultlib.RAM_Pre_Computed_Vector
-Compiling module xil_defaultlib.SIPO_buffer
-Compiling module simprims_ver.FDSE_default
-Compiling module xil_defaultlib.counter_3b__1
-Compiling module xil_defaultlib.counter_3b__2
-Compiling module xil_defaultlib.counter_3b__3
-Compiling module xil_defaultlib.counter_3b__4
-Compiling module xil_defaultlib.counter_3b__5
-Compiling module xil_defaultlib.counter_3b
-Compiling module xil_defaultlib.Voting_w_ce
-Compiling module xil_defaultlib.PL_CLASSIFIER_w_VOTING
-Compiling architecture rtl of entity xil_defaultlib.AXIS_BRAM_mng [axis_bram_mng_default]
-Compiling architecture rtl of entity xil_defaultlib.SIPO_shift_reg_w_full [sipo_shift_reg_w_full_default]
-Compiling architecture rtl of entity xil_defaultlib.axis_to_bram_PCV [axis_to_bram_pcv_default]
-Compiling architecture rtl of entity xil_defaultlib.SIPO_shift_reg_w_full [\SIPO_shift_reg_w_full(depth=1,n...]
-Compiling architecture rtl of entity xil_defaultlib.axis_to_bram_Kernel [axis_to_bram_kernel_default]
-Compiling architecture rtl of entity xil_defaultlib.SIPO_shift_reg_w_full [\SIPO_shift_reg_w_full(depth=1,n...]
-Compiling architecture rtl of entity xil_defaultlib.axis_to_bram_Bias [axis_to_bram_bias_default]
-Compiling architecture rtl of entity xil_defaultlib.DMA_MM2S [dma_mm2s_default]
-Compiling architecture rtl of entity xil_defaultlib.TB_Tester [tb_tester_default]
-Compiling architecture rtl of entity xil_defaultlib.tb_top_level
-Built simulation snapshot TB_Top_Level_time_synth
+ERROR: [VRFC 10-3354] formal port 's_axis_aclk' of mode input cannot be associated with actual port 's_axis_tready' of mode out [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10839]
+ERROR: [VRFC 10-3354] formal port 's_axis_tready' of mode output cannot be associated with actual port 's_axis_tvalid' of mode in [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10840]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 's_axis_tvalid' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10841]
+ERROR: [VRFC 10-3354] formal port 's_axis_tdata' of mode input cannot be associated with actual port 'm_axis_tdata' of mode out [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10842]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'm_axis_tdata' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10843]
+ERROR: [VRFC 10-3354] formal port 'm_axis_tvalid' of mode output cannot be associated with actual port 'm_axis_tready' of mode in [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10844]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'm_axis_tready' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10845]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_addr_Pre_Comp_Vect' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10846]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_wrdata_Pre_Comp_Vect' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10847]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_we_Pre_Comp_Vect' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10849]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_addr_Kernel_Scale' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10850]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_wrdata_Kernel_Scale' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10851]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_we_Kernel_Scale' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10853]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_addr_Bias' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10854]
+ERROR: [VRFC 10-3714] size mismatch in mixed language port association, verilog port 'bram_wrdata_Bias' [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10855]
+ERROR: [VRFC 10-3354] formal port 'bram_we_Bias' of mode input cannot be associated with actual port '\trig_axis_to_BRAM_PCV\' of mode out [C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/timing/xsim/TB_Top_Level_time_synth.v:10857]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

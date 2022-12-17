@@ -1,7 +1,7 @@
 {
    "ExpandedHierarchyInLayout":"",
    "commentid":"",
-   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
 #  -string -flagsOSRD
 preplace port DDR -pg 1 -y 800 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -y 820 -defaultsOSRD
@@ -21,7 +21,7 @@ preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 840J
 preplace netloc processing_system7_0_DDR 1 1 7 420J 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 3130
 preplace netloc axis_to_bram_PCV_0_s_axis_tready 1 3 2 N 1260 1620
 preplace netloc axi_dma_1_m_axis_mm2s_tdata 1 3 2 N 1240 1660
-preplace netloc axis_to_bram_PCV_0_en_ram 1 5 1 2180
+preplace netloc axis_to_bram_PCV_0_en_ram 1 5 1 2190
 preplace netloc axis_to_bram_Kernel_0_s_axis_tready 1 3 2 N 1480 1620
 preplace netloc axi_dma_1_m_axis_mm2s_tvalid 1 3 2 N 1280 1610
 preplace netloc axis_to_bram_PCV_0_addr_ram 1 5 1 2210
@@ -31,70 +31,70 @@ preplace netloc axis_to_bram_Bias_0_s_axis_tready 1 3 2 1430 1810 N
 preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Bias 1 4 3 1670J 1920 NJ 1920 2900
 preplace netloc axi_dma_1_M_AXI_MM2S 1 1 3 500 840 NJ 840 1360
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430J
-preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 3 3 1430 1090 NJ 1090 2270J
+preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 3 3 1430 1090 NJ 1090 2260J
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -50J 940 420J
 preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 830J
-preplace netloc PL_CLASSIFIER_w_VOTI_0_s_axis_tready 1 3 3 1420 1100 NJ 1100 2260J
-preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 3 3 1410 1110 NJ 1110 2250J
-preplace netloc axis_to_bram_Bias_0_data_out 1 5 1 2250
-preplace netloc axis_to_bram_Kernel_0_en_ram 1 5 1 2220
+preplace netloc PL_CLASSIFIER_w_VOTI_0_s_axis_tready 1 3 3 1420 1100 NJ 1100 2250J
+preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 3 3 1410 1110 NJ 1110 2240J
+preplace netloc axis_to_bram_Bias_0_data_out 1 5 1 2240
+preplace netloc axis_to_bram_Kernel_0_en_ram 1 5 1 2190
 preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 830
 preplace netloc axi_dma_0_s_axis_s2mm_tready 1 2 5 900 830 NJ 830 NJ 830 NJ 830 2900
 preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Kernel_Scale 1 4 3 1650J 1930 NJ 1930 2920
-preplace netloc axis_to_bram_Kernel_0_we_ram 1 5 1 2230
+preplace netloc axis_to_bram_Kernel_0_we_ram 1 5 1 2200
 preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 1 1 490
 preplace netloc axi_dma_0_M_AXI_MM2S 1 1 3 480 780 N 780 1380
 preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tdata 1 2 5 890 790 N 790 NJ 790 NJ 790 2920
-preplace netloc axis_to_bram_Bias_0_en_ram 1 5 1 2260
-preplace netloc axi_gpio_0_gpio_io_o 1 5 1 2240
-preplace netloc axi_dma_3_M_AXI_MM2S 1 1 3 470 750 NJ 750 1390
+preplace netloc axis_to_bram_Bias_0_en_ram 1 5 1 2250
+preplace netloc axi_gpio_0_gpio_io_o 1 5 1 2230
 preplace netloc processing_system7_0_FIXED_IO 1 1 7 420J 800 NJ 800 NJ 800 NJ 800 NJ 800 NJ 800 3120
+preplace netloc axi_dma_3_M_AXI_MM2S 1 1 3 470 750 NJ 750 1390
 preplace netloc axi_dma_2_m_axis_mm2s_tvalid 1 3 2 N 1500 1610
 preplace netloc axis_to_bram_PCV_0_we_ram 1 5 1 2170
 preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 4 450 830 870 770 N 770 1670
 preplace netloc axi_dma_0_M_AXI_S2MM 1 1 3 490 820 860 810 1370
-preplace netloc axis_to_bram_Bias_0_addr_ram 1 5 1 2240
-preplace netloc axis_to_bram_Kernel_0_data_out 1 5 1 2210
-preplace netloc axis_to_bram_Kernel_0_addr_ram 1 5 1 2200
+preplace netloc axis_to_bram_Bias_0_addr_ram 1 5 1 2220
+preplace netloc axis_to_bram_Kernel_0_data_out 1 5 1 2180
+preplace netloc axis_to_bram_Kernel_0_addr_ram 1 5 1 2170
 preplace netloc ps7_0_axi_periph_M05_AXI 1 0 3 -60J 710 NJ 710 820
-preplace netloc axi_dma_2_M_AXI_MM2S 1 1 3 460 740 NJ 740 1400
 preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 840J
+preplace netloc axi_dma_2_M_AXI_MM2S 1 1 3 460 740 NJ 740 1400
 preplace netloc axi_dma_2_m_axis_mm2s_tdata 1 3 2 N 1460 1630
 preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_PCV 1 4 3 1660J 1910 NJ 1910 2910
-preplace netloc axi_gpio_0_gpio2_io_o 1 5 1 2230
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -60 930 440 810 850 730 1430 750 1640J 1490 2190J
+preplace netloc axi_gpio_0_gpio2_io_o 1 5 1 2220
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -60 930 440 810 850 730 1430 750 1640J 1490 2180J
 preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 890J 1140 NJ 1140 1660J
 preplace netloc axi_dma_3_m_axis_mm2s_tdata 1 3 2 1410 1770 N
-preplace netloc axis_to_bram_Bias_0_we_ram 1 5 1 2270
+preplace netloc axis_to_bram_Bias_0_we_ram 1 5 1 2260
 preplace netloc axis_to_bram_PCV_0_data_out 1 5 1 2200
 levelinfo -pg 1 -80 190 670 1150 1590 2000 2640 3100 3210 -top 0 -bot 2540
 "
 }
 {
-   """""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""":"10",
-   """""""""""""""""""""""""da_board_cnt""""""""""""""""""""""""":"5",
-   """""""""""""""""""""""""da_bram_cntlr_cnt""""""""""""""""""""""""":"9",
-   """""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""":"9",
-   """""""""""""""""""""""""da_ps7_cnt""""""""""""""""""""""""":"3",
-   """"""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""":"9",
-   """""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""":"1",
-   """""""""""""""""""""""da_board_cnt""""""""""""""""""""""":"1",
-   """"""""""""""""""""""da_axi4_cnt"""""""""""""""""""""":"21",
-   """""""""""""""""""da_clkrst_cnt""""""""""""""""""":"18",
-   """"""""""""""""""da_axi4_cnt"""""""""""""""""":"3",
-   """""""""""""""da_axi4_cnt""""""""""""""":"3",
-   """""""""""""""da_board_cnt""""""""""""""":"3",
-   """""""""""""""da_clkrst_cnt""""""""""""""":"2",
-   """""""""""""""da_ps7_cnt""""""""""""""":"1",
-   """"""""""""""da_axi4_cnt"""""""""""""":"5",
-   """"""""""""""da_board_cnt"""""""""""""":"4",
-   """"""""""""""da_bram_cntlr_cnt"""""""""""""":"2",
-   """"""""""""""da_clkrst_cnt"""""""""""""":"3",
-   """"""""""""""da_ps7_cnt"""""""""""""":"1",
-   """""""""""""da_bram_cntlr_cnt""""""""""""":"1",
-   """""""""da_axi4_cnt""""""""":"9",
-   """""""""da_clkrst_cnt""""""""":"4",
-   """""""da_axi4_cnt""""""":"3",
-   """""""da_bram_cntlr_cnt""""""":"1",
-   """"""da_axi4_cnt"""""":"3"
+   """"""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""":"10",
+   """"""""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""""":"5",
+   """"""""""""""""""""""""""""""da_bram_cntlr_cnt"""""""""""""""""""""""""""""":"9",
+   """"""""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""""":"9",
+   """"""""""""""""""""""""""""""da_ps7_cnt"""""""""""""""""""""""""""""":"3",
+   """""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""":"9",
+   """"""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""":"21",
+   """"""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""":"18",
+   """""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""":"3",
+   """"""""""""""""""""da_axi4_cnt"""""""""""""""""""":"3",
+   """"""""""""""""""""da_board_cnt"""""""""""""""""""":"3",
+   """"""""""""""""""""da_clkrst_cnt"""""""""""""""""""":"2",
+   """"""""""""""""""""da_ps7_cnt"""""""""""""""""""":"1",
+   """""""""""""""""""da_axi4_cnt""""""""""""""""""":"5",
+   """""""""""""""""""da_board_cnt""""""""""""""""""":"4",
+   """""""""""""""""""da_bram_cntlr_cnt""""""""""""""""""":"2",
+   """""""""""""""""""da_clkrst_cnt""""""""""""""""""":"3",
+   """""""""""""""""""da_ps7_cnt""""""""""""""""""":"1",
+   """"""""""""""""""da_bram_cntlr_cnt"""""""""""""""""":"1",
+   """"""""""""""da_axi4_cnt"""""""""""""":"9",
+   """"""""""""""da_clkrst_cnt"""""""""""""":"4",
+   """"""""""""da_axi4_cnt"""""""""""":"3",
+   """"""""""""da_bram_cntlr_cnt"""""""""""":"1",
+   """""""""""da_axi4_cnt""""""""""":"3"
 }

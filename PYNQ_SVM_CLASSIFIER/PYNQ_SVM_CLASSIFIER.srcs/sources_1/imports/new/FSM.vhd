@@ -67,7 +67,7 @@ signal start_from_FSM_Kernel_Bias :std_logic; -- avvia FSM_Voting
 -- Signal MAIN FSM      
 --------------------------
 type t_state is (
-    RESET_STATE
+    RESET_STATE,
     IDLE,
     SETUP, 
     PROCESSING, 
@@ -128,7 +128,7 @@ valid_to_DMA                   => m_axis_valid
 SYNC_PROC : process (s_axis_aclk, axi_resetn) 
 begin
     if axi_resetn = '0' then 
-        state <= RESET_STATE
+        state <= RESET_STATE;
     elsif rising_edge(s_axis_aclk) then
         state <= next_state;
     end if;

@@ -9,7 +9,8 @@ entity TB_Tester is
    classification   : out  std_logic;
    
    -- AXI-Stream  INPUT interface
-   m00_axis_aclk      : out  std_logic;
+   axi_resetn         : out  std_logic :='0';
+   m00_axis_aclk      : out  std_logic :='0';
 
    m00_axis_tready    : in   std_logic;                            
    m00_axis_tvalid    : out  std_logic;                          
@@ -42,8 +43,8 @@ end TB_Tester;
 architecture rtl of TB_Tester is
 
     -- Clock period and cnt cycle
-    constant clk_period : time := 20 ns;
-    signal clk_cnt      : natural;
+    constant clk_period : time   := 20 ns;
+    signal   clk_cnt    : natural;
     --------------------
     --  CPU Signals   --
     --------------------
@@ -81,7 +82,7 @@ begin
 ------------------------------------------------
   -- reset = 1 for first clock cycle and then 0
   cpu_nreset <= '0', '1' after 10*clk_period;
-
+  axi_resetn <= cpu_nreset;
 ------------------------------------------------
 ---------------- COUNTER CYCLES ----------------
 ------------------------------------------------
