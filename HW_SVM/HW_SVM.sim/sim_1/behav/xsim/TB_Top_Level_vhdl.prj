@@ -1,0 +1,36 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HW_SVM.srcs/sources_1/new/AXIS_BRAM_mng.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/incremental_pipe.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/SVM.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/Classifier.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/Constant_PKG.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S_BIAS.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S_KERNEL.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S_PCV.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/DSP_AxB_Cascade.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/DSP_AxB_Cascade_wo_PCIN.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/DSP_AxB_plus_C.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/FSM_SIPO_PCV.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/FSM_Kernel_Bias.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/FSM_Voting.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/FSM.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/PL_CLASSIFIER_w_VOTING.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/xilinx_single_port_ram_no_change.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/RAM_Bias.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/RAM_Kernel_Scale.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/RAM_Pre_Computed_Vector.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/SIPO_buffer.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/SIPO_shift_reg_w_full.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/TB_Tester.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/axis_to_bram_PCV.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/axis_to_bram_Kernel.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/axis_to_bram_Bias.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/counter_3b.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/Voting_w_ce.vhd" \
+"../../../../HW_SVM.srcs/sources_1/new/double_shift_reg.vhd" \
+"../../../../HW_SVM.srcs/sim_1/new/TB_Top_Level.vhd" \
+
+# Do not sort compile order
+nosort

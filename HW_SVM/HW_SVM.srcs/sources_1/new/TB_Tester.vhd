@@ -50,7 +50,7 @@ architecture rtl of TB_Tester is
     --  CPU Signals   --
     --------------------
     signal cpu_clock  : std_logic;
-    signal cpu_nreset : std_logic :='0';
+    signal cpu_nreset : std_logic;
 
     
 begin
@@ -61,11 +61,36 @@ begin
   DMA_MM2S_inst : entity work.DMA_MM2S
   port map (
     axis_nreset => cpu_nreset,
-    axis_aclk => cpu_clock,
+    axis_aclk   => cpu_clock,
     axis_tready => m00_axis_tready,
     axis_tvalid => m00_axis_tvalid,
-    axis_tdata => m00_axis_tdata
+    axis_tdata  => m00_axis_tdata
   );
+  DMA_MM2S_PCV_inst : entity work.DMA_MM2S_PCV
+  port map (
+    axis_nreset => cpu_nreset,
+    axis_aclk   => cpu_clock,
+    axis_tready => m01_axis_tready,
+    axis_tvalid => m01_axis_tvalid,
+    axis_tdata  => m01_axis_tdata
+  );
+  DMA_MM2S_KERNEL_inst : entity work.DMA_MM2S_KERNEL
+  port map (
+    axis_nreset => cpu_nreset,
+    axis_aclk   => cpu_clock,
+    axis_tready => m02_axis_tready,
+    axis_tvalid => m02_axis_tvalid,
+    axis_tdata  => m02_axis_tdata
+  );
+  DMA_MM2S_BIAS_inst : entity work.DMA_MM2S_BIAS
+  port map (
+    axis_nreset => cpu_nreset,
+    axis_aclk   => cpu_clock,
+    axis_tready => m03_axis_tready,
+    axis_tvalid => m03_axis_tvalid,
+    axis_tdata  => m03_axis_tdata
+  );
+
 ------------------------------------------------
 ----------------- CLOCK PROCESS  ---------------
 ------------------------------------------------
@@ -105,20 +130,21 @@ begin
   if rising_edge(cpu_clock) then
     if cpu_nreset = '0' then
       -- IDLE
-      start          <= '1';   
-      classification <= '1'; 
+      start            <= '0';   
+      classification   <= '0'; 
     else
-      start          <= '1';   
-      classification <= '1'; 
-      -- if clk_cnt >= 2 and clk_cnt <= 6 then
-      --   -- SETUP
-      --   start          <= '1';   
-      --   classification <= '0'; 
-      -- elsif clk_cnt > 6 then
-      --   -- CLASSIFICATION
-      --   start          <= '1';   
-      --   classification <= '1'; 
-      -- end if;
+      if clk_cnt >= 2 and clk_cnt <= 300 then
+        -- SETUP
+        start          <= '1';   
+        classification <= '0'; 
+      elsif clk_cnt > 300 then
+        -- CLASSIFICATION
+        start          <= '1';   
+        classification <= '1'; 
+      else
+        start          <= '0';   
+        classification <= '0'; 
+      end if;
     end if;
   end if;
 end process ;

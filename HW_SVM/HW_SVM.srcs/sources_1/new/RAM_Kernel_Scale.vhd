@@ -25,7 +25,7 @@ generic (
     RAM_WIDTH : integer := WIDTH;          -- Specify RAM data width
     RAM_DEPTH : integer := DEPTH;          -- Specify RAM depth (number of entries)
     RAM_PERFORMANCE : string := "LOW_LATENCY";     -- Select "HIGH_PERFORMANCE" or "LOW_LATENCY" 
-    INIT_FILE : string := "C:\work\Master_Degree_Thesis\Dati_Classifier_bin\Coeff_TB\Partizione_1\Kernel_Scale.dat"           -- Specify name/location of RAM initialization file if using one (leave blank if not)
+    INIT_FILE : string := ""--C:\work\Master_Degree_Thesis\Dati_Classifier_bin\Coeff_TB\Partizione_1\Kernel_Scale.dat"           -- Specify name/location of RAM initialization file if using one (leave blank if not)
     );
 
 port (
