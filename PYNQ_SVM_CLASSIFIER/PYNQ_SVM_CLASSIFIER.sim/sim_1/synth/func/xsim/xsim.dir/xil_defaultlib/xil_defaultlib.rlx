@@ -1,7 +1,0 @@
-0.6
-2018.3
-Dec  7 2018
-00:33:28
-C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/func/xsim/TB_axis_to_bram_PCV_func_synth.vhd,1667733830,vhdl,C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sim_1/new/TB_axis_to_bram_PCV.vhd,,,axis_to_bram_pcv;fsm_axis_to_bram;sipo_shift_reg_w_full,,,,,,,,
-C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/func/xsim/glbl.v,1544155481,verilog,,,,glbl,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,,,,,,
-C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sim_1/new/TB_axis_to_bram_PCV.vhd,1667733153,vhdl,,,,tb_axis_to_bram_pcv,,,,,,,,

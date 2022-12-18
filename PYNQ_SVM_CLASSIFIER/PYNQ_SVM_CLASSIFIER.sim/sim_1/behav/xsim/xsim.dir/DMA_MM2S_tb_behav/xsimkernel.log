@@ -1,7 +1,0 @@
-Running: xsim.dir/DMA_MM2S_tb_behav/xsimk.exe -simmode gui -wdb DMA_MM2S_tb_behav.wdb -simrunnum 0 -socket 52458
-Design successfully loaded
-Design Loading Memory Usage: 5932 KB (Peak: 5932 KB)
-Design Loading CPU Usage: 61 ms
-Simulation completed
-Simulation Memory Usage: 6488 KB (Peak: 6488 KB)
-Simulation CPU Usage: 77 ms

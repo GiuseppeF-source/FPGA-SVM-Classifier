@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.sim/sim_1/synth/func/xsim/TB_axis_to_bram_PCV_func_synth.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FSM_axis_to_bram'
-INFO: [VRFC 10-3107] analyzing entity 'SIPO_shift_reg_w_full'
-INFO: [VRFC 10-3107] analyzing entity 'axis_to_bram_PCV'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yoxo/OneDrive/Documenti/work_dir/Master_Degree_Thesis/PYNQ_SVM_CLASSIFIER/PYNQ_SVM_CLASSIFIER.srcs/sim_1/new/TB_axis_to_bram_PCV.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TB_axis_to_bram_PCV'

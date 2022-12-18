@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Top_Level_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Top_Level" />
+            <top_module name="constant_pkg" />
+            <top_module name="personal_type_pkg" />
+            <top_module name="ram_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1220000000fs"></ZoomStartTime>
+      <ZoomEndTime time="3000000001fs"></ZoomEndTime>
+      <Cursor1Time time="2540000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="205"></NameColumnWidth>
+      <ValueColumnWidth column_width="56"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="divider" fp_name="divider522">
+      <obj_property name="label">CPU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFD700</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/DMA_MM2S_inst/axis_aclk" type="logic">
+      <obj_property name="ElementShortName">axis_aclk</obj_property>
+      <obj_property name="ObjectShortName">axis_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/DMA_MM2S_inst/axis_nreset" type="logic">
+      <obj_property name="ElementShortName">axis_nreset</obj_property>
+      <obj_property name="ObjectShortName">axis_nreset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/classification" type="logic">
+      <obj_property name="ElementShortName">classification</obj_property>
+      <obj_property name="ObjectShortName">classification</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider515">
+      <obj_property name="label">MAIN_DMA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFD700</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/DMA_MM2S_inst/axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/DMA_MM2S_inst/axis_tready" type="logic">
+      <obj_property name="ElementShortName">axis_tready</obj_property>
+      <obj_property name="ObjectShortName">axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/DMA_MM2S_inst/index" type="other">
+      <obj_property name="ElementShortName">index</obj_property>
+      <obj_property name="ObjectShortName">index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/DMA_MM2S_inst/axis_tdata" type="array">
+      <obj_property name="ElementShortName">axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider525">
+      <obj_property name="label">CLASSIFIER_w_VOTING</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFD700</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1070" type="group">
+      <obj_property name="label">FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/state" type="other">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/start_sub_fsm" type="logic">
+         <obj_property name="ElementShortName">start_sub_fsm</obj_property>
+         <obj_property name="ObjectShortName">start_sub_fsm</obj_property>
+      </wvobject>
+      <wvobject fp_name="group368" type="group">
+         <obj_property name="label">FSM_SIPO</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_SIPO_PCV/state" type="other">
+            <obj_property name="ElementShortName">state</obj_property>
+            <obj_property name="ObjectShortName">state</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_SIPO_PCV/start" type="logic">
+            <obj_property name="ElementShortName">start</obj_property>
+            <obj_property name="ObjectShortName">start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_SIPO_PCV/out_valid_sipo" type="logic">
+            <obj_property name="ElementShortName">out_valid_sipo</obj_property>
+            <obj_property name="ObjectShortName">out_valid_sipo</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_SIPO_PCV/start_fsm2" type="logic">
+            <obj_property name="ElementShortName">start_fsm2</obj_property>
+            <obj_property name="ObjectShortName">start_fsm2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_SIPO_PCV/ce_sipo" type="logic">
+            <obj_property name="ElementShortName">ce_sipo</obj_property>
+            <obj_property name="ObjectShortName">ce_sipo</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_SIPO_PCV/rst" type="logic">
+            <obj_property name="ElementShortName">rst</obj_property>
+            <obj_property name="ObjectShortName">rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group376" type="group">
+         <obj_property name="label">FSM_Kernel_Bias</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/start_FSM2" type="logic">
+            <obj_property name="ElementShortName">start_FSM2</obj_property>
+            <obj_property name="ObjectShortName">start_FSM2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/start_FSM3" type="logic">
+            <obj_property name="ElementShortName">start_FSM3</obj_property>
+            <obj_property name="ObjectShortName">start_FSM3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/m_axis_tready" type="logic">
+            <obj_property name="ElementShortName">m_axis_tready</obj_property>
+            <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/state" type="other">
+            <obj_property name="ElementShortName">state</obj_property>
+            <obj_property name="ObjectShortName">state</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/count" type="other">
+            <obj_property name="ElementShortName">count</obj_property>
+            <obj_property name="ObjectShortName">count</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/ce_DSP_AxB_plus_C_classifier" type="logic">
+            <obj_property name="ElementShortName">ce_DSP_AxB_plus_C_classifier</obj_property>
+            <obj_property name="ObjectShortName">ce_DSP_AxB_plus_C_classifier</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/en_RAM_RAM_Kernel_Scale" type="logic">
+            <obj_property name="ElementShortName">en_RAM_RAM_Kernel_Scale</obj_property>
+            <obj_property name="ObjectShortName">en_RAM_RAM_Kernel_Scale</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Kernel_Bias/en_RAM_Bias" type="logic">
+            <obj_property name="ElementShortName">en_RAM_Bias</obj_property>
+            <obj_property name="ObjectShortName">en_RAM_Bias</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group387" type="group">
+         <obj_property name="label">FSM_Voting</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Voting/start_FSM3" type="logic">
+            <obj_property name="ElementShortName">start_FSM3</obj_property>
+            <obj_property name="ObjectShortName">start_FSM3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Voting/state" type="other">
+            <obj_property name="ElementShortName">state</obj_property>
+            <obj_property name="ObjectShortName">state</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Voting/count" type="other">
+            <obj_property name="ElementShortName">count</obj_property>
+            <obj_property name="ObjectShortName">count</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Voting/reset_voting" type="logic">
+            <obj_property name="ElementShortName">reset_voting</obj_property>
+            <obj_property name="ObjectShortName">reset_voting</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Voting/sign_valid" type="logic">
+            <obj_property name="ElementShortName">sign_valid</obj_property>
+            <obj_property name="ObjectShortName">sign_valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/PL_CLASSIFIER_w_VOTING_inst/PM_FSM/pm_FSM_Voting/win_class_valid" type="logic">
+            <obj_property name="ElementShortName">win_class_valid</obj_property>
+            <obj_property name="ObjectShortName">win_class_valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/s00_axis_tdata" type="array">
+            <obj_property name="ElementShortName">s00_axis_tdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s00_axis_tdata[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/s00_axis_tdata" type="array">
+         <obj_property name="ElementShortName">s00_axis_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axis_tdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TB_Top_Level/TB_Tester_inst/s00_axis_tvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axis_tvalid</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

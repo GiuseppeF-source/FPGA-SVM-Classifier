@@ -1,0 +1,7 @@
+Running: xsim.dir/PL_CLASSIFIER_w_VOTING_time_synth/xsimk.exe -simmode gui -wdb PL_CLASSIFIER_w_VOTING_time_synth.wdb -simrunnum 0 -socket 51261
+Design successfully loaded
+Design Loading Memory Usage: 84628 KB (Peak: 84628 KB)
+Design Loading CPU Usage: 280 ms
+Simulation completed
+Simulation Memory Usage: 102804 KB (Peak: 102804 KB)
+Simulation CPU Usage: 437 ms
