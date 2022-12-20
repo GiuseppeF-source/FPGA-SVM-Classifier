@@ -11,29 +11,29 @@ function clogb2 (depth: in natural) return integer;
 -----------------------------------------------------------------------------
 -- Timing CONSTANTs
 -----------------------------------------------------------------------------
-constant CLK_PERIOD  		: time     := 20 ns;
+constant CLK_PERIOD  		  : time     := 20 ns;
 -----------------------------------------------------------------------------
 -- AXIS CONSTANTs
 -----------------------------------------------------------------------------
-constant AXIS_DATA_WIDTH 	: natural  := 32;
+constant AXIS_DATA_WIDTH 	  : natural  := 32;
 -----------------------------------------------------------------------------
 -- SVM CONSTANTs
 -----------------------------------------------------------------------------
 constant N_SVM				  : natural  := 15;
 constant N_ATTRIBUTE		  : natural  := 34;
-constant N_CLASSES			  : natural  := 6;
-constant ATTRIBUTE_DATA_WIDTH : natural  := 8;	
+constant N_CLASSES			  : natural  :=  6;
+constant ATTRIBUTE_DATA_WIDTH : natural  :=  8;	
 -----------------------------------------------------------------------------
 -- COEFFICIENT CONSTANTs
 -----------------------------------------------------------------------------
-constant PCV_DATA_WIDTH		: natural  := 408;
-constant KERNEL_DATA_WIDTH	: natural  := 12;
-constant BIAS_DATA_WIDTH	: natural  :=  7;
+constant PCV_DATA_WIDTH		  : natural  := 408;
+constant KERNEL_DATA_WIDTH	  : natural  :=  12;
+constant BIAS_DATA_WIDTH	  : natural  :=   7;
 -----------------------------------------------------------------------------
 -- RAM CONSTANTs
 -----------------------------------------------------------------------------
-constant RAM_DEPTH			:natural   := 16;
-constant ADDR_WIDTH			:integer   := clogb2(RAM_DEPTH);
+constant RAM_DEPTH			  : natural   := 16;
+constant ADDR_WIDTH			  : integer   :=  4;--clogb2(RAM_DEPTH);
 
 end Constant_PKG;
 

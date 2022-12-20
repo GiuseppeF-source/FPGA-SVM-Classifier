@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1671396594">
-  <File Type="PA-TCL" Name="PL_CLASSIFIER_w_VOTING.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="PL_CLASSIFIER_w_VOTING_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="PL_CLASSIFIER_w_VOTING_reports.tcl"/>
-  <File Type="RDS-RDS" Name="PL_CLASSIFIER_w_VOTING.vds"/>
-  <File Type="RDS-UTIL" Name="PL_CLASSIFIER_w_VOTING_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="PL_CLASSIFIER_w_VOTING_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="PL_CLASSIFIER_w_VOTING.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="PL_CLASSIFIER_w_VOTING_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="PL_CLASSIFIER_w_VOTING_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1671569581">
+  <File Type="PA-TCL" Name="hw_svm_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="hw_svm_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="hw_svm_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="hw_svm_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="hw_svm_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="hw_svm_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="hw_svm_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="hw_svm_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="hw_svm_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SIPO_shift_reg_w_full.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Bias.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/incremental_pipe.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -131,45 +161,22 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Kernel.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/hw_svm/hw_svm.bd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/SIPO_shift_reg_w_full.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/hw_svm/hdl/hw_svm_wrapper.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_PCV.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_to_bram_Bias.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="PL_CLASSIFIER_w_VOTING"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="hw_svm_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -180,7 +187,14 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/constrs_1/new/debug.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/debug.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -195,9 +209,21 @@
       <Desc>Vivado Synthesis Defaults</Desc>
     </StratHandle>
     <Step Id="synth_design">
-      <Option Id="FsmExtraction">0</Option>
       <Option Id="FlattenHierarchy">1</Option>
-      <Option Id="MoreOptsStr"><![CDATA[-mode out_of_context]]></Option>
     </Step>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_dma_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_rst_ps7_0_30M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_dma_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_dma_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axis_to_bram_PCV_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axis_to_bram_Kernel_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axis_to_bram_Bias_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_PL_CLASSIFIER_w_VOTI_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_auto_pc_0"/>
 </GenRun>

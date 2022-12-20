@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log PL_CLASSIFIER_w_VOTING.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PL_CLASSIFIER_w_VOTING.tcl
+EAStep vivado -log hw_svm_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw_svm_wrapper.tcl
