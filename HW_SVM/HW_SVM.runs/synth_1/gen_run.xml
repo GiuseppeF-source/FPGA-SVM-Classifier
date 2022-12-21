@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1671569581">
   <File Type="PA-TCL" Name="hw_svm_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="hw_svm_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hw_svm_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="hw_svm_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="hw_svm_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="hw_svm_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="hw_svm_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="hw_svm_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="hw_svm_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/AXIS_BRAM_mng.vhd">
@@ -205,17 +202,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design">
       <Option Id="FlattenHierarchy">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hw_svm_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_dma_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hw_svm_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_dma_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hw_svm_rst_ps7_0_30M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hw_svm_axi_smc_0"/>
