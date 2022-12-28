@@ -18,6 +18,8 @@ INFO: [VRFC 10-311] analyzing module RAM32X1S_HD6
 INFO: [VRFC 10-311] analyzing module RAM32X1S_HD7
 INFO: [VRFC 10-311] analyzing module RAM32X1S_HD8
 INFO: [VRFC 10-311] analyzing module RAM32X1S_HD9
+INFO: [VRFC 10-311] analyzing module dbg_hub_CV
+INFO: [VRFC 10-311] analyzing module u_ila_0_CV
 INFO: [VRFC 10-311] analyzing module Classifier
 INFO: [VRFC 10-311] analyzing module DSP_AxB_Cascade
 INFO: [VRFC 10-311] analyzing module DSP_AxB_Cascade__1

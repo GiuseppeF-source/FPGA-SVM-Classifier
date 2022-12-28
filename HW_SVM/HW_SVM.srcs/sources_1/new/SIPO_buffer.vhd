@@ -14,7 +14,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity SIPO_buffer is
     generic ( 
-        input_width: natural := 32 ;
+        input_width: natural := 32; 
         depth: natural := 9
 );
     Port ( 

@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_arith.all;
@@ -112,7 +111,7 @@ start_FSM3                   <= '0';
             end if;
             
         when PAUSE =>
-            start_FSM3                   <= '1';
+            null;--start_FSM3                   <= '1';
 
         when others =>
             null;                                                  

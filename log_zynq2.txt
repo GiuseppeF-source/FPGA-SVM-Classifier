@@ -1,0 +1,79 @@
+Classe della istanza 0 : 3
+
+Classe della istanza 1 : 1
+
+Classe della istanza 2 : 5
+
+Classe della istanza 3 : 3
+
+Classe della istanza 4 : 1
+
+Classe della istanza 5 : 1
+
+Classe della istanza 6 : 5
+
+Classe della istanza 7 : 4
+
+Classe della istanza 8 : 2
+
+Classe della istanza 9 : 1
+
+Classe della istanza 10 : 5
+
+Classe della istanza 11 : 1
+
+Classe della istanza 12 : 5
+
+Classe della istanza 13 : 1
+
+Classe della istanza 14 : 2
+
+Classe della istanza 15 : 1
+
+Classe della istanza 16 : 3
+
+Classe della istanza 17 : 2
+
+Classe della istanza 18 : 4
+
+Classe della istanza 19 : 4
+
+Classe della istanza 20 : 2
+
+Classe della istanza 21 : 2
+
+Classe della istanza 22 : 3
+
+Classe della istanza 23 : 3
+
+Classe della istanza 24 : 6
+
+Classe della istanza 25 : 6
+
+Classe della istanza 26 : 1
+
+Classe della istanza 27 : 2
+
+Classe della istanza 28 : 5
+
+Classe della istanza 29 : 6
+
+Classe della istanza 30 : 3
+
+Classe della istanza 31 : 3
+
+Classe della istanza 32 : 1
+
+Classe della istanza 33 : 2
+
+Classe della istanza 34 : 1
+
+Classe della istanza 35 : 1
+
+Classe della istanza 36 : 40400000
+
+Classe della istanza 37 : 1
+
+Classe della istanza 38 : 1
+
+Classe della istanza 39 : 1

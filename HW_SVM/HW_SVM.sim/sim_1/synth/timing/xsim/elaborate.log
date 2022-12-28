@@ -1,6 +1,6 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 4cb68f95920a487693cc364e614087a3 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot TB_Top_Level_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.TB_Top_Level xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 4cb68f95920a487693cc364e614087a3 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L xilinx_vip -L simprims_ver -L secureip --snapshot TB_Top_Level_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.TB_Top_Level xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -99,14 +99,15 @@ Compiling module xil_defaultlib.incremental_pipe
 Compiling module xil_defaultlib.Classifier
 Compiling module simprims_ver.x_lut3_mux8
 Compiling module simprims_ver.LUT3
-Compiling module simprims_ver.latchsre_ldce
-Compiling module simprims_ver.LDCE
-Compiling module simprims_ver.x_lut1_mux2
-Compiling module simprims_ver.LUT1
-Compiling module simprims_ver.LUT4
 Compiling module simprims_ver.LUT6
 Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
 Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.MUXF7
 Compiling module xil_defaultlib.FSM_Kernel_Bias
 Compiling module xil_defaultlib.FSM_SIPO_PCV
 Compiling module xil_defaultlib.FSM_Voting
@@ -148,6 +149,8 @@ Compiling module xil_defaultlib.counter_3b__4
 Compiling module xil_defaultlib.counter_3b__5
 Compiling module xil_defaultlib.counter_3b
 Compiling module xil_defaultlib.Voting_w_ce
+Compiling module xil_defaultlib.dbg_hub_CV
+Compiling module xil_defaultlib.u_ila_0_CV
 Compiling module xil_defaultlib.PL_CLASSIFIER_w_VOTING
 Compiling architecture rtl of entity xil_defaultlib.AXIS_BRAM_mng [axis_bram_mng_default]
 Compiling architecture rtl of entity xil_defaultlib.SIPO_shift_reg_w_full [sipo_shift_reg_w_full_default]

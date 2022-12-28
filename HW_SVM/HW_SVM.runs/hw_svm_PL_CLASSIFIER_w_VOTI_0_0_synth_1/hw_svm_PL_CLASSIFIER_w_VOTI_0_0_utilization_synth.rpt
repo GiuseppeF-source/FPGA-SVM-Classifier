@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Dec 20 21:25:54 2022
+| Date         : Wed Dec 28 19:19:36 2022
 | Host         : peppe-pc running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hw_svm_PL_CLASSIFIER_w_VOTI_0_0_utilization_synth.rpt -pb hw_svm_PL_CLASSIFIER_w_VOTI_0_0_utilization_synth.pb
 | Design       : hw_svm_PL_CLASSIFIER_w_VOTI_0_0
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1513 |     0 |     53200 |  2.84 |
-|   LUT as Logic             |  894 |     0 |     53200 |  1.68 |
+| Slice LUTs*                | 1512 |     0 |     53200 |  2.84 |
+|   LUT as Logic             |  893 |     0 |     53200 |  1.68 |
 |   LUT as Memory            |  619 |     0 |     17400 |  3.56 |
 |     LUT as Distributed RAM |   19 |     0 |           |       |
 |     LUT as Shift Register  |  600 |     0 |           |       |
@@ -157,9 +157,9 @@ Table of Contents
 | LUT6     |   79 |                 LUT |
 | LUT4     |   48 |                 LUT |
 | DSP48E1  |   35 |    Block Arithmetic |
-| LUT3     |   32 |                 LUT |
+| LUT3     |   34 |                 LUT |
 | FDCE     |   27 |        Flop & Latch |
-| LUT5     |   23 |                 LUT |
+| LUT5     |   22 |                 LUT |
 | RAMS32   |   19 |  Distributed Memory |
 | LDCE     |   15 |        Flop & Latch |
 | RAMB18E1 |   12 |        Block Memory |

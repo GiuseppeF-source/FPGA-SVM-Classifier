@@ -151,7 +151,25 @@ end process ;
  -----------------------------------------------
 ------------- SIMULATION DMA S2MM --------------
 ------------------------------------------------   
-  s00_axis_tready <= '1';
   
+S2MM_p: process (cpu_clock)
+begin 
+	if rising_edge(cpu_clock) then
+		if clk_cnt > 0 and clk_cnt <= 300 then
+			-- SETUP
+			s00_axis_tready <= '0';
+		elsif clk_cnt > 300 and clk_cnt <= 952 then
+			-- CLASSIFICATION
+			s00_axis_tready <= '1';
+		elsif clk_cnt > 980 and clk_cnt <= 2000 then
+			-- CLASSIFICATION
+			s00_axis_tready <= '1';
+		else
+			s00_axis_tready <= '0';
+		end if;
+	end if;
+end process;
+--s00_axis_tready <= '1';
+
 end rtl;
 

@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Tue Dec 20 21:25:50 2022
+-- Date        : Wed Dec 28 19:19:33 2022
 -- Host        : peppe-pc running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ hw_svm_PL_CLASSIFIER_w_VOTI_0_0_sim_netlist.vhdl
@@ -7715,7 +7715,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Kernel_Bias is
     bram_en_Bias_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     bram_en_Kernel_Scale_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     \state_reg[2]_0\ : out STD_LOGIC;
-    \state_reg[2]_1\ : out STD_LOGIC;
+    \state_reg[1]_0\ : out STD_LOGIC;
     axi_resetn_0 : out STD_LOGIC;
     \ram_data_reg[0]\ : in STD_LOGIC;
     bram_addr_Bias : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -7727,7 +7727,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Kernel_Bias is
     bram_we_Kernel_Scale : in STD_LOGIC;
     en_RAM_Pre_Computed_Vector : in STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     axi_resetn : in STD_LOGIC;
     s_axis_aclk : in STD_LOGIC
   );
@@ -7756,8 +7755,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Kernel_B
   signal \count[0]_i_1__1_n_0\ : STD_LOGIC;
   signal \count[1]_i_1__1_n_0\ : STD_LOGIC;
   signal \count[1]_i_2__0_n_0\ : STD_LOGIC;
-  signal \count[1]_i_3__0_n_0\ : STD_LOGIC;
-  signal \count[1]_i_4_n_0\ : STD_LOGIC;
+  signal \count[1]_i_3_n_0\ : STD_LOGIC;
+  signal \count[1]_i_4__0_n_0\ : STD_LOGIC;
   signal \count[1]_i_5_n_0\ : STD_LOGIC;
   signal \count[2]_i_1__1_n_0\ : STD_LOGIC;
   signal \count[3]_i_1__2_n_0\ : STD_LOGIC;
@@ -7792,42 +7791,44 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Kernel_B
   signal \state[0]_i_3__0_n_0\ : STD_LOGIC;
   signal \state[0]_i_4__0_n_0\ : STD_LOGIC;
   signal \state[1]_i_1__1_n_0\ : STD_LOGIC;
-  signal \state[1]_i_2_n_0\ : STD_LOGIC;
+  signal \state[1]_i_2__0_n_0\ : STD_LOGIC;
   signal \state[2]_i_1__0_n_0\ : STD_LOGIC;
   signal \state[2]_i_2_n_0\ : STD_LOGIC;
   signal \^state_reg[2]_0\ : STD_LOGIC;
   attribute XILINX_LEGACY_PRIM : string;
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Bias_reg[0]\ : label is "LD";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[0]_i_1\ : label is "soft_lutpair310";
+  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[0]_i_1\ : label is "soft_lutpair311";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Bias_reg[1]\ : label is "LD";
-  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[1]_i_1\ : label is "soft_lutpair310";
+  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[1]_i_1\ : label is "soft_lutpair311";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Bias_reg[2]\ : label is "LD";
-  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[2]_i_1\ : label is "soft_lutpair306";
+  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[2]_i_1\ : label is "soft_lutpair308";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Bias_reg[3]\ : label is "LD";
-  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[3]_i_1\ : label is "soft_lutpair302";
-  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[3]_i_2\ : label is "soft_lutpair302";
-  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[3]_i_3\ : label is "soft_lutpair301";
+  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[3]_i_1\ : label is "soft_lutpair303";
+  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[3]_i_2\ : label is "soft_lutpair303";
+  attribute SOFT_HLUTNM of \addr_RAM_Bias_reg[3]_i_3\ : label is "soft_lutpair302";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Kernel_Scale_reg[0]\ : label is "LD";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Kernel_Scale_reg[1]\ : label is "LD";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Kernel_Scale_reg[2]\ : label is "LD";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Kernel_Scale_reg[3]\ : label is "LD";
-  attribute SOFT_HLUTNM of \addr_RAM_Kernel_Scale_reg[3]_i_2\ : label is "soft_lutpair305";
-  attribute SOFT_HLUTNM of \count[1]_i_2__0\ : label is "soft_lutpair308";
-  attribute SOFT_HLUTNM of \count[1]_i_4\ : label is "soft_lutpair303";
-  attribute SOFT_HLUTNM of \count[1]_i_5\ : label is "soft_lutpair304";
-  attribute SOFT_HLUTNM of \count[2]_i_1__1\ : label is "soft_lutpair306";
-  attribute SOFT_HLUTNM of \count[3]_i_1__2\ : label is "soft_lutpair308";
-  attribute SOFT_HLUTNM of \count[4]_i_2__0\ : label is "soft_lutpair307";
+  attribute SOFT_HLUTNM of \addr_RAM_Kernel_Scale_reg[3]_i_2\ : label is "soft_lutpair306";
+  attribute SOFT_HLUTNM of \count[1]_i_2__0\ : label is "soft_lutpair309";
+  attribute SOFT_HLUTNM of \count[1]_i_4__0\ : label is "soft_lutpair304";
+  attribute SOFT_HLUTNM of \count[1]_i_5\ : label is "soft_lutpair305";
+  attribute SOFT_HLUTNM of \count[2]_i_1__1\ : label is "soft_lutpair308";
+  attribute SOFT_HLUTNM of \count[3]_i_1__2\ : label is "soft_lutpair309";
+  attribute SOFT_HLUTNM of \count[4]_i_2__0\ : label is "soft_lutpair310";
   attribute SOFT_HLUTNM of \count[5]_i_5\ : label is "soft_lutpair307";
-  attribute SOFT_HLUTNM of \count[5]_i_6\ : label is "soft_lutpair303";
-  attribute SOFT_HLUTNM of \count[5]_i_7\ : label is "soft_lutpair304";
-  attribute SOFT_HLUTNM of \count[5]_i_8\ : label is "soft_lutpair300";
-  attribute SOFT_HLUTNM of \pause_state[0]_i_1\ : label is "soft_lutpair309";
-  attribute SOFT_HLUTNM of \pause_state[2]_i_1\ : label is "soft_lutpair309";
-  attribute SOFT_HLUTNM of \ram_data[6]_i_2\ : label is "soft_lutpair305";
+  attribute SOFT_HLUTNM of \count[5]_i_6\ : label is "soft_lutpair304";
+  attribute SOFT_HLUTNM of \count[5]_i_7\ : label is "soft_lutpair305";
+  attribute SOFT_HLUTNM of \count[5]_i_8\ : label is "soft_lutpair301";
+  attribute SOFT_HLUTNM of \pause_state[0]_i_1\ : label is "soft_lutpair310";
+  attribute SOFT_HLUTNM of \pause_state[2]_i_1\ : label is "soft_lutpair307";
+  attribute SOFT_HLUTNM of \ram_data[6]_i_2\ : label is "soft_lutpair306";
   attribute SOFT_HLUTNM of \state[0]_i_1__1\ : label is "soft_lutpair300";
-  attribute SOFT_HLUTNM of \state[0]_i_4__0\ : label is "soft_lutpair301";
+  attribute SOFT_HLUTNM of \state[0]_i_4__0\ : label is "soft_lutpair302";
+  attribute SOFT_HLUTNM of \state[1]_i_1__1\ : label is "soft_lutpair301";
+  attribute SOFT_HLUTNM of \state[1]_i_4\ : label is "soft_lutpair300";
 begin
   axi_resetn_0 <= \^axi_resetn_0\;
   bram_addr_Bias_0_sp_1 <= bram_addr_Bias_0_sn_1;
@@ -8040,7 +8041,7 @@ begin
       I2 => state(0),
       I3 => state(1),
       I4 => \count_reg_n_0_[0]\,
-      I5 => \count[1]_i_4_n_0\,
+      I5 => \count[1]_i_4__0_n_0\,
       O => \count[0]_i_1__1_n_0\
     );
 \count[1]_i_1__1\: unisim.vcomponents.LUT6
@@ -8050,10 +8051,10 @@ begin
         port map (
       I0 => \^state_reg[2]_0\,
       I1 => \count[1]_i_2__0_n_0\,
-      I2 => \count[1]_i_3__0_n_0\,
+      I2 => \count[1]_i_3_n_0\,
       I3 => \count_reg_n_0_[0]\,
       I4 => \count_reg_n_0_[1]\,
-      I5 => \count[1]_i_4_n_0\,
+      I5 => \count[1]_i_4__0_n_0\,
       O => \count[1]_i_1__1_n_0\
     );
 \count[1]_i_2__0\: unisim.vcomponents.LUT2
@@ -8065,7 +8066,7 @@ begin
       I1 => \count_reg_n_0_[3]\,
       O => \count[1]_i_2__0_n_0\
     );
-\count[1]_i_3__0\: unisim.vcomponents.LUT6
+\count[1]_i_3\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0F00FFF0F0E0FFF0"
     )
@@ -8076,9 +8077,9 @@ begin
       I3 => state(0),
       I4 => m_axis_tready,
       I5 => state(1),
-      O => \count[1]_i_3__0_n_0\
+      O => \count[1]_i_3_n_0\
     );
-\count[1]_i_4\: unisim.vcomponents.LUT5
+\count[1]_i_4__0\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"2C0CFFCC"
     )
@@ -8088,7 +8089,7 @@ begin
       I2 => state(1),
       I3 => state(0),
       I4 => m_axis_tready,
-      O => \count[1]_i_4_n_0\
+      O => \count[1]_i_4__0_n_0\
     );
 \count[1]_i_5\: unisim.vcomponents.LUT4
     generic map(
@@ -8141,7 +8142,7 @@ begin
       INIT => X"0C00A0A00000A0A0"
     )
         port map (
-      I0 => \count[1]_i_3__0_n_0\,
+      I0 => \count[1]_i_3_n_0\,
       I1 => \count[5]_i_5_n_0\,
       I2 => \count_reg_n_0_[3]\,
       I3 => \count_reg_n_0_[2]\,
@@ -8563,14 +8564,14 @@ ram_name_reg_0_15_0_0_i_6: unisim.vcomponents.LUT4
       INIT => X"BAAAAAAA"
     )
         port map (
-      I0 => \state[1]_i_2_n_0\,
+      I0 => \state[1]_i_2__0_n_0\,
       I1 => state(2),
       I2 => state(0),
       I3 => state(1),
       I4 => \state[2]_i_2_n_0\,
       O => \state[1]_i_1__1_n_0\
     );
-\state[1]_i_2\: unisim.vcomponents.LUT6
+\state[1]_i_2__0\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"00380008FFFCFFFC"
     )
@@ -8581,19 +8582,17 @@ ram_name_reg_0_15_0_0_i_6: unisim.vcomponents.LUT4
       I3 => state(2),
       I4 => en_RAM_Pre_Computed_Vector,
       I5 => m_axis_tready,
-      O => \state[1]_i_2_n_0\
+      O => \state[1]_i_2__0_n_0\
     );
-\state[1]_i_4\: unisim.vcomponents.LUT5
+\state[1]_i_4\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"00001800"
+      INIT => X"40"
     )
         port map (
-      I0 => state(2),
-      I1 => state(0),
-      I2 => state(1),
-      I3 => Q(0),
-      I4 => Q(1),
-      O => \state_reg[2]_1\
+      I0 => state(1),
+      I1 => state(2),
+      I2 => state(0),
+      O => \state_reg[1]_0\
     );
 \state[2]_i_1__0\: unisim.vcomponents.LUT6
     generic map(
@@ -8704,16 +8703,16 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_SIPO_PCV
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Pre_Computed_Vector_reg[2]\ : label is "LD";
   attribute XILINX_LEGACY_PRIM of \addr_RAM_Pre_Computed_Vector_reg[3]\ : label is "LD";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \addr_RAM_Pre_Computed_Vector_reg[3]_i_1\ : label is "soft_lutpair314";
-  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair311";
-  attribute SOFT_HLUTNM of \count[2]_i_2\ : label is "soft_lutpair312";
-  attribute SOFT_HLUTNM of \count[3]_i_1__0\ : label is "soft_lutpair313";
-  attribute SOFT_HLUTNM of \count[3]_i_3__1\ : label is "soft_lutpair315";
-  attribute SOFT_HLUTNM of \count[3]_i_4\ : label is "soft_lutpair312";
-  attribute SOFT_HLUTNM of out_valid_i_i_2 : label is "soft_lutpair313";
-  attribute SOFT_HLUTNM of \pause_state[0]_i_1\ : label is "soft_lutpair315";
-  attribute SOFT_HLUTNM of \pause_state[2]_i_1\ : label is "soft_lutpair314";
-  attribute SOFT_HLUTNM of \state[1]_i_2__1\ : label is "soft_lutpair311";
+  attribute SOFT_HLUTNM of \addr_RAM_Pre_Computed_Vector_reg[3]_i_1\ : label is "soft_lutpair315";
+  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair312";
+  attribute SOFT_HLUTNM of \count[2]_i_2\ : label is "soft_lutpair313";
+  attribute SOFT_HLUTNM of \count[3]_i_1__0\ : label is "soft_lutpair314";
+  attribute SOFT_HLUTNM of \count[3]_i_3__1\ : label is "soft_lutpair316";
+  attribute SOFT_HLUTNM of \count[3]_i_4\ : label is "soft_lutpair313";
+  attribute SOFT_HLUTNM of out_valid_i_i_2 : label is "soft_lutpair314";
+  attribute SOFT_HLUTNM of \pause_state[0]_i_1\ : label is "soft_lutpair316";
+  attribute SOFT_HLUTNM of \pause_state[2]_i_1\ : label is "soft_lutpair315";
+  attribute SOFT_HLUTNM of \state[1]_i_2__1\ : label is "soft_lutpair312";
 begin
   en_RAM_Pre_Computed_Vector <= \^en_ram_pre_computed_vector\;
 \addr_RAM_Pre_Computed_Vector_reg[0]\: unisim.vcomponents.LDCE
@@ -9174,7 +9173,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Voting is
   port (
-    Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     \count_clk_reg[2]\ : out STD_LOGIC;
     \count_clk_reg[3]\ : out STD_LOGIC;
     \count_clk_reg[3]_0\ : out STD_LOGIC;
@@ -9187,7 +9186,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Voting is
     \state_reg[2]_1\ : out STD_LOGIC;
     \state_reg[1]_0\ : out STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC;
-    SR : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tready : in STD_LOGIC;
     \count_reg[4]_0\ : in STD_LOGIC;
     \count_reg[0]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -9201,13 +9200,14 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Voting is
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Voting;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Voting is
-  signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal count : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \count[0]_i_1__0_n_0\ : STD_LOGIC;
   signal \count[0]_i_6_n_0\ : STD_LOGIC;
   signal \count[1]_i_1__0_n_0\ : STD_LOGIC;
   signal \count[1]_i_2_n_0\ : STD_LOGIC;
-  signal \count[1]_i_3_n_0\ : STD_LOGIC;
+  signal \count[1]_i_3__0_n_0\ : STD_LOGIC;
+  signal \count[1]_i_4_n_0\ : STD_LOGIC;
   signal \count[2]_i_1__0_n_0\ : STD_LOGIC;
   signal \count[3]_i_1__1_n_0\ : STD_LOGIC;
   signal \count[3]_i_2__0_n_0\ : STD_LOGIC;
@@ -9226,36 +9226,38 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Voting i
   signal \pause_state_reg_n_0_[0]\ : STD_LOGIC;
   signal \pause_state_reg_n_0_[1]\ : STD_LOGIC;
   signal \pause_state_reg_n_0_[2]\ : STD_LOGIC;
-  signal state : STD_LOGIC_VECTOR ( 2 to 2 );
+  signal state : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \state[0]_i_1_n_0\ : STD_LOGIC;
   signal \state[0]_i_2_n_0\ : STD_LOGIC;
   signal \state[0]_i_3_n_0\ : STD_LOGIC;
   signal \state[0]_i_4_n_0\ : STD_LOGIC;
   signal \state[0]_i_5_n_0\ : STD_LOGIC;
   signal \state[1]_i_1__0_n_0\ : STD_LOGIC;
-  signal \state[1]_i_2__0_n_0\ : STD_LOGIC;
+  signal \state[1]_i_2_n_0\ : STD_LOGIC;
   signal \state[1]_i_3__0_n_0\ : STD_LOGIC;
+  signal \state[1]_i_5_n_0\ : STD_LOGIC;
   signal \state[2]_i_1__1_n_0\ : STD_LOGIC;
   signal \state[2]_i_2__0_n_0\ : STD_LOGIC;
   signal \state[2]_i_3_n_0\ : STD_LOGIC;
-  signal \state[2]_i_4_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[1]_i_3\ : label is "soft_lutpair316";
-  attribute SOFT_HLUTNM of \count[2]_i_1__0\ : label is "soft_lutpair318";
-  attribute SOFT_HLUTNM of \count[2]_i_1__2\ : label is "soft_lutpair320";
-  attribute SOFT_HLUTNM of \count[2]_i_5__0\ : label is "soft_lutpair316";
-  attribute SOFT_HLUTNM of \count[4]_i_4\ : label is "soft_lutpair319";
-  attribute SOFT_HLUTNM of \count[4]_i_5\ : label is "soft_lutpair318";
-  attribute SOFT_HLUTNM of m_axis_tvalid_INST_0 : label is "soft_lutpair317";
-  attribute SOFT_HLUTNM of \pause_state[0]_i_1\ : label is "soft_lutpair321";
-  attribute SOFT_HLUTNM of \pause_state[1]_i_1\ : label is "soft_lutpair319";
-  attribute SOFT_HLUTNM of \pause_state[2]_i_1\ : label is "soft_lutpair320";
-  attribute SOFT_HLUTNM of \state[0]_i_4\ : label is "soft_lutpair322";
-  attribute SOFT_HLUTNM of \state[2]_i_3\ : label is "soft_lutpair321";
-  attribute SOFT_HLUTNM of \state[2]_i_4\ : label is "soft_lutpair322";
-  attribute SOFT_HLUTNM of \win_class_reg[2]_i_7\ : label is "soft_lutpair317";
+  attribute SOFT_HLUTNM of \count[1]_i_4\ : label is "soft_lutpair317";
+  attribute SOFT_HLUTNM of \count[2]_i_1__0\ : label is "soft_lutpair319";
+  attribute SOFT_HLUTNM of \count[2]_i_1__2\ : label is "soft_lutpair321";
+  attribute SOFT_HLUTNM of \count[2]_i_5__0\ : label is "soft_lutpair317";
+  attribute SOFT_HLUTNM of \count[4]_i_4\ : label is "soft_lutpair320";
+  attribute SOFT_HLUTNM of \count[4]_i_5\ : label is "soft_lutpair319";
+  attribute SOFT_HLUTNM of m_axis_tvalid_INST_0 : label is "soft_lutpair318";
+  attribute SOFT_HLUTNM of \pause_state[0]_i_1\ : label is "soft_lutpair320";
+  attribute SOFT_HLUTNM of \pause_state[1]_i_1\ : label is "soft_lutpair321";
+  attribute SOFT_HLUTNM of \pause_state[2]_i_1\ : label is "soft_lutpair322";
+  attribute SOFT_HLUTNM of \state[0]_i_4\ : label is "soft_lutpair324";
+  attribute SOFT_HLUTNM of \state[0]_i_5\ : label is "soft_lutpair323";
+  attribute SOFT_HLUTNM of \state[1]_i_3__0\ : label is "soft_lutpair324";
+  attribute SOFT_HLUTNM of \state[1]_i_5\ : label is "soft_lutpair323";
+  attribute SOFT_HLUTNM of \state[2]_i_3\ : label is "soft_lutpair322";
+  attribute SOFT_HLUTNM of \win_class_reg[2]_i_7\ : label is "soft_lutpair318";
 begin
-  Q(1 downto 0) <= \^q\(1 downto 0);
+  Q(0) <= \^q\(0);
   \count_clk_reg[3]\ <= \^count_clk_reg[3]\;
   \count_clk_reg[3]_0\ <= \^count_clk_reg[3]_0\;
   \count_clk_reg[3]_1\ <= \^count_clk_reg[3]_1\;
@@ -9286,7 +9288,7 @@ begin
       INIT => X"8"
     )
         port map (
-      I0 => \^q\(1),
+      I0 => \^q\(0),
       I1 => \count_reg[0]_0\(1),
       O => \state_reg[1]_0\
     );
@@ -9308,7 +9310,7 @@ begin
       INIT => X"B"
     )
         port map (
-      I0 => \^q\(0),
+      I0 => state(0),
       I1 => state(2),
       O => \count[0]_i_6_n_0\
     );
@@ -9318,9 +9320,9 @@ begin
     )
         port map (
       I0 => \count[1]_i_2_n_0\,
-      I1 => \state[1]_i_3__0_n_0\,
+      I1 => \count[1]_i_3__0_n_0\,
       I2 => \count[3]_i_2__0_n_0\,
-      I3 => \count[1]_i_3_n_0\,
+      I3 => \count[1]_i_4_n_0\,
       I4 => count(1),
       I5 => count(0),
       O => \count[1]_i_1__0_n_0\
@@ -9332,21 +9334,34 @@ begin
         port map (
       I0 => \count_reg[4]_0\,
       I1 => state(2),
-      I2 => \state[2]_i_4_n_0\,
-      I3 => \^q\(1),
-      I4 => \^q\(0),
+      I2 => \state[1]_i_3__0_n_0\,
+      I3 => \^q\(0),
+      I4 => state(0),
       I5 => m_axis_tready,
       O => \count[1]_i_2_n_0\
     );
-\count[1]_i_3\: unisim.vcomponents.LUT3
+\count[1]_i_3__0\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000FFFFFE00FE00"
+    )
+        port map (
+      I0 => count(4),
+      I1 => count(3),
+      I2 => count(2),
+      I3 => \state[2]_i_3_n_0\,
+      I4 => m_axis_tready,
+      I5 => state(2),
+      O => \count[1]_i_3__0_n_0\
+    );
+\count[1]_i_4\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"FD"
     )
         port map (
       I0 => state(2),
-      I1 => \^q\(0),
+      I1 => state(0),
       I2 => count(4),
-      O => \count[1]_i_3_n_0\
+      O => \count[1]_i_4_n_0\
     );
 \count[2]_i_1__0\: unisim.vcomponents.LUT4
     generic map(
@@ -9364,10 +9379,10 @@ begin
       INIT => X"40"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(0),
-      I2 => state(2),
-      O => SR(0)
+      I0 => \^q\(0),
+      I1 => state(2),
+      I2 => state(0),
+      O => SS(0)
     );
 \count[2]_i_2__1\: unisim.vcomponents.LUT6
     generic map(
@@ -9377,7 +9392,7 @@ begin
       I0 => \^count_clk_reg[3]_0\,
       I1 => \count_reg[0]_0\(2),
       I2 => \^count_clk_reg[3]_1\,
-      I3 => \^q\(1),
+      I3 => \^q\(0),
       I4 => \count_reg[0]_0\(1),
       I5 => \count_reg[0]_0\(0),
       O => \count_clk_reg[2]_0\
@@ -9389,7 +9404,7 @@ begin
         port map (
       I0 => \^count_clk_reg[3]_1\,
       I1 => \count_reg[0]_0\(2),
-      I2 => \^q\(1),
+      I2 => \^q\(0),
       I3 => \count_reg[0]_0\(1),
       I4 => \^count_clk_reg[3]\,
       I5 => \count_reg[0]_0\(0),
@@ -9415,7 +9430,7 @@ begin
         port map (
       I0 => \count_reg[0]_0\(4),
       I1 => count(4),
-      I2 => \^q\(0),
+      I2 => state(0),
       I3 => state(2),
       I4 => \count[4]_i_5_n_0\,
       I5 => \count_reg[0]_0\(3),
@@ -9428,7 +9443,7 @@ begin
         port map (
       I0 => \count[4]_i_5_n_0\,
       I1 => state(2),
-      I2 => \^q\(0),
+      I2 => state(0),
       I3 => count(4),
       I4 => \count_reg[0]_0\(4),
       O => \state_reg[2]_0\
@@ -9441,7 +9456,7 @@ begin
       I0 => \^count_clk_reg[3]\,
       I1 => \^count_clk_reg[3]_0\,
       I2 => \count_reg[0]_0\(2),
-      I3 => \^q\(1),
+      I3 => \^q\(0),
       I4 => \count_reg[0]_0\(1),
       I5 => \count_reg[0]_0\(0),
       O => \count_clk_reg[2]\
@@ -9464,11 +9479,11 @@ begin
       INIT => X"3333F3FFAAAA0000"
     )
         port map (
-      I0 => \^q\(1),
+      I0 => \^q\(0),
       I1 => m_axis_tready,
       I2 => \count_reg[4]_0\,
       I3 => count(4),
-      I4 => \^q\(0),
+      I4 => state(0),
       I5 => state(2),
       O => \count[3]_i_2__0_n_0\
     );
@@ -9478,8 +9493,8 @@ begin
     )
         port map (
       I0 => \count_reg[4]_0\,
-      I1 => \^q\(0),
-      I2 => \^q\(1),
+      I1 => state(0),
+      I2 => \^q\(0),
       I3 => m_axis_tready,
       I4 => state(2),
       I5 => count(4),
@@ -9490,8 +9505,8 @@ begin
       INIT => X"FD"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(0),
+      I0 => \^q\(0),
+      I1 => state(0),
       I2 => state(2),
       O => \count[4]_i_1__0_n_0\
     );
@@ -9500,7 +9515,7 @@ begin
       INIT => X"FF4000000000FF40"
     )
         port map (
-      I0 => \^q\(0),
+      I0 => state(0),
       I1 => state(2),
       I2 => \count_reg[4]_0\,
       I3 => \count[4]_i_4_n_0\,
@@ -9513,8 +9528,8 @@ begin
       INIT => X"0F88"
     )
         port map (
-      I0 => \^q\(0),
-      I1 => \^q\(1),
+      I0 => state(0),
+      I1 => \^q\(0),
       I2 => m_axis_tready,
       I3 => state(2),
       O => \count[4]_i_4_n_0\
@@ -9538,8 +9553,8 @@ begin
       I0 => \count_clk_reg[4]_0\,
       I1 => state(2),
       I2 => \count_clk_reg[4]_1\,
-      I3 => \^q\(0),
-      I4 => \^q\(1),
+      I3 => state(0),
+      I4 => \^q\(0),
       I5 => \count_clk[4]_i_5_n_0\,
       O => E(0)
     );
@@ -9616,8 +9631,8 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       INIT => X"80"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(0),
+      I0 => \^q\(0),
+      I1 => state(0),
       I2 => state(2),
       O => m_axis_tvalid
     );
@@ -9626,8 +9641,8 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       INIT => X"CECC"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(0),
+      I0 => \^q\(0),
+      I1 => state(0),
       I2 => state(2),
       I3 => \pause_state_reg_n_0_[0]\,
       O => \pause_state[0]_i_1_n_0\
@@ -9637,8 +9652,8 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       INIT => X"AAA8"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(0),
+      I0 => \^q\(0),
+      I1 => state(0),
       I2 => state(2),
       I3 => \pause_state_reg_n_0_[1]\,
       O => \pause_state[1]_i_1_n_0\
@@ -9648,8 +9663,8 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       INIT => X"F2F0"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(0),
+      I0 => \^q\(0),
+      I1 => state(0),
       I2 => state(2),
       I3 => \pause_state_reg_n_0_[2]\,
       O => \pause_state[2]_i_1_n_0\
@@ -9687,7 +9702,7 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       I1 => \state[0]_i_3_n_0\,
       I2 => state(2),
       I3 => m_axis_tready,
-      I4 => \^q\(0),
+      I4 => state(0),
       I5 => \pause_state_reg_n_0_[0]\,
       O => \state[0]_i_1_n_0\
     );
@@ -9698,8 +9713,8 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
         port map (
       I0 => state(2),
       I1 => \state[0]_i_4_n_0\,
-      I2 => \^q\(0),
-      I3 => \^q\(1),
+      I2 => state(0),
+      I3 => \^q\(0),
       I4 => m_axis_tready,
       I5 => \state[0]_i_5_n_0\,
       O => \state[0]_i_2_n_0\
@@ -9712,7 +9727,7 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       I0 => \count_reg[4]_0\,
       I1 => m_axis_tready,
       I2 => state(2),
-      I3 => \^q\(0),
+      I3 => state(0),
       I4 => \count[4]_i_5_n_0\,
       I5 => count(4),
       O => \state[0]_i_3_n_0\
@@ -9738,42 +9753,48 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
     );
 \state[1]_i_1__0\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFFFFFFBAAA"
+      INIT => X"BAFFAAAABAEEAAAA"
     )
         port map (
-      I0 => \state[1]_i_2__0_n_0\,
-      I1 => \^q\(0),
-      I2 => state(2),
-      I3 => \^q\(1),
-      I4 => \state[1]_i_3__0_n_0\,
+      I0 => \state[1]_i_2_n_0\,
+      I1 => state(2),
+      I2 => \state[1]_i_3__0_n_0\,
+      I3 => \^q\(0),
+      I4 => state(0),
       I5 => \state_reg[1]_1\,
       O => \state[1]_i_1__0_n_0\
     );
-\state[1]_i_2__0\: unisim.vcomponents.LUT6
+\state[1]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"38C8FCCC3808FCCC"
+      INIT => X"00F0FFFFC0A0F0F0"
     )
         port map (
       I0 => \pause_state_reg_n_0_[1]\,
-      I1 => \^q\(1),
+      I1 => \state[1]_i_5_n_0\,
       I2 => \^q\(0),
-      I3 => state(2),
+      I3 => state(0),
       I4 => m_axis_tready,
-      I5 => \state[2]_i_4_n_0\,
-      O => \state[1]_i_2__0_n_0\
+      I5 => state(2),
+      O => \state[1]_i_2_n_0\
     );
-\state[1]_i_3__0\: unisim.vcomponents.LUT6
+\state[1]_i_3__0\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"0000FFFFFE00FE00"
+      INIT => X"B"
+    )
+        port map (
+      I0 => count(1),
+      I1 => count(0),
+      O => \state[1]_i_3__0_n_0\
+    );
+\state[1]_i_5\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"FE"
     )
         port map (
       I0 => count(4),
       I1 => count(3),
       I2 => count(2),
-      I3 => \state[2]_i_3_n_0\,
-      I4 => m_axis_tready,
-      I5 => state(2),
-      O => \state[1]_i_3__0_n_0\
+      O => \state[1]_i_5_n_0\
     );
 \state[2]_i_1__1\: unisim.vcomponents.LUT6
     generic map(
@@ -9784,8 +9805,8 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       I1 => \state[2]_i_2__0_n_0\,
       I2 => \pause_state_reg_n_0_[2]\,
       I3 => m_axis_tready,
-      I4 => \^q\(1),
-      I5 => \^q\(0),
+      I4 => \^q\(0),
+      I5 => state(0),
       O => \state[2]_i_1__1_n_0\
     );
 \state[2]_i_2__0\: unisim.vcomponents.LUT6
@@ -9795,7 +9816,7 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
         port map (
       I0 => \state[2]_i_3_n_0\,
       I1 => m_axis_tready,
-      I2 => \state[2]_i_4_n_0\,
+      I2 => \state[1]_i_3__0_n_0\,
       I3 => count(2),
       I4 => count(3),
       I5 => count(4),
@@ -9806,18 +9827,9 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       INIT => X"8"
     )
         port map (
-      I0 => \^q\(0),
-      I1 => \^q\(1),
+      I0 => state(0),
+      I1 => \^q\(0),
       O => \state[2]_i_3_n_0\
-    );
-\state[2]_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"B"
-    )
-        port map (
-      I0 => count(1),
-      I1 => count(0),
-      O => \state[2]_i_4_n_0\
     );
 \state_reg[0]\: unisim.vcomponents.FDCE
      port map (
@@ -9825,7 +9837,7 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       CE => '1',
       CLR => \state_reg[0]_0\,
       D => \state[0]_i_1_n_0\,
-      Q => \^q\(0)
+      Q => state(0)
     );
 \state_reg[1]\: unisim.vcomponents.FDCE
      port map (
@@ -9833,7 +9845,7 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
       CE => '1',
       CLR => \state_reg[0]_0\,
       D => \state[1]_i_1__0_n_0\,
-      Q => \^q\(1)
+      Q => \^q\(0)
     );
 \state_reg[2]\: unisim.vcomponents.FDCE
      port map (
@@ -9850,9 +9862,9 @@ m_axis_tvalid_INST_0: unisim.vcomponents.LUT3
         port map (
       I0 => \count[4]_i_5_n_0\,
       I1 => state(2),
-      I2 => \^q\(0),
+      I2 => state(0),
       I3 => count(4),
-      I4 => \^q\(1),
+      I4 => \^q\(0),
       O => \state_reg[2]_1\
     );
 end STRUCTURE;
@@ -9898,10 +9910,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_SIPO_buffer 
   signal \^shift_reg_reg[6][31]_0\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \^shift_reg_reg[7][31]_0\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[0]_i_1__2\ : label is "soft_lutpair327";
-  attribute SOFT_HLUTNM of \count[2]_i_1__3\ : label is "soft_lutpair327";
-  attribute SOFT_HLUTNM of \count[3]_i_2__2\ : label is "soft_lutpair326";
-  attribute SOFT_HLUTNM of in_ready_i : label is "soft_lutpair326";
+  attribute SOFT_HLUTNM of \count[0]_i_1__2\ : label is "soft_lutpair329";
+  attribute SOFT_HLUTNM of \count[2]_i_1__3\ : label is "soft_lutpair329";
+  attribute SOFT_HLUTNM of \count[3]_i_2__2\ : label is "soft_lutpair328";
+  attribute SOFT_HLUTNM of in_ready_i : label is "soft_lutpair328";
 begin
   Q(15 downto 0) <= \^q\(15 downto 0);
   \shift_reg_reg[1][31]_0\(31 downto 0) <= \^shift_reg_reg[1][31]_0\(31 downto 0);
@@ -12350,7 +12362,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b is
     \out_class[3]_64\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out_class[5]_66\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out_class[4]_65\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_aclk : in STD_LOGIC
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b;
@@ -12362,8 +12374,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b i
   signal \count[2]_i_2_n_0\ : STD_LOGIC;
   signal \^out_class[1]_62\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair328";
-  attribute SOFT_HLUTNM of \count[2]_i_2\ : label is "soft_lutpair328";
+  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair330";
+  attribute SOFT_HLUTNM of \count[2]_i_2\ : label is "soft_lutpair330";
 begin
   \out_class[1]_62\(2 downto 0) <= \^out_class[1]_62\(2 downto 0);
 \count[0]_i_1\: unisim.vcomponents.LUT2
@@ -12418,7 +12430,7 @@ begin
       CE => '1',
       D => \count[0]_i_1_n_0\,
       Q => \^out_class[1]_62\(0),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -12429,7 +12441,7 @@ begin
       CE => '1',
       D => \count[1]_i_1_n_0\,
       Q => \^out_class[1]_62\(1),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -12440,7 +12452,7 @@ begin
       CE => '1',
       D => \count[2]_i_2_n_0\,
       Q => \^out_class[1]_62\(2),
-      R => SR(0)
+      R => SS(0)
     );
 \win_class_reg[2]_i_3\: unisim.vcomponents.LUT5
     generic map(
@@ -12469,7 +12481,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_0 is
     \count[2]_i_2__3_0\ : in STD_LOGIC;
     Output_SVM : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out_class[1]_62\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    SR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -12484,8 +12496,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_0
   signal \count[2]_i_4__0_n_0\ : STD_LOGIC;
   signal \^out_class[2]_63\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair329";
-  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair329";
+  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair331";
+  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair331";
 begin
   \out_class[2]_63\(2 downto 0) <= \^out_class[2]_63\(2 downto 0);
 \count[0]_i_1\: unisim.vcomponents.LUT2
@@ -12553,7 +12565,7 @@ begin
       CE => '1',
       D => \count[0]_i_1_n_0\,
       Q => \^out_class[2]_63\(0),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -12564,7 +12576,7 @@ begin
       CE => '1',
       D => \count[1]_i_1_n_0\,
       Q => \^out_class[2]_63\(1),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -12575,7 +12587,7 @@ begin
       CE => '1',
       D => \count[2]_i_1_n_0\,
       Q => \^out_class[2]_63\(2),
-      R => SR(0)
+      R => SS(0)
     );
 \win_class_reg[1]_i_3\: unisim.vcomponents.LUT6
     generic map(
@@ -12609,7 +12621,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_1 is
     \out_class[1]_62\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \out_class[2]_63\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \count_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -12640,10 +12652,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_1
   signal \win_class_reg[2]_i_6_n_0\ : STD_LOGIC;
   signal \win_class_reg[2]_i_9_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair330";
-  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair330";
-  attribute SOFT_HLUTNM of \win_class_reg[1]_i_2\ : label is "soft_lutpair331";
-  attribute SOFT_HLUTNM of \win_class_reg[2]_i_6\ : label is "soft_lutpair331";
+  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair332";
+  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair332";
+  attribute SOFT_HLUTNM of \win_class_reg[1]_i_2\ : label is "soft_lutpair333";
+  attribute SOFT_HLUTNM of \win_class_reg[2]_i_6\ : label is "soft_lutpair333";
 begin
   \count_reg[2]_0\(0) <= \^count_reg[2]_0\(0);
 \count[0]_i_1\: unisim.vcomponents.LUT2
@@ -12685,7 +12697,7 @@ begin
       CE => '1',
       D => \count[0]_i_1_n_0\,
       Q => \out_class[3]_64\(0),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -12696,7 +12708,7 @@ begin
       CE => '1',
       D => \count[1]_i_1_n_0\,
       Q => \out_class[3]_64\(1),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -12707,7 +12719,7 @@ begin
       CE => '1',
       D => \count[2]_i_1_n_0\,
       Q => \^count_reg[2]_0\(0),
-      R => SR(0)
+      R => SS(0)
     );
 \win_class_reg[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -12974,7 +12986,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_2 is
     \count_reg[0]_1\ : in STD_LOGIC;
     \count_reg[0]_2\ : in STD_LOGIC;
     \count_reg[0]_3\ : in STD_LOGIC;
-    SR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -12989,10 +13001,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_2
   signal \count[2]_i_3__0_n_0\ : STD_LOGIC;
   signal \^out_class[4]_65\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[0]_i_2__0\ : label is "soft_lutpair332";
-  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair333";
-  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair333";
-  attribute SOFT_HLUTNM of \count[2]_i_3__0\ : label is "soft_lutpair332";
+  attribute SOFT_HLUTNM of \count[0]_i_2__0\ : label is "soft_lutpair334";
+  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair335";
+  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair335";
+  attribute SOFT_HLUTNM of \count[2]_i_3__0\ : label is "soft_lutpair334";
 begin
   \out_class[4]_65\(2 downto 0) <= \^out_class[4]_65\(2 downto 0);
 \count[0]_i_1\: unisim.vcomponents.LUT6
@@ -13061,7 +13073,7 @@ begin
       CE => '1',
       D => \count[0]_i_1_n_0\,
       Q => \^out_class[4]_65\(0),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -13072,7 +13084,7 @@ begin
       CE => '1',
       D => \count[1]_i_1_n_0\,
       Q => \^out_class[4]_65\(1),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -13083,7 +13095,7 @@ begin
       CE => '1',
       D => \count[2]_i_1_n_0\,
       Q => \^out_class[4]_65\(2),
-      R => SR(0)
+      R => SS(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -13102,7 +13114,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_3 is
     \count_reg[0]_2\ : in STD_LOGIC;
     \out_class[4]_65\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \count_reg[0]_3\ : in STD_LOGIC;
-    SR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -13121,10 +13133,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_3
   signal \^count_clk_reg[1]\ : STD_LOGIC;
   signal \^out_class[5]_66\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[0]_i_3\ : label is "soft_lutpair335";
-  attribute SOFT_HLUTNM of \count[2]_i_3\ : label is "soft_lutpair334";
-  attribute SOFT_HLUTNM of \count[2]_i_4\ : label is "soft_lutpair334";
-  attribute SOFT_HLUTNM of \count[2]_i_5\ : label is "soft_lutpair335";
+  attribute SOFT_HLUTNM of \count[0]_i_3\ : label is "soft_lutpair337";
+  attribute SOFT_HLUTNM of \count[2]_i_3\ : label is "soft_lutpair336";
+  attribute SOFT_HLUTNM of \count[2]_i_4\ : label is "soft_lutpair336";
+  attribute SOFT_HLUTNM of \count[2]_i_5\ : label is "soft_lutpair337";
 begin
   \count_clk_reg[1]\ <= \^count_clk_reg[1]\;
   \out_class[5]_66\(2 downto 0) <= \^out_class[5]_66\(2 downto 0);
@@ -13244,7 +13256,7 @@ begin
       CE => '1',
       D => \count[0]_i_1_n_0\,
       Q => \^out_class[5]_66\(0),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -13255,7 +13267,7 @@ begin
       CE => '1',
       D => \count[1]_i_1_n_0\,
       Q => \^out_class[5]_66\(1),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -13266,7 +13278,7 @@ begin
       CE => '1',
       D => \count[2]_i_1_n_0\,
       Q => \^out_class[5]_66\(2),
-      R => SR(0)
+      R => SS(0)
     );
 \win_class_reg[2]_i_13\: unisim.vcomponents.LUT6
     generic map(
@@ -13306,7 +13318,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_4 is
     \count_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \count_reg[0]_1\ : in STD_LOGIC;
     \count_reg[0]_2\ : in STD_LOGIC;
-    SR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -13320,8 +13332,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_4
   signal \count[2]_i_1_n_0\ : STD_LOGIC;
   signal \^p_0_out\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair336";
-  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair336";
+  attribute SOFT_HLUTNM of \count[1]_i_1\ : label is "soft_lutpair338";
+  attribute SOFT_HLUTNM of \count[2]_i_1\ : label is "soft_lutpair338";
 begin
   p_0_out(2 downto 0) <= \^p_0_out\(2 downto 0);
 \count[0]_i_1\: unisim.vcomponents.LUT2
@@ -13376,7 +13388,7 @@ begin
       CE => '1',
       D => \count[0]_i_1_n_0\,
       Q => \^p_0_out\(0),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -13387,7 +13399,7 @@ begin
       CE => '1',
       D => \count[1]_i_1_n_0\,
       Q => \^p_0_out\(1),
-      R => SR(0)
+      R => SS(0)
     );
 \count_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -13398,7 +13410,7 @@ begin
       CE => '1',
       D => \count[2]_i_1_n_0\,
       Q => \^p_0_out\(2),
-      R => SR(0)
+      R => SS(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -35985,7 +35997,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM is
     \state_reg[1]\ : out STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC;
     rst_pipe_classfier : out STD_LOGIC;
-    SR : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : out STD_LOGIC_VECTOR ( 0 to 0 );
     out_valid_i_reg : out STD_LOGIC;
     s_axis_tvalid_0 : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
@@ -36018,7 +36030,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM is
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM is
-  signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal bram_addr_Bias_0_sn_1 : STD_LOGIC;
   signal bram_addr_Bias_1_sn_1 : STD_LOGIC;
   signal bram_addr_Bias_2_sn_1 : STD_LOGIC;
@@ -36038,20 +36049,18 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM is
   signal ram_name_reg_5_i_37_n_0 : STD_LOGIC;
   signal ram_name_reg_8_i_37_n_0 : STD_LOGIC;
   signal state : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal state_0 : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \FSM_sequential_state[1]_i_1\ : label is "soft_lutpair323";
-  attribute SOFT_HLUTNM of \FSM_sequential_state[2]_i_1\ : label is "soft_lutpair323";
+  attribute SOFT_HLUTNM of \FSM_sequential_state[1]_i_1\ : label is "soft_lutpair325";
+  attribute SOFT_HLUTNM of \FSM_sequential_state[2]_i_1\ : label is "soft_lutpair325";
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_sequential_state_reg[0]\ : label is "reset_state:000,setup:010,idle:001,pause:100,processing:011";
   attribute FSM_ENCODED_STATES of \FSM_sequential_state_reg[1]\ : label is "reset_state:000,setup:010,idle:001,pause:100,processing:011";
   attribute FSM_ENCODED_STATES of \FSM_sequential_state_reg[2]\ : label is "reset_state:000,setup:010,idle:001,pause:100,processing:011";
-  attribute SOFT_HLUTNM of ram_name_reg_0_i_43 : label is "soft_lutpair324";
-  attribute SOFT_HLUTNM of ram_name_reg_0_i_45 : label is "soft_lutpair325";
-  attribute SOFT_HLUTNM of s_axis_tready_INST_0 : label is "soft_lutpair324";
-  attribute SOFT_HLUTNM of trig_axis_to_BRAM_Bias_INST_0 : label is "soft_lutpair325";
+  attribute SOFT_HLUTNM of ram_name_reg_0_i_43 : label is "soft_lutpair326";
+  attribute SOFT_HLUTNM of ram_name_reg_0_i_45 : label is "soft_lutpair327";
+  attribute SOFT_HLUTNM of s_axis_tready_INST_0 : label is "soft_lutpair326";
+  attribute SOFT_HLUTNM of trig_axis_to_BRAM_Bias_INST_0 : label is "soft_lutpair327";
 begin
-  Q(0) <= \^q\(0);
   bram_addr_Bias_0_sp_1 <= bram_addr_Bias_0_sn_1;
   bram_addr_Bias_1_sp_1 <= bram_addr_Bias_1_sn_1;
   bram_addr_Bias_2_sp_1 <= bram_addr_Bias_2_sn_1;
@@ -36143,8 +36152,6 @@ DSP48E1_inst_i_2: unisim.vcomponents.LUT3
     );
 pm_FSM_Kernel_Bias: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Kernel_Bias
      port map (
-      Q(1) => \^q\(0),
-      Q(0) => state_0(0),
       axi_resetn => axi_resetn,
       axi_resetn_0 => pm_FSM_Kernel_Bias_n_12,
       bram_addr_Bias(3 downto 0) => bram_addr_Bias(3 downto 0),
@@ -36168,8 +36175,8 @@ pm_FSM_Kernel_Bias: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Ke
       \ram_data_reg[0]\ => ram_name_reg_0_i_43_n_0,
       \ram_data_reg[0]_0\ => ram_name_reg_0_i_45_n_0,
       s_axis_aclk => s_axis_aclk,
-      \state_reg[2]_0\ => ce_DSP_AxB_plus_C_classifier,
-      \state_reg[2]_1\ => pm_FSM_Kernel_Bias_n_11
+      \state_reg[1]_0\ => pm_FSM_Kernel_Bias_n_11,
+      \state_reg[2]_0\ => ce_DSP_AxB_plus_C_classifier
     );
 pm_FSM_SIPO_PCV: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_SIPO_PCV
      port map (
@@ -36195,9 +36202,8 @@ pm_FSM_Voting: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM_Voting
      port map (
       E(0) => E(0),
       Output_SVM(0) => Output_SVM(0),
-      Q(1) => \^q\(0),
-      Q(0) => state_0(0),
-      SR(0) => SR(0),
+      Q(0) => Q(0),
+      SS(0) => SS(0),
       ce_class(0) => ce_class(0),
       \count_clk_reg[2]\ => \count_clk_reg[2]\,
       \count_clk_reg[2]_0\ => \count_clk_reg[2]_0\,
@@ -45129,7 +45135,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Voting_w_ce is
     Output_SVM : in STD_LOGIC_VECTOR ( 0 to 0 );
     \count_reg[0]_4\ : in STD_LOGIC;
     m_axis_tdata_0_sp_1 : in STD_LOGIC;
-    SR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SS : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_aclk : in STD_LOGIC;
     \count_reg[0]_5\ : in STD_LOGIC;
     \count_reg[0]_6\ : in STD_LOGIC;
@@ -45159,10 +45165,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Voting_w_ce 
   signal p_0_out : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \win_class_reg[2]_i_2_n_0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \count_clk[2]_i_1\ : label is "soft_lutpair338";
-  attribute SOFT_HLUTNM of \count_clk[3]_i_1\ : label is "soft_lutpair337";
-  attribute SOFT_HLUTNM of \count_clk[4]_i_2\ : label is "soft_lutpair337";
-  attribute SOFT_HLUTNM of \count_clk[4]_i_3\ : label is "soft_lutpair338";
+  attribute SOFT_HLUTNM of \count_clk[2]_i_1\ : label is "soft_lutpair340";
+  attribute SOFT_HLUTNM of \count_clk[3]_i_1\ : label is "soft_lutpair339";
+  attribute SOFT_HLUTNM of \count_clk[4]_i_2\ : label is "soft_lutpair339";
+  attribute SOFT_HLUTNM of \count_clk[4]_i_3\ : label is "soft_lutpair340";
   attribute XILINX_LEGACY_PRIM : string;
   attribute XILINX_LEGACY_PRIM of \win_class_reg[0]\ : label is "LD";
   attribute XILINX_LEGACY_PRIM of \win_class_reg[1]\ : label is "LD";
@@ -45261,7 +45267,7 @@ begin
       CE => E(0),
       D => \count_clk[0]_i_1_n_0\,
       Q => \^q\(0),
-      S => SR(0)
+      S => SS(0)
     );
 \count_clk_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -45272,7 +45278,7 @@ begin
       CE => E(0),
       D => \p_0_in__1\(1),
       Q => \^q\(1),
-      R => SR(0)
+      R => SS(0)
     );
 \count_clk_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -45283,7 +45289,7 @@ begin
       CE => E(0),
       D => \p_0_in__1\(2),
       Q => \^q\(2),
-      R => SR(0)
+      R => SS(0)
     );
 \count_clk_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -45294,7 +45300,7 @@ begin
       CE => E(0),
       D => \p_0_in__1\(3),
       Q => \^q\(3),
-      R => SR(0)
+      R => SS(0)
     );
 \count_clk_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -45305,13 +45311,13 @@ begin
       CE => E(0),
       D => \p_0_in__1\(4),
       Q => \^q\(4),
-      R => SR(0)
+      R => SS(0)
     );
 \counter[1].pm_counter_3b\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b
      port map (
       Output_SVM(0) => Output_SVM(0),
       Q(2 downto 0) => \^q\(2 downto 0),
-      SR(0) => SR(0),
+      SS(0) => SS(0),
       \count_reg[0]_0\(0) => \count_reg[0]_0\(0),
       \count_reg[0]_1\ => \count_reg[0]_4\,
       \count_reg[2]_0\ => \counter[1].pm_counter_3b_n_0\,
@@ -45326,7 +45332,7 @@ begin
      port map (
       Output_SVM(0) => Output_SVM(0),
       Q(3 downto 0) => \^q\(3 downto 0),
-      SR(0) => SR(0),
+      SS(0) => SS(0),
       \count[2]_i_2__3_0\ => \count[2]_i_2__3\,
       \count_reg[0]_0\ => \count_reg[0]_2\,
       \count_reg[0]_1\(0) => \count_reg[0]_0\(0),
@@ -45340,7 +45346,7 @@ begin
       D(2) => \counter[3].pm_counter_3b_n_0\,
       D(1) => \counter[3].pm_counter_3b_n_1\,
       D(0) => \counter[3].pm_counter_3b_n_2\,
-      SR(0) => SR(0),
+      SS(0) => SS(0),
       \count_reg[0]_0\(0) => \count_reg[0]\(0),
       \count_reg[2]_0\(0) => \out_class[3]_64\(2),
       \m_axis_tdata[0]\ => \counter[1].pm_counter_3b_n_0\,
@@ -45357,7 +45363,7 @@ begin
 \counter[4].pm_counter_3b\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_2
      port map (
       Q(2 downto 0) => \^q\(2 downto 0),
-      SR(0) => SR(0),
+      SS(0) => SS(0),
       \count_reg[0]_0\ => \count_reg[0]_3\,
       \count_reg[0]_1\ => \count_reg[0]_5\,
       \count_reg[0]_2\ => \count_reg[0]_6\,
@@ -45369,7 +45375,7 @@ begin
 \counter[5].pm_counter_3b\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_3
      port map (
       Q(2 downto 0) => \^q\(2 downto 0),
-      SR(0) => SR(0),
+      SS(0) => SS(0),
       \count_clk_reg[1]\ => \counter[5].pm_counter_3b_n_0\,
       \count_reg[0]_0\(0) => \count_reg[0]_0\(0),
       \count_reg[0]_1\ => \count_reg[0]_1\,
@@ -45384,7 +45390,7 @@ begin
 \counter[6].pm_counter_3b\: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_counter_3b_4
      port map (
       Q(2 downto 0) => \^q\(2 downto 0),
-      SR(0) => SR(0),
+      SS(0) => SS(0),
       \count_reg[0]_0\(0) => \count_reg[0]_0\(0),
       \count_reg[0]_1\ => \count_reg[0]_1\,
       \count_reg[0]_2\ => \count_reg[0]_2\,
@@ -54959,7 +54965,7 @@ PM_FSM: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_FSM
       E(0) => count_clk,
       Output_SVM(0) => i_out_Classifier,
       Q(0) => \pm_FSM_Voting/state\(1),
-      SR(0) => clear,
+      SS(0) => clear,
       WEA(0) => i_we_RAM_Pre_Computed_Vector,
       axi_resetn => axi_resetn,
       bram_addr_Bias(3 downto 0) => bram_addr_Bias(3 downto 0),
@@ -55105,7 +55111,7 @@ PM_Voting: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Voting_w_ce
       E(0) => count_clk,
       Output_SVM(0) => i_out_Classifier,
       Q(4 downto 0) => \count_clk_reg__0\(4 downto 0),
-      SR(0) => clear,
+      SS(0) => clear,
       \count[2]_i_2__3\ => PM_FSM_n_9,
       \count_clk_reg[0]_0\ => PM_Voting_n_7,
       \count_clk_reg[1]_0\ => PM_Voting_n_5,
@@ -55184,7 +55190,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute x_interface_parameter of s_axis_tready : signal is "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 30303030, PHASE 0.000, CLK_DOMAIN hw_svm_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of s_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 s_axis TVALID";
   attribute x_interface_info of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 m_axis TDATA";
-  attribute x_interface_parameter of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 30000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 s_axis TDATA";
 begin
   m_axis_tdata(31) <= \<const0>\;

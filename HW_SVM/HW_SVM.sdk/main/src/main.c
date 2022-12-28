@@ -45,6 +45,11 @@ int main()
     Xil_DCacheDisable();
     Xil_DCacheFlush();
     xil_printf("Avvio Programma\n\r");
+/************** Zero Result **********************/
+    for (u32 i=0; i<36; i=i+1) {
+		Result[i] = 0;
+	}
+/*************************************************/
 
 /*********** Initialize the GPIO driver ***********/
 	int Status_Gpio;
@@ -208,13 +213,8 @@ u32 Status = 0;
 		xil_printf("DMA_load_Bias -> Invio eseguito con successo \r\n");
 /****************************************************/
 
-/***********Configure PL to PROCESSING  ***********/
 
-	// Send combination 11 -> STATE PROCESSING to PL
-		XGpio_DiscreteWrite(&Gpio, START         , 1);
-		XGpio_DiscreteWrite(&Gpio, CLASSIFICATION, 1);
-		xil_printf("START = 1 , CLASSIFICATION = 1 -> PROCESSING \r\n");
-/****************************************************/
+
 
 
 /*********** Send 36 Istances to Classifier ( PL )  ***********/
@@ -240,13 +240,27 @@ u32 Status = 0;
 			}
 	xil_printf("AXI MAIN DMA -> Configurato per ricevere da PL \r\n");
 
-//	while ((XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DEVICE_TO_DMA)) || (XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DMA_TO_DEVICE))) {
+	/***********Configure PL to PROCESSING  ***********/
+
+		// Send combination 11 -> STATE PROCESSING to PL
+			XGpio_DiscreteWrite(&Gpio, START         , 1);
+			XGpio_DiscreteWrite(&Gpio, CLASSIFICATION, 1);
+			xil_printf("START = 1 , CLASSIFICATION = 1 -> PROCESSING \r\n");
+	/****************************************************/
+
+//	while ( XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DMA_TO_DEVICE) ) {
 //			/* Attesa completamento operazione del DMA */
-//			xil_printf("DMA MAIN sta inviando... \r\n");
+//			xil_printf("DMA MAIN sta ancora inviando... \r\n");
 //			sleep(1);
 //	}
-//	xil_printf("AXI MAIN DMA -> Invio e Ricezione eseguiti con successo \r\n");
-	sleep(5);
+//	while ( XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DEVICE_TO_DMA) ) {
+//			/* Attesa completamento operazione del DMA */
+//			xil_printf("DMA MAIN sta ancora ricevendo... \r\n");
+//			sleep(1);
+//	}
+	xil_printf("AXI MAIN DMA -> Invio e Ricezione eseguiti con successo \r\n");
+
+	sleep(10);
 /*******************************************************/
 
 /********************* STAMPA dei RISULTATI ***************/

@@ -1,2 +1,7 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
+ERROR: Index 324 out of bound 0 to 323
+Time: 25140 ns  Iteration: 1  Process: /TB_Top_Level/TB_Tester_inst/DMA_MM2S_inst/line__69
+  File: C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/new/DMA_MM2S.vhd
+
+HDL Line: C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/new/DMA_MM2S.vhd:78

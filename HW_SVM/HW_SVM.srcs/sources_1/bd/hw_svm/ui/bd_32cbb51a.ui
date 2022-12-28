@@ -17,56 +17,56 @@ preplace inst axis_to_bram_Kernel_0 -pg 1 -lvl 4 -y 610 -defaultsOSRD
 preplace inst axis_to_bram_PCV_0 -pg 1 -lvl 4 -y 410 -defaultsOSRD
 preplace inst rst_ps7_0_30M -pg 1 -lvl 1 -y 510 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 280 -defaultsOSRD
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 1420
-preplace netloc processing_system7_0_DDR 1 1 5 990J -110 NJ -110 NJ -110 NJ -110 3270
-preplace netloc axis_to_bram_PCV_0_en_ram 1 4 1 2240
-preplace netloc axis_to_bram_PCV_0_s_axis_tready 1 3 1 1850
-preplace netloc axi_dma_1_m_axis_mm2s_tdata 1 3 1 1860
-preplace netloc axis_to_bram_PCV_0_addr_ram 1 4 1 2260
-preplace netloc axis_to_bram_Kernel_0_s_axis_tready 1 3 1 1820
-preplace netloc axi_dma_1_m_axis_mm2s_tvalid 1 3 1 1830
-preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tvalid 1 5 1 3250
-preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Bias 1 3 3 1880 930 NJ 930 3210
-preplace netloc axis_to_bram_Bias_0_s_axis_tready 1 3 1 1810
-preplace netloc axi_dma_3_m_axis_mm2s_tvalid 1 3 1 1800
-preplace netloc axi_dma_1_M_AXI_MM2S 1 1 3 1050 20 N 20 1830
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 1000
-preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 4 1 2350
-preplace netloc axi_smc_M00_AXI 1 0 3 -110J 170 1010 140 1390
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -100 390 990J
-preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 1440
-preplace netloc PL_CLASSIFIER_w_VOTI_0_s_axis_tready 1 4 1 2340
-preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 4 1 2330
-preplace netloc axis_to_bram_Bias_0_data_out 1 4 1 2330
-preplace netloc axis_to_bram_Kernel_0_en_ram 1 4 1 2280
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 4 1390J 920 NJ 920 NJ 920 3230
-preplace netloc axi_dma_0_s_axis_s2mm_tready 1 5 1 3240
-preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Kernel_Scale 1 3 3 1870 940 NJ 940 3220
-preplace netloc axis_to_bram_Kernel_0_we_ram 1 4 1 2300
-preplace netloc axi_dma_0_M_AXI_MM2S 1 1 4 1080J 10 NJ 10 1870J 20 2300J
-preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tdata 1 5 1 3210
-preplace netloc axi_gpio_0_gpio_io_o 1 4 1 2280
-preplace netloc axis_to_bram_Bias_0_en_ram 1 4 1 2340
-preplace netloc axi_dma_3_M_AXI_MM2S 1 1 3 1070 40 N 40 1800
-preplace netloc processing_system7_0_FIXED_IO 1 1 5 1000J -100 NJ -100 NJ -100 NJ -100 3260
-preplace netloc axis_to_bram_PCV_0_we_ram 1 4 1 2230
-preplace netloc axi_dma_2_m_axis_mm2s_tvalid 1 3 1 1810
-preplace netloc axi_dma_0_M_AXI_S2MM 1 1 4 1040J -10 NJ -10 NJ -10 2320J
-preplace netloc axis_to_bram_Bias_0_addr_ram 1 4 1 2320
-preplace netloc axis_to_bram_Kernel_0_data_out 1 4 1 2260
-preplace netloc axis_to_bram_Kernel_0_addr_ram 1 4 1 2240
-preplace netloc rst_ps7_0_30M_peripheral_aresetn 1 1 5 1020 120 1410 -20 1880 10 2310 -120 3230
-preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 1400
-preplace netloc axi_dma_2_M_AXI_MM2S 1 1 3 1060 30 N 30 1810
-preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_PCV 1 3 3 1850 950 NJ 950 3240
-preplace netloc axi_gpio_0_gpio2_io_o 1 4 1 2270
-preplace netloc axi_dma_2_m_axis_mm2s_tdata 1 3 1 1830
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -110 410 1030 130 1430 0 1840 0 2290 -130 3250
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 2 1400J 50 1870J
-preplace netloc axis_to_bram_Bias_0_we_ram 1 4 1 2350
+preplace netloc processing_system7_0_DDR 1 1 5 970J -100 NJ -100 NJ -100 NJ -100 3260
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 1390
+preplace netloc axis_to_bram_PCV_0_en_ram 1 4 1 2250
+preplace netloc axis_to_bram_PCV_0_s_axis_tready 1 3 1 1870
+preplace netloc axi_dma_1_m_axis_mm2s_tdata 1 3 1 1880
+preplace netloc axis_to_bram_PCV_0_addr_ram 1 4 1 2270
+preplace netloc axis_to_bram_Kernel_0_s_axis_tready 1 3 1 1830
+preplace netloc axi_dma_1_m_axis_mm2s_tvalid 1 3 1 1850
+preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tvalid 1 5 1 3240
+preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Bias 1 3 3 1890 930 NJ 930 3200
+preplace netloc axis_to_bram_Bias_0_s_axis_tready 1 3 1 1800
+preplace netloc axi_dma_3_m_axis_mm2s_tvalid 1 3 1 1790
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 980
+preplace netloc axi_dma_1_M_AXI_MM2S 1 1 3 1020 20 N 20 1810
+preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 4 1 2370
+preplace netloc axi_smc_M00_AXI 1 0 3 -110J 170 980 120 1380
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -100 390 970J
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 1430
+preplace netloc PL_CLASSIFIER_w_VOTI_0_s_axis_tready 1 4 1 2360
+preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 4 1 2350
+preplace netloc axis_to_bram_Bias_0_data_out 1 4 1 2350
+preplace netloc axis_to_bram_Kernel_0_en_ram 1 4 1 2300
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 4 1400J 570 1810J 920 NJ 920 3220
+preplace netloc axi_dma_0_s_axis_s2mm_tready 1 5 1 3230
+preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Kernel_Scale 1 3 3 1880 940 NJ 940 3210
+preplace netloc axis_to_bram_Kernel_0_we_ram 1 4 1 2320
+preplace netloc axi_dma_0_M_AXI_MM2S 1 1 4 1050J 60 NJ 60 NJ 60 2340J
+preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tdata 1 5 1 3200
+preplace netloc axi_gpio_0_gpio_io_o 1 4 1 2290
+preplace netloc axis_to_bram_Bias_0_en_ram 1 4 1 2360
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 1000J 140 1430J 310 1810J 140 2310J 220 3250
+preplace netloc axi_dma_3_M_AXI_MM2S 1 1 3 1040 50 N 50 1790
+preplace netloc axis_to_bram_PCV_0_we_ram 1 4 1 2240
+preplace netloc axi_dma_2_m_axis_mm2s_tvalid 1 3 1 1820
+preplace netloc axi_dma_0_M_AXI_S2MM 1 1 4 1060J 70 NJ 70 NJ 70 2330J
+preplace netloc axis_to_bram_Bias_0_addr_ram 1 4 1 2340
+preplace netloc axis_to_bram_Kernel_0_data_out 1 4 1 2280
+preplace netloc axis_to_bram_Kernel_0_addr_ram 1 4 1 2250
+preplace netloc rst_ps7_0_30M_peripheral_aresetn 1 1 5 990 110 1420 40 1890 40 2320 -80 3240
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 1380
+preplace netloc axi_dma_2_M_AXI_MM2S 1 1 3 1030 30 N 30 1800
+preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_PCV 1 3 3 1870 950 NJ 950 3230
+preplace netloc axi_gpio_0_gpio2_io_o 1 4 1 2280
+preplace netloc axi_dma_2_m_axis_mm2s_tdata 1 3 1 1860
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -110 410 1010 130 1410 320 1840 130 2300 -90 3250
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 2 1400J 330 1860J
+preplace netloc axis_to_bram_Bias_0_we_ram 1 4 1 2370
 preplace netloc axi_dma_3_m_axis_mm2s_tdata 1 3 1 1820
-preplace netloc axis_to_bram_PCV_0_data_out 1 4 1 2250
-levelinfo -pg 1 -130 760 1240 1620 2060 2950 3300 -top -320 -bot 1200
+preplace netloc axis_to_bram_PCV_0_data_out 1 4 1 2260
+levelinfo -pg 1 -130 760 1240 1620 2080 2950 3300 -top -320 -bot 1200
 "
 }
 {

@@ -1,4 +1,57 @@
-20:24:58 **** Build of project main_bsp ****
+19:52:40 **** Incremental Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:4:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+19:54:06 **** Clean-only build of configuration Debug for project main ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  main.elf.size  main.elf
+' '
+19:54:07 **** Auto Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:4:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+20:00:36 **** Clean-only build of project main_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/axidma_v9_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+20:00:37 **** Clean-only build of configuration Debug for project main ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  main.elf.size  main.elf
+' '
+20:00:38 **** Build of project main_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_8/src"
 make -C ps7_cortexa9_0/libsrc/axidma_v9_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
@@ -108,14 +161,14 @@ make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
-20:25:30 **** Build of configuration Debug for project main ****
+20:01:07 **** Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/helloworld.c'
+'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: ARM v7 gcc compiler'
@@ -124,45 +177,20 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=
 ' '
 'Building target: main.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: main.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19348	   1144	  22568	  43060	   a834	main.elf
+  39684	   4736	  15976	  60396	   ebec	main.elf
 'Finished building: main.elf.size'
 ' '
-20:25:33 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-20:27:57 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-20:28:05 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-20:28:13 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-20:34:13 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-20:34:26 **** Clean-only build of configuration Debug for project main ****
+20:01:29 **** Clean-only build of configuration Debug for project main ****
 make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  main.elf.size  main.elf
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  main.elf.size  main.elf
 ' '
-20:34:26 **** Auto Build of configuration Debug for project main ****
+20:01:29 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -184,15 +212,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19348	   1144	  22568	  43060	   a834	main.elf
+  39684	   4736	  15976	  60396	   ebec	main.elf
 'Finished building: main.elf.size'
 ' '
-20:35:15 **** Auto Build of configuration Debug for project main ****
+20:08:47 **** Incremental Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-20:35:18 **** Auto Build of configuration Debug for project main ****
+20:13:46 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -209,34 +237,135 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19348	   1144	  22568	  43060	   a834	main.elf
+  39684	   4736	  15976	  60396	   ebec	main.elf
 'Finished building: main.elf.size'
 ' '
-20:37:20 **** Auto Build of configuration Debug for project main ****
+20:14:13 **** Incremental Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:14:25 **** Incremental Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:15:09 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:14:0:
-../src/Bias_pkt_32b.h:1:1: error: expected ',' or ';' before 'u32'
- u32 Bias[] = {
- ^~~
+'Finished building: ../src/main.c'
+' '
+'Building target: main.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: main.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size main.elf  |tee "main.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39528	   4736	  15976	  60240	   eb50	main.elf
+'Finished building: main.elf.size'
+' '
+20:15:15 **** Incremental Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:18:34 **** Auto Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: main.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: main.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size main.elf  |tee "main.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39528	   4736	  15976	  60240	   eb50	main.elf
+'Finished building: main.elf.size'
+' '
+20:22:28 **** Auto Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: main.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: main.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size main.elf  |tee "main.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39592	   4736	  15976	  60304	   eb90	main.elf
+'Finished building: main.elf.size'
+' '
+20:23:23 **** Auto Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: main.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: main.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size main.elf  |tee "main.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  39748	   4736	  15976	  60460	   ec2c	main.elf
+'Finished building: main.elf.size'
+' '
+20:24:10 **** Auto Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:257:24: warning: passing argument 1 of 'XAxiDma_Busy' makes pointer from integer without a cast [-Wint-conversion]
+  while ((XAxiDma_Busy( XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DMA_TO_DEVICE) ) {
+                        ^~~~~~~~~~~~
+In file included from ../src/main.c:9:0:
+../../main_bsp/ps7_cortexa9_0/include/xaxidma.h:750:5: note: expected 'XAxiDma * {aka struct XAxiDma *}' but argument is of type 'u32 {aka long unsigned int}'
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^~~~~~~~~~~~
+../src/main.c:257:10: error: too few arguments to function 'XAxiDma_Busy'
+  while ((XAxiDma_Busy( XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DMA_TO_DEVICE) ) {
+          ^~~~~~~~~~~~
+In file included from ../src/main.c:9:0:
+../../main_bsp/ps7_cortexa9_0/include/xaxidma.h:750:5: note: declared here
+ u32 XAxiDma_Busy(XAxiDma *InstancePtr,int Direction);
+     ^~~~~~~~~~~~
+../src/main.c:257:72: error: expected ')' before '{' token
+  while ((XAxiDma_Busy( XAxiDma_Busy(&DMA_MAIN,XAXIDMA_DMA_TO_DEVICE) ) {
+                                                                        ^
+../src/main.c:280:1: error: expected ')' before '}' token
+ }
+ ^
+../src/main.c:280:1: error: expected expression before '}' token
 make: *** [src/subdir.mk:26: src/main.o] Error 1
-20:37:32 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:14:0:
-../src/Bias_pkt_32b.h:1:1: error: expected ',' or ';' before 'u32'
- u32 Bias[] = {
- ^~~
-make: *** [src/subdir.mk:26: src/main.o] Error 1
-20:37:41 **** Auto Build of configuration Debug for project main ****
+20:24:38 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -253,10 +382,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19348	   3400	  22568	  45316	   b104	main.elf
+  39756	   4736	  15976	  60468	   ec34	main.elf
 'Finished building: main.elf.size'
 ' '
-20:38:27 **** Auto Build of configuration Debug for project main ****
+20:24:58 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -273,10 +402,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19348	   3400	  22584	  45332	   b114	main.elf
+  39756	   4736	  15976	  60468	   ec34	main.elf
 'Finished building: main.elf.size'
 ' '
-20:40:05 **** Auto Build of configuration Debug for project main ****
+20:25:08 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -293,10 +422,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19348	   3400	  30232	  52980	   cef4	main.elf
+  39792	   4736	  15976	  60504	   ec58	main.elf
 'Finished building: main.elf.size'
 ' '
-20:40:50 **** Auto Build of configuration Debug for project main ****
+20:25:24 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -313,10 +442,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  25068	   3400	  30232	  58700	   e54c	main.elf
+  39728	   4736	  15976	  60440	   ec18	main.elf
 'Finished building: main.elf.size'
 ' '
-20:42:19 **** Auto Build of configuration Debug for project main ****
+20:27:15 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -333,365 +462,20 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  26584	   3424	  30248	  60256	   eb60	main.elf
+  39728	   4736	  15976	  60440	   ec18	main.elf
 'Finished building: main.elf.size'
 ' '
-21:16:50 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  37512	   4736	  30312	  72560	  11b70	main.elf
-'Finished building: main.elf.size'
-' '
-21:17:31 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  37512	   4736	  30312	  72560	  11b70	main.elf
-'Finished building: main.elf.size'
-' '
-21:18:55 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  38956	   4736	  30312	  74004	  12114	main.elf
-'Finished building: main.elf.size'
-' '
-21:19:00 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  38956	   4736	  30312	  74004	  12114	main.elf
-'Finished building: main.elf.size'
-' '
-21:21:15 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:22:38 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:22:42 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:00 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:05 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:07 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:10 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:39 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:42 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:48 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:23:56 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:24:45 **** Auto Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: main.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../main_bsp/ps7_cortexa9_0/lib -o "main.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: main.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size main.elf  |tee "main.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
-'Finished building: main.elf.size'
-' '
-21:53:13 **** Incremental Build of configuration Debug for project main ****
+20:29:15 **** Incremental Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-21:56:39 **** Incremental Build of configuration Debug for project main ****
+20:30:35 **** Incremental Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-22:04:46 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:05:39 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:06:11 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:07:54 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:12:09 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:18:53 **** Auto Build of configuration Debug for project main ****
+20:31:26 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -708,10 +492,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
+  39792	   4736	  15976	  60504	   ec58	main.elf
 'Finished building: main.elf.size'
 ' '
-22:18:57 **** Auto Build of configuration Debug for project main ****
+20:31:30 **** Incremental Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:32:16 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -728,15 +517,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
+  39728	   4736	  15976	  60440	   ec18	main.elf
 'Finished building: main.elf.size'
 ' '
-22:19:36 **** Incremental Build of configuration Debug for project main ****
+20:32:20 **** Incremental Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-22:26:14 **** Auto Build of configuration Debug for project main ****
+20:33:58 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -753,10 +542,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39404	   4736	  30312	  74452	  122d4	main.elf
+  39628	   4736	  15976	  60340	   ebb4	main.elf
 'Finished building: main.elf.size'
 ' '
-22:26:47 **** Auto Build of configuration Debug for project main ****
+20:34:01 **** Incremental Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:34:22 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -773,20 +567,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39620	   4736	  30312	  74668	  123ac	main.elf
+  39528	   4736	  15976	  60240	   eb50	main.elf
 'Finished building: main.elf.size'
 ' '
-22:26:51 **** Incremental Build of configuration Debug for project main ****
+20:34:26 **** Incremental Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-22:27:05 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:28:05 **** Auto Build of configuration Debug for project main ****
+20:35:19 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -803,15 +592,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39404	   4736	  30312	  74452	  122d4	main.elf
+  39528	   4736	  15976	  60240	   eb50	main.elf
 'Finished building: main.elf.size'
 ' '
-22:28:08 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:29:42 **** Auto Build of configuration Debug for project main ****
+20:35:29 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -828,21 +612,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size main.elf  |tee "main.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39404	   4736	  30312	  74452	  122d4	main.elf
+  39528	   4736	  15976	  60240	   eb50	main.elf
 'Finished building: main.elf.size'
 ' '
-22:29:46 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:30:05 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-22:31:40 **** Incremental Build of configuration Debug for project main ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
