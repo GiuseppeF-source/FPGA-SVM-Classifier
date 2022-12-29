@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="hw_svm_axis_to_bram_Bias_0_0_synth_1" LaunchDir="C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/hw_svm_axis_to_bram_Bias_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_svm_PL_CLASSIFIER_w_VOTI_0_0_synth_1" LaunchDir="C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/hw_svm_PL_CLASSIFIER_w_VOTI_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_svm_axis_to_bram_PCV_0_0_synth_1" LaunchDir="C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/hw_svm_axis_to_bram_PCV_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hw_svm_axis_to_bram_Kernel_0_0_synth_1" LaunchDir="C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/hw_svm_axis_to_bram_Kernel_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="hw_svm_axis_to_bram_Bias_0_0_synth_1"/>
+		<Parent Id="hw_svm_PL_CLASSIFIER_w_VOTI_0_0_synth_1"/>
+		<Parent Id="hw_svm_axis_to_bram_PCV_0_0_synth_1"/>
+		<Parent Id="hw_svm_axis_to_bram_Kernel_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="hw_svm_axis_to_bram_Bias_0_0_synth_1"/>
+		<Parent Id="hw_svm_PL_CLASSIFIER_w_VOTI_0_0_synth_1"/>
+		<Parent Id="hw_svm_axis_to_bram_PCV_0_0_synth_1"/>
+		<Parent Id="hw_svm_axis_to_bram_Kernel_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

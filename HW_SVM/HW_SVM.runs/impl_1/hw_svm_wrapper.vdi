@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Dec 28 19:58:21 2022
-# Process ID: 17252
+# Start of session at: Thu Dec 29 22:00:26 2022
+# Process ID: 11004
 # Current directory: C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/impl_1
 # Command line: vivado.exe -log hw_svm_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hw_svm_wrapper.tcl -notrace
 # Log file: C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.runs/impl_1/hw_svm_wrapper.vdi
@@ -14,7 +14,7 @@ Command: open_checkpoint hw_svm_wrapper_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 241.488 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 260.195 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 514 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
@@ -27,10 +27,10 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1377.609 ; gain = 0.410
-Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1377.609 ; gain = 0.410
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1377.609 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1378.570 ; gain = 0.609
+Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1378.570 ; gain = 0.609
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1378.570 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 269 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 48 instances
@@ -39,7 +39,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 201 instances
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
-open_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1377.609 ; gain = 1136.121
+open_checkpoint: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1378.570 ; gain = 1118.375
 INFO: [Memdata 28-167] Found XPM memory block hw_svm_i/axi_smc/inst/s04_nodes/s04_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the hw_svm_i/axi_smc/inst/s04_nodes/s04_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block hw_svm_i/axi_smc/inst/s04_nodes/s04_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the hw_svm_i/axi_smc/inst/s04_nodes/s04_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block hw_svm_i/axi_smc/inst/s03_nodes/s03_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the hw_svm_i/axi_smc/inst/s03_nodes/s03_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
@@ -174,7 +174,6 @@ WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
 WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
 WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
 WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
-INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
 WARNING: [DRC PDRC-153] Gated clock check: Net hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Bias_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Bias_reg[3]_i_2/O, cell hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Bias_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Kernel_Scale_reg[3]_i_1_n_0 is a gated clock net sourced by a combinational pin hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Kernel_Scale_reg[3]_i_1/O, cell hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/pm_FSM_Kernel_Bias/addr_RAM_Kernel_Scale_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
@@ -253,7 +252,7 @@ Writing bitstream ./hw_svm_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-88 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+87 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:47 ; elapsed = 00:00:38 . Memory (MB): peak = 1912.141 ; gain = 534.531
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 28 19:59:36 2022...
+write_bitstream: Time (s): cpu = 00:01:45 ; elapsed = 00:01:19 . Memory (MB): peak = 1910.012 ; gain = 531.441
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 29 22:02:41 2022...

@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Tue Dec 20 21:24:32 2022
+// Date        : Thu Dec 29 21:29:36 2022
 // Host        : peppe-pc running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/bd/hw_svm/ip/hw_svm_axis_to_bram_Bias_0_0/hw_svm_axis_to_bram_Bias_0_0_sim_netlist.v
+//               C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/bd/hw_svm/ip/hw_svm_axis_to_bram_Bias_0_0/hw_svm_axis_to_bram_Bias_0_0_sim_netlist.v
 // Design      : hw_svm_axis_to_bram_Bias_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

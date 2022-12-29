@@ -1,4 +1,4 @@
-20:35:29 **** Auto Build of configuration Debug for project main ****
+22:05:47 **** Auto Build of configuration Debug for project main ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -6,6 +6,11 @@ a9-linaro-pre-build-step
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
 'Building target: main.elf'
 'Invoking: ARM v7 gcc linker'
@@ -19,5 +24,5 @@ arm-none-eabi-size main.elf  |tee "main.elf.size"
 'Finished building: main.elf.size'
 ' '
 
-20:35:30 Build Finished (took 1s.217ms)
+22:05:50 Build Finished (took 2s.236ms)
 
