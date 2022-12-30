@@ -65,6 +65,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param tcl.collectionResultDisplayLimit 0
+  set_param xicom.use_bs_reader 1
   open_checkpoint hw_svm_wrapper_routed.dcp
   set_property webtalk.parent_dir C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]

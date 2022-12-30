@@ -29,14 +29,25 @@
                                 "id": 0,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 2,
                                 "portIndex": 0,
                                 "nets": [
                                     {
-                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/m_axis_tready",
-                                        "isBus": false
+                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/m_axis_tdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/m_axis_tdata[2]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/m_axis_tdata[1]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/m_axis_tdata[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -45,14 +56,112 @@
                                 "id": 1,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 31,
                                 "portIndex": 1,
                                 "nets": [
                                     {
-                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/m_axis_tvalid",
-                                        "isBus": false
+                                        "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[31]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[30]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[29]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[28]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[27]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[26]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[25]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[24]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[23]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[22]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[21]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[20]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[19]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[18]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[17]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[16]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[15]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[14]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[13]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[12]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[11]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[10]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[9]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[8]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[7]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[6]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[5]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[4]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[3]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[2]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[1]"
+                                            },
+                                            {
+                                                "name": "hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -67,7 +176,7 @@
                                 "portIndex": 2,
                                 "nets": [
                                     {
-                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/s_axis_tready",
+                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/m_axis_tready",
                                         "isBus": false
                                     }
                                 ]
@@ -83,7 +192,7 @@
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/s_axis_tvalid",
+                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/m_axis_tvalid",
                                         "isBus": false
                                     }
                                 ]
@@ -97,6 +206,38 @@
                                 "leftIndex": 0,
                                 "rightIndex": 0,
                                 "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/s_axis_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/s_axis_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
                                 "nets": [
                                     {
                                         "name": "hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/PM_FSM/trig_axis_to_BRAM_PCV",

@@ -1,0 +1,60 @@
+rogram Startup
+
+Gpio -> Initialized 
+GPIO for FSM control set to Output 
+START = 0 , CLASSIFICATION = 0  -> IDLE MODE
+DMA_MAIN -> Initialized 
+DMA_load_PCV -> Initialized 
+DMA_load_Kernel_Scale -> Initialized 
+DMA_load_Bias -> Initialized 
+START = 1 , CLASSIFICATION = 0 -> SETUP MODE
+Address PCV on DDR -> 0x105EF4 
+DMA_load_PCV -> Configured to send to axis_to_BRAM_PCV 
+DMA_load_PCV -> Sending Successfully 
+Address Kernel_Scale on DDR -> 0x106234 
+DMA_load_Kernel_Scale-> Configured to send to axis_to_BRAM_Kernel 
+DMA_load_Kernel_Scale -> Sending Successfully 
+Address Bias on DDR -> 0x106274 
+DMA_load_Bias-> Configured to send to axis_to_BRAM_Bias 
+DMA_load_Bias -> Sending Successfully 
+AXI MAIN DMA -> Configured to send to SVM HW Accelerator 
+AXI MAIN DMA -> Configured to receive from SVM HW Accelerator 
+START = 1 , CLASSIFICATION = 1 -> PROCESSING 
+AXI MAIN DMA -> Sending and Receiving successfully executed 
+
+Class of Instance 1 : 3
+Class of Instance 2 : 1
+Class of Instance 3 : 5
+Class of Instance 4 : 3
+Class of Instance 5 : 1
+Class of Instance 6 : 1
+Class of Instance 7 : 5
+Class of Instance 8 : 4
+Class of Instance 9 : 2
+Class of Instance 10 : 1
+Class of Instance 11 : 5
+Class of Instance 12 : 1
+Class of Instance 13 : 5
+Class of Instance 14 : 1
+Class of Instance 15 : 2
+Class of Instance 16 : 1
+Class of Instance 17 : 3
+Class of Instance 18 : 2
+Class of Instance 19 : 4
+Class of Instance 20 : 4
+Class of Instance 21 : 2
+Class of Instance 22 : 2
+Class of Instance 23 : 3
+Class of Instance 24 : 3
+Class of Instance 25 : 6
+Class of Instance 26 : 6
+Class of Instance 27 : 1
+Class of Instance 28 : 2
+Class of Instance 29 : 5
+Class of Instance 30 : 6
+Class of Instance 31 : 3
+Class of Instance 32 : 3
+Class of Instance 33 : 1
+Class of Instance 34 : 2
+Class of Instance 35 : 1
+Class of Instance 36 : 1

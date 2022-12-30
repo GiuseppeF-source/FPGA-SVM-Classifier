@@ -14,16 +14,24 @@
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="341"></NameColumnWidth>
-      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+      <NameColumnWidth column_width="434"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
+   <WVObjectSize size="7" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/m_axis_tready" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/m_axis_tready</obj_property>
       <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hw_svm_i/PL_CLASSIFIER_w_VOTI_0/m_axis_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hw_svm_i/PL_CLASSIFIER_w_VOTI_0/m_axis_tdata[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[2:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -40,6 +48,14 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">hw_svm_i/PL_CLASSIFIER_w_VOTI_0/U0/s_axis_tready</obj_property>
       <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="hw_svm_i/axi_dma_0_m_axis_mm2s_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">hw_svm_i/axi_dma_0_m_axis_mm2s_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_dma_0_m_axis_mm2s_tdata[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
