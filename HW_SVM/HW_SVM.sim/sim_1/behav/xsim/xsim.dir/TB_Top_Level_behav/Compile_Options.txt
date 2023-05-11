@@ -1,1 +1,1 @@
--wto "4cb68f95920a487693cc364e614087a3" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "TB_Top_Level_behav" "xil_defaultlib.TB_Top_Level" "xil_defaultlib.glbl" -log "elaborate.log" 
+-wto "4cb68f95920a487693cc364e614087a3" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "secureip" -L "xpm" --snapshot "TB_Top_Level_behav" "xil_defaultlib.TB_Top_Level" -log "elaborate.log" 

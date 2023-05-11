@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 LIBRARY xil_defaultlib;
 USE xil_defaultlib.personal_type_pkg.ALL;
 use xil_defaultlib.Constant_PKG.all;
@@ -15,10 +16,12 @@ entity PL_CLASSIFIER_w_VOTING is
   s_axis_tready    : out std_logic;                          -- from SIPO
   s_axis_tvalid    : in  std_logic;                          -- from DMA
   s_axis_tdata     : in  std_logic_vector( AXIS_DATA_WIDTH -1 downto 0 ); -- from DMA 
+  s_axis_tlast     : in std_logic;
   -- AXI-Stream OUTPUT interface
   m_axis_tdata     : out std_logic_vector( AXIS_DATA_WIDTH -1 downto 0 );
   m_axis_tvalid    : out std_logic;
   m_axis_tready    :  in std_logic;
+  m_axis_tlast     : out std_logic;
   -- INPUT interface for RAM 
   -- RAM Pre-comp Vect
   bram_addr_Pre_Comp_Vect   : in std_logic_vector( ADDR_WIDTH - 1 downto 0 );  
@@ -113,6 +116,11 @@ signal i_FSM_addr_RAM_Kernel_Scale          : std_logic_vector( ADDR_WIDTH -1 do
 signal i_FSM_en_RAM_RAM_Kernel_Scaler       : std_logic;
 signal i_FSM_addr_RAM_Bias                  : std_logic_vector( ADDR_WIDTH -1 downto 0 );
 signal i_FSM_en_RAM_Bias                    : std_logic;
+
+---------------
+-- TLAST mng --
+---------------
+signal cnt_latency : natural range 0 to 59; -- total latency 67 - 10 clk dovuti al buffer 
 
 
 component Classifier is
@@ -236,10 +244,8 @@ component FSM is
   -- Gestione AXI-Stream Output                                                             
   m_axis_tready                  :  in std_logic; -- ready from DMA                         
   m_axis_valid                   : out std_logic; -- valid to DMA   
-  --m_axis_tlast                   : out std_logic;                        
   -- Gestione AXI-Stream Input                                                              
   s_axis_tready                  : out std_logic 
-  --s_axis_tlast                   : in std_logic                                           
 );    
 end component;
 
@@ -389,5 +395,36 @@ i_addr_RAM_Bias                 <= bram_addr_Bias( ADDR_WIDTH-1 downto 0 )      
 i_din_RAM_Bias                  <= bram_wrdata_Bias( BIAS_DATA_WIDTH-1 downto 0 )             		     when (i_BRAM_PS_to_PL = '0') else ( others => '0' );                      
 i_we_RAM_Bias                   <= bram_we_Bias                                 		     when (i_BRAM_PS_to_PL = '0') else '0';                                  
 i_en_RAM_Bias                   <= bram_en_Bias                                 		     when (i_BRAM_PS_to_PL = '0') else i_FSM_en_RAM_Bias;                    
+
+-------------------
+-- TLAST manager --
+-------------------
+last_latency_p: process(s_axis_aclk,axi_resetn) 
+    begin 
+        if axi_resetn = '0' then
+            cnt_latency <= 0;
+        elsif rising_edge(s_axis_aclk) then
+            if s_axis_tlast = '1' then
+                cnt_latency <= cnt_latency + 1;
+            elsif cnt_latency >= 1 then
+                cnt_latency <= cnt_latency + 1;
+            else
+                cnt_latency <= cnt_latency;
+            end if;
+        end if;
+    end process;  
+    
+last_output: process(s_axis_aclk,axi_resetn) 
+        begin 
+            if axi_resetn = '0' then
+                m_axis_tlast <= '0';
+            elsif rising_edge(s_axis_aclk) then
+                if cnt_latency = 59 then
+                    m_axis_tlast <= '1';
+                else   
+                    m_axis_tlast <= '0';
+                end if;
+            end if;
+        end process;
 
 end arch;

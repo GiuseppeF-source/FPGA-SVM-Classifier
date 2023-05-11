@@ -96,7 +96,7 @@ signal ram_name : ram_type := init_from_file_or_zeroes(C_INIT_FILE);
 
 --- specifica distribuita/block
 attribute ram_style : string;
-attribute ram_style of ram_name : signal is "auto"; -- "{auto | block | distributed | pipe_distributed | block_power1 | block_power2}"
+attribute ram_style of ram_name : signal is "distributed"; -- "{auto | block | distributed | pipe_distributed | block_power1 | block_power2}"
 
 begin
 process(clka)

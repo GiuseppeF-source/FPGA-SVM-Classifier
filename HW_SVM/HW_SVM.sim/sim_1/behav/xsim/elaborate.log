@@ -1,8 +1,11 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 4cb68f95920a487693cc364e614087a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_Top_Level_behav xil_defaultlib.TB_Top_Level xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 4cb68f95920a487693cc364e614087a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L secureip -L xpm --snapshot TB_Top_Level_behav xil_defaultlib.TB_Top_Level -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-3671] readline called past the end of file 'ramfile' [C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/new/xilinx_single_port_ram_no_change.vhd:78]
+WARNING: [VRFC 10-3671] readline called past the end of file 'ramfile' [C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/new/xilinx_single_port_ram_no_change.vhd:78]
+WARNING: [VRFC 10-3671] readline called past the end of file 'ramfile' [C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/new/xilinx_single_port_ram_no_change.vhd:78]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -21,7 +24,6 @@ Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
 Compiling package xil_defaultlib.ram_pkg
 Compiling package ieee.std_logic_textio
-Compiling module xil_defaultlib.glbl
 Compiling architecture arch of entity xil_defaultlib.SIPO_buffer [sipo_buffer_default]
 Compiling architecture behavioral of entity xil_defaultlib.DSP_AxB_Cascade [dsp_axb_cascade_default]
 Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]

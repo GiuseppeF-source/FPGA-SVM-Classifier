@@ -51,7 +51,7 @@ component PL_CLASSIFIER_w_VOTING is
   );
 end component;
 
-constant clock_period : time := 20ns;
+constant clock_period : time := 7ns;
 
 -- GPIO INPUT interface      
     signal  start                     : std_logic;                                               
@@ -167,14 +167,14 @@ end process;
 -- Inizio variazione segnali
 -------------------------------------------
 s_axis_aclk <= not s_axis_aclk after clock_period/2;
-axi_resetn  <= '0', '1' after 3*clock_period;
+axi_resetn  <= '0', '1' after 5*clock_period;
 
 p_stimuli: process
 begin 
     wait for 5 * clock_period; -- 100ns process;
     wait until rising_edge(s_axis_aclk);
     --wait for 1ns;          -- time for propagation of signal after rising edge 
-
+    m_axis_tready <= '1'; -- DMA sempre in ricezione
 -- -- IDLE
 --     start <= '0';
 --     classification <= '0';     
@@ -194,17 +194,17 @@ begin
     ------------------------
     -- OUTPUT Interface S2MM
     ------------------------
-    m_axis_tready <= '1'; -- DMA sempre in ricezione
+
     
     ------------------------
     -- INPUT  Interface MM2S
     ------------------------
     s_axis_tvalid  <= '1'; -- dato del DMA sempre valido 
     --------------------   
-    wait for 2.25us;
-    m_axis_tready <= '0'; -- DMA non più in ricezione
-    wait for 3us;
-    m_axis_tready <= '1'; -- DMA nuovamente in ricezione
+--    wait for 2.25us;
+--    m_axis_tready <= '0'; -- DMA non più in ricezione
+--    wait for 3us;
+--    m_axis_tready <= '1'; -- DMA nuovamente in ricezione
       
  wait;  
 end process;
@@ -213,6 +213,7 @@ DMA: process
 variable i : integer := 0;
 variable n_query : integer := 0;
 begin
+ if  n_query < 36 then
     if i < 9 then 
         if s_axis_tready = '1' and s_axis_tvalid  <= '1'  then
             if i = 8 then
@@ -230,6 +231,9 @@ begin
         n_query := n_query + 1;
     end if;
     wait until falling_edge(s_axis_aclk);
+  else
+    wait;
+  end if;
 end process;
 
 

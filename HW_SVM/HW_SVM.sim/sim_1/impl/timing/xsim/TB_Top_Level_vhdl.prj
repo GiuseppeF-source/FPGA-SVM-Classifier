@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../HW_SVM.srcs/sources_1/new/AXIS_BRAM_mng.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/Constant_PKG.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S_BIAS.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S_KERNEL.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/DMA_MM2S_PCV.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/SIPO_shift_reg_w_full.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/TB_Tester.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/axis_to_bram_PCV.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/axis_to_bram_Kernel.vhd" \
+"../../../../../HW_SVM.srcs/sources_1/new/axis_to_bram_Bias.vhd" \
+"../../../../../HW_SVM.srcs/sim_1/new/TB_Top_Level.vhd" \
+
+# Do not sort compile order
+nosort

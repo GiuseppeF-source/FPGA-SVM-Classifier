@@ -9,7 +9,8 @@ entity DMA_MM2S is
         axis_aclk   : in std_logic;
         axis_tready : in std_logic;
         axis_tvalid : out std_logic;
-        axis_tdata  : out std_logic_vector( 32 - 1 downto 0)
+        axis_tdata  : out std_logic_vector( 32 - 1 downto 0);
+        axis_tlast  : out std_logic
       );
 end DMA_MM2S;
 
@@ -34,7 +35,7 @@ begin
 -- Lettura Attributi da file
 -------------------------------
 read_file: process
-    file text_file : text open read_mode is "C:\work\Master_Degree_Thesis\Gen_data_to_send\TB\Attribute_Test_ddr32.h";
+    file text_file : text open read_mode is "C:\work\Master_Degree_Thesis\Gen_data_to_send\TB_DMA_Emul\Attribute_Test_ddr32.h";
     variable var_line : line;
     variable successful      : boolean;            -- variabile di conferma lettura
     variable bitvec          : std_logic_vector( 32 - 1 downto 0 ) := (others => '0');
@@ -70,20 +71,28 @@ process (axis_aclk)
 begin
   if rising_edge(axis_aclk) then
     if axis_nreset = '0' then
+      axis_tlast    <= '0';
       axis_tvalid_i <= '0';
       axis_tdata  <= (others => 'Z');
       index <= 0;
     else
       axis_tvalid_i <= '1'; -- default 
       axis_tdata  <= data_to_send(index);
-
-      if index < n_32b then  
+      
+      
+      if index = n_32b-1 then
+        -- assert tlast with last message  
+        axis_tlast    <= '1';
+      end if;
+    
+      if index < n_32b-1 then  
           if ( axis_tready_i = '1' and axis_tvalid_i = '1' ) then           
               index <= index + 1;
           end if;       
       else
               axis_tvalid_i <= '0';
               index         <= index;
+              
       end if;
     end if;
   end if;

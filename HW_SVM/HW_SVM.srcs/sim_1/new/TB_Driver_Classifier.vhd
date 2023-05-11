@@ -86,7 +86,7 @@ architecture arch of TB_Driver_Classifier is
 -- Clock related signal and Constants
 ------------------------------------------
 signal   clk :  std_logic := '1' ;
-constant clock_period : time := 20 ns;
+constant clock_period : time := 7 ns;
 constant DEPTH_Coeff : integer := 16;
 constant WIDTH_Kernel_Scale : integer := 12;
 constant WIDTH_Bias : integer := 7;

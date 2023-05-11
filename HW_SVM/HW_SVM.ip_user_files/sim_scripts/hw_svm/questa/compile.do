@@ -62,17 +62,17 @@ vcom -work proc_sys_reset_v5_0_13 -64 -93 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/hw_svm/ip/hw_svm_rst_ps7_0_30M_0/sim/hw_svm_rst_ps7_0_30M_0.vhd" \
-"../../../bd/hw_svm/ip/hw_svm_axi_dma_0_0/hw_svm_axi_dma_0_0_sim_netlist.vhdl" \
-"../../../bd/hw_svm/ip/hw_svm_axi_smc_0/hw_svm_axi_smc_0_sim_netlist.vhdl" \
-"../../../bd/hw_svm/ip/hw_svm_axi_dma_1_0/hw_svm_axi_dma_1_0_sim_netlist.vhdl" \
-"../../../bd/hw_svm/ip/hw_svm_axi_dma_1_1/hw_svm_axi_dma_1_1_sim_netlist.vhdl" \
-"../../../bd/hw_svm/ip/hw_svm_axi_dma_2_0/hw_svm_axi_dma_2_0_sim_netlist.vhdl" \
+"c:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/bd/hw_svm/ip/hw_svm_axi_dma_0_0/hw_svm_axi_dma_0_0_sim_netlist.vhdl" \
+"c:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/bd/hw_svm/ip/hw_svm_axi_smc_0/hw_svm_axi_smc_0_sim_netlist.vhdl" \
+"c:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/bd/hw_svm/ip/hw_svm_axi_dma_1_0/hw_svm_axi_dma_1_0_sim_netlist.vhdl" \
+"c:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/bd/hw_svm/ip/hw_svm_axi_dma_1_1/hw_svm_axi_dma_1_1_sim_netlist.vhdl" \
+"c:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/bd/hw_svm/ip/hw_svm_axi_dma_2_0/hw_svm_axi_dma_2_0_sim_netlist.vhdl" \
 "../../../bd/hw_svm/ip/hw_svm_axis_to_bram_PCV_0_0/sim/hw_svm_axis_to_bram_PCV_0_0.vhd" \
 "../../../bd/hw_svm/ip/hw_svm_axis_to_bram_Kernel_0_0/sim/hw_svm_axis_to_bram_Kernel_0_0.vhd" \
 "../../../bd/hw_svm/ip/hw_svm_axis_to_bram_Bias_0_0/sim/hw_svm_axis_to_bram_Bias_0_0.vhd" \
 "../../../bd/hw_svm/ip/hw_svm_PL_CLASSIFIER_w_VOTI_0_0/sim/hw_svm_PL_CLASSIFIER_w_VOTI_0_0.vhd" \
-"../../../bd/hw_svm/sim/hw_svm.vhd" \
 "../../../bd/hw_svm/ip/hw_svm_auto_pc_0/hw_svm_auto_pc_0_sim_netlist.vhdl" \
+"../../../bd/hw_svm/sim/hw_svm.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

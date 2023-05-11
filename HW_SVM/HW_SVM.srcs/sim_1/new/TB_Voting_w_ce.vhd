@@ -21,16 +21,16 @@ component Voting_w_ce is
    );
 end component;
 
-constant period        : time := 20ns;
+constant period        : time       := 7ns;
 signal clk             :  std_logic := '1';
 signal rst             :  std_logic := '1';
 signal ce              :  std_logic := '0';
 
-signal sign_classifier :  std_logic;  -- 0 positivo 1 negativo
+signal sign_classifier :  std_logic := '0';  -- 0 positivo 1 negativo
 signal sign_valid      :  std_logic := '0';  --indica input valido da Classifier
 
-signal win_class       :  std_logic_vector( 2 downto 0 ); -- 6 classi  
-signal win_class_valid :  std_logic;                        -- output valido 
+signal win_class       :  std_logic_vector( 2 downto 0 ) := (others => '0' ) ; -- 6 classi  
+signal win_class_valid :  std_logic := '0';                        -- output valido 
 
 
 begin
@@ -84,6 +84,52 @@ begin
      wait until rising_edge(CLK); 
      -- sequenza finita  
      sign_valid <= '0';     -- dati in ingresso non più validi 
+     sign_classifier <= '0';  
+     wait until rising_edge(CLK); 
+     wait until rising_edge(CLK);  
+     wait until rising_edge(CLK);
+     wait until rising_edge(CLK);   
+     rst <= '1';
+     wait until rising_edge(CLK);
+     rst <= '0';
+     
+     ------------------
+     --- seconda seq --
+     ------------------
+     wait until rising_edge(CLK);
+     sign_valid <= '1'; -- valid alto da ora in poi permette di acquisire i dati
+     sign_classifier <= '0'; 
+     wait until rising_edge(CLK);
+     sign_classifier <= '0';
+     wait until rising_edge(CLK);
+     sign_classifier <= '0';
+     wait until rising_edge(CLK);  
+     sign_classifier <= '0';
+     wait until rising_edge(CLK);
+     sign_classifier <= '0';
+     wait until rising_edge(CLK);  
+     sign_classifier <= '0';
+     wait until rising_edge(CLK);
+     sign_classifier <= '0';
+     wait until rising_edge(CLK);  
+     sign_classifier <= '1';
+     wait until rising_edge(CLK);
+     sign_classifier <= '0';
+     wait until rising_edge(CLK); 
+     sign_classifier <= '1';
+     wait until rising_edge(CLK); 
+     sign_classifier <= '1';
+     wait until rising_edge(CLK); 
+     sign_classifier <= '1';
+     wait until rising_edge(CLK); 
+     sign_classifier <= '1';
+     wait until rising_edge(CLK); 
+     sign_classifier <= '0';
+     wait until rising_edge(CLK); 
+     sign_classifier <= '0';
+     wait until rising_edge(CLK); 
+     -- sequenza finita  
+     sign_valid <= '0';     -- dati in ingresso non più validi 
      sign_classifier <= '1';  
      wait until rising_edge(CLK); 
      wait until rising_edge(CLK);  
@@ -91,47 +137,7 @@ begin
      rst <= '1';
      wait until rising_edge(CLK);
      rst <= '0';
-    sign_classifier <= '1'; -- 
-          wait until rising_edge(CLK);
-          sign_valid <= '1'; -- valid alto da ora in poi permette di acquisire i dati
-          sign_classifier <= '1'; 
-          wait until rising_edge(CLK);
-          sign_classifier <= '1';
-          wait until rising_edge(CLK);
-          sign_classifier <= '1';
-          wait until rising_edge(CLK);  
-          sign_classifier <= '1';
-          wait until rising_edge(CLK);
-          sign_classifier <= '0';
-          wait until rising_edge(CLK);  
-          sign_classifier <= '1';
-          wait until rising_edge(CLK);
-          sign_classifier <= '0';
-          wait until rising_edge(CLK);  
-          sign_classifier <= '0';
-          wait until rising_edge(CLK);
-          sign_classifier <= '0';
-          wait until rising_edge(CLK); 
-          sign_classifier <= '0';
-          -- interruzzione ce
-          ce <= '0';
-          wait until rising_edge(CLK);
-          wait until rising_edge(CLK);
-          wait until rising_edge(CLK);
-          ce <= '1';
-          sign_classifier <= '0';
-          wait until rising_edge(CLK); 
-          sign_classifier <= '0';
-          wait until rising_edge(CLK); 
-          sign_classifier <= '0';
-          wait until rising_edge(CLK); 
-          sign_classifier <= '0';
-          wait until rising_edge(CLK); 
-          sign_classifier <= '0';
-          wait until rising_edge(CLK); 
-          sign_classifier <= '0';
-          wait until rising_edge(CLK); 
-          -- sequenza finita  
+        
             
 
      wait;

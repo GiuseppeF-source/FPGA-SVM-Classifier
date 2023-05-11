@@ -18,7 +18,8 @@ signal  axi_resetn_i                   : std_logic; -- reset Active Low
 signal  m00_axis_aclk                  : std_logic;                                              
 signal  m00_axis_tready                : std_logic;                                 
 signal  m00_axis_tvalid                : std_logic;                          
-signal  m00_axis_tdata                 : std_logic_vector( AXIS_DATA_WIDTH -1 downto 0 );  
+signal  m00_axis_tdata                 : std_logic_vector( AXIS_DATA_WIDTH -1 downto 0 ); 
+signal  m00_axis_tlast                 : std_logic;  
 -- AXI-Stream  OUT  interface  -- PCV DMA                                     
 signal  m01_axis_tready                : std_logic;                         
 signal  m01_axis_tvalid                : std_logic;                  
@@ -34,7 +35,8 @@ signal  m03_axis_tdata                 : std_logic_vector( AXIS_DATA_WIDTH -1 do
 -- AXI-Stream IN  interface                                          
 signal  s00_axis_tdata                 : std_logic_vector( AXIS_DATA_WIDTH -1 downto 0 );                     
 signal  s00_axis_tvalid                : std_logic;                                              
-signal  s00_axis_tready                : std_logic;    -- DMA Sempre disponibile                                                                         
+signal  s00_axis_tready                : std_logic;    -- DMA Sempre disponibile  
+signal  s00_axis_tlast                 : std_logic;                                                      
 -- RAM Pre-comp Vect        
 signal  bram_addr_Pre_Comp_Vect        : std_logic_vector( ADDR_WIDTH -1  downto 0 );  -- da utilizzare solo i primi 4         
 signal  bram_wrdata_Pre_Comp_Vect      : std_logic_vector( PCV_DATA_WIDTH-1 downto 0 ); -- dimensione axi full da portare a 408 
@@ -66,9 +68,11 @@ begin
       s_axis_tready 					=> m00_axis_tready,
       s_axis_tvalid 					=> m00_axis_tvalid,
       s_axis_tdata 						=> m00_axis_tdata,
+      s_axis_tlast                      => m00_axis_tlast,
       m_axis_tdata 						=> s00_axis_tdata,
       m_axis_tvalid 					=> s00_axis_tvalid,
       m_axis_tready 					=> s00_axis_tready,
+      m_axis_tlast                      => s00_axis_tlast,
       bram_addr_Pre_Comp_Vect 			=> bram_addr_Pre_Comp_Vect,
       bram_wrdata_Pre_Comp_Vect 		=> bram_wrdata_Pre_Comp_Vect,
       bram_en_Pre_Comp_Vect 			=> bram_en_Pre_Comp_Vect,
@@ -146,9 +150,11 @@ begin
       m00_axis_tready => m00_axis_tready,
       m00_axis_tvalid => m00_axis_tvalid,
       m00_axis_tdata  => m00_axis_tdata,
+      m00_axis_tlast  => m00_axis_tlast,
       s00_axis_tdata  => s00_axis_tdata,
       s00_axis_tvalid => s00_axis_tvalid,
       s00_axis_tready => s00_axis_tready,
+      s00_axis_tlast  => s00_axis_tlast,
       m01_axis_tready => m01_axis_tready,
       m01_axis_tvalid => m01_axis_tvalid,
       m01_axis_tdata  => m01_axis_tdata,

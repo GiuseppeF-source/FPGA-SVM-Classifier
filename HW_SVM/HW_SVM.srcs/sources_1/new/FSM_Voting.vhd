@@ -50,7 +50,7 @@ begin
     end if;
 end process;
 
-TIMER : process(s_axis_aclk, axi_resetn, state)
+TIMER : process(s_axis_aclk, axi_resetn)
 begin
     if axi_resetn = '0' then
         count <= 0;
@@ -78,7 +78,7 @@ begin
     end if;
 end process;
 
-OUTPUT_DECODE : process(state,count) 
+OUTPUT_DECODE : process(all) 
 begin
 -- default
 valid_to_DMA    <= '0';
@@ -103,9 +103,7 @@ sign_valid      <= '0';
         when VOTING =>
             ce_voting       <= '1';
             if count < 15 then
-                sign_valid      <= '1';    -- sign dal classifier validi 
-            else 
-                sign_valid      <= '0';        
+                sign_valid      <= '1';    -- sign dal classifier validi        
             end if;
             
         when RESULT =>
@@ -120,7 +118,7 @@ sign_valid      <= '0';
     end case;
 end process;
  
-NEXT_STATE_DECODE : process (state, pause_state, m_axis_tready, start_FSM3, count, win_class_valid) 
+NEXT_STATE_DECODE : process (all) 
 begin
     next_state <= state;
     case state is
@@ -130,8 +128,6 @@ begin
         when IDLE =>
             if start_FSM3 = '1' then 
                 next_state <= FIRST_WAITING;
-            else 
-                next_state <= IDLE;
             end if;  
 
         when FIRST_WAITING =>
@@ -139,17 +135,13 @@ begin
                 next_state  <= PAUSE;      -- stallo, in pause se DMA non ? pronto
             elsif count = 1 then -- attesa causata dai ( 0 to 2) 3 cicli dell'ultimo DSP AxB+C , - quello di reset
                 next_state <= RST_VOTING;
-            else 
-                next_state <= FIRST_WAITING;
             end if;                    
                     
         when WAITING =>
             if m_axis_tready = '0' then
                 next_state  <= PAUSE;      -- stallo, in pause se DMA non ? pronto
-            elsif count = 7 then         -- 10 cicli meno reset, attesa tra un inizio lettura Ram PCV ed un altro ( in base alla prima FSM) 
+            elsif count = 5 then         -- 10 cicli meno reset, attesa tra un inizio lettura Ram PCV ed un altro ( in base alla prima FSM) 
                 next_state <= RST_VOTING;
-            else
-                next_state <= WAITING;
             end if;
 
         when RST_VOTING =>
@@ -163,9 +155,7 @@ begin
             if m_axis_tready = '0' then
                 next_state  <= PAUSE;      -- stallo in pause se DMA non ? pronto
             elsif win_class_valid = '1'  then
-                next_state  <= RESULT; 
-            else
-                next_state <=  VOTING; 
+                next_state  <= RESULT;  
             end if;        
 
         when RESULT =>
@@ -173,8 +163,6 @@ begin
                 next_state  <= PAUSE;      -- stallo in pause se DMA non ? pronto
             elsif m_axis_tready = '1'  then
                 next_state  <= WAITING;   
-            else
-                next_state <= RESULT;
             end if;        
                   
         when PAUSE =>                                                  
@@ -184,7 +172,7 @@ begin
     end case;
 end process;
 
-PAUSE_STATE_DECODE: process (s_axis_aclk, state, pause_state ) 
+PAUSE_STATE_DECODE: process (s_axis_aclk) 
 begin 
 if rising_edge(s_axis_aclk) then
     case state is 

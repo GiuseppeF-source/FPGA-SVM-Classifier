@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Wed Dec 28 19:24:53 2022
+--Date        : Sat Mar 18 16:35:23 2023
 --Host        : peppe-pc running 64-bit major release  (build 9200)
 --Command     : generate_target hw_svm.bd
 --Design      : hw_svm
@@ -2555,7 +2555,7 @@ architecture STRUCTURE of hw_svm is
   signal ps7_0_axi_periph_M04_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal ps7_0_axi_periph_M04_AXI_WREADY : STD_LOGIC;
   signal ps7_0_axi_periph_M04_AXI_WVALID : STD_LOGIC;
-  signal rst_ps7_0_30M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal rst_ps7_0_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_dma_0_m_axis_mm2s_tlast_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_dma_0_mm2s_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_dma_0_mm2s_prmry_reset_out_n_UNCONNECTED : STD_LOGIC;
@@ -2582,10 +2582,10 @@ architecture STRUCTURE of hw_svm is
   signal NLW_processing_system7_0_S_AXI_HP0_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP0_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_rst_ps7_0_30M_mb_reset_UNCONNECTED : STD_LOGIC;
-  signal NLW_rst_ps7_0_30M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_rst_ps7_0_30M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_rst_ps7_0_30M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_rst_ps7_0_mb_reset_UNCONNECTED : STD_LOGIC;
+  signal NLW_rst_ps7_0_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_rst_ps7_0_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_rst_ps7_0_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
   attribute X_INTERFACE_INFO of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
@@ -2614,7 +2614,7 @@ architecture STRUCTURE of hw_svm is
 begin
 PL_CLASSIFIER_w_VOTI_0: component hw_svm_PL_CLASSIFIER_w_VOTI_0_0
      port map (
-      axi_resetn => rst_ps7_0_30M_peripheral_aresetn(0),
+      axi_resetn => rst_ps7_0_peripheral_aresetn(0),
       bram_addr_Bias(3 downto 0) => axis_to_bram_Bias_0_addr_ram(3 downto 0),
       bram_addr_Kernel_Scale(3 downto 0) => axis_to_bram_Kernel_0_addr_ram(3 downto 0),
       bram_addr_Pre_Comp_Vect(3 downto 0) => axis_to_bram_PCV_0_addr_ram(3 downto 0),
@@ -2642,7 +2642,7 @@ PL_CLASSIFIER_w_VOTI_0: component hw_svm_PL_CLASSIFIER_w_VOTI_0_0
     );
 axi_dma_0: component hw_svm_axi_dma_0_0
      port map (
-      axi_resetn => rst_ps7_0_30M_peripheral_aresetn(0),
+      axi_resetn => rst_ps7_0_peripheral_aresetn(0),
       m_axi_mm2s_aclk => processing_system7_0_FCLK_CLK0,
       m_axi_mm2s_araddr(31 downto 0) => axi_dma_0_M_AXI_MM2S_ARADDR(31 downto 0),
       m_axi_mm2s_arburst(1 downto 0) => axi_dma_0_M_AXI_MM2S_ARBURST(1 downto 0),
@@ -2708,7 +2708,7 @@ axi_dma_0: component hw_svm_axi_dma_0_0
     );
 axi_dma_1: component hw_svm_axi_dma_1_0
      port map (
-      axi_resetn => rst_ps7_0_30M_peripheral_aresetn(0),
+      axi_resetn => rst_ps7_0_peripheral_aresetn(0),
       m_axi_mm2s_aclk => processing_system7_0_FCLK_CLK0,
       m_axi_mm2s_araddr(31 downto 0) => axi_dma_1_M_AXI_MM2S_ARADDR(31 downto 0),
       m_axi_mm2s_arburst(1 downto 0) => axi_dma_1_M_AXI_MM2S_ARBURST(1 downto 0),
@@ -2750,7 +2750,7 @@ axi_dma_1: component hw_svm_axi_dma_1_0
     );
 axi_dma_2: component hw_svm_axi_dma_1_1
      port map (
-      axi_resetn => rst_ps7_0_30M_peripheral_aresetn(0),
+      axi_resetn => rst_ps7_0_peripheral_aresetn(0),
       m_axi_mm2s_aclk => processing_system7_0_FCLK_CLK0,
       m_axi_mm2s_araddr(31 downto 0) => axi_dma_2_M_AXI_MM2S_ARADDR(31 downto 0),
       m_axi_mm2s_arburst(1 downto 0) => axi_dma_2_M_AXI_MM2S_ARBURST(1 downto 0),
@@ -2792,7 +2792,7 @@ axi_dma_2: component hw_svm_axi_dma_1_1
     );
 axi_dma_3: component hw_svm_axi_dma_2_0
      port map (
-      axi_resetn => rst_ps7_0_30M_peripheral_aresetn(0),
+      axi_resetn => rst_ps7_0_peripheral_aresetn(0),
       m_axi_mm2s_aclk => processing_system7_0_FCLK_CLK0,
       m_axi_mm2s_araddr(31 downto 0) => axi_dma_3_M_AXI_MM2S_ARADDR(31 downto 0),
       m_axi_mm2s_arburst(1 downto 0) => axi_dma_3_M_AXI_MM2S_ARBURST(1 downto 0),
@@ -2838,7 +2838,7 @@ axi_gpio_0: component hw_svm_axi_gpio_0_0
       gpio_io_o(0) => axi_gpio_0_gpio_io_o(0),
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(8 downto 0),
-      s_axi_aresetn => rst_ps7_0_30M_peripheral_aresetn(0),
+      s_axi_aresetn => rst_ps7_0_peripheral_aresetn(0),
       s_axi_arready => ps7_0_axi_periph_M00_AXI_ARREADY,
       s_axi_arvalid => ps7_0_axi_periph_M00_AXI_ARVALID(0),
       s_axi_awaddr(8 downto 0) => ps7_0_axi_periph_M00_AXI_AWADDR(8 downto 0),
@@ -2970,7 +2970,7 @@ axi_smc: component hw_svm_axi_smc_0
       S04_AXI_rresp(1 downto 0) => axi_dma_3_M_AXI_MM2S_RRESP(1 downto 0),
       S04_AXI_rvalid => axi_dma_3_M_AXI_MM2S_RVALID,
       aclk => processing_system7_0_FCLK_CLK0,
-      aresetn => rst_ps7_0_30M_peripheral_aresetn(0)
+      aresetn => rst_ps7_0_peripheral_aresetn(0)
     );
 axis_to_bram_Bias_0: component hw_svm_axis_to_bram_Bias_0_0
      port map (
@@ -3124,9 +3124,9 @@ processing_system7_0: component hw_svm_processing_system7_0_0
 ps7_0_axi_periph: entity work.hw_svm_ps7_0_axi_periph_0
      port map (
       ACLK => processing_system7_0_FCLK_CLK0,
-      ARESETN => rst_ps7_0_30M_peripheral_aresetn(0),
+      ARESETN => rst_ps7_0_peripheral_aresetn(0),
       M00_ACLK => processing_system7_0_FCLK_CLK0,
-      M00_ARESETN => rst_ps7_0_30M_peripheral_aresetn(0),
+      M00_ARESETN => rst_ps7_0_peripheral_aresetn(0),
       M00_AXI_araddr(31 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(31 downto 0),
       M00_AXI_arready(0) => ps7_0_axi_periph_M00_AXI_ARREADY,
       M00_AXI_arvalid(0) => ps7_0_axi_periph_M00_AXI_ARVALID(0),
@@ -3145,7 +3145,7 @@ ps7_0_axi_periph: entity work.hw_svm_ps7_0_axi_periph_0
       M00_AXI_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       M00_AXI_wvalid(0) => ps7_0_axi_periph_M00_AXI_WVALID(0),
       M01_ACLK => processing_system7_0_FCLK_CLK0,
-      M01_ARESETN => rst_ps7_0_30M_peripheral_aresetn(0),
+      M01_ARESETN => rst_ps7_0_peripheral_aresetn(0),
       M01_AXI_araddr(31 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(31 downto 0),
       M01_AXI_arready => ps7_0_axi_periph_M01_AXI_ARREADY,
       M01_AXI_arvalid => ps7_0_axi_periph_M01_AXI_ARVALID,
@@ -3163,7 +3163,7 @@ ps7_0_axi_periph: entity work.hw_svm_ps7_0_axi_periph_0
       M01_AXI_wready => ps7_0_axi_periph_M01_AXI_WREADY,
       M01_AXI_wvalid => ps7_0_axi_periph_M01_AXI_WVALID,
       M02_ACLK => processing_system7_0_FCLK_CLK0,
-      M02_ARESETN => rst_ps7_0_30M_peripheral_aresetn(0),
+      M02_ARESETN => rst_ps7_0_peripheral_aresetn(0),
       M02_AXI_araddr(31 downto 0) => ps7_0_axi_periph_M02_AXI_ARADDR(31 downto 0),
       M02_AXI_arready => ps7_0_axi_periph_M02_AXI_ARREADY,
       M02_AXI_arvalid => ps7_0_axi_periph_M02_AXI_ARVALID,
@@ -3181,7 +3181,7 @@ ps7_0_axi_periph: entity work.hw_svm_ps7_0_axi_periph_0
       M02_AXI_wready => ps7_0_axi_periph_M02_AXI_WREADY,
       M02_AXI_wvalid => ps7_0_axi_periph_M02_AXI_WVALID,
       M03_ACLK => processing_system7_0_FCLK_CLK0,
-      M03_ARESETN => rst_ps7_0_30M_peripheral_aresetn(0),
+      M03_ARESETN => rst_ps7_0_peripheral_aresetn(0),
       M03_AXI_araddr(31 downto 0) => ps7_0_axi_periph_M03_AXI_ARADDR(31 downto 0),
       M03_AXI_arready => ps7_0_axi_periph_M03_AXI_ARREADY,
       M03_AXI_arvalid => ps7_0_axi_periph_M03_AXI_ARVALID,
@@ -3199,7 +3199,7 @@ ps7_0_axi_periph: entity work.hw_svm_ps7_0_axi_periph_0
       M03_AXI_wready => ps7_0_axi_periph_M03_AXI_WREADY,
       M03_AXI_wvalid => ps7_0_axi_periph_M03_AXI_WVALID,
       M04_ACLK => processing_system7_0_FCLK_CLK0,
-      M04_ARESETN => rst_ps7_0_30M_peripheral_aresetn(0),
+      M04_ARESETN => rst_ps7_0_peripheral_aresetn(0),
       M04_AXI_araddr(31 downto 0) => ps7_0_axi_periph_M04_AXI_ARADDR(31 downto 0),
       M04_AXI_arready => ps7_0_axi_periph_M04_AXI_ARREADY,
       M04_AXI_arvalid => ps7_0_axi_periph_M04_AXI_ARVALID,
@@ -3217,7 +3217,7 @@ ps7_0_axi_periph: entity work.hw_svm_ps7_0_axi_periph_0
       M04_AXI_wready => ps7_0_axi_periph_M04_AXI_WREADY,
       M04_AXI_wvalid => ps7_0_axi_periph_M04_AXI_WVALID,
       S00_ACLK => processing_system7_0_FCLK_CLK0,
-      S00_ARESETN => rst_ps7_0_30M_peripheral_aresetn(0),
+      S00_ARESETN => rst_ps7_0_peripheral_aresetn(0),
       S00_AXI_araddr(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
       S00_AXI_arburst(1 downto 0) => processing_system7_0_M_AXI_GP0_ARBURST(1 downto 0),
       S00_AXI_arcache(3 downto 0) => processing_system7_0_M_AXI_GP0_ARCACHE(3 downto 0),
@@ -3257,17 +3257,17 @@ ps7_0_axi_periph: entity work.hw_svm_ps7_0_axi_periph_0
       S00_AXI_wstrb(3 downto 0) => processing_system7_0_M_AXI_GP0_WSTRB(3 downto 0),
       S00_AXI_wvalid => processing_system7_0_M_AXI_GP0_WVALID
     );
-rst_ps7_0_30M: component hw_svm_rst_ps7_0_30M_0
+rst_ps7_0: component hw_svm_rst_ps7_0_30M_0
      port map (
       aux_reset_in => '1',
-      bus_struct_reset(0) => NLW_rst_ps7_0_30M_bus_struct_reset_UNCONNECTED(0),
+      bus_struct_reset(0) => NLW_rst_ps7_0_bus_struct_reset_UNCONNECTED(0),
       dcm_locked => '1',
       ext_reset_in => processing_system7_0_FCLK_RESET0_N,
-      interconnect_aresetn(0) => NLW_rst_ps7_0_30M_interconnect_aresetn_UNCONNECTED(0),
+      interconnect_aresetn(0) => NLW_rst_ps7_0_interconnect_aresetn_UNCONNECTED(0),
       mb_debug_sys_rst => '0',
-      mb_reset => NLW_rst_ps7_0_30M_mb_reset_UNCONNECTED,
-      peripheral_aresetn(0) => rst_ps7_0_30M_peripheral_aresetn(0),
-      peripheral_reset(0) => NLW_rst_ps7_0_30M_peripheral_reset_UNCONNECTED(0),
+      mb_reset => NLW_rst_ps7_0_mb_reset_UNCONNECTED,
+      peripheral_aresetn(0) => rst_ps7_0_peripheral_aresetn(0),
+      peripheral_reset(0) => NLW_rst_ps7_0_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
     );
 end STRUCTURE;

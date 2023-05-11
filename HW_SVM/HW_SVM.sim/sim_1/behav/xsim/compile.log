@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/new/TB_Tester.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TB_Tester'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sources_1/new/PL_CLASSIFIER_w_VOTING.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PL_CLASSIFIER_w_VOTING'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/work/Master_Degree_Thesis/HW_SVM/HW_SVM.srcs/sim_1/new/TB_Top_Level.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'TB_Top_Level'

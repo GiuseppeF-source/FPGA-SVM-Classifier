@@ -17,11 +17,13 @@ entity TB_Tester is
    m00_axis_tready    : in   std_logic;                            
    m00_axis_tvalid    : out  std_logic;                          
    m00_axis_tdata     : out  std_logic_vector( AXIS_DATA_WIDTH - 1 downto 0 ); 
+   m00_axis_tlast     : out std_logic; 
    
    -- AXI-Stream OUTPUT interface
    s00_axis_tdata     : in   std_logic_vector( AXIS_DATA_WIDTH - 1 downto 0 );
    s00_axis_tvalid    : in   std_logic;
    s00_axis_tready    : out  std_logic;
+   s00_axis_tlast     : in std_logic; 
  
 -- axis_to_BRAM
    -- AXI-Stream OUTPUT interface PCV
@@ -64,7 +66,8 @@ begin
     axis_aclk   => cpu_clock,
     axis_tready => m00_axis_tready,
     axis_tvalid => m00_axis_tvalid,
-    axis_tdata  => m00_axis_tdata
+    axis_tdata  => m00_axis_tdata,
+    axis_tlast  => m00_axis_tlast
   );
   DMA_MM2S_PCV_inst : entity work.DMA_MM2S_PCV
   port map (
@@ -158,7 +161,7 @@ begin
 		if clk_cnt > 0 and clk_cnt <= 300 then
 			-- SETUP
 			s00_axis_tready <= '0';
-		elsif clk_cnt > 300 and clk_cnt <= 952 then
+		elsif clk_cnt > 300 and clk_cnt <= 980 then
 			-- CLASSIFICATION
 			s00_axis_tready <= '1';
 		elsif clk_cnt > 980 and clk_cnt <= 2000 then

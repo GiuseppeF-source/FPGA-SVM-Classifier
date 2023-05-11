@@ -34,7 +34,7 @@ begin
 -- Lettura Attributi da file
 -------------------------------
 read_file: process
-    file text_file : text open read_mode is "C:\work\Master_Degree_Thesis\Gen_data_to_send\TB\Bias_pkt_32b_TB.h";
+    file text_file : text open read_mode is "C:\work\Master_Degree_Thesis\Gen_data_to_send\TB_DMA_Emul\Bias_pkt_32b_TB.h";
     variable var_line : line;
     variable successful      : boolean;            -- variabile di conferma lettura
     variable bitvec          : std_logic_vector( 32 - 1 downto 0 ) := (others => '0');

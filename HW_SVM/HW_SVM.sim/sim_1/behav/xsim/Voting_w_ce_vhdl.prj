@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HW_SVM.srcs/sources_1/new/counter_3b.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../HW_SVM.srcs/sources_1/new/Voting_w_ce.vhd" \
+
+# Do not sort compile order
+nosort

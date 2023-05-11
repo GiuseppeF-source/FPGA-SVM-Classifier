@@ -88,7 +88,7 @@
 /config/ip/num_si/value=5
 /config/ip/num_mi/value=1
 /config/ip/num_clks/value=1
-/config/aclk/csk/value=hw_svm_processing_system7_0_0_FCLK_CLK0:30:0.000
+/config/aclk/csk/value=hw_svm_processing_system7_0_0_FCLK_CLK0:142:0.000
 /clocking/S00_Entry/ASSOCIATED_CLK/value=aclk;range=aclk;editable=0
 /clocking/S01_Entry/ASSOCIATED_CLK/value=aclk;range=aclk;editable=0
 /clocking/S02_Entry/ASSOCIATED_CLK/value=aclk;range=aclk;editable=0

@@ -1,0 +1,95 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Mar 22 17:19:28 2023
+| Host         : peppe-pc running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file PL_CLASSIFIER_w_VOTING_control_sets_placed.rpt
+| Design       : PL_CLASSIFIER_w_VOTING
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            4 |
+|      4 |            5 |
+|      5 |            2 |
+|      6 |            1 |
+|      7 |            2 |
+|     11 |            1 |
+|     12 |            2 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |           15 |
+| No           | No                    | Yes                    |              14 |            8 |
+| No           | Yes                   | No                     |              18 |            7 |
+| Yes          | No                    | No                     |            1319 |          385 |
+| Yes          | No                    | Yes                    |              24 |           14 |
+| Yes          | Yes                   | No                     |            1245 |          305 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+-------------------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+|                    Clock Signal                    |                                       Enable Signal                                       |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------------------------------------------+-------------------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+|  s_axis_aclk                                       |                                                                                           | PM_FSM/pm_FSM_Kernel_Bias/state[2]_i_2_n_0 |                2 |              3 |
+|  s_axis_aclk                                       |                                                                                           | PM_FSM/pm_FSM_SIPO_PCV/state[2]_i_2_n_0    |                2 |              3 |
+|  s_axis_aclk                                       |                                                                                           | PM_FSM/pm_FSM_Voting/state[2]_i_2_n_0      |                2 |              3 |
+|  s_axis_aclk                                       |                                                                                           | PM_FSM/FSM_sequential_state[2]_i_2_n_0     |                1 |              3 |
+|  PM_FSM/pm_FSM_Kernel_Bias/en_RAM_Bias             |                                                                                           |                                            |                3 |              4 |
+|  PM_FSM/pm_FSM_Kernel_Bias/en_RAM_RAM_Kernel_Scale |                                                                                           |                                            |                3 |              4 |
+|  PM_FSM/pm_FSM_SIPO_PCV/start_fsm2                 |                                                                                           |                                            |                3 |              4 |
+|  s_axis_aclk                                       | PM_FSM/pm_FSM_SIPO_PCV/pause_state                                                        | PM_FSM/pm_FSM_SIPO_PCV/state[2]_i_2_n_0    |                2 |              4 |
+|  s_axis_aclk                                       | PM_Voting/win_class[2]_i_1_n_0                                                            | PM_FSM/pm_FSM_Voting/reset_voting          |                2 |              4 |
+|  s_axis_aclk                                       | PM_FSM/pm_FSM_Voting/pause_state                                                          | PM_FSM/pm_FSM_Voting/state[2]_i_2_n_0      |                3 |              5 |
+|  s_axis_aclk                                       | PM_Voting/count_clk                                                                       | PM_FSM/pm_FSM_Voting/reset_voting          |                2 |              5 |
+|  s_axis_aclk                                       | PM_FSM/pm_FSM_Kernel_Bias/pause_state                                                     | PM_FSM/pm_FSM_Kernel_Bias/state[2]_i_2_n_0 |                5 |              6 |
+|  s_axis_aclk                                       | PM_RAM_Bias/inst_RAM_Bias/ram_data                                                        |                                            |                2 |              7 |
+|  s_axis_aclk                                       | PM_RAM_Bias/inst_RAM_Bias/p_0_in                                                          |                                            |                2 |              7 |
+|  s_axis_aclk                                       |                                                                                           |                                            |                6 |             11 |
+|  s_axis_aclk                                       | PM_RAM_Kernel_Scale/inst_RAM_Kernel_Scale/ram_data                                        |                                            |                3 |             12 |
+|  s_axis_aclk                                       | PM_RAM_Kernel_Scale/inst_RAM_Kernel_Scale/p_0_in                                          |                                            |                3 |             12 |
+|  s_axis_aclk                                       |                                                                                           | PM_FSM/pm_FSM_Voting/reset_voting          |                8 |             20 |
+|  s_axis_aclk                                       | PM_RAM_Pre_Computed_Vector/inst_RAM_Pre_Computed_Vector/ram_name_reg_0_15_360_360_i_1_n_0 |                                            |               12 |             48 |
+|  s_axis_aclk                                       | PM_SIPO/shift_reg[0]                                                                      |                                            |              124 |            292 |
+|  s_axis_aclk                                       | PM_RAM_Pre_Computed_Vector/inst_RAM_Pre_Computed_Vector/p_0_in                            |                                            |               90 |            360 |
+|  s_axis_aclk                                       | PM_RAM_Pre_Computed_Vector/inst_RAM_Pre_Computed_Vector/ram_data                          |                                            |              102 |            408 |
+|  s_axis_aclk                                       | PM_FSM/ce_DSP_AxB_Cascade_classifier                                                      |                                            |              154 |           1200 |
+|  s_axis_aclk                                       | PM_FSM/ce_DSP_AxB_Cascade_classifier                                                      | PM_FSM/rst_svm_classifier                  |              305 |           1245 |
++----------------------------------------------------+-------------------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+
+
