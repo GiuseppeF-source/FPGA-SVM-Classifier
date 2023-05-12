@@ -3,70 +3,72 @@
    "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
 preplace port DDR -pg 1 -y 880 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 910 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -y 180 -defaultsOSRD -orient R180
-preplace inst axis_to_bram_Bias_0 -pg 1 -lvl 5 -y 690 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 1040 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -y 200 -defaultsOSRD -orient R180
+preplace inst axis_to_bram_Bias_0 -pg 1 -lvl 3 -y 890 -defaultsOSRD
 preplace inst axi_dma_1 -pg 1 -lvl 2 -y 440 -defaultsOSRD
 preplace inst axi_dma_2 -pg 1 -lvl 2 -y 660 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 3 -y 930 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -y 1100 -defaultsOSRD
 preplace inst axi_dma_3 -pg 1 -lvl 2 -y 1090 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 2 -y 870 -defaultsOSRD
-preplace inst PL_CLASSIFIER_w_VOTI_0 -pg 1 -lvl 4 -y 460 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 240 -defaultsOSRD
+preplace inst PL_CLASSIFIER_w_VOTI_0 -pg 1 -lvl 4 -y 660 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 1 -y 800 -defaultsOSRD
-preplace inst axis_to_bram_Kernel_0 -pg 1 -lvl 3 -y 660 -defaultsOSRD
-preplace inst axis_to_bram_PCV_0 -pg 1 -lvl 3 -y 440 -defaultsOSRD
+preplace inst axis_to_bram_Kernel_0 -pg 1 -lvl 3 -y 680 -defaultsOSRD
+preplace inst axis_to_bram_PCV_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
 preplace inst rst_ps7_0 -pg 1 -lvl 1 -y 500 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 4 -y 940 -defaultsOSRD
-preplace netloc ps7_0_axi_periph_M02_AXI 1 1 1 390
-preplace netloc processing_system7_0_DDR 1 4 2 2110J 880 NJ
-preplace netloc axis_to_bram_PCV_0_en_ram 1 3 1 1350
-preplace netloc axis_to_bram_PCV_0_s_axis_tready 1 2 1 850
-preplace netloc axi_dma_1_m_axis_mm2s_tdata 1 2 1 800
-preplace netloc axis_to_bram_PCV_0_addr_ram 1 3 1 1370
-preplace netloc axis_to_bram_Kernel_0_s_axis_tready 1 2 1 810
-preplace netloc axi_dma_1_m_axis_mm2s_tvalid 1 2 1 800
-preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tvalid 1 3 2 NJ 180 2030
-preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Bias 1 4 1 2090
-preplace netloc axis_to_bram_Bias_0_s_axis_tready 1 2 3 NJ 1090 1460J 750 2070
-preplace netloc axi_dma_3_m_axis_mm2s_tvalid 1 2 3 850J 790 1450J 740 2060
-preplace netloc axi_dma_1_M_AXI_MM2S 1 2 1 840
-preplace netloc processing_system7_0_M_AXI_GP0 1 0 5 20 10 NJ 10 NJ 10 NJ 10 2050
-preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 2 2 890 30 1440
-preplace netloc axi_smc_M00_AXI 1 3 1 N
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 40 1000 440J 970 790J 1080 NJ 1080 2010
-preplace netloc ps7_0_axi_periph_M03_AXI 1 1 1 410
-preplace netloc PL_CLASSIFIER_w_VOTI_0_s_axis_tready 1 2 2 900 330 N
-preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 2 2 880 550 1330
-preplace netloc axis_to_bram_Bias_0_data_out 1 3 3 1470 820 NJ 820 2460
-preplace netloc axis_to_bram_Kernel_0_en_ram 1 3 1 1430
-preplace netloc rst_ps7_0_peripheral_aresetn 1 0 4 50 1010 430 960 800 1060 1400
-preplace netloc ps7_0_axi_periph_M01_AXI 1 1 3 NJ 780 NJ 780 1320
-preplace netloc axi_dma_0_s_axis_s2mm_tready 1 3 2 NJ 200 2020
-preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Kernel_Scale 1 2 3 900 770 NJ 770 2010
-preplace netloc axis_to_bram_Kernel_0_we_ram 1 3 1 1460
-preplace netloc axi_dma_0_M_AXI_MM2S 1 2 1 890
-preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tdata 1 3 2 1320J 210 2010
-preplace netloc axi_gpio_0_gpio_io_o 1 2 2 830J 800 1420
-preplace netloc axis_to_bram_Bias_0_en_ram 1 3 3 1480 830 NJ 830 2450
-preplace netloc processing_system7_0_FIXED_IO 1 4 2 NJ 910 NJ
-preplace netloc axi_dma_3_M_AXI_MM2S 1 2 1 890
-preplace netloc axis_to_bram_PCV_0_we_ram 1 3 1 1340
-preplace netloc axi_dma_2_m_axis_mm2s_tvalid 1 2 1 790
-preplace netloc axi_dma_0_M_AXI_S2MM 1 2 1 870
-preplace netloc axis_to_bram_Bias_0_addr_ram 1 3 3 1490 790 2070J 810 2470
-preplace netloc axis_to_bram_Kernel_0_data_out 1 3 1 1410
-preplace netloc axis_to_bram_Kernel_0_addr_ram 1 3 1 1390
+preplace inst processing_system7_0 -pg 1 -lvl 4 -y 1070 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 1 1 410
+preplace netloc processing_system7_0_DDR 1 4 1 1960
+preplace netloc axis_to_bram_PCV_0_en_ram 1 3 1 1280
+preplace netloc axis_to_bram_PCV_0_s_axis_tready 1 2 1 860
+preplace netloc axi_dma_1_m_axis_mm2s_tdata 1 2 1 860
+preplace netloc axis_to_bram_PCV_0_addr_ram 1 3 1 1320
+preplace netloc axis_to_bram_Kernel_0_s_axis_tready 1 2 1 780
+preplace netloc axi_dma_1_m_axis_mm2s_tvalid 1 2 1 790
+preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tvalid 1 4 1 1930
+preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Bias 1 2 3 900 1260 NJ 1260 1890
+preplace netloc axis_to_bram_Bias_0_s_axis_tready 1 2 1 850J
+preplace netloc axi_dma_3_m_axis_mm2s_tvalid 1 2 1 840J
+preplace netloc axi_dma_1_M_AXI_MM2S 1 2 1 830
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 5 40 1290 NJ 1290 NJ 1290 NJ 1290 1920
+preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 3 1 1380
+preplace netloc axi_smc_M00_AXI 1 3 1 1240
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 20 1280 NJ 1280 NJ 1280 NJ 1280 1880
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 1 430
+preplace netloc PL_CLASSIFIER_w_VOTI_0_s_axis_tready 1 3 1 1360
+preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 3 1 1350
+preplace netloc axis_to_bram_Bias_0_data_out 1 3 1 1250
+preplace netloc axis_to_bram_Kernel_0_en_ram 1 3 1 1240
+preplace netloc rst_ps7_0_peripheral_aresetn 1 0 5 50 600 400 310 820 1230 1290 920 1950
+preplace netloc ps7_0_axi_periph_M01_AXI 1 1 4 NJ 780 780J 1220 N 1220 1910
+preplace netloc axi_dma_0_s_axis_s2mm_tready 1 4 1 1920
+preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_Kernel_Scale 1 2 3 860 1270 NJ 1270 1930
+preplace netloc axis_to_bram_Kernel_0_we_ram 1 3 1 1230
+preplace netloc axi_dma_0_M_AXI_MM2S 1 2 2 870 330 1280
+preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tdata 1 4 1 1880
+preplace netloc axi_gpio_0_gpio_io_o 1 3 1 1340
+preplace netloc axis_to_bram_Bias_0_en_ram 1 3 1 1300
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 N
+preplace netloc axi_dma_3_M_AXI_MM2S 1 2 1 770
+preplace netloc PL_CLASSIFIER_w_VOTI_0_m_axis_tlast 1 4 1 1890
+preplace netloc axis_to_bram_PCV_0_we_ram 1 3 1 1270
+preplace netloc axi_dma_2_m_axis_mm2s_tvalid 1 2 1 770
+preplace netloc axi_dma_0_M_AXI_S2MM 1 2 2 880 340 1270
+preplace netloc axi_dma_0_m_axis_mm2s_tlast 1 3 1 1370
+preplace netloc axis_to_bram_Bias_0_addr_ram 1 3 1 1230
+preplace netloc axis_to_bram_Kernel_0_data_out 1 3 1 1250
+preplace netloc axis_to_bram_Kernel_0_addr_ram 1 3 1 1260
 preplace netloc ps7_0_axi_periph_M04_AXI 1 1 1 390
-preplace netloc axi_dma_2_M_AXI_MM2S 1 2 1 800
-preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_PCV 1 2 3 860 20 NJ 20 2040
-preplace netloc axi_gpio_0_gpio2_io_o 1 2 2 860J 810 1440
-preplace netloc axi_dma_2_m_axis_mm2s_tdata 1 2 1 790
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 30 600 400 320 820 1050 1380 760 2100
-preplace netloc ps7_0_axi_periph_M00_AXI 1 1 1 420
-preplace netloc axis_to_bram_Bias_0_we_ram 1 3 3 1500 800 NJ 800 2440
-preplace netloc axi_dma_3_m_axis_mm2s_tdata 1 2 3 NJ 1070 NJ 1070 2080
-preplace netloc axis_to_bram_PCV_0_data_out 1 3 1 1360
-levelinfo -pg 1 0 220 620 1120 1760 2280 2500 -top 0 -bot 1210
+preplace netloc axi_dma_2_M_AXI_MM2S 1 2 1 790
+preplace netloc PL_CLASSIFIER_w_VOTI_0_trig_axis_to_BRAM_PCV 1 2 3 890 1250 NJ 1250 1900
+preplace netloc axi_gpio_0_gpio2_io_o 1 3 1 1330
+preplace netloc axi_dma_2_m_axis_mm2s_tdata 1 2 1 810
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 30 400 420 320 800 1240 1310 1180 1940
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 2 390 220 N
+preplace netloc axis_to_bram_Bias_0_we_ram 1 3 1 1240
+preplace netloc axi_dma_3_m_axis_mm2s_tdata 1 2 1 810J
+preplace netloc axis_to_bram_PCV_0_data_out 1 3 1 1300
+levelinfo -pg 1 0 220 600 1070 1630 2390 -top -220 -bot 1420
 "
 }
 {

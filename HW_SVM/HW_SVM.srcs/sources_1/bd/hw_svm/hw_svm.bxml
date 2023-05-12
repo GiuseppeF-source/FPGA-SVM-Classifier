@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="hw_svm" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1683742121"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1683742121"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1683742121"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1683742121"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1683912344"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1683912344"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1683912344"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1683912344"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\hw_svm_processing_system7_0_0\hw_svm_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -111,14 +111,6 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\hw_svm_PL_CLASSIFIER_w_VOTI_0_0\hw_svm_PL_CLASSIFIER_w_VOTI_0_0.xci" Type="IP">
-        <Instance HierarchyPath="PL_CLASSIFIER_w_VOTI_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="synth\hw_svm.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
@@ -158,6 +150,14 @@
       </File>
       <File Name="ip\hw_svm_auto_pc_0\hw_svm_auto_pc_0.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\hw_svm_PL_CLASSIFIER_w_VOTI_0_1\hw_svm_PL_CLASSIFIER_w_VOTI_0_1.xci" Type="IP">
+        <Instance HierarchyPath="PL_CLASSIFIER_w_VOTI_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
