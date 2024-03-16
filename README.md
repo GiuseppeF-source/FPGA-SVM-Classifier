@@ -1,5 +1,5 @@
-# Master_Degree_Thesis
+# FPGA-SVM-Classifier
 Current Branch:
 MAIN
  
- dopo il merge di conclusione_trasferimento_dma
+ dopo il merge del branch "conclusione_trasferimento_dma"
